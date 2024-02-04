@@ -6,7 +6,6 @@ import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser';
 import { MDBIcon } from 'mdb-react-ui-kit';
 
-
 function Navigate({ name, path }) {
     return (
 
@@ -28,6 +27,7 @@ function ServiceNav({ name, path }) {
 
     );
 }
+
 function Form({ type, name, place }) {
     return (
 
@@ -40,15 +40,8 @@ function Form({ type, name, place }) {
     );
 }
 
-
-
 function Navbar() {
 
-    const routine = routineCheckup;
-    const general = generalDentistry;
-    const cosmetic = cosmeticDentistry;
-    const ortho = orthodontic;
-    const implant = implants;
     const location = useLocation();
 
     useEffect(() => {
@@ -111,6 +104,12 @@ function Navbar() {
                             <Navigate
                                 name={'Services'}
                                 path={'/services'}
+                            />
+                        </li>
+                        <li className="nav-item nav-hover">
+                            <Navigate
+                                name={'About'}
+                                path={'/about'}
                             />
                         </li>
                         <li className="nav-item nav-hover">

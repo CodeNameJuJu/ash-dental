@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+
 import '../Main.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -47,7 +47,6 @@ export const Home = () => {
                     <a href="#" class="btn btn-gold">Click here to read more</a>
                 </section>
             </div>
-
         </div>
     )
 }
