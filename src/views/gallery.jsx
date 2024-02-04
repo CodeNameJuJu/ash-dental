@@ -53,21 +53,21 @@ function Gallery() {
                 <div className='Car'>
                     <Carousel>
                         <Carousel.Item>
-                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental images 2600 x 1600 px/1.png" text="First slide" alt='Sale1' />
+                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental/1.png" text="First slide" alt='Sale1' />
                             <Carousel.Caption>
                                 <h3>First slide label</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental images 2600 x 1600 px/7.png" text="First slide" alt='Sale2' />
+                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental/7.png" text="First slide" alt='Sale2' />
                             <Carousel.Caption>
                                 <h3>Second slide label</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental images 2600 x 1600 px/8.png" text="First slide" alt='Sale3' />
+                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental/8.png" text="First slide" alt='Sale3' />
                             <Carousel.Caption>
                                 <h3>Third slide label</h3>
                                 <p>
@@ -84,60 +84,60 @@ function Gallery() {
                     <h3 className="text-left">Image Section 1</h3>
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Dental images 2600 x 1600 px/2.png" alt="Gallery 1" className="img-fluid" />
+                    <img src="/Images/Dental/2.png" alt="Gallery 1" className="img-fluid" />
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Dental images 2600 x 1600 px/3.png" alt="Gallery 2" className="img-fluid" />
+                    <img src="/Images/Dental/3.png" alt="Gallery 2" className="img-fluid" />
                 </div>
 
                 <div className="col-md-3 mb-4">
                     <h3 className="text-left">Image Section 2</h3>
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology Page/20.png" alt="Gallery 6" className="img-fluid" />
+                    <img src="/Images/Technology/20.png" alt="Gallery 6" className="img-fluid" />
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology Page/16.png" alt="Gallery 8" className="img-fluid" />
+                    <img src="/Images/Technology/16.png" alt="Gallery 8" className="img-fluid" />
                 </div>
 
                 <div className="col-md-3 mb-4">
                     <h3 className="text-left">Image Section 3</h3>
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Dental images 2600 x 1600 px/4.png" alt="Gallery 3" className="img-fluid" />
+                    <img src="/Images/Dental/4.png" alt="Gallery 3" className="img-fluid" />
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Dental images 2600 x 1600 px/5.png" alt="Gallery 4" className="img-fluid" />
+                    <img src="/Images/Dental/5.png" alt="Gallery 4" className="img-fluid" />
                 </div>
 
                 <div className="col-md-3 mb-4">
                     <h3 className="text-left">Image Section 4</h3>
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology Page/15.png" alt="Gallery 7" className="img-fluid" />
+                    <img src="/Images/Technology/15.png" alt="Gallery 7" className="img-fluid" />
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology Page/21.png" alt="Gallery 13" className="img-fluid" />
+                    <img src="/Images/Technology/21.png" alt="Gallery 13" className="img-fluid" />
                 </div>
 
                 <div className="col-md-3 mb-4">
                     <h3 className="text-left">Image Section 5</h3>
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology Page/17.png" alt="Gallery 9" className="img-fluid" />
+                    <img src="/Images/Technology/17.png" alt="Gallery 9" className="img-fluid" />
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology Page/18.png" alt="Gallery 10" className="img-fluid" />
+                    <img src="/Images/Technology/18.png" alt="Gallery 10" className="img-fluid" />
                 </div>
 
                 <div className="col-md-3 mb-4">
                     <h3 className="text-left">Image Section 6</h3>
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology Page/19.png" alt="Gallery 11" className="img-fluid" />
+                    <img src="/Images/Technology/19.png" alt="Gallery 11" className="img-fluid" />
                 </div>
                 <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology Page/14.png" alt="Gallery 12" className="img-fluid" />
+                    <img src="/Images/Technology/14.png" alt="Gallery 12" className="img-fluid" />
                 </div>
             </div>
 
