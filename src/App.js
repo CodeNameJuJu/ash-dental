@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './Main.css';
 import Home from './views/home';
+import About from './views/about';
 import Services from "./views/services";
-import Teams from './views/teams';
+import Technology from "./views/technology";
 import Contact from './views/contact';
 import Gallery from './views/gallery';
 import Navbar from "./components/navbar";
@@ -21,7 +22,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:treatId" element={<TreatmentDetails />} />
-          <Route path="/teams" element={<Teams />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>

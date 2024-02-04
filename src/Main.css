@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,8 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#1C1C1C;
-  color: #989BA4;
+  background-color: white;
+  color: #1C1C1C;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
@@ -25,18 +29,13 @@ code {
   padding-bottom: 25px;
 }
 
-.bg-color {
-  width: 100% !important;
-  background-color: #1C1C1C !important;
-}
-
 .btn-bg {
   background-color: #B6A792;
   border-color: #B6A792;
 }
 
 .bio-text {
-  color: #B6A792 !important;
+  color: #1C1C1C !important;
 }
 
 .blog-link {
@@ -45,7 +44,7 @@ code {
 
 .blog-link:hover {
   text-decoration: none;
-  color: #B6A792 !important;
+  color: #1C1C1C !important;
 }
 
 .blog-shadow {
@@ -90,13 +89,17 @@ code {
 /* CSS */
 .image-container {
   position: relative;
-  width: 42%; /* Adjust to your desired width */
-  height: 18.75rem; /* Adjust to your desired height */
+  width: 42%;
+  /* Adjust to your desired width */
+  height: 18.75rem;
+  /* Adjust to your desired height */
   overflow: hidden;
-  max-width: 600px; /* Adjust the max-width to your desired value */
+  max-width: 600px;
+  /* Adjust the max-width to your desired value */
 }
 
-.image1, .image2 {
+.image1,
+.image2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -112,7 +115,7 @@ code {
     width: 120%;
   }
 
-  .very-bad-practice-do-not-do-this{
+  .very-bad-practice-do-not-do-this {
     padding-bottom: 300px;
   }
 }
@@ -121,13 +124,13 @@ code {
 /*Range Reset*/
 input[type="range"] {
   -webkit-appearance: none;
-   appearance: none;
-   background: transparent;
-   cursor: pointer;
-   width: 100%;
-   height: 7px;
-   margin-bottom: 10px;
-   padding-bottom: 10px;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  height: 7px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 /***** Chrome, Safari, Opera and Edge Chromium styles *****/
@@ -135,14 +138,16 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-runnable-track {
   background-color: #B6A792;
   border-radius: 0.5rem;
-  height: 0.5rem;  
+  height: 0.5rem;
 }
 
 /* slider thumb */
 input[type="range"]::-webkit-slider-thumb {
- -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none;
+  /* Override default look */
   appearance: none;
-  margin-top: -12px; /* Centers thumb on the track */
+  margin-top: -12px;
+  /* Centers thumb on the track */
 
   /*custom styles*/
   background-color: #B6A792;
@@ -160,8 +165,10 @@ input[type="range"]::-moz-range-track {
 
 /* slider thumb */
 input[type="range"]::-moz-range-thumb {
-  border: none; /*Removes extra border that FF applies*/
-  border-radius: 0; /*Removes default border-radius that FF applies*/
+  border: none;
+  /*Removes extra border that FF applies*/
+  border-radius: 0;
+  /*Removes default border-radius that FF applies*/
 
   /*custom styles*/
   background-color: #B6A792;
@@ -273,7 +280,8 @@ section .section-title {
 
 #what-we-do .card {
   padding: 1rem !important;
-  border: none;
+  border: 2px solid #B6A792;
+  border-radius: 5px;
   margin-bottom: 1rem;
   -webkit-transition: .5s all ease;
   -moz-transition: .5s all ease;
@@ -328,7 +336,7 @@ section .section-title {
 
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
   background-color: #B6A792 !important;
   color: #ffffff !important;
 }
@@ -341,13 +349,28 @@ section .section-title {
 .footer-link {
   color: #B6A792;
 }
-  
-a:hover{
+
+a:hover {
   color: #B6A792;
 }
 
 a {
-  color: #B6A792;
+  color: #1C1C1C;
+}
+
+h1, h2, h3 {
+  color: #1C1C1C;
+}
+
+.background {
+  background-color: #ffffff0c;
+}
+
+p {
+  color: 1C1C1C;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
 }
 
 /* _button-group.scss:81 */
@@ -360,15 +383,15 @@ a {
   height: 100px;
 }
 
-.marketing{
+.marketing {
   padding-top: 50px;
 }
 
-.Car{
+.Car {
   padding-bottom: 50px;
 }
 
-.featurette{
+.featurette {
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -378,7 +401,7 @@ a {
   text-align: center;
 }
 
-.test{
+.test {
   margin-bottom: 35px;
 }
 
@@ -394,14 +417,174 @@ a {
   background-size: 80%;
   animation: animate 7s linear infinite;
   background-clip: unset;
-  -webkit-background-clip: text; /*gooi problem uit lyk nie serious nie maar sal kyk */
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-background-clip: text;
+  /*gooi problem uit lyk nie serious nie maar sal kyk */
+  -webkit-text-fill-color: #ffffff0c;
 }
+
+.container .card {
+  max-width: 300px;
+  background-color: #B6A792;
+  height: 215px;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 20px #B6A792;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+  height: 450px;
+}
+
+.container .card .imgContainer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  top: -50px;
+  left: 10px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgContainer img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+  .container .card .imgContainer {
+    left: -2px;
+  }
+}
+
+.opac {
+  opacity: 0.5;
+}
+
+.opac:hover {
+  opacity: 1;
+}
+
+.text-color {
+  color: #1C1C1C;
+  opacity: 1;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+
+@media (max-width:767px) {
+  h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.intro p {
+  margin-bottom: 0;
+}
+
+.people {
+  cursor: pointer;
+}
+
+.item {
+  margin-bottom: 30px;
+}
+
+.item .box {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.item .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff0c;
+  transition: opacity 0.15s ease-in;
+  opacity: 0;
+  padding-top: 80px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #ffffff0c;
+}
+
+.item:hover .cover {
+  opacity: 1;
+}
+
+.item .name {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #28292E;
+}
+
+.item .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #28292E;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.social {
+  font-size: 18px;
+}
+
+.social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.social a:hover {
+  opacity: 1;
+}
+
 
 @keyframes animate {
   0% {
     background-position: -500%;
   }
+
   100% {
     background-position: 500%;
   }
@@ -420,13 +603,58 @@ a {
     background-size: 80%;
     animation: animate 6s linear infinite;
     background-clip: unset;
-    -webkit-background-clip: text; /*gooi problem uit lyk nie serious nie maar sal kyk */
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-background-clip: text;
+    /*gooi problem uit lyk nie serious nie maar sal kyk */
+    -webkit-text-fill-color: #ffffff0c;
   }
 }
 
 @media (max-width: 992px) {
-  .dropdown:hover>.dropdown-menu{
-      display: block;
+  .dropdown:hover>.dropdown-menu {
+    display: block;
   }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.mb50 {
+  margin-bottom: 50px;
 }
