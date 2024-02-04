@@ -6,7 +6,6 @@ import { MDBIcon } from 'mdb-react-ui-kit';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import '../Main.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { teamMembersDetails } from '../data/teamMembersData';
 
 function Card({ name, displayName, image, path, bio }) {
     return (
@@ -20,6 +19,22 @@ function Card({ name, displayName, image, path, bio }) {
                     <p className="card-text">{bio}</p>
                 </div>
             </div>
+        </div >
+    );
+}
+
+function Card2({ name, displayName, image, path, bio }) {
+    return (
+        <div class="row ps-4 ms-4">
+            <div className='col-sm-8' style={{ backgroundImage: `url(/Images/Background%202.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+                <div className='pb-4 mb-4 pt-4 mt-4 ps-4 ms-4 pe-4 me-4'>
+                    <h2 className="card-title">{name}</h2>
+                    <p className="card-text">{bio}</p>
+                </div>
+            </div>
+            <div class="col-sm-4" style={{ height: '35%', width: '25%', textAlign: 'center' }}>
+                <img class="img-fluid" src={image} alt="trainer-img" />
+            </div >
         </div >
     );
 }
@@ -39,8 +54,6 @@ function Form({ type, name, place }) {
 }
 
 export const About = () => {
-
-    const teamMembers = teamMembersDetails;
 
     const { handleSubmit, formState } = useForm()
     const { isSubmitting } = formState
@@ -83,16 +96,34 @@ export const About = () => {
                     </p>
                 </div>
                 <div className='card-padding'>
-                    {teamMembers.map((member, index) => (
-                        <div className='mb-5 pb-5 ps-5 pt-4 mt-4' key={index}>
+                        <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
                             <Card
-                                name={member.displayName}
-                                image={member.image}
-                                bio={member.bio}
-                                path={member.name.toLowerCase()} // Use a unique identifier (e.g., name) as the path
+                                name={"Dr. Guilherme Rodrigues De Franca"}
+                                image={"../Images/Faces Close Ups_Portrait/6.png"}
+                                bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
                             />
                         </div>
-                    ))}
+                        <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
+                            <Card2
+                                name={"Dr. Guilherme Rodrigues De Franca"}
+                                image={"../Images/Faces Close Ups_Portrait/6.png"}
+                                bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
+                            />
+                        </div>
+                        <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
+                            <Card
+                                name={"Dr. Guilherme Rodrigues De Franca"}
+                                image={"../Images/Faces Close Ups_Portrait/6.png"}
+                                bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
+                            />
+                        </div>
+                        <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
+                            <Card2
+                                name={"Dr. Guilherme Rodrigues De Franca"}
+                                image={"../Images/Faces Close Ups_Portrait/6.png"}
+                                bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
+                            />
+                        </div>
                 </div>
                 <p>Our team of dental artists consists of experienced professionals,
                     each specializing in various aspects of dentistry, including cosmetic procedures, orthodontics,

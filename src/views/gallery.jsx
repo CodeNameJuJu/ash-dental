@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { MDBIcon } from 'mdb-react-ui-kit';
 import '../Main.css';
+import Carousel from 'react-bootstrap/Carousel';
 
 /* Make components for the Gallery that will be in the App.js */
 
@@ -49,29 +50,34 @@ function Gallery() {
 
             {/* Carousel */}
             <div id="carouselExample" className="carousel slide" style={{ backgroundImage: `url(/Images/Background%202.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '60vh', overflow: 'hidden' }}>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img className="d-block w-100" src="/Images/Dental images 2600 x 1600 px/1.png" alt="First slide" style={{ maxHeight: '60vh', objectFit: 'contain' }} />
-                    </div>
-                    <div className="carousel-item">
-                        <img className="d-block w-100" src="/Images/Dental images 2600 x 1600 px/7.png" alt="Second slide" style={{ maxHeight: '60vh', objectFit: 'contain' }} />
-                    </div>
-                    <div className="carousel-item">
-                        <img className="d-block w-100" src="/Images/Dental images 2600 x 1600 px/8.png" alt="Third slide" style={{ maxHeight: '60vh', objectFit: 'contain' }} />
-                    </div>
-                    {/* Add more carousel items... */}
+                <div className='Car'>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental images 2600 x 1600 px/1.png" text="First slide" alt='Sale1' />
+                            <Carousel.Caption>
+                                <h3>First slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental images 2600 x 1600 px/7.png" text="First slide" alt='Sale2' />
+                            <Carousel.Caption>
+                                <h3>Second slide label</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental images 2600 x 1600 px/8.png" text="First slide" alt='Sale3' />
+                            <Carousel.Caption>
+                                <h3>Third slide label</h3>
+                                <p>
+                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                </p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
             </div>
-
-
             {/* Image Gallery */}
             <div className="row mt-5 pt-5">
                 <div className="col-md-3 mb-4">
