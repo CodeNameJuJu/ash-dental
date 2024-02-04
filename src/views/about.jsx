@@ -13,7 +13,7 @@ function Card({ name, displayName, image, path, bio }) {
             <div class="col-sm-4" style={{ height: '35%', width: '25%', textAlign: 'center' }}>
                 <img class="img-fluid" src={image} alt="trainer-img" />
             </div >
-            <div className='col-sm-8' style={{ backgroundImage: `url(/Images/Background%202.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className='col-sm-8' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-4 mb-4 pt-4 mt-4 ps-4 ms-4 pe-4 me-4'>
                     <h2 className="card-title">{name}</h2>
                     <p className="card-text">{bio}</p>
@@ -26,7 +26,7 @@ function Card({ name, displayName, image, path, bio }) {
 function Card2({ name, displayName, image, path, bio }) {
     return (
         <div class="row ps-4 ms-4">
-            <div className='col-sm-8' style={{ backgroundImage: `url(/Images/Background%202.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className='col-sm-8' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-4 mb-4 pt-4 mt-4 ps-4 ms-4 pe-4 me-4'>
                     <h2 className="card-title">{name}</h2>
                     <p className="card-text">{bio}</p>
@@ -99,28 +99,28 @@ export const About = () => {
                         <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
                             <Card
                                 name={"Dr. Guilherme Rodrigues De Franca"}
-                                image={"../Images/Faces Close Ups_Portrait/6.png"}
+                                image={"../Images/FacesCloseUpsPortrait/6.png"}
                                 bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
                             />
                         </div>
                         <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
                             <Card2
                                 name={"Dr. Guilherme Rodrigues De Franca"}
-                                image={"../Images/Faces Close Ups_Portrait/6.png"}
+                                image={"../Images/FacesCloseUpsPortrait/6.png"}
                                 bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
                             />
                         </div>
                         <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
                             <Card
                                 name={"Dr. Guilherme Rodrigues De Franca"}
-                                image={"../Images/Faces Close Ups_Portrait/6.png"}
+                                image={"../Images/FacesCloseUpsPortrait/6.png"}
                                 bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
                             />
                         </div>
                         <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
                             <Card2
                                 name={"Dr. Guilherme Rodrigues De Franca"}
-                                image={"../Images/Faces Close Ups_Portrait/6.png"}
+                                image={"../Images/FacesCloseUpsPortrait/6.png"}
                                 bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
                             />
                         </div>
@@ -134,7 +134,7 @@ export const About = () => {
                         <div className='mb-3 pb-3 ps-3 pe-3' >
                             <div className="row mt-5">
                                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                                    <div className="card background" style={{ backgroundImage: `url(/Images/Background%202.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '95%', width: '100%' }}>
+                                    <div className="card background" style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '95%', width: '100%' }}>
                                         <div className="card-block block-1">
                                             <h3 className="card-title text-color"><i class="fa-solid fa-compass-drafting me-4"></i>Patient-Centric Excellence:</h3>
                                             <p className="text-color">
@@ -146,7 +146,7 @@ export const About = () => {
                                     </div>
                                 </div>
                                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                                    <div className="card background" style={{ backgroundImage: `url(/Images/Background%202.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '95%', width: '100%' }}>
+                                    <div className="card background" style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '95%', width: '100%' }}>
                                         <div className="card-block block-1">
                                             <h3 className="card-title text-color"><i class="fa-solid fa-wand-magic-sparkles me-3"></i>Innovation and Technology:</h3>
                                             <p>
@@ -157,7 +157,7 @@ export const About = () => {
                                     </div>
                                 </div>
                                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                                    <div className="card background opac" style={{ backgroundImage: `url(/Images/ASH%20Dental%20Texture%20options.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '95%', width: '100%' }}>
+                                    <div className="card background opac" style={{ backgroundImage: `url(/Images/Texture1.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '95%', width: '100%' }}>
                                         <div className="card-block block-1">
                                             <h3 className="card-title text-color"><i class="fa-solid fa-palette me-3"></i><strong>Dentistry as an Art Form:</strong></h3>
                                             <p><strong>
@@ -169,7 +169,7 @@ export const About = () => {
                                     </div>
                                 </div>
                                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                                    <div className="card background opac" style={{ backgroundImage: `url(/Images/ASH%20Dental%20Texture%20options.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '95%', width: '100%' }}>
+                                    <div className="card background opac" style={{ backgroundImage: `url(/Images/Texture1.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '95%', width: '100%' }}>
                                         <div className="card-block block-1">
                                             <h3 className="card-title text-color"><i class="fa-solid fa-pen-to-square me-3"></i><strong>Patient Education and Empowerment:</strong></h3>
                                             <p><strong>
@@ -196,7 +196,7 @@ export const About = () => {
                         <button type="button" className="btn btn-bg btn-link" data-bs-toggle="modal" title='Documents' data-bs-target="#myModal">
                             Book an appointment
                         </button>
-                        <div className="modal fade text-center" id="myModal" style={{ backgroundImage: `url(/Images/Background%202.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+                        <div className="modal fade text-center" id="myModal" style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                             <div className="modal-dialog">
                                 <div className="modal-content">
                                     <div className="modal-header">
