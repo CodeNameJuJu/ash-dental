@@ -1,7 +1,6 @@
 import '../Main.css';
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { routineCheckup, generalDentistry, cosmeticDentistry, orthodontic, implants } from '../data/treatmentData';
 
 function Navigate({ name, path }) {
     return (
@@ -13,26 +12,9 @@ function Navigate({ name, path }) {
     );
 }
 
-function ServiceNav({ name, path }) {
-    return (
-
-        <li>
-            <Link className="dropdown-item nav-link" to={`/services/${path}`} title={name}>
-                {name}
-            </Link>
-        </li>
-
-    );
-}
-
 
 function Navbar() {
 
-    const routine = routineCheckup;
-    const general = generalDentistry;
-    const cosmetic = cosmeticDentistry;
-    const ortho = orthodontic;
-    const implant = implants;
     const location = useLocation();
 
     useEffect(() => {
@@ -63,6 +45,12 @@ function Navbar() {
                             <Navigate
                                 name={'Services'}
                                 path={'/services'}
+                            />
+                        </li>
+                        <li className="nav-item nav-hover">
+                            <Navigate
+                                name={'About'}
+                                path={'/about'}
                             />
                         </li>
                         <li className="nav-item nav-hover">
