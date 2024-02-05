@@ -1,8 +1,4 @@
-import React, { useRef } from 'react';
-import { useForm } from 'react-hook-form'
-import '../Main.css';
-import emailjs from '@emailjs/browser';
-import { MDBIcon } from 'mdb-react-ui-kit';
+import React from 'react';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import '../Main.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -39,46 +35,7 @@ function Card2({ name, displayName, image, path, bio }) {
     );
 }
 
-
-
-function Form({ type, name, place }) {
-    return (
-
-        <div className="mb-3 pt-0">
-            <input type={type} name={name} placeholder={place}
-                className="form-control px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-            />
-        </div>
-
-    );
-}
-
 export const About = () => {
-
-    const { handleSubmit, formState } = useForm()
-    const { isSubmitting } = formState
-
-    // logic function to send emails to emailJS
-
-    const form = useRef();
-
-    const sendEmail = () => {
-
-        emailjs.sendForm('service_ny768nq', 'template_uwqtnpl', form.current, 'KpiSa53Nghfe0Zc2i')
-            .then((result) => {
-                alert('message sent successfully...');
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            })
-
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                resolve()
-            }, 4000)
-        })
-
-    };
 
     return (
         <div className='ps-5 ms-5 pe-5 me-5' >
@@ -96,34 +53,34 @@ export const About = () => {
                     </p>
                 </div>
                 <div className='card-padding'>
-                        <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
-                            <Card
-                                name={"Dr. Guilherme Rodrigues De Franca"}
-                                image={"../Images/FacesCloseUpsPortrait/6.png"}
-                                bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
-                            />
-                        </div>
-                        <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
-                            <Card2
-                                name={"Dr. Guilherme Rodrigues De Franca"}
-                                image={"../Images/FacesCloseUpsPortrait/6.png"}
-                                bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
-                            />
-                        </div>
-                        <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
-                            <Card
-                                name={"Dr. Guilherme Rodrigues De Franca"}
-                                image={"../Images/FacesCloseUpsPortrait/6.png"}
-                                bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
-                            />
-                        </div>
-                        <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
-                            <Card2
-                                name={"Dr. Guilherme Rodrigues De Franca"}
-                                image={"../Images/FacesCloseUpsPortrait/6.png"}
-                                bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
-                            />
-                        </div>
+                    <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
+                        <Card
+                            name={"Dr. Guilherme Rodrigues De Franca"}
+                            image={"../Images/FacesCloseUpsPortrait/6.png"}
+                            bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
+                        />
+                    </div>
+                    <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
+                        <Card2
+                            name={"Dr. Guilherme Rodrigues De Franca"}
+                            image={"../Images/FacesCloseUpsPortrait/6.png"}
+                            bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
+                        />
+                    </div>
+                    <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
+                        <Card
+                            name={"Dr. Guilherme Rodrigues De Franca"}
+                            image={"../Images/FacesCloseUpsPortrait/6.png"}
+                            bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
+                        />
+                    </div>
+                    <div className='mb-5 pb-5 ps-5 pt-4 mt-4'>
+                        <Card2
+                            name={"Dr. Guilherme Rodrigues De Franca"}
+                            image={"../Images/FacesCloseUpsPortrait/6.png"}
+                            bio={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis malesuada velit, non dignissim nisi fringilla a. Mauris a lacinia massa. Fusce vitae nisi orci. Integer accumsan condimentum nisi vitae accumsan. Proin eget tristique lorem. Proin et nisl elementum, consectetur magna ut, porta neque. Nunc congue mi at rutrum sollicitudin. Integer efficitur ex ut metus facilisis aliquet. Fusce eu justo nec enim pulvinar cursus. Donec venenatis tincidunt vehicula. Nulla ullamcorper lorem eleifend congue consectetur. Quisque laoreet hendrerit felis ut iaculis. Pellentesque at arcu nec nibh tempus posuere vitae sit amet diam. Nullam rutrum purus vel dapibus vehicula. Duis blandit vehicula accumsan. Aliquam sit amet leo ligula. Vestibulum convallis lacus et lectus convallis, sit amet ullamcorper nisi auctor. Maecenas ante lorem, finibus vitae lacus eu, aliquet pharetra justo. Nunc commodo laoreet enim, sed hendrerit erat pharetra ac. Quisque non nulla elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non sapien finibus mauris cursus malesuada nec tempus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quis tempor libero."}
+                        />
+                    </div>
                 </div>
                 <p>Our team of dental artists consists of experienced professionals,
                     each specializing in various aspects of dentistry, including cosmetic procedures, orthodontics,
@@ -192,84 +149,13 @@ export const About = () => {
                         Each member plays a pivotal role in shaping the overall patient experience at our practice, contributing to the seamless and comfortable journey you undergo with us.
                     </p>
                     <br />
-                    <div className='pt-4 mt-4'>
-                        <button type="button" className="btn btn-bg btn-link" data-bs-toggle="modal" title='Documents' data-bs-target="#myModal">
-                            Book an appointment
-                        </button>
-                        <div className="modal fade text-center" id="myModal" style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-                            <div className="modal-dialog">
-                                <div className="modal-content">
-                                    <div className="modal-header">
-                                        <h4 className="modal-title">Schedule a Consultation</h4>
-                                        <button type="button" className="btn-close btn btn-bg btn-link" data-bs-dismiss="modal" title='Close window'></button>
-                                    </div>
-                                    <div className="modal-body">
-                                        <p>Please fill in the form below and we will get in contact as soon as possible to confirm your booking</p>
-                                        <form className='text-color' ref={form} onSubmit={handleSubmit(sendEmail)}>
-                                            <Form
-                                                type={"text"}
-                                                name={"user_fName"}
-                                                place={"First Name..."}
-                                            />
-                                            <Form
-                                                type={"text"}
-                                                name={"user_lName"}
-                                                place={"Last Name..."}
-                                            />
-                                            <Form
-                                                type={"email"}
-                                                name={"user_email"}
-                                                place={"Your email address..."}
-                                            />
-                                            <Form
-                                                type={"phone"}
-                                                name={"user_phone"}
-                                                place={"Your phone number..."}
-                                            />
-                                            <div className="mb-3 pt-0">
-                                                <textarea name="message" placeholder="Your message"
-                                                    className="form-control px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-                                                ></textarea>
-                                            </div>
-                                            <br />
-                                            <div className='row'>
-                                                <p className='text-color'>
-                                                    <MDBIcon icon="phone" className="me-3" />  (011) + 465 2718
-                                                </p>
-                                                <p className='text-color'>
-                                                    <MDBIcon icon="phone" className="me-3" />  Emergency dental help: 062 408 5934
-                                                </p>
-                                                <p className='text-color'>
-                                                    <MDBIcon icon="envelope" className="me-3" />
-                                                    info@identicalteeth.co.za
-                                                </p>
-                                                <p >
-                                                    <MDBIcon icon="envelope" className="me-3" />
-                                                    dentist@identicalteeth.co.za
-                                                </p>
-                                            </div>
-                                            <br />
-                                            <div className="mb-3 pb-3 pt-0">
-                                                <button disabled={isSubmitting} className="btn btn-bg btn-link">
-                                                    {isSubmitting && (
-                                                        <span className="spinner-grow spinner-grow-sm"></span>
-                                                    )}
-                                                    Send Message
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <p className='pb-5 mb-5'>
-                        Embark on a journey to rediscover your smile. Schedule a consultation with ASH Dental.
-                    </p>
                 </div>
+                <br />
+                <br />
+                <br />
+                <p className='pb-5 mb-5'>
+                    Embark on a journey to rediscover your smile. Schedule a consultation with ASH Dental.
+                </p>
             </div>
         </div>
     )

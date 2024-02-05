@@ -20,8 +20,8 @@ export const Home = () => {
             </header>
             <div>
                 <div class="ash-welcome">
-                    <h2 class="heading2">Welcome to ASH Dental</h2>
-                    <p>Our journey begins the moment you step into our practice, where a seamless and visually captivating design welcomes you.
+                    <h2 class="heading2 text-color-white">Welcome to ASH Dental</h2>
+                    <p class="lead text-white-50 mb-4">Our journey begins the moment you step into our practice, where a seamless and visually captivating design welcomes you.
                         We seamlessly blend state-of-the-art technology with a relaxing environment, ensuring a personalized experience from the outset.
                         Our commitment to understanding your unique needs unfolds in a consultation room, where together, we craft the best plan tailored to your individual requirements.
                         Transitioning from consultation to the dental treatment chair, we bring this personalized planning to life,
@@ -36,7 +36,7 @@ export const Home = () => {
                     and passion to the practice. We are not just dental professionals; we are artists dedicated to creating
                     smiles that reflect the true beauty within each person.</p>
                 <a href="#" class="btn btn-gold">Click here to read more</a>
-                <img class="home-img" src="./public/images/Dent1.jpg" alt=""></img>
+                <img class="home-img" src="/Images/Dental/3.png" alt=""></img>
             </section>
 
             <div>

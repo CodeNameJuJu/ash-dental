@@ -78,138 +78,48 @@ function Gallery() {
                     </Carousel>
                 </div>
             </div>
-            {/* Image Gallery */}
-            <div className="row mt-5 pt-5">
-                <div className="col-md-3 mb-4">
-                    <h3 className="text-left">Image Section 1</h3>
+            <div className="container mt-4 pt-4 mb-4 pb-4">
+                <div className="row">
+                    <div className="col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/400x300" className="img-fluid" alt="Placeholder" />
+                    </div>
+                    <div className="col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/400x200" className="img-fluid" alt="Placeholder" />
+                    </div>
+                    <div className="col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/400x400" className="img-fluid" alt="Placeholder" />
+                    </div>
                 </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Dental/2.png" alt="Gallery 1" className="img-fluid" />
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Dental/3.png" alt="Gallery 2" className="img-fluid" />
-                </div>
-
-                <div className="col-md-3 mb-4">
-                    <h3 className="text-left">Image Section 2</h3>
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology/20.png" alt="Gallery 6" className="img-fluid" />
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology/16.png" alt="Gallery 8" className="img-fluid" />
-                </div>
-
-                <div className="col-md-3 mb-4">
-                    <h3 className="text-left">Image Section 3</h3>
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Dental/4.png" alt="Gallery 3" className="img-fluid" />
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Dental/5.png" alt="Gallery 4" className="img-fluid" />
-                </div>
-
-                <div className="col-md-3 mb-4">
-                    <h3 className="text-left">Image Section 4</h3>
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology/15.png" alt="Gallery 7" className="img-fluid" />
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology/21.png" alt="Gallery 13" className="img-fluid" />
-                </div>
-
-                <div className="col-md-3 mb-4">
-                    <h3 className="text-left">Image Section 5</h3>
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology/17.png" alt="Gallery 9" className="img-fluid" />
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology/18.png" alt="Gallery 10" className="img-fluid" />
-                </div>
-
-                <div className="col-md-3 mb-4">
-                    <h3 className="text-left">Image Section 6</h3>
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology/19.png" alt="Gallery 11" className="img-fluid" />
-                </div>
-                <div className="col-md-4 mb-4">
-                    <img src="/Images/Technology/14.png" alt="Gallery 12" className="img-fluid" />
-                </div>
-            </div>
-
-            {/* Modal */}
-            <div className="pb-5 mb-5">
-                <button type="button" className="btn btn-bg btn-link" data-bs-toggle="modal" title='Documents' data-bs-target="#myModal">
-                    Book an appointment
-                </button>
-                <div className="modal fade text-center" id="myModal" style={{ backgroundImage: `url(/Images/Background%202.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-                    <div className="modal-dialog">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <h4 className="modal-title">Schedule a Consultation</h4>
-                                <button type="button" className="btn-close btn btn-bg btn-link" data-bs-dismiss="modal" title='Close window'></button>
+                <div className="row">
+                    <div className="col-md-6 mb-2">
+                        <img src="https://via.placeholder.com/600x300" className="img-fluid" alt="Placeholder" />
+                    </div>
+                    <div className="col-md-6">
+                        <div className="row">
+                            <div className="col-md-6 mb-2">
+                                <img src="https://via.placeholder.com/300x300" className="img-fluid" alt="Placeholder" />
                             </div>
-                            <div className="modal-body">
-                                <p>Please fill in the form below and we will get in contact as soon as possible to confirm your booking</p>
-                                <form className='text-color' ref={form} onSubmit={handleSubmit(sendEmail)}>
-                                    <Form
-                                        type={"text"}
-                                        name={"user_fName"}
-                                        place={"First Name..."}
-                                    />
-                                    <Form
-                                        type={"text"}
-                                        name={"user_lName"}
-                                        place={"Last Name..."}
-                                    />
-                                    <Form
-                                        type={"email"}
-                                        name={"user_email"}
-                                        place={"Your email address..."}
-                                    />
-                                    <Form
-                                        type={"phone"}
-                                        name={"user_phone"}
-                                        place={"Your phone number..."}
-                                    />
-                                    <div className="mb-3 pt-0">
-                                        <textarea name="message" placeholder="Your message"
-                                            className="form-control px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-                                        ></textarea>
-                                    </div>
-                                    <br />
-                                    <div className='row'>
-                                        <p className='text-color'>
-                                            <MDBIcon icon="phone" className="me-3" />  (011) + 465 2718
-                                        </p>
-                                        <p className='text-color'>
-                                            <MDBIcon icon="phone" className="me-3" />  Emergency dental help: 062 408 5934
-                                        </p>
-                                        <p className='text-color'>
-                                            <MDBIcon icon="envelope" className="me-3" />
-                                            info@identicalteeth.co.za
-                                        </p>
-                                        <p >
-                                            <MDBIcon icon="envelope" className="me-3" />
-                                            dentist@identicalteeth.co.za
-                                        </p>
-                                    </div>
-                                    <br />
-                                    <div className="mb-3 pb-3 pt-0">
-                                        <button disabled={isSubmitting} className="btn btn-bg btn-link">
-                                            {isSubmitting && (
-                                                <span className="spinner-grow spinner-grow-sm"></span>
-                                            )}
-                                            Send Message
-                                        </button>
-                                    </div>
-                                </form>
+                            <div className="col-md-6 mb-2">
+                                <img src="https://via.placeholder.com/300x200" className="img-fluid" alt="Placeholder" />
+                            </div>
+                            <div className="col-md-12 mb-2">
+                                <img src="https://via.placeholder.com/600x400" className="img-fluid" alt="Placeholder" />
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-3 mb-2">
+                        <img src="https://via.placeholder.com/300x400" className="img-fluid" alt="Placeholder" />
+                    </div>
+                    <div className="col-md-3 mb-2">
+                        <img src="https://via.placeholder.com/300x200" className="img-fluid" alt="Placeholder" />
+                    </div>
+                    <div className="col-md-3 mb-2">
+                        <img src="https://via.placeholder.com/300x300" className="img-fluid" alt="Placeholder" />
+                    </div>
+                    <div className="col-md-3 mb-2">
+                        <img src="https://via.placeholder.com/300x500" className="img-fluid" alt="Placeholder" />
                     </div>
                 </div>
             </div>

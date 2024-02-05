@@ -494,6 +494,11 @@ p {
   opacity: 1;
 }
 
+.text-color-white {
+  color: #fff;
+  opacity: 1;
+}
+
 h2 {
   font-weight: bold;
   margin-bottom: 40px;
@@ -1218,8 +1223,6 @@ img {
   }
   .home-img {
     max-width: 100%;
-  }
-}
   }
 }
 

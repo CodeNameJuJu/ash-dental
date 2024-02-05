@@ -1,33 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import '../Main.css';
-import { treatments } from '../data/treatmentData';
-
-
-/* Maak components vir die Services page wat in die cards gaan gebruik vir elke employee */
-
-function Section({ name, displayName, image, path, bio }) {
-    return (
-        <div className='row mt-2 pt-2 mb-2 pb-2'>
-            <div className='col-sm-8'>
-                <section>
-                    <h3 className='section-title mb-2 h1 text-center header-col'>{name}</h3>
-                </section>
-                <p>{bio}</p>
-            </div>
-            <img className='col-sm-4 mb-5 pb-5' src={image} alt={name} />
-            <Link className="nav-link" to={`/services/${path}`} title='Home'>
-                Read More
-            </Link>
-        </div>
-    );
-}
 
 function Services() {
-
-
-    // Fetch the data for the specified treatment member
-    const treatment = treatments;
 
     return (
         <div>
@@ -60,10 +34,7 @@ function Services() {
                     </div>
                 </div>
             </header>
-            
-            <div class="card text-white bg-secondary my-5 py-4 text-center">
-                <div class="card-body"><p class=" shine2 text-white m-0">Your Dental Journey Starts Here</p></div>
-            </div>
+
             <div>
             </div>
             <div class="gradient-line-divider"></div>
@@ -90,26 +61,26 @@ function Services() {
 
 
 
-           
+
             <div class="gradient-line-divider"></div>
             <hr></hr>
             <div>
                 <div class="wrapper">
                     <div class="serv-content-block">
-                        <h2>Teeth Whitening:</h2>
+                        <h2 class="text-color-white">Teeth Whitening:</h2>
                         <p>Illuminate your smile with our professional teeth whitening procedures. We specialize in removing
                             stains and discoloration, restoring the natural brilliance of your teeth.</p>
                     </div>
                     <div class="serv-overlay-block"></div>
                     <div class="serv-image-block">
-                        <img class="serv-image" src="../Images/toothbrush.jpg" alt="Image description"></img>
+                        <img class="serv-image" src="/Images/Dental/2.png" alt="description"></img>
                     </div>
                 </div>
             </div>
             <hr></hr>
 
             <div class="serv2-wrapper">
-                <img class="text1-img" src="../Images/text2.jpg" alt="Texture background"></img>
+                <img class="text1-img" src="/Images/Dental/3.png" alt="Texture background"></img>
                 <div class="serv2-content-block">
                     <h2 class="gold" >Advanced Cosmetic Dentistry</h2>
                     <h3 class="brown" >Redesign, Enhance, Transform</h3>
@@ -121,15 +92,15 @@ function Services() {
                         pleasing smile, our cosmetic dentistry services are tailored to meet your unique goals. We offer a
                         comprehensive range of treatments, from professional teeth whitening and veneers to smile
                         makeovers and full-mouth reconstruction..</p>
-                    <p class="gold" >The benefits of cosmetic dentistry extend beyond appearance, positively impacting your confidence,
+                    {/* <p class="gold" >The benefits of cosmetic dentistry extend beyond appearance, positively impacting your confidence,
                         self-esteem, and overall oral health. Discover the transformative power of a radiant smile at ASH
                         Dental, where precision, elegance, and excellence converge to create a truly exceptional cosmetic
-                        dentistry experience.</p>
+                        dentistry experience.</p> */}
                 </div>
-                
+
                 <div class="serv2-overlay-block"></div>
                 <div class="serv2-image-block">
-                    <img class="serv2-image" src="../Images/fullequiped2.jpg" alt="Image 2 description"></img>
+                    <img class="serv2-image" src="/Images/Dental/5.png" alt="2 description"></img>
                 </div>
             </div>
 
@@ -137,7 +108,7 @@ function Services() {
                 <div class="serv3-image-grid">
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="../Images/boypatient.jpg" alt="Image 1"></img>
+                        <img class="serv3-img" src="/Images/Dental/4.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h3 class="content-title gold">Teeth Whitening:</h3>
                             <p class="content-text white">Illuminate your smile with our professional teeth whitening procedures. We specialize in removing
@@ -146,7 +117,7 @@ function Services() {
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="../Images/boypatient2.jpg" alt="Image 1"></img>
+                        <img class="serv3-img" src="/Images/Dental/6.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h3 class="content-title gold">Veneers:</h3>
                             <p class="content-text">Transform your smile with our custom-made porcelain veneers. These thin shells are expertly
@@ -155,7 +126,7 @@ function Services() {
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="../Images/womanpatient.jpg" alt="Image 1"></img>
+                        <img class="serv3-img" src="/Images/Dental/7.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h3 class="content-title gold">Dental Bonding:</h3>
                             <p class="content-text">Address chipped or discoloured teeth with our dental bonding services. Using tooth-coloured resin,
@@ -164,7 +135,7 @@ function Services() {
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="../Images/emptyroom.jpg" alt="Image 1"></img>
+                        <img class="serv3-img" src="/Images/Dental/8.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h3 class="content-title gold">Dental Crowns:</h3>
                             <p class="content-text">Revitalize damaged or discoloured teeth with our dental crowns made out of emax- and sagemax
@@ -174,7 +145,7 @@ function Services() {
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="../Images/fullequiped.jpg" alt="Image 1"></img>
+                        <img class="serv3-img" src="/Images/Dental/4.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h3 class="content-title gold">Orthodontics:</h3>
                             <p class="content-text">Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear
@@ -183,7 +154,7 @@ function Services() {
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="../Images/fullequiped2.jpg" alt="Image 1"></img>
+                        <img class="serv3-img" src="/Images/Dental/6.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h3 class="content-title gold">Dental Implants:</h3>
                             <p class="content-text">Experience a transformative smile with our dental implant solutions. Beyond restoration, implants
@@ -192,16 +163,16 @@ function Services() {
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="../Images/womanpatient.jpg" alt="Image 1"></img>
+                        <img class="serv3-img" src="/Images/Dental/7.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h3 class="content-title gold">Gum Contouring:</h3>
                             <p class="content-text">Refine your smile with our gum contouring procedures. Also known as gum reshaping, this service
-                                    enhances the appearance of your teeth, especially beneficial for those with a gummy smile.</p>
+                                enhances the appearance of your teeth, especially beneficial for those with a gummy smile.</p>
                         </div>
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="../Images/boypatient2.jpg" alt="Image 1"></img>
+                        <img class="serv3-img" src="/Images/Dental/8.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h3 class="content-title gold">Smile Makeovers:</h3>
                             <p class="content-text">Embark on a personalized journey with our Smile Makeovers. These comprehensive plans combine
@@ -211,7 +182,7 @@ function Services() {
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="../Images/boypatient.jpg" alt="Image 1"></img>
+                        <img class="serv3-img" src="/Images/Dental/4.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h3 class="content-title gold">Full-Mouth Reconstruction:</h3>
                             <p class="content-text">Transform your entire oral landscape with our Full-Mouth Reconstruction services. This
@@ -222,8 +193,11 @@ function Services() {
 
                 </div>
             </div>
+            <div class="card text-white bg-secondary my-5 py-4 text-center">
+                <div class="card-body"><p class=" shine2 text-white m-0">Your Dental Journey Starts Here</p></div>
+            </div>
             <div class=" info row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="../Images/temp2.jpg" alt="..."></img></div>
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/Images/Dental/6.png" alt="..."></img></div>
                 <div class="col-lg-5">
                     <h1 class="font-weight-light ">Our Technology</h1>
                     <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
