@@ -1,44 +1,163 @@
 import React from 'react';
 import '../Main.css';
-import { technologyData } from '../data/technologyData';
 
 /* Maak components vir die Services page wat in die cards gaan gebruik vir elke employee */
 
-function Tech({ name, displayName, image, desc }) {
+function Tech({ name, image, desc }) {
     return (
         <div className='row mt-2 pt-2 mb-2 pb-2'>
-            <img className='col-sm-4 mb-5 pb-5' src={image} alt={name} />
+            <img className='col-sm-4' src={image} alt={name} style={{ height: '100%' }} />
             <div className='col-sm-8'>
                 <section>
-                    <h3 className='section-title mb-2 h1 text-center header-col'>{name}</h3>
+                    <h3 className='section-title mb-2 text-center'>{name}</h3>
                 </section>
-                <p>{desc}</p>
+                <p className="lead text-start">{desc}</p>
             </div>
+        </div>
+    );
+}
+
+function Tech2({ name, image, desc }) {
+    return (
+        <div className='row mt-2 pt-2 mb-2 pb-2'>
+            <div className='col-sm-8'>
+                <section>
+                    <h3 className='section-title mb-2 text-center'>{name}</h3>
+                </section>
+                <p className="lead text-start">{desc}</p>
+            </div>
+            <img className='col-sm-4' src={image} alt={name} style={{ height: '100%' }} />
         </div>
     );
 }
 
 function Technology() {
 
-    const TechData = technologyData;
-
     return (
-        <div className='container'>
-            <section>
+        <div className='container text-center'>
+            <section className='mb-5 pb-5'>
                 <br />
                 <br />
-                <h1 className='section-title mb-2 text-center'>Our Technology!</h1>
+                <h1 className='section-title mb-2 text-center'>Technology at ASH Dental!</h1>
+                <br />
+                <br />
+                <h3 className='section-title mb-2 text-center'>Elevating your dental experience.</h3>
+                <br />
+                <br />
+                <p className="lead">We embrace cutting-edge dental technology to revolutionize your dental experience. Our commitment to precision, comfort, and excellence is reflected in the state-of-the-art technologies we employ to ensure your journey to optimal oral health is nothing short of exceptional.</p>
             </section>
+            <br />
             <div>
-                {TechData.map((right, index) => (
-                    <div className='mb-5 pb-5' key={index} >
-                        <Tech
-                            name={right.displayName}
-                            image={right.image}
-                            desc={right.desc}
-                        />
-                    </div>
-                ))}
+                <div className='mb-5 pb-5'>
+                    <Tech
+                        name={"Ceiling mounted TV’s, state of the art speakers & Apple iPads"}
+                        desc={"At ASH Dental, we redefine the dental experience by seamlessly integrating everyday technology to elevate your journey with us. Immerse yourself in a personalized atmosphere with Sonos Speakers, where you have the power to curate your own playlist, turning your dental visit into a musical escape. Our ceiling-mounted TVs offer a visual retreat, transporting you to another place while receiving treatment. Embracing modernity, we've gone paperless with iPads for efficient and eco-friendly filing. We believe that your time with us should be more than a dental appointment – it's a guest experience. Say goodbye to the traditional dental visit dread; at ASH Dental, you're not just a number; you're our valued guest on a uniquely tailored journey."}
+                        image={"/Images/Technology/14.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech2
+                        name={"Fläsh Teeth Whitening"}
+                        desc={"ASH Dental brings you the pinnacle of teeth whitening technology with fläsh Teeth Whitening. This innovative solution transcends traditional methods, providing a swift and effective approach to achieving a brighter, whiter smile, harnessing the advanced technology showcased by fläsh Teeth Whitening."}
+                        image={"/Images/Technology/15.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech
+                        name={"Digital Photography: Capturing Precision, Revealing Beauty"}
+                        desc={"Step into the future of dentistry with our advanced digital photography. We utilize high-resolution imaging to capture detailed shots of your teeth, providing an unparalleled level of precision in diagnostics and treatment planning."}
+                        image={"/Images/Technology/16.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech2
+                        name={"Digital impression and scanning , intra oral scanner"}
+                        desc={"Step into a new era of dental impressions with the SIRONA prime scan at ASH Dental. Bid farewell to traditional, messy impressions and welcome a more comfortable and efficient experience. Our handheld prime scan device captures precise 3D images of your teeth, eliminating the discomfort associated with conventional impressions. Whether you're exploring orthodontic treatments or restorative procedures, prime scan enhances your overall dental experience, ensuring accuracy, comfort, and efficiency."}
+                        image={"/Images/Technology/17.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech
+                        name={"3D Imaging: A Deeper Insight for Comprehensive Care"}
+                        desc={"Our commitment to thorough diagnostics is exemplified through 3-dimensional imaging. Unlike conventional X-rays, this technology provides a comprehensive, three-dimensional view of your oral structures. This allows us to analyze your dental health with unprecedented detail, ensuring a more accurate diagnosis and personalized treatment plans. Additionally, our digital intraoral sensor allows for the immediate viewing of X-rays during diagnoses and treatment, enhancing the efficiency of our diagnostic process."}
+                        image={"/Images/Technology/18.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech2
+                        name={"CBCT Scans: Precision Beyond the Surface"}
+                        desc={"ASH Dental goes beyond the surface with Cone Beam Computed Tomography (CBCT) scans. This technology allows us to visualize your teeth, bone structure, and soft tissues in three dimensions. From implant planning to complex oral surgeries and root canals, CBCT scans contribute to our commitment to precision and patient-centric care."}
+                        image={"/Images/Technology/19.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech
+                        name={"NSK Scaler and Polisher: Gentle Yet Effective Dental Care"}
+                        desc={"Experience a new standard of comfort and effectiveness in routine dental cleanings with the NSK Scaler and Polisher at ASH Dental. Our tool ensures a gentle yet thorough cleaning process, efficiently removing plaque and stains to leave your teeth refreshed. With precision and comfort as our priorities, the NSK scaler and polisher redefine the dental care experience, making every hygiene appointment enjoyable. Say goodbye to discomfort and hello to a new era of patient-centric dental cleanings at ASH Dental, providing effective calculus and stain removal for a revitalized smile."}
+                        image={"/Images/Technology/20.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech2
+                        name={"CEREC CAD/CAM Milling Technology: For precision and accurate fit "}
+                        desc={"With our CEREC CAD/CAM milling technology, we can design, create, and place crowns or veneers without compromising on quality or aesthetics. This technology enables us to design, craft, and seamlessly place crowns, veneers and bridges in less than a week. The advantages are manifold: fewer appointments, a more natural looking appeal to the tooth and great quality for an aesthetic appeal. Experience the convenience of modern dentistry at ASH Dental, where we prioritize efficiency and excellence to deliver a transformative smile in the shortest time possible. This technology ensures accuracy and fit, allowing the ceramicist can customize detail in crowns, veneers and bridges to ensure a natural looking tooth."}
+                        image={"/Images/Technology/21.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech
+                        name={"NSK Surgic Pro: For efficient implant placement and surgical removal of teeth."}
+                        desc={"NSK Pro Surgic stands as a pinnacle in our arsenal of advanced dental technology at ASH Dental. Specifically designed for efficient implant placement and the surgical removal of teeth, this cutting-edge system ensures precision and ease during dental procedures. With NSK Pro Surgic, we elevate the standard of implantology, providing our patients with a seamless and comfortable experience."}
+                        image={"/Images/Technology/22.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech2
+                        name={"Co-diagnostix implant planning software"}
+                        desc={"This software enhances our implantology capabilities by offering precise and comprehensive planning for dental implant procedures. Co-Diagnostix enables us to visualize the patient's unique oral anatomy in 3D, facilitating accurate placement of implants for optimal function and aesthetics. With this advanced technology, we ensure a personalized and efficient approach to implant dentistry, providing our patients with exceptional outcomes and a transformed smile."}
+                        image={"/Images/Technology/23.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech
+                        name={"SmartLite® Pro EndoActivator: Comprehensive cleaning of root canals"}
+                        desc={"This technology is employed to ensure thorough and effective root canal procedures. The SmartLite® Pro EndoActivator is specifically designed as an equipment solution for the intracanal activation of irrigating fluids, integral to the meticulous cleaning and disinfection of root canals. By facilitating comprehensive cleaning of root canals, the SmartLite® Pro Endo Activator contributes to successful obturation, ultimately leading to lasting results."}
+                        image={"/Images/Technology/24.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech2
+                        name={"Advanced Sterilization for Your Safety: Introducing the DAC Premium Autoclave"}
+                        desc={"We prioritize your safety with the use of technology like the DAC Premium Autoclave, ensuring the sterilization of dental instruments. Our commitment to stringent hygiene standards guarantees a safe and sterile environment, providing you peace of mind during your dental experience."}
+                        image={"/Images/Technology/25.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech
+                        name={"Enhancing Procedure Efficiency: DÜRR Suction Machine for Optimal Saliva Removal"}
+                        desc={"The DÜRR suction machine plays a crucial role in maintaining a clean and efficient dental environment. With its powerful suction capabilities, it ensures effective removal of saliva during dental procedures, contributing to a smooth and comfortable experience for our patients. "}
+                        image={"/Images/Technology/26.png"}
+                    />
+                </div>
+                <div className='mb-5 pb-5'>
+                    <Tech2
+                        name={"Precision in Curing: SmartLite® Pro Curing Light"}
+                        desc={"We utilize the Smartlite® Pro Curing Light for the efficient curing of composite and cement materials. This advanced technology ensures the thorough and quick setting of materials, contributing to the longevity and durability of dental restorations."}
+                        image={"/Images/Technology/27.png"}
+                    />
+                </div>
+            </div>
+            <div className='mb-4 pb-4'>
+                <p className="lead col-8">
+                    Explore the future of dentistry at ASH Dental, where technology and personalized care converge to create smiles that reflect the pinnacle of dental excellence.
+                </p>
+                <div className='d-flex justify-content-center'>
+                    <p className="lead col-8">
+                        Contact us to schedule a consultation and discover the transformative impact of advanced dental technology on your oral health journey.
+                    </p>
+                </div>
+                <br />
+                <br />
             </div>
         </div>
 

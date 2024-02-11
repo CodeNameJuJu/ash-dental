@@ -49,17 +49,17 @@ export const Contact = () => {
     return (
 
         //contact form 
-        <div className='container text-center'>
+        <div className='container text-center pb-4 mb-4'>
             <div>
                 <br />
                 <br />
-                <h2 className='header-col'>Get in touch!</h2>
+                <h1 className='header-col'>Get in touch!</h1>
                 <br />
                 <br />
             </div>
             <div className='row'>
                 <div className='col-sm-6'>
-                    <h4 className='header-col'>Please fill in the form below:</h4>
+                    <h3 className='header-col'>Please fill in the form below:</h3>
                     <form ref={form} onSubmit={handleSubmit(sendEmail)}>
                         <Form
                             type={"text"}
@@ -98,11 +98,8 @@ export const Contact = () => {
                     </form>
                 </div>
                 <div className='col-sm-6'>
-                    <h4 className='header-col'>Where to find us:</h4>
-                    <iframe title='ITLocation' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.098864250687!2d28.18284007540274!3d-25.833287377307148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95657a4c6e0441%3A0xb4df28d0e43cd7b4!2siDentical%20Teeth%20.!5e0!3m2!1sen!2sza!4v1696350178468!5m2!1sen!2sza"
-                        width="100%" height="100%" allowFullScreen="" loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <h3 className='header-col'>Where to find us:</h3>
+                    <iframe title="Ash Dental" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.1416288215023!2d28.265524069631322!3d-25.784875491007618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9560c2eb5dd5f7%3A0x36a72d55cee4ae8f!2s177%20Garsfontein%20Rd%2C%20Ashlea%20Gardens%2C%20Pretoria%2C%200081!5e0!3m2!1sen!2sza!4v1707677504814!5m2!1sen!2sza" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <br />
