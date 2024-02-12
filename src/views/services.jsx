@@ -18,26 +18,22 @@ function Services() {
                     </ul>
                 </div>
             </nav>
-            <header class="bg-dark py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-6">
-                            <div class="text-center my-5">
-                                <h1 class="display-5 fw-bolder text-white mb-2">Our Services</h1>
-                                <p class="lead text-white-50 mb-4">Quickly design and customize responsive mobile-first sites!</p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
-                                    <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
-                                </div>
-                            </div>
+            <section class="ban_sec">
+                <div class="banner-1">
+                    {/* class="container" */}
+                    <div class="ban_img">
+                        <img src="/Images/ServicesLandscape/banner2.jpg" alt="banner" border="0"></img>
+                        <div class="ban_text">
+                            <strong>
+                                <span class="gold">Meeting current</span><br></br> needs now
+                            </strong>
+                            <p class="g">Your Gateway to Healthy, Happy Smiles: Discover Ash Dental.</p>
+                            <a href="#">Lend a hand</a>
                         </div>
                     </div>
                 </div>
-            </header>
+            </section>
 
-            <div>
-            </div>
-            <div class="gradient-line-divider"></div>
             {/* <div class="background1">
                 <div >
                     <div class="scontainer">
@@ -55,16 +51,9 @@ function Services() {
                         </div>
                     </div>
                 </div>
-               
             </div> */}
-            <div class="gradient-line-divider"></div>
 
-
-
-
-            <div class="gradient-line-divider"></div>
-            <hr></hr>
-            <div>
+            {/* <div>
                 <div class="wrapper">
                     <div class="serv-content-block">
                         <h2 class="text-color-white">Teeth Whitening:</h2>
@@ -76,15 +65,13 @@ function Services() {
                         <img class="serv-image" src="/Images/Dental/2.png" alt="description"></img>
                     </div>
                 </div>
-            </div>
-            <hr></hr>
+            </div> */}
 
-            <div class="serv2-wrapper">
-                <img class="text1-img" src="/Images/Dental/3.png" alt="Texture background"></img>
-                <div class="serv2-content-block">
-                    <h2 class="gold" >Advanced Cosmetic Dentistry</h2>
-                    <h3 class="brown" >Redesign, Enhance, Transform</h3>
-                    <p>Redefine smiles and enhance the natural beauty of your teeth. Cosmetic dentistry goes beyond
+            <div class="row serv-top">
+                <div class=" col-7 text-center">
+                    <h1 class="gold ">Advanced Cosmetic Dentistry</h1>
+                    <h3 class="brown ">Redesign, Enhance, Transform</h3>
+                    <p class="lead">Redefine smiles and enhance the natural beauty of your teeth. Cosmetic dentistry goes beyond
                         traditional dental procedures; it&#39;s an art form dedicated to improving the aesthetics and function of
                         your smile. Our skilled team at ASH Dental employs cutting-edge techniques and personalized
                         treatment plans to address a range of cosmetic concerns, including teeth discoloration,
@@ -98,11 +85,17 @@ function Services() {
                         dentistry experience.</p> */}
                 </div>
 
-                <div class="serv2-overlay-block"></div>
-                <div class="serv2-image-block">
-                    <img class="serv2-image" src="/Images/Dental/5.png" alt="2 description"></img>
+                <div class="col-5">
+                    <div class="serv2-image-block">
+                        <img class="serv2-image" src="/Images/Dental/5.png" alt="2 description"></img>
+                        <div class="serv2-overlay-block"></div>
+                    </div>
                 </div>
             </div>
+
+
+
+
 
             <div class="serv3-container">
                 <div class="serv3-image-grid">
@@ -110,7 +103,7 @@ function Services() {
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/Dental/4.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title gold">Teeth Whitening:</h3>
+                            <h3 class="content-title">Teeth Whitening:</h3>
                             <p class="content-text white">Illuminate your smile with our professional teeth whitening procedures. We specialize in removing
                                 stains and discoloration, restoring the natural brilliance of your teeth. LINK.</p>
                         </div>
@@ -119,8 +112,8 @@ function Services() {
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/Dental/6.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title gold">Veneers:</h3>
-                            <p class="content-text">Transform your smile with our custom-made porcelain veneers. These thin shells are expertly
+                            <h3 class="content-title black">Veneers:</h3>
+                            <p class="content-text white">Transform your smile with our custom-made porcelain veneers. These thin shells are expertly
                                 crafted to cover imperfections and enhance the overall appearance of your teeth.</p>
                         </div>
                     </div>
@@ -128,8 +121,8 @@ function Services() {
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/Dental/7.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title gold">Dental Bonding:</h3>
-                            <p class="content-text">Address chipped or discoloured teeth with our dental bonding services. Using tooth-coloured resin,
+                            <h3 class="content-title white">Dental Bonding:</h3>
+                            <p class="content-text white" >Address chipped or discoloured teeth with our dental bonding services. Using tooth-coloured resin,
                                 we sculpt and shape the material to achieve a seamless and natural look.</p>
                         </div>
                     </div>
@@ -137,8 +130,8 @@ function Services() {
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/Dental/8.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title gold">Dental Crowns:</h3>
-                            <p class="content-text">Revitalize damaged or discoloured teeth with our dental crowns made out of emax- and sagemax
+                            <h3 class="content-title black">Dental Crowns:</h3>
+                            <p class="content-text white">Revitalize damaged or discoloured teeth with our dental crowns made out of emax- and sagemax
                                 zirconia porcelain. These caps not only strengthen teeth but also improve their appearance, ensuring
                                 a natural and harmonious smile.</p>
                         </div>
@@ -147,7 +140,7 @@ function Services() {
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/Dental/4.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title gold">Orthodontics:</h3>
+                            <h3 class="content-title black">Orthodontics:</h3>
                             <p class="content-text">Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear
                                 aligners, we tailor treatments to enhance both aesthetics and functionality..</p>
                         </div>
@@ -185,7 +178,7 @@ function Services() {
                         <img class="serv3-img" src="/Images/Dental/4.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h3 class="content-title gold">Full-Mouth Reconstruction:</h3>
-                            <p class="content-text">Transform your entire oral landscape with our Full-Mouth Reconstruction services. This
+                            <p class="content-text white">Transform your entire oral landscape with our Full-Mouth Reconstruction services. This
                                 comprehensive approach addresses both functional and aesthetic concerns, incorporating various
                                 cosmetic and restorative procedures.</p>
                         </div>
@@ -193,7 +186,23 @@ function Services() {
 
                 </div>
             </div>
-            <div class="card text-white bg-secondary my-5 py-4 text-center">
+
+            <div className='row ms-3 text-center mt-5 mb-4'>
+                    <h1 className='gold'>A Journey to Transformative Smiles</h1>
+                    <p className='lead'>Schedule a consultation to explore the possibilities and rediscover the beauty of your smile
+                     with us. 
+                    </p>
+                    <div className='col-4-6 mt-2 mb-2'>
+                    <button type="button" className="btn btn-bg btn-link"  title="Documents">
+                        Book an appointment
+                    </button>
+                    </div>
+                    <p className='lead'>
+                    At ASH Dental, our Cosmetic Dentistry goes beyond enhancing smiles; it's about crafting a 
+                    personalized and radiant expression of your individuality. .
+                    </p>
+                </div>
+            {/* <div class="card text-white bg-secondary my-5 py-4 text-center">
                 <div class="card-body"><p class=" shine2 text-white m-0">Your Dental Journey Starts Here</p></div>
             </div>
             <div class=" info row gx-4 gx-lg-5 align-items-center my-5">
@@ -203,7 +212,7 @@ function Services() {
                     <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
                     <a class="btn btn-primary" href="#!">Call to Action!</a>
                 </div>
-            </div>
+            </div> */}
 
 
             {/* <div>
