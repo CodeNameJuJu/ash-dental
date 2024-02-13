@@ -11,12 +11,13 @@ function Card({ name, image, bio, title, quali }) {
             </div >
             <div className='col-5' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-4 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
-                    <h2 className="card-title">{name}</h2>
                     <br />
-                    <h3 className="card-title">{title}</h3>
-                    <h4 className="card-title">{quali}</h4>
+                    <h1 className="card-title text-start">{name}</h1>
                     <br />
-                    <p className="card-text lead"><strong>{bio}</strong></p>
+                    <h3 className="card-title text-start">{title}</h3>
+                    <h4 className="card-title text-start">{quali}</h4>
+                    <br />
+                    <p className="card-text lead text-start"><strong>{bio}</strong></p>
                 </div>
             </div>
         </div >
@@ -28,12 +29,13 @@ function Card2({ name, image, bio, title, quali }) {
         <div className="row d-flex justify-content-center">
             <div className='col-5' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-4 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
-                    <h2 className="card-title">{name}</h2>
                     <br />
-                    <h3 className="card-title">{title}</h3>
-                    <h4 className="card-title">{quali}</h4>
+                    <h1 className="card-title text-start">{name}</h1>
                     <br />
-                    <p className="card-text lead"><strong>{bio}</strong></p>
+                    <h3 className="card-title text-start">{title}</h3>
+                    <h4 className="card-title text-start">{quali}</h4>
+                    <br />
+                    <p className="card-text lead text-start"><strong>{bio}</strong></p>
                 </div>
             </div>
             <div className="col-4" style={{ height: '35%', width: '25%', textAlign: 'center' }}>
@@ -51,14 +53,14 @@ export const About = () => {
                 <div className='pt-4 mt-3 pb-3 ps-4 ms-4 pe-4 me-4'>
                     <h1 className='pt-4 mt-3 pb-3 text-color-gold'>A Journey to Transformative Smiles</h1>
                     <div className='d-flex justify-content-center'>
-                        <p className="lead col-8">At ASH Dental, we envision a world where every smile tells a story of confidence, health,
+                        <p className="lead col-8 text-start">At ASH Dental, we envision a world where every smile tells a story of confidence, health,
                             and individuality. We strive to be pioneers in cosmetic and general dentistry, setting new standards for precision,
                             artistry, and patient-centric care.
                         </p>
                     </div>
                     <h3 className='pt-4 mt-3 pb-3 text-color-gold'>Meet Our Dental Artists</h3>
                     <div className='d-flex justify-content-center'>
-                        <p className="lead col-8">
+                        <p className="lead col-8 text-start">
                             Our team at ASH Dental is a collective of skilled professionals, each bringing a unique set of expertise and passion to the practice.
                             We are not just dental professionals; we are artists dedicated to creating smiles that reflect the true beauty within each person.
                         </p>
@@ -84,11 +86,31 @@ export const About = () => {
                         />
                     </div>
                 </div>
-                <p className="lead col-8">Our team of dental artists consists of experienced professionals,
+                <p className="lead col-8 text-start">Our Team of Dental Artists Consists of Experienced Professionals,
                     each specializing in various aspects of dentistry, including cosmetic procedures, orthodontics,
                     endodontics, oral surgery, and general dentistry.
                 </p>
-                <section className='mt-5 pt-5 mb-5 pb-5 text-center' id="what-we-do">
+
+                <div className='pt-5 mt-5'>
+                    <h3 className='text-color-gold'>Meet the Team </h3>
+                    <p className="lead  text-start">
+                        Discover the diverse talents that come together to create a harmonious blend of precision, compassion, and excellence,
+                        ensuring that your experience with us is not just a dental appointment but a transformative and positive journey toward optimal oral health and confidence.
+                        Our dedicated team at ASH Dental extends beyond our dentists to include skilled professionals in various roles.
+                        Each member plays a pivotal role in shaping the overall patient experience at our practice, contributing to the seamless and comfortable journey you undergo with us.
+                    </p>
+                    <br />
+                    <br />
+                    <img style={{ height: '800%', width: '100%' }} src="/Images/Dental/1.png" text="First slide" alt='Sale1' />
+                    <br />
+                </div>
+                <br />
+                <br />
+                <br />
+                <h3 className='pb-5 mb-5 text-color-gold'>
+                    Embark on a Journey to Rediscover Your Smile.
+                </h3>
+                <section className='mb-5 pb-5 text-center' id="what-we-do">
                     <div className="container-fluid">
                         <div className='mb-3 pb-3 ps-3 pe-3' >
                             <div className="row mt-5">
@@ -145,22 +167,6 @@ export const About = () => {
                         </div>
                     </div>
                 </section>
-                <div className='pt-5 mt-5'>
-                    <h3 className='text-color-gold'>Meet the Team </h3>
-                    <p className="lead">
-                        Discover the diverse talents that come together to create a harmonious blend of precision, compassion, and excellence,
-                        ensuring that your experience with us is not just a dental appointment but a transformative and positive journey toward optimal oral health and confidence.
-                        Our dedicated team at ASH Dental extends beyond our dentists to include skilled professionals in various roles.
-                        Each member plays a pivotal role in shaping the overall patient experience at our practice, contributing to the seamless and comfortable journey you undergo with us.
-                    </p>
-                    <br />
-                </div>
-                <br />
-                <br />
-                <br />
-                <p className='pb-5 mb-5 lead'>
-                    Embark on a journey to rediscover your smile. Schedule a consultation with ASH Dental.
-                </p>
             </div>
         </div>
     )

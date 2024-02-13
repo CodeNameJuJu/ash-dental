@@ -2,37 +2,8 @@ import React from 'react';
 import '../Main.css';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { Link } from "react-router-dom";
-import { routineCheckup, generalDentistry, cosmeticDentistry, orthodontic, implants } from '../data/treatmentData';
-
-
-
-function ServiceNav({ name, path }) {
-    return (
-
-        <Link className="dropdown-item nav-link" to={`/services/${path}`} title={name}>
-            {name}
-        </Link>
-
-    );
-}
-
-function Nav({ name, path }) {
-    return (
-
-        <Link className="footer-link nav-item" to={path} title={name}>
-            {name};
-        </Link>
-
-    );
-}
 
 function Footer() {
-    const routine = routineCheckup;
-    const general = generalDentistry;
-    const cosmetic = cosmeticDentistry;
-    const ortho = orthodontic;
-    const implant = implants;
 
     return (
         <div class="footer-bg" >
