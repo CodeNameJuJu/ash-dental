@@ -625,7 +625,7 @@ h2 {
 
 /* Sub Navbar CSS */
 .nav-bg{
-  background-color: #989BA4 ;
+  background-color: #ffffff ;
 }
 
 
@@ -648,7 +648,7 @@ h2 {
 .navbar-dark .navbar-nav .show>.sub-nav-link,
 .navbar-dark .navbar-nav .sub-nav-link:focus,
 .navbar-dark .navbar-nav .sub-nav-link:hover {
-  color: #726358 ;
+  color: #ffffff ;
 }
 
 .sub-nav-link {
@@ -656,7 +656,7 @@ h2 {
   transition: 0.2s;
   display: block;
   color: #28292E;
- 
+
   text-decoration: none;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 
@@ -790,7 +790,7 @@ h2 {
 }
 
 .serv3-image-block .serv3-content-overlay{
-  background: rgba(0,0,0,0.7);
+  background: #9b7d3b81;
   position: absolute;
   height: 99%;
   width: 100%;
@@ -864,7 +864,8 @@ h2 {
 }
 
 .serv-top{
-  margin: 30px;
+  margin: 20px;
+  margin-left: 40px;
 }
 
 
@@ -1374,4 +1375,7 @@ ul {
   .ban_text {
     left: 2%;
   }
+}
+.a2{
+  text-decoration: none !important;
 }
