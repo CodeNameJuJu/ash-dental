@@ -1,15 +1,33 @@
 import React from 'react';
 import '../Main.css';
+import { Link, useLocation } from 'react-router-dom';
+import CosmeticDentistry  from '../components/subServices/cosmeticDentistry';
+
 
 function Services() {
 
+    function Navigate({ name, path }) {
+        return (
+            <Link className="nav-item nav-link" to={path} title={name}>
+                {name}
+            </Link>
+        );
+    }
+    
+
     return (
         <div>
+        <hr ></hr>
             <nav class="navbar nav-bg navbar-expand-sm "> <button class="navbar-toggler" type="button" data-target="#navigation"> <span class="navbar-toggler-icon"></span> </button>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav">
-                        <li class="sub-nav-item active"> <a href="#" class="sub-nav-link"> Cosmetic Dentistry </a> </li>
-                        <li class="sub-nav-item"> <a href="#" class="sub-nav-link"> Teeth Whitening </a> </li>
+                        <li class="sub-nav-item active">
+                            <Navigate class="sub-nav-item" name={'Cosmetic Dentistry'} path={'/cosmeticDentistry'} />
+                         </li>
+                        
+                        <li class="sub-nav-item">
+                            <Navigate class="sub-nav-item" name={'Teeth Whitening'} path={'/teethWhitening'} /> 
+                            </li>
                         <li class="sub-nav-item"> <a href="#" class="sub-nav-link"> Crowns and Veneers </a> </li>
                         <li class="sub-nav-item"> <a href="#" class="sub-nav-link"> Dental Implants </a> </li>
                         <li class="sub-nav-item"> <a href="#" class="sub-nav-link"> Orthodontics</a> </li>
@@ -69,23 +87,28 @@ function Services() {
 
             <div class="row serv-top">
                 <div class=" col-7 text-center">
-                    <h1 class="gold ">Advanced Cosmetic Dentistry</h1>
-                    <h3 class="brown ">Redesign, Enhance, Transform</h3>
-                    <p class="lead">Redefine smiles and enhance the natural beauty of your teeth. Cosmetic dentistry goes beyond
+                    <h1 class="gold text-start">Advanced Cosmetic Dentistry</h1>
+                    <h3 class="brown text-start ">Redesign, Enhance, Transform</h3>
+                    <br/>
+                    <p class="lead text-start">Redefine smiles and enhance the natural beauty of your teeth. Cosmetic dentistry goes beyond
                         traditional dental procedures; it&#39;s an art form dedicated to improving the aesthetics and function of
                         your smile. Our skilled team at ASH Dental employs cutting-edge techniques and personalized
                         treatment plans to address a range of cosmetic concerns, including teeth discoloration,
-                        misalignment, and imperfections. Whether you desire a whiter, straighter, or more aesthetically
+                        misalignment, and imperfections.
+                        </p>
+                        <br/>
+                        <p class="lead text-start">Whether you desire a whiter, straighter, or more aesthetically
                         pleasing smile, our cosmetic dentistry services are tailored to meet your unique goals. We offer a
                         comprehensive range of treatments, from professional teeth whitening and veneers to smile
-                        makeovers and full-mouth reconstruction..</p>
-                    {/* <p class="gold" >The benefits of cosmetic dentistry extend beyond appearance, positively impacting your confidence,
+                        makeovers and full-mouth reconstruction.</p>
+                        <br/>
+                     <p class="lead text-start" >The benefits of cosmetic dentistry extend beyond appearance, positively impacting your confidence,
                         self-esteem, and overall oral health. Discover the transformative power of a radiant smile at ASH
                         Dental, where precision, elegance, and excellence converge to create a truly exceptional cosmetic
-                        dentistry experience.</p> */}
+                        dentistry experience.</p> 
                 </div>
 
-                <div class="col-5">
+                <div class="col-4">
                     <div class="serv2-image-block">
                         <img class="serv2-image" src="/Images/Dental/5.png" alt="2 description"></img>
                         <div class="serv2-overlay-block"></div>
@@ -101,27 +124,27 @@ function Services() {
                 <div class="serv3-image-grid">
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="/Images/Dental/4.png" alt="1"></img>
+                        <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/1.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title">Teeth Whitening:</h3>
+                            <h1 class="content-title white">Teeth Whitening:</h1>
                             <p class="content-text white">Illuminate your smile with our professional teeth whitening procedures. We specialize in removing
                                 stains and discoloration, restoring the natural brilliance of your teeth. LINK.</p>
                         </div>
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="/Images/Dental/6.png" alt="1"></img>
+                        <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/4.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title black">Veneers:</h3>
+                            <h1 class="content-title white">Veneers:</h1>
                             <p class="content-text white">Transform your smile with our custom-made porcelain veneers. These thin shells are expertly
                                 crafted to cover imperfections and enhance the overall appearance of your teeth.</p>
                         </div>
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="/Images/Dental/7.png" alt="1"></img>
+                        <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/8.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title white">Dental Bonding:</h3>
+                            <h1 class="content-title white">Dental Bonding:</h1>
                             <p class="content-text white" >Address chipped or discoloured teeth with our dental bonding services. Using tooth-coloured resin,
                                 we sculpt and shape the material to achieve a seamless and natural look.</p>
                         </div>
@@ -130,7 +153,7 @@ function Services() {
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/Dental/8.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title black">Dental Crowns:</h3>
+                            <h1 class="content-title white">Dental Crowns:</h1>
                             <p class="content-text white">Revitalize damaged or discoloured teeth with our dental crowns made out of emax- and sagemax
                                 zirconia porcelain. These caps not only strengthen teeth but also improve their appearance, ensuring
                                 a natural and harmonious smile.</p>
@@ -140,8 +163,8 @@ function Services() {
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/Dental/4.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title black">Orthodontics:</h3>
-                            <p class="content-text">Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear
+                            <h1 class="content-title white">Orthodontics:</h1>
+                            <p class="content-text white">Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear
                                 aligners, we tailor treatments to enhance both aesthetics and functionality..</p>
                         </div>
                     </div>
@@ -149,8 +172,8 @@ function Services() {
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/Dental/6.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title gold">Dental Implants:</h3>
-                            <p class="content-text">Experience a transformative smile with our dental implant solutions. Beyond restoration, implants
+                            <h1 class="content-title white">Dental Implants:</h1>
+                            <p class="content-text white">Experience a transformative smile with our dental implant solutions. Beyond restoration, implants
                                 contribute to the overall cosmetic enhancement of your smile by replacing missing teeth. </p>
                         </div>
                     </div>
@@ -158,26 +181,26 @@ function Services() {
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/Dental/7.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title gold">Gum Contouring:</h3>
-                            <p class="content-text">Refine your smile with our gum contouring procedures. Also known as gum reshaping, this service
+                            <h1 class="content-title white">Gum Contouring:</h1>
+                            <p class="content-text white">Refine your smile with our gum contouring procedures. Also known as gum reshaping, this service
                                 enhances the appearance of your teeth, especially beneficial for those with a gummy smile.</p>
                         </div>
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="/Images/Dental/8.png" alt="1"></img>
+                        <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/5.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title gold">Smile Makeovers:</h3>
-                            <p class="content-text">Embark on a personalized journey with our Smile Makeovers. These comprehensive plans combine
+                            <h1 class="content-title white">Smile Makeovers:</h1>
+                            <p class="content-text white">Embark on a personalized journey with our Smile Makeovers. These comprehensive plans combine
                                 various cosmetic procedures to achieve a harmonious and attractive smile tailored to your unique
                                 preferences.</p>
                         </div>
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="/Images/Dental/4.png" alt="1"></img>
+                        <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/6.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title gold">Full-Mouth Reconstruction:</h3>
+                            <h1 class="content-title white">Full-Mouth Reconstruction:</h1>
                             <p class="content-text white">Transform your entire oral landscape with our Full-Mouth Reconstruction services. This
                                 comprehensive approach addresses both functional and aesthetic concerns, incorporating various
                                 cosmetic and restorative procedures.</p>
@@ -189,19 +212,24 @@ function Services() {
 
             <div className='row ms-3 text-center mt-5 mb-4'>
                     <h1 className='gold'>A Journey to Transformative Smiles</h1>
+                    <p className='lead'>At ASH Dental, our Cosmetic Dentistry goes beyond enhancing smiles; it's about crafting a personalized and radiant expression of your individuality.
+                     Schedule a consultation to explore the possibilities and rediscover the beauty of your smile with us.
+                    </p>
+                    <hr></hr>
+                    <br></br>
                     <p className='lead'>Schedule a consultation to explore the possibilities and rediscover the beauty of your smile
                      with us. 
                     </p>
+
                     <div className='col-4-6 mt-2 mb-2'>
                     <button type="button" className="btn btn-bg btn-link"  title="Documents">
                         Book an appointment
                     </button>
                     </div>
-                    <p className='lead'>
-                    At ASH Dental, our Cosmetic Dentistry goes beyond enhancing smiles; it's about crafting a 
-                    personalized and radiant expression of your individuality. .
-                    </p>
+                   
+
                 </div>
+                <br></br>
             {/* <div class="card text-white bg-secondary my-5 py-4 text-center">
                 <div class="card-body"><p class=" shine2 text-white m-0">Your Dental Journey Starts Here</p></div>
             </div>

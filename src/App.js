@@ -10,6 +10,8 @@ import Gallery from './views/gallery';
 import Navbar from "./components/navbar";
 import Footer from './components/footer';
 import ScrollToTop from "./components/scrollToTop";
+import CosmeticDentistry  from "../src/components/subServices/cosmeticDentistry";
+import TeethWhitening from  "../src/components/subServices/teethWhitening";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/cosmeticDentistry" element={<CosmeticDentistry />} />
+          <Route path="/teethWhitening" element={<TeethWhitening />} />
         </Routes>
         <Footer />
       </BrowserRouter>
