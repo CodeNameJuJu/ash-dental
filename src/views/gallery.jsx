@@ -1,49 +1,9 @@
-import React, { useRef } from 'react';
-import { useForm } from 'react-hook-form';
-import emailjs from '@emailjs/browser';
-import { MDBIcon } from 'mdb-react-ui-kit';
+import React from 'react';
 import '../Main.css';
 import Carousel from 'react-bootstrap/Carousel';
 
-/* Make components for the Gallery that will be in the App.js */
-
-function Form({ type, name, place }) {
-    return (
-        <div className="mb-3 pt-0">
-            <input
-                type={type}
-                name={name}
-                placeholder={place}
-                className="form-control px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-            />
-        </div>
-    );
-}
 
 function Gallery() {
-    const { handleSubmit, formState } = useForm();
-    const { isSubmitting } = formState;
-    const form = useRef();
-
-    const sendEmail = () => {
-        emailjs
-            .sendForm('service_ny768nq', 'template_uwqtnpl', form.current, 'KpiSa53Nghfe0Zc2i')
-            .then(
-                (result) => {
-                    alert('Message sent successfully...');
-                    console.log(result.text);
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
-
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                resolve();
-            }, 4000);
-        });
-    };
 
     return (
         <div className="text-center">

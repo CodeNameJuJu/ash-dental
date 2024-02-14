@@ -285,7 +285,8 @@ section .section-title {
 
 #what-we-do .card {
   padding: 1rem !important;
-  border: 2px solid #B6A792;
+  border: none;
+  color: #B6A792;
   border-radius: 5px;
   margin-bottom: 1rem;
   -webkit-transition: .5s all ease;
@@ -479,22 +480,16 @@ p {
   }
 }
 
-.opac {
-  opacity: 0.5;
-}
-
-.opac:hover {
-  opacity: 1;
-}
-
 .text-color {
   color: #1C1C1C;
-  opacity: 1;
 }
 
 .text-color-white {
   color: #fff;
-  opacity: 1;
+}
+
+.text-color-gold {
+  color: #B6A792;
 }
 
 h2 {
