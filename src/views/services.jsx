@@ -18,21 +18,18 @@ function Services() {
     return (
         <div>
         <hr ></hr>
-            <nav class="navbar nav-bg navbar-expand-sm "> <button class="navbar-toggler" type="button" data-target="#navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <nav class="navbar nav-bg navbar-expand-sm "> <button class="navbar-toggler" type="button" data-target="#navigation"> <span class="navbar-toggler-icon"></span> </button>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="sub-nav-item active">
-                            <Navigate class="sub-nav-item" name={'Cosmetic Dentistry'} path={'/cosmeticDentistry'} />
-                         </li>
-                        
+                            <Navigate name={'Cosmetic Dentistry'} path={'/cosmeticDentistry'} /> </li>
                         <li class="sub-nav-item">
-                            <Navigate class="sub-nav-item" name={'Teeth Whitening'} path={'/teethWhitening'} /> 
-                            </li>
-                        <li class="sub-nav-item"> <a href="#" class="sub-nav-link"> Crowns and Veneers </a> </li>
-                        <li class="sub-nav-item"> <a href="#" class="sub-nav-link"> Dental Implants </a> </li>
-                        <li class="sub-nav-item"> <a href="#" class="sub-nav-link"> Orthodontics</a> </li>
-                        <li class="sub-nav-item"> <a href="#" class="sub-nav-link"> General Dentistry </a> </li>
-                        <li class="sub-nav-item"> <a href="#" class="sub-nav-link"> 24 Hour Emergencies </a> </li>
+                            <Navigate name={'Teeth Whitening'} path={'/teethWhitening'} /> </li>
+                        <li class="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
+                        <li class="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
+                        <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
+                        <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                        <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                     </ul>
                 </div>
             </nav>

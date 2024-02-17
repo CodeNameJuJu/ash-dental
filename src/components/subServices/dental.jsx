@@ -3,7 +3,7 @@ import "../../Main.css";
 import { Link, useLocation } from 'react-router-dom';
 
 
-function TeethWhitening() {
+function Dental() {
     function Navigate({ name, path }) {
         return (
             <Link className="nav-item nav-link" to={path} title={name}>
@@ -32,31 +32,32 @@ function TeethWhitening() {
 
             <div class="row serv-top">
                 <div class=" col-7 text-center">
-                    <h1 class="gold text-start">Teeth Whitening</h1>
-                    <h3 class="brown text-start ">Illuminate Your Radiance</h3>
+                    <h1 class="gold text-start">Dental Implants</h1>
+                    <h3 class="brown text-start ">Journey to a Confident Smile</h3>
                     <br/>
-                    <p class="lead text-start">Our Teeth Whitening services are a symphony of artistry and science, meticulously designed to
-                        unveil the true brilliance of your smile. We believe that a radiant smile is a personal expression, and
-                        our approach goes beyond mere aesthetics. Each Teeth Whitening journey begins with a
-                        personalized treatment plan, acknowledging your unique dental needs and preferences. Our
-                        experienced dental professionals blend artistry with precision, ensuring stunning yet natural-looking
-                        results.</p>
+                    <p class="lead text-start">Dental implants are more than just a procedure; they represent a transformative journey to restore
+                    your confident smile.</p>
                         <br/>
-                        <p class="lead text-start">Leveraging advanced technology and safe whitening agents, our procedures are crafted to remove
-                            stains and discoloration effectively, prioritizing your dental health and comfort.</p>
+                        <p class="lead text-start">Dental implants are innovative solutions to restore missing teeth. Implants work by securely
+                        anchoring artificial teeth into the jaw, mimicking the natural structure for unparalleled stability and
+                        aesthetics.Our dental professionals harness the latest advancements in dental implantology,
+                        offering cutting-edge solutions tailored to each individual. From single-tooth implants to full-arch
+                        rehabilitation, we employ state-of-the-art techniques and technologies, including 3D x-ray, 3D
+                        printing and advanced diagnostic software, to ensure the utmost precision in every procedure. </p>
                         <br/>
-                        <p class="lead text-start" >Our commitment to enduring and beautiful results, combined with the latest in whitening
-                        technology.</p> 
+                        <p class="lead text-start" >At
+                            ASH Dental, dental implantology is not just a service; it&#39;s a dedication to providing you with a
+                            permanent, natural-looking solution that enhances both your oral health and confidence.</p> 
                         <br/>
-                        <p class="lead text-start">Illuminate your unique radiance by scheduling a consultation and discovering the art of Teeth
-                            Whitening at ASH Dental.</p>
+                        <p class="lead text-start gold" >Your journey to a radiant smile is marked by excellence, comfort, and results that redefine dental
+                        care… because detail matters.</p> 
                         <br/>
 
                 </div>
 
                 <div class="col-5">
                     <div class="serv2-image-block">
-                        <img class="serv2-image" src="/Images/ServicesLandscape/TW1.png" alt="2 description"></img>
+                        <img class="serv2-image" src="/Images/ServicesLandscape/dentalBonding.png" alt="2 description"></img>
                         <div class="serv2-overlay-block"></div>
                     </div>
                 </div>
@@ -69,4 +70,4 @@ function TeethWhitening() {
     )
 }
 
-export default TeethWhitening;
+export default Dental;

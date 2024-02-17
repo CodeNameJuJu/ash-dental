@@ -12,6 +12,13 @@ import Footer from './components/footer';
 import ScrollToTop from "./components/scrollToTop";
 import CosmeticDentistry  from "../src/components/subServices/cosmeticDentistry";
 import TeethWhitening from  "../src/components/subServices/teethWhitening";
+import Orthodontics from  "../src/components/subServices/orthodontics";
+import GeneralDentistry from  "../src/components/subServices/generalDentistry";
+import Emergencies from  "../src/components/subServices/emergencies";
+import Dental from  "../src/components/subServices/dental";
+import Crowns from  "../src/components/subServices/crowns";
+import cosmeticDentistry from  "../src/components/subServices/teethWhitening";
+
 
 function App() {
   return (
@@ -28,6 +35,12 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/cosmeticDentistry" element={<CosmeticDentistry />} />
           <Route path="/teethWhitening" element={<TeethWhitening />} />
+          <Route path="/crowns" element={<Crowns />} />
+          <Route path="/dental" element={<Dental />} />
+          <Route path="/orthodontics" element={<Orthodontics />} />
+          <Route path="/generalDentistry" element={<GeneralDentistry />} />
+          <Route path="/emergencies" element={<Emergencies />} />
+          
         </Routes>
         <Footer />
       </BrowserRouter>

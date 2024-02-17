@@ -777,6 +777,7 @@ h2 {
 .serv3-image-block {
   position: relative;
   overflow: hidden; /* Hide overflowing content */
+  filter: sepia(0.3);
 }
 .serv3-image-block img {
   /* ... existing image styles ... */
@@ -785,7 +786,7 @@ h2 {
 }
 
 .serv3-image-block .serv3-content-overlay{
-  background: #9b7d3b81;
+  background: rgba(27, 27, 27, 0.7);
   position: absolute;
   height: 99%;
   width: 100%;
