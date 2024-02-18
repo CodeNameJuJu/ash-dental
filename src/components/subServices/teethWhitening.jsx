@@ -17,8 +17,6 @@ function TeethWhitening() {
             <nav class="navbar nav-bg navbar-expand-sm "> <button class="navbar-toggler" type="button" data-target="#navigation"> <span class="navbar-toggler-icon"></span> </button>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav">
-                        <li class="sub-nav-item active">
-                            <Navigate name={'Cosmetic Dentistry'} path={'/cosmeticDentistry'} /> </li>
                         <li class="sub-nav-item">
                             <Navigate name={'Teeth Whitening'} path={'/teethWhitening'} /> </li>
                         <li class="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>

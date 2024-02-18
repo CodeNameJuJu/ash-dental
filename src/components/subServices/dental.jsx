@@ -17,8 +17,6 @@ function Dental() {
             <nav class="navbar nav-bg navbar-expand-sm "> <button class="navbar-toggler" type="button" data-target="#navigation"> <span class="navbar-toggler-icon"></span> </button>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav">
-                        <li class="sub-nav-item active">
-                            <Navigate name={'Cosmetic Dentistry'} path={'/cosmeticDentistry'} /> </li>
                         <li class="sub-nav-item">
                             <Navigate name={'Teeth Whitening'} path={'/teethWhitening'} /> </li>
                         <li class="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
@@ -29,11 +27,12 @@ function Dental() {
                     </ul>
                 </div>
             </nav>
+            &nbsp;
 
             <div class="row serv-top">
                 <div class=" col-7 text-center">
-                    <h1 class="gold text-start">Dental Implants</h1>
-                    <h3 class="brown text-start ">Journey to a Confident Smile</h3>
+                    <h1 class="gold ">Dental Implants</h1>
+                    <h3 class="brown  ">Journey to a Confident Smile</h3>
                     <br/>
                     <p class="lead text-start">Dental implants are more than just a procedure; they represent a transformative journey to restore
                     your confident smile.</p>
@@ -57,7 +56,7 @@ function Dental() {
 
                 <div class="col-5">
                     <div class="serv2-image-block">
-                        <img class="serv2-image" src="/Images/ServicesLandscape/dentalBonding.png" alt="2 description"></img>
+                        <img class="serv2-image" src="/Images/Dental/1.png" alt="2 description"></img>
                         <div class="serv2-overlay-block"></div>
                     </div>
                 </div>
