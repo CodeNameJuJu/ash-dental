@@ -34,7 +34,7 @@ function Navbar() {
         <nav className="navbar navbar-light bg-color navbar-expand-lg sticky-top">
             <div className="container-fluid">
                 <Link className="navbar-brand nav-link shine" to="/" title="Identical Teeth">
-                    <img style={{ maxHeight: '90px', width: 'auto' }} src="/Images/primary logo/Ash Dental logo-01.png" alt="Gallery 11" className="img-fluid" />
+                    <img style={{ maxHeight: '60px', Width: '250px' }} src="/Images/primary logo/Ash Dental logo-01.png" alt="Gallery 11" className="img-fluid" />
                 </Link>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center text-center">
@@ -58,7 +58,7 @@ function Navbar() {
                         </li>
                     </ul>
                 </div>
-                <div className="pt-2 pe-3">
+                <div className="">
                     <button type="button" className="btn btn-bg btn-link" onClick={openModal} title="Documents">
                         Book an appointment
                     </button>

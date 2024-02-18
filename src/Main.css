@@ -688,10 +688,8 @@ h2 {
 }
 .footer-bg{
   background-color: #1C1C1C !important;
-
+  opacity: 1;
 }
-
-
 
   /* *************************************************************** Services CSS */
 
@@ -777,7 +775,7 @@ h2 {
 .serv3-image-block {
   position: relative;
   overflow: hidden; /* Hide overflowing content */
-  filter: sepia(0.3);
+  filter: sepia(0.2);
 }
 .serv3-image-block img {
   /* ... existing image styles ... */
@@ -1170,7 +1168,7 @@ img {
   color: #030303;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+
   font-weight: bold;
   transition: background-color 0.2s ease-in-out;
 }
@@ -1374,4 +1372,86 @@ ul {
 }
 .a2{
   text-decoration: none !important;
+}
+
+.crown-container {
+  background-color: #1C1C1C;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.crown-inner-container {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border-radius: 15px;
+
+
+}
+
+.crown-text-container {
+  flex: 1;
+  text-align: left;
+}
+
+.crown-image-container {
+  flex: 1; 
+  text-align: right;
+
+}
+
+.crown-image-container img {
+  max-width: 85%;
+  min-height: 400px;
+  border-radius: 15px;
+}
+.sub-centered-container {
+  margin-left: 50px; /* Move left by 20px */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* Optional background color */
+  padding: 20px; /* Adjust padding as needed */
+  width: 90%; /* Adjust width as needed */
+  border-radius: 5px; /* Add border radius if desired */
+}
+.sub-centered-inner-container {
+  display: flex; /* Use flex for side-by-side layout */
+  justify-content: space-between; /* Space containers evenly */
+}
+
+.sub-image-container {
+  flex: 1; /* Equal width for both image and text */
+  text-align: center; /* Center image if needed */
+}
+
+.sub-text-container {
+  flex: 1 0 200px; /* Set a minimum width of 200px */
+  text-align: center; /* Center image if needed */
+}
+.sub-image-container img {
+  max-width: 85%;
+  min-height: 400px;
+  border-radius: 15px;
+}
+.crown-button {
+  background-color: #726358;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.crown-button:hover {
+  background-color: #B6A792;
 }
