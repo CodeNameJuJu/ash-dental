@@ -5,12 +5,12 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Card({ name, image, bio, title, quali }) {
     return (
-        <div class="row d-flex justify-content-center">
-            <div class="col-4" style={{ height: '35%', width: '25%', textAlign: 'center' }}>
-                <img class="img-fluid" src={image} alt="trainer-img" />
-            </div >
-            <div className='col-5' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-                <div className='pb-4 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
+        <div className="row d-flex justify-content-center">
+            <div className="col-md-4 col-sm-6">
+                <img className="img-fluid" src={image} alt="trainer-img" />
+            </div>
+            <div className='col-md-5 col-sm-6 ' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+                <div className='pb-3 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
                     <br />
                     <h1 className="card-title text-start">{name}</h1>
                     <br />
@@ -20,14 +20,14 @@ function Card({ name, image, bio, title, quali }) {
                     <p className="card-text lead text-start"><strong>{bio}</strong></p>
                 </div>
             </div>
-        </div >
+        </div>
     );
 }
 
 function Card2({ name, image, bio, title, quali }) {
     return (
         <div className="row d-flex justify-content-center">
-            <div className='col-5' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className='col-md-5 col-sm-6' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-4 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
                     <br />
                     <h1 className="card-title text-start">{name}</h1>
@@ -38,29 +38,29 @@ function Card2({ name, image, bio, title, quali }) {
                     <p className="card-text lead text-start"><strong>{bio}</strong></p>
                 </div>
             </div>
-            <div className="col-4" style={{ height: '35%', width: '25%', textAlign: 'center' }}>
+            <div className="col-md-4 col-sm-6">
                 <img className="img-fluid" src={image} alt="trainer-img" />
-            </div >
-        </div >
+            </div>
+        </div>
     );
 }
 
 export const About = () => {
 
     return (
-        <div className='ps-5 ms-5 pe-5 me-5' >
-            <div className='text-center ps-4 ms-4 pe-4 me-4' >
-                <div className='pt-4 mt-3 pb-3 ps-4 ms-4 pe-4 me-4'>
+        <div className='ps-md-5 ms-md-5 pe-md-5 me-md-5 ps-sm-3 ms-sm-3 pe-sm-3 me-sm-3'>
+            <div className='text-center ps-md-4 ms-md-4 pe-md-4 me-md-4' >
+                <div className='pt-4 mt-3 pb-3 ps-md-4 ms-md-4 pe-md-4 me-md-4'>
                     <h1 className='pt-4 mt-3 pb-3 text-color-gold'>A Journey to Transformative Smiles</h1>
                     <div className='d-flex justify-content-center'>
-                        <p className="lead col-8 text-start">At ASH Dental, we envision a world where every smile tells a story of confidence, health,
+                        <p className="lead col-md-9 col-sm-10 text-start">At ASH Dental, we envision a world where every smile tells a story of confidence, health,
                             and individuality. We strive to be pioneers in cosmetic and general dentistry, setting new standards for precision,
                             artistry, and patient-centric care.
                         </p>
                     </div>
                     <h3 className='pt-4 mt-3 pb-3 text-color-gold'>Meet Our Dental Artists</h3>
                     <div className='d-flex justify-content-center'>
-                        <p className="lead col-8 text-start">
+                        <p className="lead col-md-9 col-sm-10 text-start">
                             Our team at ASH Dental is a collective of skilled professionals, each bringing a unique set of expertise and passion to the practice.
                             We are not just dental professionals; we are artists dedicated to creating smiles that reflect the true beauty within each person.
                         </p>
@@ -86,7 +86,7 @@ export const About = () => {
                         />
                     </div>
                 </div>
-                <p className="lead col-8 text-start">Our Team of Dental Artists Consists of Experienced Professionals,
+                <p className="lead col-md-9 col-sm-10 text-start">Our Team of Dental Artists Consists of Experienced Professionals,
                     each specializing in various aspects of dentistry, including cosmetic procedures, orthodontics,
                     endodontics, oral surgery, and general dentistry.
                 </p>
@@ -101,7 +101,7 @@ export const About = () => {
                     </p>
                     <br />
                     <br />
-                    <img style={{ height: '800%', width: '100%' }} src="/Images/Dental/1.png" text="First slide" alt='Sale1' />
+                    <img style={{ height: '100%', width: '100%' }} src="/Images/Dental/1.png" text="First slide" alt='Sale1' />
                     <br />
                 </div>
                 <br />
@@ -117,7 +117,7 @@ export const About = () => {
                                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                                     <div className="card background">
                                         <div className="card-block block-1">
-                                            <h3 className="card-title text-color-gold"><i class="fa-solid fa-compass-drafting me-4"></i>Patient-Centric Excellence:</h3>
+                                            <h3 className="card-title text-color-gold"><i className="fa-solid fa-compass-drafting me-4"></i>Patient-Centric Excellence:</h3>
                                             <p className="lead">
                                                 Your journey with ASH Dental is characterized by a patient-centric approach.
                                                 We listen to your unique needs, concerns, and aspirations, tailoring our services to ensure a comfortable,
@@ -129,7 +129,7 @@ export const About = () => {
                                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                                     <div className="card background">
                                         <div className="card-block block-1">
-                                            <h3 className="card-title text-color-gold"><i class="fa-solid fa-wand-magic-sparkles me-3"></i>Innovation and Technology:</h3>
+                                            <h3 className="card-title text-color-gold"><i className="fa-solid fa-wand-magic-sparkles me-3"></i>Innovation and Technology:</h3>
                                             <p className="lead">
                                                 We embrace innovation and leverage cutting-edge technology to provide state-of-the-art dental solutions.
                                                 From advanced diagnostic imaging to the latest in cosmetic dentistry techniques, we ensure that you receive the highest quality care.
@@ -140,7 +140,7 @@ export const About = () => {
                                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                                     <div className="card background">
                                         <div className="card-block block-1">
-                                            <h3 className="card-title text-color-gold"><i class="fa-solid fa-palette me-3"></i>Dentistry as an Art Form:</h3>
+                                            <h3 className="card-title text-color-gold"><i className="fa-solid fa-palette me-3"></i>Dentistry as an Art Form:</h3>
                                             <p className="lead">
                                                 We believe that dentistry is an art form. Each smile is a canvas,
                                                 and our approach involves meticulous planning, personalized treatments,
@@ -153,7 +153,7 @@ export const About = () => {
                                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                                     <div className="card background">
                                         <div className="card-block block-1">
-                                            <h3 className="card-title text-color-gold"><i class="fa-solid fa-pen-to-square me-3"></i>Patient Education and Empowerment:</h3>
+                                            <h3 className="card-title text-color-gold"><i className="fa-solid fa-pen-to-square me-3"></i>Patient Education and Empowerment:</h3>
                                             <p className="lead">
                                                 We believe that an informed patient is an empowered patient. Our team takes the time to explain procedures,
                                                 discuss treatment options, and answer any questions you may have.
