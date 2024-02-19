@@ -47,7 +47,7 @@ function Modal({ showModal, closeModal }) {
             <div className="modal-dialog text-center modal-lg" >
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h4 className="modal-title">Schedule a Consultation</h4>
+                        <h4 className="modal-title text-color-gold">Book an Appointment</h4>
                         <button type="button" className="btn-close" onClick={closeModal}></button>
                     </div>
                     <div className="modal-body bg-modal">
@@ -75,22 +75,18 @@ function Modal({ showModal, closeModal }) {
                                 <div className="row">
                                     <div className="mb-3 text-start"> {/* Add spacing to the contact details */}
                                         <p className="text-color mb-1">
-                                            <MDBIcon icon="phone" className="me-3" /> (011) + 465 2718
+                                            <MDBIcon icon="phone" className="me-3" /> (012) 111 1715
                                         </p>
                                         <br />
                                         <p className="text-color mb-1">
-                                            <MDBIcon icon="phone" className="me-3" /> Emergency help: 062 408 5934
+                                            <MDBIcon icon="phone" className="me-3" /> 084 850 3501
                                         </p>
                                         <br />
                                         <p className="text-color mb-1">
                                             <MDBIcon icon="envelope" className="me-3" />
-                                            info@identicalteeth.co.za
+                                            info@ashdental.co.za
                                         </p>
                                         <br />
-                                        <p className="mb-0">
-                                            <MDBIcon icon="envelope" className="me-3" />
-                                            dentist@identicalteeth.co.za
-                                        </p>
                                     </div>
                                 </div>
                                 <br />

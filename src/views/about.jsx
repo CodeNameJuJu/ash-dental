@@ -53,14 +53,14 @@ export const About = () => {
                 <div className='pt-4 mt-3 pb-3 ps-md-4 ms-md-4 pe-md-4 me-md-4'>
                     <h1 className='pt-4 mt-3 pb-3 text-color-gold'>A Journey to Transformative Smiles</h1>
                     <div className='d-flex justify-content-center'>
-                        <p className="lead col-md-9 col-sm-10 text-start">At ASH Dental, we envision a world where every smile tells a story of confidence, health,
+                        <p className="lead col-md-12 col-sm-10 text-start">At ASH Dental, we envision a world where every smile tells a story of confidence, health,
                             and individuality. We strive to be pioneers in cosmetic and general dentistry, setting new standards for precision,
                             artistry, and patient-centric care.
                         </p>
                     </div>
                     <h3 className='pt-4 mt-3 pb-3 text-color-gold'>Meet Our Dental Artists</h3>
                     <div className='d-flex justify-content-center'>
-                        <p className="lead col-md-9 col-sm-10 text-start">
+                        <p className="lead col-md-12 col-sm-10 text-start">
                             Our team at ASH Dental is a collective of skilled professionals, each bringing a unique set of expertise and passion to the practice.
                             We are not just dental professionals; we are artists dedicated to creating smiles that reflect the true beauty within each person.
                         </p>
@@ -86,7 +86,7 @@ export const About = () => {
                         />
                     </div>
                 </div>
-                <p className="lead col-md-9 col-sm-10 text-start">Our Team of Dental Artists Consists of Experienced Professionals,
+                <p className="lead col-md-12 col-sm-10 text-start">Our Team of Dental Artists Consists of Experienced Professionals,
                     each specializing in various aspects of dentistry, including cosmetic procedures, orthodontics,
                     endodontics, oral surgery, and general dentistry.
                 </p>
@@ -118,7 +118,7 @@ export const About = () => {
                                     <div className="card background">
                                         <div className="card-block block-1">
                                             <h3 className="card-title text-color-gold"><i className="fa-solid fa-compass-drafting me-4"></i>Patient-Centric Excellence:</h3>
-                                            <p className="lead">
+                                            <p>
                                                 Your journey with ASH Dental is characterized by a patient-centric approach.
                                                 We listen to your unique needs, concerns, and aspirations, tailoring our services to ensure a comfortable,
                                                 positive, and transformative experience.
@@ -130,7 +130,7 @@ export const About = () => {
                                     <div className="card background">
                                         <div className="card-block block-1">
                                             <h3 className="card-title text-color-gold"><i className="fa-solid fa-wand-magic-sparkles me-3"></i>Innovation and Technology:</h3>
-                                            <p className="lead">
+                                            <p>
                                                 We embrace innovation and leverage cutting-edge technology to provide state-of-the-art dental solutions.
                                                 From advanced diagnostic imaging to the latest in cosmetic dentistry techniques, we ensure that you receive the highest quality care.
                                             </p>
@@ -141,7 +141,7 @@ export const About = () => {
                                     <div className="card background">
                                         <div className="card-block block-1">
                                             <h3 className="card-title text-color-gold"><i className="fa-solid fa-palette me-3"></i>Dentistry as an Art Form:</h3>
-                                            <p className="lead">
+                                            <p>
                                                 We believe that dentistry is an art form. Each smile is a canvas,
                                                 and our approach involves meticulous planning, personalized treatments,
                                                 and a commitment to achieving results that go beyond expectations.
@@ -154,7 +154,7 @@ export const About = () => {
                                     <div className="card background">
                                         <div className="card-block block-1">
                                             <h3 className="card-title text-color-gold"><i className="fa-solid fa-pen-to-square me-3"></i>Patient Education and Empowerment:</h3>
-                                            <p className="lead">
+                                            <p>
                                                 We believe that an informed patient is an empowered patient. Our team takes the time to explain procedures,
                                                 discuss treatment options, and answer any questions you may have.
                                             </p>
