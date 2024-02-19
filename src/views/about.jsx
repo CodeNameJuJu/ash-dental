@@ -6,10 +6,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 function Card({ name, image, bio, title, quali }) {
     return (
         <div className="row d-flex justify-content-center">
-            <div className="col-md-4 col-sm-6">
+            <div className="col-md-5 col-sm-6">
                 <img className="img-fluid" src={image} alt="trainer-img" />
             </div>
-            <div className='col-md-5 col-sm-6 ' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-3 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
                     <br />
                     <h1 className="card-title text-start">{name}</h1>
@@ -17,7 +17,7 @@ function Card({ name, image, bio, title, quali }) {
                     <h3 className="card-title text-start">{title}</h3>
                     <h4 className="card-title text-start">{quali}</h4>
                     <br />
-                    <p className="card-text lead text-start"><strong>{bio}</strong></p>
+                    <p className="card-text lead text-start smaller-text">{bio}</p>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@ function Card({ name, image, bio, title, quali }) {
 function Card2({ name, image, bio, title, quali }) {
     return (
         <div className="row d-flex justify-content-center">
-            <div className='col-md-5 col-sm-6' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-4 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
                     <br />
                     <h1 className="card-title text-start">{name}</h1>
@@ -35,10 +35,10 @@ function Card2({ name, image, bio, title, quali }) {
                     <h3 className="card-title text-start">{title}</h3>
                     <h4 className="card-title text-start">{quali}</h4>
                     <br />
-                    <p className="card-text lead text-start"><strong>{bio}</strong></p>
+                    <p className="card-text lead text-start smaller-text">{bio}</p>
                 </div>
             </div>
-            <div className="col-md-4 col-sm-6">
+            <div className="col-md-5 col-sm-6">
                 <img className="img-fluid" src={image} alt="trainer-img" />
             </div>
         </div>
