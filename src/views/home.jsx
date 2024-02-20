@@ -16,7 +16,7 @@ export const Home = () => {
                                 <span class="gold">ASH DENTAL</span><br></br> Mini heading
                             </strong>
                             <p class="g">Your Gateway to Healthy, Happy Smiles: Discover Ash Dental.</p>
-                            <a href="#">Lend a hand</a>
+                            {/* <a href="#" class="btn">Where to?</a> */}
                         </div>
                     </div>
                 </div>
@@ -41,75 +41,95 @@ export const Home = () => {
             <div class="serv3-container text-center">
                 <h1 class=" gold">Services </h1>
                 <h2 class=" brown"> Crafting Radiant Smiles</h2>
+                <div class="serv3-container">
                 <div class="serv3-image-grid">
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/5.png" alt="1"></img>
+                        <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/1.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title white">Advanced Cosmetic Dentistry: Redefine, Enhance, Transform</h3>
-                            <p class="content-text white">Teeth Whitening, Veneers, Dental Bonding, Dental Crowns, Orthodontics, Dental Implants,
-                                Gum Contouring, Smile Makeovers, Full-Mouth Reconstruction..</p>
-                        </div>
-                    </div>
-                    <div class="serv3-image-block">
-                        <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/6.png" alt="1"></img>
-                        <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title white">Teeth Whitening: Illuminate Your Radiance</h3>
-                            <p class="content-text white">Personalized treatment plans, advanced technology, safe whitening agents for enduring and
-                                beautiful results.</p>
+                            <h2 class="content-title white">Teeth Whitening:</h2>
+                            <p class="content-text white">Illuminate your smile with our professional teeth whitening procedures. We specialize in removing
+                                stains and discoloration, restoring the natural brilliance of your teeth. LINK.</p>
                         </div>
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/4.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title white">Crowns and Veneers: Artistry and Precision Unleashed</h3>
-                            <p class="content-text white" >Crafted using emax- and sagemax zirconia porcelain, offering durability, natural look, and
-                                transformative results.</p>
+                            <h2 class="content-title white">Veneers:</h2>
+                            <p class="content-text white">Transform your smile with our custom-made porcelain veneers. These thin shells are expertly
+                                crafted to cover imperfections and enhance the overall appearance of your teeth.</p>
                         </div>
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/8.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title white">Dental Implants: Journey to a Confident Smile</h3>
-                            <p class="content-text white">Transformative journey to restore missing teeth, cutting-edge implantology, 3D x-ray, 3D
-                                printing, and advanced diagnostic software for precision.</p>
+                            <h2 class="content-title white">Dental Bonding:</h2>
+                            <p class="content-text white" >Address chipped or discoloured teeth with our dental bonding services. Using tooth-coloured resin,
+                                we sculpt and shape the material to achieve a seamless and natural look.</p>
                         </div>
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/11.png" alt="1"></img>
+                        <img class="serv3-img" src="/Images/ServicesLandscape/Crowns2.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title white">Tooth Alignment and Orthodontic Techniques: Precision Orthodontic Care</h3>
-                            <p class="content-text white">Personalized orthodontic solutions for all ages, including clear aligners, metal braces,
-                                ceramic braces, and various retainers.</p>
+                            <h2 class="content-title white">Dental Crowns:</h2>
+                            <p class="content-text white">Revitalize damaged or discoloured teeth with our dental crowns made out of emax- and sagemax
+                                zirconia porcelain. These caps not only strengthen teeth but also improve their appearance, ensuring
+                                a natural and harmonious smile.</p>
+                        </div>
+                    </div>
+                    <div class="serv3-image-block">
+                        <div class="serv3-content-overlay"></div>
+                        <img class="serv3-img" src="/Images/ServicesLandscape/Ortho.png" alt="1"></img>
+                        <div class="serv3-content-details fadeIn-bottom">
+                            <h2 class="content-title white">Orthodontics:</h2>
+                            <p class="content-text white">Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear
+                                aligners, we tailor treatments to enhance both aesthetics and functionality..</p>
+                        </div>
+                    </div>
+                    <div class="serv3-image-block">
+                        <div class="serv3-content-overlay"></div>
+                        <img class="serv3-img" src="/Images/ServicesLandscape/DentalImplant.png" alt="1"></img>
+                        <div class="serv3-content-details fadeIn-bottom">
+                            <h2 class="content-title white">Dental Implants:</h2>
+                            <p class="content-text white">Experience a transformative smile with our dental implant solutions. Beyond restoration, implants
+                                contribute to the overall cosmetic enhancement of your smile by replacing missing teeth. </p>
+                        </div>
+                    </div>
+                    <div class="serv3-image-block">
+                        <div class="serv3-content-overlay"></div>
+                        <img class="serv3-img" src="/Images/FacesCloseUpsPortrait/Gum.png" alt="1"></img>
+                        <div class="serv3-content-details fadeIn-bottom">
+                            <h2 class="content-title white">Gum Contouring:</h2>
+                            <p class="content-text white">Refine your smile with our gum contouring procedures. Also known as gum reshaping, this service
+                                enhances the appearance of your teeth, especially beneficial for those with a gummy smile.</p>
                         </div>
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
                         <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/5.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title white">Comprehensive General Dentistry: Personalized Care for Optimal Oral Health</h3>
-                            <p class="content-text white">Routine Check-ups and Cleanings, Root Canal Therapy, Tooth Extractions, Dental
-                                Restorations, Gum Disease Treatment, Mouthguards, Nightguards, Emergency Dental Care,
-                                Wisdom Teeth Management, Denture Expertise. </p>
+                            <h2 class="content-title white">Smile Makeovers:</h2>
+                            <p class="content-text white">Embark on a personalized journey with our Smile Makeovers. These comprehensive plans combine
+                                various cosmetic procedures to achieve a harmonious and attractive smile tailored to your unique
+                                preferences.</p>
                         </div>
                     </div>
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="/Images/Dental/7.png" alt="1"></img>
+                        <img class="serv3-img" src="/Images/ServicesLandscape/MouthReconstruction.png" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
-                            <h3 class="content-title gold">24-Hour Emergency Dental Service: Swift and Effective Care</h3>
-                            <p class="content-text white">Convenience, prompt assistance, minimal disruption, offering services for toothache relief,
-                                repairs, urgent care, lost restorations, severe gum issues. (Read more: redirect to the
-                                services &amp; treatment page)</p>
+                            <h2 class="content-title white">Full-Mouth Reconstruction:</h2>
+                            <p class="content-text white">Transform your entire oral landscape with our Full-Mouth Reconstruction services. This
+                                comprehensive approach addresses both functional and aesthetic concerns, incorporating various
+                                cosmetic and restorative procedures.</p>
                         </div>
                     </div>
 
-
                 </div>
+            </div>
             </div>
 
 
