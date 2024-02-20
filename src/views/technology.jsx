@@ -4,7 +4,7 @@ import '../Main.css';
 /* Component for displaying technology details */
 function Tech({ name, image, desc, desc2, desc3 }) {
     return (
-        <div className='row mt-2 pt-2 mb-2 pb-2'>
+        <div className='row'>
             <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '100%' }} />
             <div className='col-md-8 col-sm-12'>
                 <section className='mt-3 pt-3'>
@@ -23,7 +23,7 @@ function Tech({ name, image, desc, desc2, desc3 }) {
 /* Component for displaying technology details */
 function Tech2({ name, image, desc, desc2 }) {
     return (
-        <div className='row mt-2 pt-2 mb-2 pb-2'>
+        <div className='row'>
             <div className='col-md-8 col-sm-12'>
                 <section className='mt-3 pt-3'>
                     <h3 className='text-color-gold mb-2 text-start'>{name}</h3>
@@ -140,7 +140,7 @@ function Technology() {
             <br />
             <div>
                 {techDetails.map((tech, index) => (
-                    <div key={index} className='mb-5 pb-5'>
+                    <div key={index} className='mb-3 pb-3'>
                         {index % 2 === 0 ? (
                             <Tech {...tech} />
                         ) : (
