@@ -4,11 +4,11 @@ import '../Main.css';
 /* Component for displaying technology details */
 function Tech({ name, image, desc, desc2, desc3 }) {
     return (
-        <div className='row'>
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '100%' }} />
+        <div className='row ms-0 ps-0 mb-4 pb-4'>
+            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '350px', width: '400px' }} />
             <div className='col-md-8 col-sm-12'>
-                <section className='mt-3 pt-3'>
-                    <h3 className='text-color-gold mb-2 text-start'>{name}</h3>
+                <section className='pb-1'>
+                    <h3 className='text-color-gold text-start'>{name}</h3>
                 </section>
                 <p className="lead text-start">{desc}</p>
                 <br />
@@ -23,16 +23,16 @@ function Tech({ name, image, desc, desc2, desc3 }) {
 /* Component for displaying technology details */
 function Tech2({ name, image, desc, desc2 }) {
     return (
-        <div className='row'>
+        <div className='row ms-0 ps-0 mb-4 pb-4'>
             <div className='col-md-8 col-sm-12'>
-                <section className='mt-3 pt-3'>
-                    <h3 className='text-color-gold mb-2 text-start'>{name}</h3>
+                <section className='pb-1'>
+                    <h3 className='text-color-gold text-start'>{name}</h3>
                 </section>
                 <p className="lead text-start">{desc}</p>
                 <br />
                 {desc2 && <p className="lead text-start">{desc2}</p>}
             </div>
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '100%' }} />
+            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '350px', width: '400px' }} />
         </div>
     );
 }
@@ -47,29 +47,29 @@ function Technology() {
             desc: "At ASH Dental, we redefine the dental experience by seamlessly integrating everyday technology to elevate your journey with us. Immerse yourself in a personalized atmosphere with Sonos Speakers, where you have the power to curate your own playlist, turning your dental visit into a musical escape.",
             desc2: "Our ceiling-mounted TVs offer a visual retreat, transporting you to another place while receiving treatment. Embracing modernity, we've gone paperless with iPads for efficient and eco-friendly filing. We believe that your time with us should be more than a dental appointment – it's a guest experience.",
             desc3: "Say goodbye to the traditional dental visit dread; at ASH Dental, you're not just a number; you're our valued guest on a uniquely tailored journey.",
-            image: "/Images/Technology/14.png"
+            image: "/Images/Technology/Teeth whitening (2).png"
         },
         {
             name: "Fläsh Teeth Whitening",
             desc: "ASH Dental brings you the pinnacle of teeth whitening technology with fläsh Teeth Whitening. This innovative solution transcends traditional methods, providing a swift and effective approach to achieving a brighter, whiter smile, harnessing the advanced technology showcased by fläsh Teeth Whitening.",
-            image: "/Images/Technology/15.png"
+            image: "/Images/Technology/Teeth whitening.png"
         },
         {
             name: "Digital Photography: Capturing Precision, Revealing Beauty",
             desc: "Step into the future of dentistry with our advanced digital photography. We utilize high-resolution imaging to capture detailed shots of your teeth, providing an unparalleled level of precision in diagnostics and treatment planning.",
-            image: "/Images/Technology/16.png"
-        },
-        {
-            name: "Digital Impression and Scanning, Intra Oral Scanner",
-            desc: "Step into a new era of dental impressions with the SIRONA prime scan at ASH Dental. Bid farewell to traditional, messy impressions and welcome a more comfortable and efficient experience. Our handheld prime scan device captures precise 3D images of your teeth, eliminating the discomfort associated with conventional impressions.",
-            desc2: "Whether you're exploring orthodontic treatments or restorative procedures, prime scan enhances your overall dental experience, ensuring accuracy, comfort, and efficiency.",
-            image: "/Images/Technology/17.png"
+            image: "/Images/Technology/Teeth whitening (3).png"
         },
         {
             name: "3D Imaging: A Deeper Insight for Comprehensive Care",
             desc: "Our commitment to thorough diagnostics is exemplified through 3-dimensional imaging. Unlike conventional X-rays, this technology provides a comprehensive, three-dimensional view of your oral structures. This allows us to analyze your dental health with unprecedented detail, ensuring a more accurate diagnosis and personalized treatment plans.",
             desc2: "Additionally, our digital intraoral sensor allows for the immediate viewing of X-rays during diagnoses and treatment, enhancing the efficiency of our diagnostic process.",
             image: "/Images/Technology/18.png"
+        },
+        {
+            name: "Digital Impression and Scanning, Intra Oral Scanner",
+            desc: "Step into a new era of dental impressions with the SIRONA prime scan at ASH Dental. Bid farewell to traditional, messy impressions and welcome a more comfortable and efficient experience. Our handheld prime scan device captures precise 3D images of your teeth, eliminating the discomfort associated with conventional impressions.",
+            desc2: "Whether you're exploring orthodontic treatments or restorative procedures, prime scan enhances your overall dental experience, ensuring accuracy, comfort, and efficiency.",
+            image: "/Images/Technology/17.png"
         },
         {
             name: "CBCT Scans: Precision Beyond the Surface",
@@ -129,9 +129,8 @@ function Technology() {
             <section className='mb-5 pb-5'>
                 <br />
                 <br />
-                <h1 className='text-color-gold mb-2 text-center'>Technology at ASH Dental</h1>
-                <br />
-                <br />
+                <h1 className='text-color-gold text-center'>Technology at ASH Dental</h1>
+
                 <h3 className='text-color-gold mb-2 text-center brown'>Elevating your Dental Experience</h3>
                 <br />
                 <br />
@@ -149,15 +148,15 @@ function Technology() {
                     </div>
                 ))}
             </div>
-            <div className='mb-4 pb-4 text-start'>
-                <p className="lead">
+            <div className='mb-4 pb-4 text-center'>
+                <h3  className="gold card-title">
                     Explore the future of dentistry at ASH Dental, where technology and personalized care converge to create smiles that reflect the pinnacle of dental excellence.
-                </p>
+                </h3>
                 <br />
                 <div>
-                    <p className="lead">
+                    <h3  className="gold card-title">
                         Contact us to schedule a consultation and discover the transformative impact of advanced dental technology on your oral health journey.
-                    </p>
+                    </h3>
                 </div>
                 <br />
                 <br />

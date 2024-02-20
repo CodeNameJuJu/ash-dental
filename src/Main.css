@@ -2,9 +2,6 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff;
@@ -15,13 +12,13 @@ body {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 525; /* Semi-bold */
+  font-weight: 600; /* Semi-bold */
 }
 
 /* Second headings (H3) */
 h3 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500; /* Medium */
+  font-weight: 525; /* Medium */
 }
 
 /* Content / paragraphs (p) */
@@ -30,38 +27,109 @@ p {
   font-weight: 400; /* Regular */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+  font-family: 'Silk Serif', serif;
+  font-weight: 520; /* Regular */
 }
 
-@media screen and (max-width: 1300px) {
+.smaller-text {
+  font-size: 20px !important;
+  /* Adjust font size for smaller screens */
+}
+
+.col-md-5 {
+  width: 30%; /* Make both columns take full width on smaller screens */
+}
+
+
+@media screen and (max-width: 1700px) {
   .card-component h3 {
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     /* Change h3 font size to match h4 */
   }
 
   .card-component h4 {
-    font-size: 1rem;
+    font-size: 0.5rem;
     /* Change h4 font size to match h5 */
   }
 
-  .card-background img {
-    max-width: 100%;
-    /* Ensure image takes full width of its container */
-    height: auto;
-    /* Maintain aspect ratio */
+  .card-padding {
+    padding-top: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .col-md-5 {
+    width: 40%; /* Make both columns take full width on smaller screens */
+  }
+
+  .img-fluid {
+    max-width: 100%; /* Set max-width to 100% to make the image responsive */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .smaller-text {
-    font-size: 16px;
+    font-size: 12px;
     /* Adjust font size for smaller screens */
   }
 }
 
-.smaller-text {
-  font-size: 18px;
-  /* Default font size */
+@media screen and (max-width: 1300px) {
+  .card-component h3 {
+    font-size: 0.75rem;
+    /* Change h3 font size to match h4 */
+  }
+
+  .card-component h4 {
+    font-size: 0.5rem;
+    /* Change h4 font size to match h5 */
+  }
+
+  .card-padding {
+    padding-top: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .col-md-5 {
+    width: 60%; /* Make both columns take full width on smaller screens */
+  }
+
+  .img-fluid {
+    max-width: 100%; /* Set max-width to 100% to make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .smaller-text {
+    font-size: 12px;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-component h3 {
+    font-size: 0.75rem;
+    /* Change h3 font size to match h4 */
+  }
+
+  .card-component h4 {
+    font-size: 0.5rem;
+    /* Change h4 font size to match h5 */
+  }
+
+  .card-padding {
+    padding-top: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .col-md-5 {
+    width: 95%; /* Make both columns take full width on smaller screens */
+  }
+
+  .img-fluid {
+    max-width: 100%; /* Set max-width to 100% to make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .smaller-text {
+    font-size: 12px;
+    /* Adjust font size for smaller screens */
+  }
 }
 
 #dropdown-basic {

@@ -4,91 +4,48 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Gallery() {
     return (
-        <div className="text-center">
-            {/* Carousel */}
-            <div
-                id="carouselExample"
-                className="carousel slide"
-                style={{
-                    backgroundImage: `url(/Images/Background%202.png)`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    height: '60vh',
-                    overflow: 'hidden'
-                }}
-            >
-                <div className='Car'>
-                    <Carousel>
-                        <Carousel.Item>
-                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental/1.png" text="First slide" alt='Sale1' />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental/7.png" text="First slide" alt='Sale2' />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img style={{ height: '100%', width: '100%' }} src="/Images/Dental/8.png" text="First slide" alt='Sale3' />
-                        </Carousel.Item>
-                    </Carousel>
-                </div>
-            </div>
-
-            {/* Image Grid */}
+        <div className="text-center row">
+            <h1 className='text-color-gold'>Gallery</h1>
+            <p className="lead col-md-12 col-sm-10 text-start mb-4 pb-4">
+                Explore our gallery and witness the transformative journeys we've embarked on with our patients. Each image tells a story of precision, artistry,
+                and the pursuit of dental excellence. Join us on a visual tour that reflects the harmonious blend of design, technology,
+                and the personalised touch that defines ASH Dental.
+            </p>
+            <h3 className='brown mt-4 pt-4'>Transformations</h3>
             <div className="container mt-4 pt-4 mb-4 pb-4">
                 {/* First Row */}
                 <div className="row">
                     {/* Image 1 */}
-                    <div className="col-md-4 mb-2">
-                        <img src="https://via.placeholder.com/400x300" className="img-fluid" alt="Placeholder" />
+                    <div className="col-md-6 mb-2">
+                        <img src="../Images/FacesCloseUpsLandscape/tannie1.jpg" className="img-fluid" alt="Placeholder" style={{ height: '450px', width: '600px' }} />
                     </div>
                     {/* Image 2 */}
-                    <div className="col-md-4 mb-2">
-                        <img src="https://via.placeholder.com/400x200" className="img-fluid" alt="Placeholder" />
+                    <div className="col-md-6 mb-2">
+                        <img src="../Images/FacesCloseUpsLandscape/tannie2.jpg" className="img-fluid" alt="Placeholder" style={{ height: '450px', width: '600px' }} />
+                    </div>
+                </div>
+                {/* First Row */}
+                <div className="row">
+                    {/* Image 1 */}
+                    <div className="col-md-6 mb-2">
+                        <img src="../Images/FacesCloseUpsLandscape/mond1.jpg" className="img-fluid" alt="Placeholder" style={{ height: '450px', width: '600px' }} />
                     </div>
                     {/* Image 3 */}
-                    <div className="col-md-4 mb-2">
-                        <img src="https://via.placeholder.com/400x400" className="img-fluid" alt="Placeholder" />
-                    </div>
-                </div>
-                {/* Second Row */}
-                <div className="row">
-                    {/* Image 4 */}
                     <div className="col-md-6 mb-2">
-                        <img src="https://via.placeholder.com/600x300" className="img-fluid" alt="Placeholder" />
-                    </div>
-                    {/* Image 5 */}
-                    <div className="col-md-6">
-                        <div className="row">
-                            {/* Nested Row */}
-                            <div className="col-md-6 mb-2">
-                                <img src="https://via.placeholder.com/300x300" className="img-fluid" alt="Placeholder" />
-                            </div>
-                            <div className="col-md-6 mb-2">
-                                <img src="https://via.placeholder.com/300x200" className="img-fluid" alt="Placeholder" />
-                            </div>
-                            <div className="col-md-12 mb-2">
-                                <img src="https://via.placeholder.com/600x400" className="img-fluid" alt="Placeholder" />
-                            </div>
-                        </div>
+                        <img src="../Images/FacesCloseUpsLandscape/tannie3.jpg" className="img-fluid" alt="Placeholder" style={{ height: '450px', width: '600px' }} />
                     </div>
                 </div>
-                {/* Third Row */}
-                <div className="row">
-                    {/* Image 6 */}
-                    <div className="col-md-3 mb-2">
-                        <img src="https://via.placeholder.com/300x400" className="img-fluid" alt="Placeholder" />
+                <h3 className='brown mt-4 pt-4 mb-4 pb-4'>Practice</h3>
+                {/* Image Grid */}
+                {/* Second Row */}
+                <div className="row mb-5 pb-5">
+                    {/* Image 1 */}
+                    <div className="col-md-6 mb-2">
+                        <img src="../Images/Technology/Teeth whitening (2).png" className="img-fluid" alt="Placeholder" style={{ height: '450px', width: '600px' }} />
                     </div>
-                    {/* Image 7 */}
-                    <div className="col-md-3 mb-2">
-                        <img src="https://via.placeholder.com/300x200" className="img-fluid" alt="Placeholder" />
-                    </div>
-                    {/* Image 8 */}
-                    <div className="col-md-3 mb-2">
-                        <img src="https://via.placeholder.com/300x300" className="img-fluid" alt="Placeholder" />
-                    </div>
-                    {/* Image 9 */}
-                    <div className="col-md-3 mb-2">
-                        <img src="https://via.placeholder.com/300x500" className="img-fluid" alt="Placeholder" />
+                    {/* Image 2 */}
+                    <div className="col-md-6 mb-2">
+                        <img src="../Images/Dental/5.png" className="img-fluid" alt="Placeholder" style={{ height: '450px', width: '600px' }} />
                     </div>
                 </div>
             </div>
