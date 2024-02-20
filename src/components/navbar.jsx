@@ -33,7 +33,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-light bg-color navbar-expand-lg sticky-top">
             <div className="container-fluid">
-                <Link className="navbar-brand nav-link shine" to="/" title="Identical Teeth">
+                <Link className="navbar-brand nav-link shine" to="/" title="ASH DENTAL">
                     <img style={{ maxHeight: '60px', Width: '250px' }} src="/Images/primary logo/Ash Dental logo-01.png" alt="Gallery 11" className="img-fluid" />
                 </Link>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">

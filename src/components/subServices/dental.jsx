@@ -31,8 +31,8 @@ function Dental() {
 
             <div class="row serv-top">
                 <div class=" col-7 text-center">
-                    <h1 class="gold ">Dental Implants</h1>
-                    <h3 class="brown  ">Journey to a Confident Smile</h3>
+                    <h1 class="gold text-start">Dental Implants</h1>
+                    <h3 class="brown  text-start">Journey to a Confident Smile</h3>
                     <br/>
                     <p class="lead text-start">Dental implants are more than just a procedure; they represent a transformative journey to restore
                     your confident smile.</p>
