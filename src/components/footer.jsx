@@ -6,10 +6,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 function Footer() {
 
     return (
-        <div class="footer-bg"style={{ opacity:1 }} >
         
-        <div style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', opacity: 0.4 }}>
-
+        
+        <div style={{ backgroundImage: `url(/Images/Texture2.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', opacity: 1 }}>
+        <div class="footer-bg"style={{ opacity:0.8 }} >
             <MDBFooter className='text-center text-lg-start text-muted '>
                 <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
                 </section>
@@ -43,15 +43,15 @@ function Footer() {
                                 <br></br>
                                 <ul> <a href='#' target="_blank" rel="noopener noreferrer" title='Page Link' class="a2">Contact</a></ul>
                             </MDBCol>
-                            <MDBCol md="3" lg="2" xl="3" className='mx-auto mb-4'>
+                            <MDBCol md="3" lg="2" xl="2.5" className='mx-auto mb-4'>
                                 <h6 className='text-uppercase fw-bold mb-4 white'>
                                     OPERATING HOURS</h6>
                                 <br></br>
-                                <li class="white"> Mon- Fri: 7:30 – 5pm </li>
+                                <ul class="white"> Mon- Fri: 7:30 – 5pm </ul>
                                 <br></br>
-                                <li class="white"> Saturday: 8:30 – 1pm</li>
+                                <ul class="white"> Saturday: 8:30 – 1pm</ul>
                                 <br></br>
-                                <li class="white"> Sunday & Public Holidays: Closed </li>
+                                <ul class="white"> Sun & Public Hol: Closed </ul>
                                 <br></br>
                                 <div>
                                     <h3 class="white"> Follow Us On</h3>
@@ -69,7 +69,7 @@ function Footer() {
 
                             </MDBCol> */}
 
-                            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+                            <MDBCol md="3" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
                                 <h6 className='text-uppercase fw-bold mb-4 white '>Contact Us</h6>
                                 <br></br>
                                 <p>
@@ -112,12 +112,12 @@ function Footer() {
                             </MDBCol>
 
                         </MDBRow>
-                        <div className='text-center p-4' >
+                        {/* <div className='text-center p-4' >
                             © 2024 Copyright:&nbsp;
                             <p className='text-reset fw-bold'>
                                 Ash Dental
                             </p>
-                        </div>
+                        </div> */}
                     </MDBContainer>
                 </section>
 

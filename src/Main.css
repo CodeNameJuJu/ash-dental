@@ -500,7 +500,7 @@ p {
 
 .container .card .imgContainer img {
   max-width: 100%;
-  border-radius: 4px;
+  
 }
 
 .container .card .content {
@@ -539,11 +539,11 @@ p {
 .text-color-gold {
   color: #B6A792;
 }
-
-h2 {
+/* juju here it affecst my other h2 heavily so made urs an ID lets chat about it <3 */
+.h2 {
   font-weight: bold;
-  margin-bottom: 40px;
-  padding-top: 40px;
+  /* margin-bottom: 40px;
+  padding-top: 40px; */
 }
 
 @media (max-width:767px) {
@@ -838,7 +838,7 @@ h2 {
   margin-right: 25px;
   margin-left: 25px;
   margin-bottom: 15px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .serv3-image-grid {
@@ -1358,6 +1358,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  margin-left: 50px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -1542,9 +1543,26 @@ ul {
 .a2 {
   text-decoration: none !important;
 }
+@media (max-width: 768px) {
+  .crown-inner-container,
+  .sub-centered-container {
+    flex-direction: row; /* Keep row layout */
+  }
+
+  .crown-text-container,
+  .sub-text-container {
+    flex: 1 1 auto; /* Allow text to adapt */
+  }
+
+  .crown-image-container,
+  .sub-image-container {
+    flex: 1 1 auto; /* Allow image to adapt */
+    flex-order: 2; /* Move image to the end (below text) */
+  }
+}
 
 .crown-container {
-  background-color: #1C1C1C;
+  background-color: #ffffff;
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -1554,13 +1572,13 @@ ul {
 
 .crown-inner-container {
   background-color: white;
+  border-color: #726358;
   padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  border-radius: 15px;
 
 
 }
@@ -1579,7 +1597,6 @@ ul {
 .crown-image-container img {
   max-width: 85%;
   min-height: 400px;
-  border-radius: 15px;
 }
 
 .sub-centered-container {
@@ -1589,14 +1606,10 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  /* Optional background color */
-  padding: 20px;
-  /* Adjust padding as needed */
-  width: 90%;
-  /* Adjust width as needed */
-  border-radius: 5px;
-  /* Add border radius if desired */
+  background-color: white; /* Optional background color */
+  padding: 20px; /* Adjust padding as needed */
+  width: 90%; /* Adjust width as needed */
+
 }
 
 .sub-centered-inner-container {
@@ -1623,7 +1636,6 @@ ul {
 .sub-image-container img {
   max-width: 85%;
   min-height: 400px;
-  border-radius: 15px;
 }
 
 .crown-button {
@@ -1638,4 +1650,11 @@ ul {
 
 .crown-button:hover {
   background-color: #B6A792;
+}
+.cntr{
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  padding: 0 4px;
 }

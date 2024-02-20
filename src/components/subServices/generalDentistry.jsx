@@ -56,7 +56,7 @@ function GeneralDentistry() {
             <div class="row serv-top text-center">
                 <br />
                 <br />
-                <h3 class="brown" >Routine Check-ups and Cleanings:</h3>
+                <h3 class="brown text-start" >Routine Check-ups and Cleanings:</h3>
                 <p class="lead text-start"> Routine Check-ups and Cleanings are more than just
                     appointments – they are essential steps towards ensuring your long-term oral health. Our dedicated
                     team of professionals takes a personalized approach to every check-up, prioritizing preventive care
@@ -67,7 +67,7 @@ function GeneralDentistry() {
                 </p>
                 &nbsp;
                 <br></br>
-                <h3 class="brown">Root Canal Therapy:</h3>
+                <h3 class="brown text-start ">Root Canal Therapy:</h3>
                 <p class="lead text-start"> Experience advanced Endodontic treatments at ASH Dental, where we redefine
                     root canal therapy with precision and innovation to alleviate the throbbing pain. Endodontic
                     procedures, commonly known as root canal treatments, involve the meticulous removal of infected
@@ -87,7 +87,7 @@ function GeneralDentistry() {
                 </p>
                 &nbsp;
                 <br />
-                <h3 class="brown">Tooth Extractions:</h3>
+                <h3 class="brown text-start">Tooth Extractions:</h3>
                 <p class="lead text-start"> Our tooth extraction procedures ensure a seamless and comfortable process.
                     Whether it&#39;s the removal of a damaged, decayed or painful tooth the extraction of wisdom teeth,
                     our skilled professionals prioritize precision and patient well-being. At ASH Dental, we leverage
@@ -98,7 +98,7 @@ function GeneralDentistry() {
                 </p>
                 &nbsp;
                 <br />
-                <h3 class="brown">Dental Restorations:</h3>
+                <h3 class="brown text-start">Dental Restorations:</h3>
                 <p class="lead text-start"> We offer a range of dental restorations, including fillings, crowns, bridges, and
                     dentures, to enhance the appearance and functionality of your smile. We prioritize excellence in
                     every restoration, aiming for both optimal aesthetics and long-lasting durability. At ASH Dental, we
@@ -108,14 +108,14 @@ function GeneralDentistry() {
                 </p>
 
                 &nbsp;
-                <h3 class="brown">Gum Disease Treatment:</h3>
+                <h3 class="brown text-start">Gum Disease Treatment:</h3>
                 <p class="lead text-start"> Early detection and intervention are key in managing gum disease. We go
                     beyond conventional methods to address gum disease comprehensively, from gingivitis to advanced
                     periodontal stages. We don&#39;t just treat gum disease; we aim to prevent its recurrence.
                 </p>
                 &nbsp;
-                <h3 class="brown">Mouthguards and Nightguards:</h3>
-                <p class="lead"> Customized mouthguards and nightguards provide protection
+                <h3 class="brown text-start">Mouthguards and Nightguards:</h3>
+                <p class="lead text-start"> Customized mouthguards and nightguards provide protection
                     against teeth grinding and sports-related injuries.
                 </p>
             </div>
@@ -148,7 +148,7 @@ function GeneralDentistry() {
                 <div class="row serv-top text-center">
                 <br />
                 <br />
-                <h3 class="brown text-center" >Wisdom Teeth Management</h3>
+                <h3 class="brown text-start" >Wisdom Teeth Management</h3>
                 <p class="lead text-start"> Our specialized care for wisdom teeth ensures their removal is as comfortable and efficient as
                             possible. ASH Dental&#39;s commitment to acknowledging patient needs and concerns, along with a
                             patient-first approach, is evident in our approach to wisdom teeth management. Comfort during the
@@ -156,8 +156,8 @@ function GeneralDentistry() {
                             journey with us. 
                 </p>
                 &nbsp;
-                <h3 class="brown">Denture Expertise</h3>
-                <p class="lead "> Our team is skilled in providing denture solutions that restore smiles and functionality. ASH Dental&#39;s
+                <h3 class="brown text-start">Denture Expertise</h3>
+                <p class="lead text-start "> Our team is skilled in providing denture solutions that restore smiles and functionality. ASH Dental&#39;s
                     dedication to embracing uniqueness and acceptance is reflected in our denture expertise. We
                     understand that every patient is a unique canvas, and our commitment to providing personalized
                     treatment plans extends to our denture services. Bid farewell to loose dentures; with cutting-edge

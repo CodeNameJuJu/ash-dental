@@ -50,13 +50,39 @@ function Emergencies() {
                     </div>
                 </div>
             </div>
+            <div className='row'> 
+            <h3 class="brown">Emergency Hotline: 084 850 3501</h3>
+                <p class=" gold">
+                    *please note that a call out fee applies
+                </p>
+                <p class="lead ">
+                    Contact ASH Dental now to experience reliable, round-the-clock dental care tailored to your busy
+                    schedule.
+                </p>
+                </div>
 
             <br></br>
             &nbsp;
             <h3 class="brown text-center">Why Choose ASH Dental&#39;s 24-Hour Service?</h3>
+            <div className=' row text-center'>
+            &nbsp;
+                        <h3 class="brown " >Services Offered:</h3>
+
+                        <ul class="lead   ">
+                            <li>Emergency Toothache Relief</li>
+                            <li>Same-Day Repairs for Chipped or Broken Teeth</li>
+                            <li>Urgent Care for Dental Injuries</li>
+                            <li>Swift Assistance for Lost or Dislodged Dental Restorations</li>
+                            <li>Immediate Attention for Severe Gum Issues</li>
+                        </ul>
+                     </div>
             <section className='mb-5 pb-5 text-center' id="what-we-do">
+
+
                 <div className="container-fluid">
+                
                     <div className='mb-3 pb-3 ps-3 pe-3' >
+                    
                         <div className="row mt-5">
                             <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                                 <div className="card background">
@@ -105,7 +131,7 @@ function Emergencies() {
                                             discuss treatment options, and answer any questions you may have.
                                         </p>
                                         <br />
-                                        <br />
+
                                     </div>
                                 </div>
                             </div>
@@ -113,8 +139,8 @@ function Emergencies() {
                     </div>
                 </div>
             </section>
-            <div class="row  text-center">
-                <h3 class="brown text-center" >Services Offered:</h3>
+            <div class="row text-center">
+                {/* <h3 class="brown text-center" >Services Offered:</h3>
 
                 <ul class="lead ">
                     <li>Emergency Toothache Relief</li>
@@ -122,55 +148,46 @@ function Emergencies() {
                     <li>Urgent Care for Dental Injuries</li>
                     <li>Swift Assistance for Lost or Dislodged Dental Restorations</li>
                     <li>Immediate Attention for Severe Gum Issues</li>
-                </ul>
+                </ul> */}
+
                 &nbsp;
-                <h2 class="gold">Why Choose ASH Dental&#39;s 24-Hour Service?</h2>
-                <p class="lead ">Reach out to ASH Dental at any hour, day or night, by calling our
+                <div class="row text-start"> 
+                <h2 class="gold text-start ">Why Choose ASH Dental&#39;s 24-Hour Service?</h2>
+                <p class="lead text-start">Reach out to ASH Dental at any hour, day or night, by calling our
                     dedicated emergency hotline.
                 </p>
                 &nbsp;
                 <br></br>
-                <h3 class="brown">Contact Us Anytime: </h3>
-                &nbsp;
-                <h3 class="brown">Prompt Consultation:</h3>
-                <p class="lead ">Our experienced dental professionals will provide a prompt
+                <h3 class="brown text-start">Contact Us Anytime: </h3>
+                <h3 class="brown text-start">Prompt Consultation:</h3>
+                <p class="lead  text-start">Our experienced dental professionals will provide a prompt
                     consultation, guiding you on the necessary steps and assessing the urgency of your situation.
                 </p>
                 &nbsp;
+                
                 &nbsp;
-                <h3 class="brown">Immediate Care:</h3>
-                <p class="lead ">If immediate care is required, we will make the necessary arrangements
+                <h3 class="brown text-start ">Immediate Care:</h3>
+                <p class="lead  text-start">If immediate care is required, we will make the necessary arrangements
                     for you to receive swift and effective treatment at our practice.
                 </p>
                 &nbsp;
-                <h3 class="brown">Immediate Care:</h3>
-                <p class="lead ">If immediate care is required, we will make the necessary arrangements
-                    for you to receive swift and effective treatment at our practice.
-                </p>
-                &nbsp;
-                <h3 class="brown">Follow-Up:</h3>
-                <p class="lead ">After addressing the immediate concern, we will schedule a follow-up
+                <h3 class="brown text-start">Follow-Up:</h3>
+                <p class="lead  text-start">After addressing the immediate concern, we will schedule a follow-up
                     appointment during regular hours for any further necessary treatments or comprehensive
                     care.
                 </p>
                 &nbsp;
-                <h3 class="brown">Immediate Care:</h3>
-                <p class="lead ">If immediate care is required, we will make the necessary arrangements
+                <h3 class="brown text-start">Immediate Care:</h3>
+                <p class="lead text-start ">If immediate care is required, we will make the necessary arrangements
                     for you to receive swift and effective treatment at our practice.
                 </p>
-                <p class="lead  ">
+                <p class="lead text-start ">
                     Embark on a dental journey where precision meets luxury. Experience ASH Dental – Where Transformative Smiles Begin.
                 </p>
                 &nbsp;
-                <h3 class="brown">Emergency Hotline: 084 850 3501</h3>
-                <p class=" gold">
-                    *please note that a call out fee applies
-                </p>
-                <p class="lead ">
-                    Contact ASH Dental now to experience reliable, round-the-clock dental care tailored to your busy
-                    schedule.
-                </p>
+
                 &nbsp;
+                </div>
             </div>
             <br></br>
         </div>
