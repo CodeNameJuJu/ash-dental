@@ -16,14 +16,7 @@ export const Home = () => {
                 <div class="banner-1">
                     {/* class="container" */}
                     <div class="ban_img">
-                        <img src="/Images/ServicesLandscape/banner2.jpg" alt="banner" border="0"></img>
-                        <div class="ban_text">
-                            <strong>
-                                <span class="gold">ASH DENTAL</span><br></br> Mini heading
-                            </strong>
-                            <p class="g">Your Gateway to Healthy, Happy Smiles: Discover Ash Dental.</p>
-                            {/* <a href="#" class="btn">Where to?</a> */}
-                        </div>
+                        <img src="/Images/googlemybusiness.png" alt="banner" border="0" style={{ height: '600px'}}></img>
                     </div>
                 </div>
             </section>

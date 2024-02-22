@@ -5,8 +5,8 @@ import Carousel from 'react-bootstrap/Carousel';
 function Gallery() {
     return (
         <div className="text-center row">
-            <h1 className='text-color-gold'>Gallery</h1>
-            <p className="lead col-md-12 col-sm-10 text-start mb-4 pb-4">
+            <h1 className='text-color-gold mt-4 pt-4'>Gallery</h1>
+            <p className="lead col-md-10 col-sm-10 text-start mt-3 pt-3 mb-4 pb-4">
                 Explore our gallery and witness the transformative journeys we've embarked on with our patients. Each image tells a story of precision, artistry,
                 and the pursuit of dental excellence. Join us on a visual tour that reflects the harmonious blend of design, technology,
                 and the personalised touch that defines ASH Dental.

@@ -58,7 +58,7 @@ li {
   }
 
   .col-md-5 {
-    width: 40%; /* Make both columns take full width on smaller screens */
+    width: 45%; /* Make both columns take full width on smaller screens */
   }
 
   .img-fluid {
