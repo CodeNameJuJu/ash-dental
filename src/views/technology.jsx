@@ -74,7 +74,7 @@ function Technology() {
         {
             name: "CBCT Scans: Precision Beyond the Surface",
             desc: "ASH Dental goes beyond the surface with Cone Beam Computed Tomography (CBCT) scans. This technology allows us to visualize your teeth, bone structure, and soft tissues in three dimensions. From implant planning to complex oral surgeries and root canals, CBCT scans contribute to our commitment to precision and patient-centric care.",
-            image: "/Images/Technology/19.png"
+            image: "/Images/Technology/planmeca-viso-g3.jpg"
         },
         {
             name: "NSK Scaler and Polisher: Gentle Yet Effective Dental Care",
@@ -120,6 +120,19 @@ function Technology() {
             name: "Precision in Curing: SmartLite® Pro Curing Light",
             desc: "We utilize the Smartlite® Pro Curing Light for the efficient curing of composite and cement materials. This advanced technology ensures the thorough and quick setting of materials, contributing to the longevity and durability of dental restorations.",
             image: "/Images/Technology/27.png"
+        },
+        {
+            name: "SmileFy, a simulation of your smile",
+            desc: "At ASH Dental we use a cutting-edge software program that allows us to create 3D digital smile designs and simulations. This innovative technology allows us to:",
+            desc2: "Visualize your dream smile: See what your smile could look like after treatment, ensuring you're fully informed and involved in the planning process. Enhance treatment planning: Plan and predict cosmetic and restorative procedures with greater accuracy, leading to more efficient and predictable outcomes.",
+            desc3: "SmileFy is just one example of our commitment to using technology to enhance your dental experience.",
+            image: "/Images/Technology/SmileFy_Software.png"
+        },
+        {
+            name: "Close up with binocular loupes",
+            desc: "At ASH Dental, we're dedicated to providing exceptional dental care with the highest level of precision and detail. That's why we've incorporated binocular loupes from Zumax® into our practice. These advanced surgical loupes offer:",
+            desc2: "Magnified visualization: Enhanced magnification allows your dentist to see intricate details within the oral cavity, leading to more accurate diagnoses and treatment procedures. Increased efficiency and accuracy: The superior clarity provided by these loupes allows for more precise manoeuvring and manipulation of instruments, leading to efficient and successful treatment outcomes.",
+            image: "/Images/Technology/Loupes_Zumax.png"
         },
         // Add more technology details here
     ];

@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 function Card({ name, image, bio, title, quali }) {
     return (
         <div className="row d-flex justify-content-center mb-5 pb-5 pt-4 mt-4 me-0 ms-0 ps-0 pe-0">
-            <div className="col-md-5 col-sm-6">
+            <div className="col-md-5 col-sm-6 no-padding">
                 <img className="img-fluid" src={image} alt="trainer-img" />
             </div>
             <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
@@ -69,14 +69,14 @@ export const About = () => {
                 <div className='pt-4 mt-3 pb-3 ps-md-4 ms-md-4 pe-md-4 me-md-4'>
                     <h1 className='pt-4 mt-3 pb-3 text-color-gold'>A Journey to Transformative Smiles</h1>
                     <div className='d-flex justify-content-center'>
-                        <p className="lead col-md-12 col-sm-10 text-start">At ASH Dental, we envision a world where every smile tells a story of confidence, health,
+                        <p className="lead col-md-12 col-sm-10 ps-1 ms-1 text-start">At ASH Dental, we envision a world where every smile tells a story of confidence, health,
                             and individuality. We strive to be pioneers in cosmetic and general dentistry, setting new standards for precision,
                             artistry, and patient-centric care.
                         </p>
                     </div>
                     <h3 className='pt-4 mt-3 pb-3 brown'>Meet Our Dental Artists</h3>
                     <div className='d-flex justify-content-center'>
-                        <p className="lead col-md-12 col-sm-10 text-start">
+                        <p className="lead col-md-12 col-sm-10 ps-1 ms-1 text-start">
                             Our team at ASH Dental is a collective of skilled professionals, each bringing a unique set of expertise and passion to the practice.
                             We are not just dental professionals; we are artists dedicated to creating smiles that reflect the true beauty within each person.
                         </p>
@@ -135,14 +135,14 @@ export const About = () => {
                         )}
                     </div>
                 </div>
-                <p className="lead col-md-12 col-sm-10 text-start">Our Team of Dental Artists Consists of Experienced Professionals,
+                <p className="lead col-md-12 col-sm-10 ps-1 ms-1 text-start">Our Team of Dental Artists Consists of Experienced Professionals,
                     each specializing in various aspects of dentistry, including cosmetic procedures, orthodontics,
                     endodontics, oral surgery, and general dentistry.
                 </p>
 
                 <div className='pt-3 mt-3'>
                     <h3 className='text-color-gold'>Meet the Team </h3>
-                    <p className="lead  text-start">
+                    <p className="lead  text-start ps-1 ms-1">
                         Discover the diverse talents that come together to create a harmonious blend of precision, compassion, and excellence,
                         ensuring that your experience with us is not just a dental appointment but a transformative and positive journey toward optimal oral health and confidence.
                         Our dedicated team at ASH Dental extends beyond our dentists to include skilled professionals in various roles.
@@ -167,7 +167,7 @@ export const About = () => {
                                     <div className="card background">
                                         <div className="card-block block-1">
                                             <h3 className="card-title text-color-gold"><i className="fa-solid fa-compass-drafting me-4"></i>Patient-Centric Excellence:</h3>
-                                            <p>
+                                            <p className='ps-1 ms-1'>
                                                 Your journey with ASH Dental is characterized by a patient-centric approach.
                                                 We listen to your unique needs, concerns, and aspirations, tailoring our services to ensure a comfortable,
                                                 positive, and transformative experience.

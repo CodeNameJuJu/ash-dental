@@ -72,6 +72,10 @@ li {
   }
 }
 
+.no-padding{
+  padding: 0px !important;
+}
+
 @media screen and (max-width: 1300px) {
   .card-component h3 {
     font-size: 0.75rem;
