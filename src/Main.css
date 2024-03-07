@@ -770,7 +770,7 @@ p {
   }
   .navbar-toggler {
     display: block;
-    background-color: #c9c9c9b7;
+    background-color: #c9c9c967;
     margin-left: 10px;
   }
   .navbar-collapse.show {
@@ -865,13 +865,7 @@ p {
 
 /* *************************************************************** Services CSS */
 
-/* *, *:before, *:after{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  box-sizing: border-box;
-} */
+
 .wrapper {
   position: relative;
   /* Create a stacking context */
@@ -1110,6 +1104,22 @@ p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   /* Original shadow */
 }
+
+@media (max-width: 768px) {
+  /* Target screens less than or equal to 768px wide */
+
+  .col-7 {
+    flex: 1; /* Make text column take up more space */
+  }
+  .col-5 {
+    width: 50%; /* Set a fixed width for the image column */
+  }
+  .serv2-dental {
+    box-sizing: content-box !important; /* Override if needed */
+  }
+}
+
+
 
 /* Media query for mobile responsiveness (max-width: 768px) */
 
