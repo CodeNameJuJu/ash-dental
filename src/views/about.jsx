@@ -42,7 +42,7 @@ function Card2({ name, image, bio, title, quali }) {
                     <p className="card-text lead text-start smaller-text">{bio}</p>
                 </div>
             </div>
-            <div className="col-md-5 col-sm-6">
+            <div className="col-md-5 col-sm-6 no-padding">
                 <img className="img-fluid" src={image} alt="trainer-img" />
             </div>
         </div>
@@ -162,7 +162,7 @@ export const About = () => {
                 <section className='mb-5 pb-5 text-center' id="what-we-do">
                     <div className="container-fluid">
                         <div className='mb-3 pb-3 ps-3 pe-3' >
-                            <div className="row mt-5">
+                            <div className="row mt-5 no-margins">
                                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                                     <div className="card background">
                                         <div className="card-block block-1">
