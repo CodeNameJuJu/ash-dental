@@ -87,7 +87,6 @@ function Footer() {
                                     <MDBIcon icon="envelope" className="me-3 white" />
                                     <a class="a2" href='mailto:info@identicalteeth.co.za' target="_blank" rel="noopener noreferrer" title='Email Link'>info@ashdental.co.za</a>
                                 </p>
-                                <br></br>
 
                                 <p>
                                     <MDBIcon icon="phone" className="me-3 white" />
@@ -99,12 +98,14 @@ function Footer() {
                                     <a class="a2" href='tel:012 111 1715' target="_blank" rel="noopener noreferrer" title='Phone Link'>012 111 1715</a>
                                 </p>
                             </MDBCol>
-                            <MDBCol md="2" lg="2" xl="2" className='mb-4 mt-3 d-flex justify-content-cente'>
+                            <MDBCol md="2" lg="2" xl="2" className='mb-4 mt-3' style={{'text-align': 'center'}}>
                                 <div>
-                                    <a href='https://www.facebook.com/identicalteeth/' target="_blank" rel="noopener noreferrer" className='me-4 text-reset white' style={{'font-size': '25px'}}>
+                                    <a href='https://www.facebook.com/identicalteeth/' target="_blank" rel="noopener noreferrer" className='me-4 text-reset white' 
+                                    style={{'font-size': '25px', 'padding-right':'10px' ,'text-align': 'center'}}>
                                         <MDBIcon fab icon="facebook-f" />
                                     </a>
-                                    <a href='https://www.instagram.com/identicalteeth/' target="_blank" rel="noopener noreferrer" className='me-4 text-reset white' style={{'font-size': '25px'}}>
+                                    <a href='https://www.instagram.com/identicalteeth/' target="_blank" rel="noopener noreferrer" className='me-4 text-reset white'
+                                     style={{'font-size': '25px', 'padding-left':'10px'}}>
                                         <MDBIcon fab icon="instagram" />
                                     </a>
 
