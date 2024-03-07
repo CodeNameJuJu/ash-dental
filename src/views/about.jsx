@@ -88,21 +88,21 @@ export const About = () => {
                             <>
                                 <Card
                                     name={"Dr. Guilherme Rodrigues"}
-                                    image={"../Images/FacesCloseUpsPortrait/6.png"}
+                                    image={"../Images/Practice/Low/ASH DENTAL_content_MARCH'24-158.jpg"}
                                     title={"Founder and Chief Smile Architect"}
                                     quali={"BChD (Pret.), DipOdont (Oral Surg.)(Pret.) "}
                                     bio={"Dr. Rodrigues leads our team with a vision to redefine dental care. As an accomplished dentist with a passion for cosmetic dentistry, Dr Rodrigues has transformed countless smiles and lives."}
                                 />
                                 <Card
                                     name={"Dr. Juan Williams"}
-                                    image={"../Images/FacesCloseUpsPortrait/6.png"}
+                                    image={"../Images/Practice/Low/ASH DENTAL_content_MARCH'24-188.jpg"}
                                     title={"Co-Founder and Dental Artist"}
                                     quali={"BSC (Pret), BChD (Pret)"}
                                     bio={"Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."}
                                 />
                                 <Card
                                     name={"Dr. Eulana Marais"}
-                                    image={"../Images/FacesCloseUpsPortrait/6.png"}
+                                    image={"../Images/Practice/Low/ASH DENTAL_content_MARCH'24-123.jpg"}
                                     title={"Co-Founder and Dental Artist"}
                                     quali={"BChD (Pret.)"}
                                     bio={"Driven by a lifelong passion for dentistry, Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of 'unwavering commitment and a new benchmark in luxury dental care.' This, combined with her calming demeanor, creates a welcoming and stress-free atmosphere where your comfort and well-being are paramount."}
@@ -112,24 +112,24 @@ export const About = () => {
                             <>
                                 <Card
                                     name={"Dr. Guilherme Rodrigues"}
-                                    image={"../Images/FacesCloseUpsPortrait/6.png"}
+                                    image={"../Images/Practice/Low/ASH DENTAL_content_MARCH'24-158.jpg"}
                                     title={"Founder and Chief Smile Architect"}
                                     quali={"BChD (Pret.), DipOdont (Oral Surg.)(Pret.) "}
                                     bio={"Dr. Rodrigues leads our team with a vision to redefine dental care. As an accomplished dentist with a passion for cosmetic dentistry, Dr Rodrigues has transformed countless smiles and lives."}
                                 />
                                 <Card2
                                     name={"Dr. Juan Williams"}
-                                    image={"../Images/FacesCloseUpsPortrait/6.png"}
+                                    image={"../Images/Practice/Low/ASH DENTAL_content_MARCH'24-188.jpg"}
                                     title={"Co-Founder and Dental Artist"}
-                                    quali={"BSC (Pret), BChD (Pret)"}
+                                    quali={"BSc (Pret), BChD (Pret)"}
                                     bio={"Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."}
                                 />
                                 <Card
                                     name={"Dr. Eulana Marais"}
-                                    image={"../Images/FacesCloseUpsPortrait/6.png"}
-                                    title={"Co-Founder and Dental Artist"}
+                                    image={"../Images/Practice/Low/ASH DENTAL_content_MARCH'24-123.jpg"}
+                                    title={"Dental Artist"}
                                     quali={"BChD (Pret.)"}
-                                    bio={"Driven by a lifelong passion for dentistry, Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of 'unwavering commitment and a new benchmark in luxury dental care.' This, combined with her calming demeanor, creates a welcoming and stress-free atmosphere where your comfort and well-being are paramount."}
+                                    bio={"Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of 'unwavering commitment and a new benchmark in luxury dental care.'"}
                                 />
                             </>
                         )}
@@ -150,7 +150,7 @@ export const About = () => {
                     </p>
                     <br />
                     <br />
-                    <img style={{ height: '100%', width: '100%' }} src="/Images/Dental/1.png" text="First slide" alt='Sale1' />
+                    <img style={{ height: '100%', width: '100%' }} src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-343.jpg" text="First slide" alt='Sale1' />
                     <br />
                 </div>
                 <br />

@@ -1,22 +1,15 @@
-import { Link, useLocation } from 'react-router-dom';
 import '../Main.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export const Home = () => {
-    function Navigate({ name, path }) {
-        return (
-            <Link className="nav-item nav-link" to={path} title={name}>
-                {name}
-            </Link>
-        );
-    }
+
     return (
         <div>
             <section class="ban_sec">
                 <div class="banner-1">
                     {/* class="container" */}
                     <div class="ban_img">
-                        <img src="/Images/googlemybusiness.png" alt="banner" border="0" style={{ height: '600px'}}></img>
+                        <img src="/Images/banner1.jpg" alt="banner" border="0" style={{ height: '600px'}}></img>
                     </div>
                 </div>
             </section>
@@ -101,7 +94,7 @@ export const Home = () => {
                     <a href="/dental"> 
                     <div class="serv3-image-block">
                         <div class="serv3-content-overlay"></div>
-                        <img class="serv3-img" src="/Images/ServicesLandscape/Implant2.png" alt="1"></img>
+                        <img class="serv3-img" src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-6511.jpg" alt="1"></img>
                         <div class="serv3-content-details fadeIn-bottom">
                             <h2 class="content-title white">Dental Implants</h2>
                             <p class="content-text white">Experience a transformative smile with our dental implant solutions. Beyond restoration, implants
@@ -191,7 +184,7 @@ export const Home = () => {
             &nbsp;
 
             <div className='row'>
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/5.png" alt="Dental" style={{ height: '100%' }} />
+            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.jpg" alt="Dental" style={{ height: '100%' }} />
             <div className='col-md-8 col-sm-12'>
                 <section className='mt-3 pt-3'>
                     <h2 className='brown mb-2 text-start'>Innovation and Technology</h2>
@@ -221,7 +214,7 @@ export const Home = () => {
             
             </div>
            
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/FacesCloseUpsPortrait/2.png" alt="Patient Centric Excellence" style={{ height: '70%' }} />
+            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.jpg" alt="Patient Centric Excellence" style={{ height: '70%' }} />
         </div>
         </div>
     )

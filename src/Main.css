@@ -72,6 +72,20 @@ li {
   }
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it appears above other content */
+  background-color: #ffffff; /* Add your desired background color */
+}
+
+.navbar-second {
+  position: sticky;
+  top: 90px; /* Adjust according to the height of the first navbar */
+  z-index: 1000; /* Ensure it appears above other content */
+  background-color: #ffffff; /* Add your desired background color */
+}
+
 .no-padding{
   padding: 0px !important;
 }

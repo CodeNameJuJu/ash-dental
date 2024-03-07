@@ -47,7 +47,7 @@ function Technology() {
             desc: "At ASH Dental, we redefine the dental experience by seamlessly integrating everyday technology to elevate your journey with us. Immerse yourself in a personalized atmosphere with Sonos Speakers, where you have the power to curate your own playlist, turning your dental visit into a musical escape.",
             desc2: "Our ceiling-mounted TVs offer a visual retreat, transporting you to another place while receiving treatment. Embracing modernity, we've gone paperless with iPads for efficient and eco-friendly filing. We believe that your time with us should be more than a dental appointment – it's a guest experience.",
             desc3: "Say goodbye to the traditional dental visit dread; at ASH Dental, you're not just a number; you're our valued guest on a uniquely tailored journey.",
-            image: "/Images/Technology/Teeth whitening (2).png"
+            image: "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-358.jpg"
         },
         {
             name: "Fläsh Teeth Whitening",
@@ -132,7 +132,7 @@ function Technology() {
             name: "Close up with binocular loupes",
             desc: "At ASH Dental, we're dedicated to providing exceptional dental care with the highest level of precision and detail. That's why we've incorporated binocular loupes from Zumax® into our practice. These advanced surgical loupes offer:",
             desc2: "Magnified visualization: Enhanced magnification allows your dentist to see intricate details within the oral cavity, leading to more accurate diagnoses and treatment procedures. Increased efficiency and accuracy: The superior clarity provided by these loupes allows for more precise manoeuvring and manipulation of instruments, leading to efficient and successful treatment outcomes.",
-            image: "/Images/Technology/Loupes_Zumax.png"
+            image: "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-3011.jpg"
         },
         // Add more technology details here
     ];

@@ -24,7 +24,7 @@ function Services() {
     return (
         <div>
             <hr ></hr>
-            <nav class=" navbar nav-bg navbar-expand-sm ">
+            <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -203,7 +203,7 @@ function Services() {
                         <a href="/dental">
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/ServicesLandscape/Implant2.png" alt="1"></img>
+                                <img class="serv3-img" src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-6511.jpg" alt="1"></img>
                                 <div class="serv3-content-details fadeIn-bottom">
                                     <h2 class="content-title white">Dental Implants</h2>
                                     <p class="content-text white">Experience a transformative smile with our dental implant solutions. Beyond restoration, implants
