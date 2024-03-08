@@ -53,7 +53,7 @@ function Navbar() {
                     aria-label="Toggle navigation"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    <span className="navbar-toggler-icon"></span>
+                    <i class="fa fa-bars" style={{'font-size': '25px'}}></i>
                 </button>
 
                 <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">

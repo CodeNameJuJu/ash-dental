@@ -776,6 +776,10 @@ p {
   .navbar-collapse.show {
     display: block;
   }
+  .sub-nav-item{
+    margin-left: 10px;
+    text-align: center;
+  }
 }
 .navbar-toggler {
   display: flex;

@@ -87,7 +87,7 @@ export const Home = () => {
                         <div class="serv3-content-details fadeIn-bottom">
                             <h2 class="content-title white">Orthodontics</h2>
                             <p class="content-text white">Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear
-                                aligners, we tailor treatments to enhance both aesthetics and functionality..</p>
+                                aligners, we tailor treatments to enhance both aesthetics and functionality.</p>
                         </div>
                     </div>
                     </a>

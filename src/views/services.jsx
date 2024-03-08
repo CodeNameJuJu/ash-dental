@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Main.css';
 import { Link, useLocation } from 'react-router-dom'
-
+import Modal from '../components/modal';
 
 function Services() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,13 +13,19 @@ function Services() {
 
     function Navigate({ name, path }) {
         return (
-            <Link className="sub-nav-item nav-link" to={path} title={name}>
+            <Link className="nav-item nav-link" to={path} title={name}>
                 {name}
             </Link>
         );
     }
 
-
+    const [showModal, setShowModal] = useState(false);
+    const openModal = () => {
+        setShowModal(true);
+    };
+    const closeModal = () => {
+        setShowModal(false);
+    };
 
     return (
         <div>
@@ -36,7 +42,7 @@ function Services() {
 
                     onClick={toggleNavbar}
                 >
-                <span className="navbar-toggler-icon"></span>
+                <i class="fa fa-bars" style={{'font-size': '25px'}}></i>
                 </button>
 
                 <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
@@ -197,7 +203,7 @@ function Services() {
                                 <div class="serv3-content-details fadeIn-bottom">
                                     <h2 class="content-title white">Orthodontics</h2>
                                     <p class="content-text white">Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear
-                                        aligners, we tailor treatments to enhance both aesthetics and functionality..</p>
+                                        aligners, we tailor treatments to enhance both aesthetics and functionality.</p>
                                 </div>
                             </div>
                         </a>
@@ -265,9 +271,10 @@ function Services() {
                         </p>
                         <br></br>
                         <div className='col-4-6 mt-2 mb-2'>
-                            <button type="button" className="btn btn-bg btn-link" title="Documents">
+                            <button type="button" className="btn btn-bg btn-link" onClick={openModal} title="Documents">
                                 Book an appointment
                             </button>
+                            <Modal showModal={showModal} closeModal={closeModal} />
                         </div>
                     </div>
                 </div>
@@ -278,83 +285,6 @@ function Services() {
 
 
             <br></br>
-            {/* <div class="card text-white bg-secondary my-5 py-4 text-center">
-                <div class="card-body"><p class=" shine2 text-white m-0">Your Dental Journey Starts Here</p></div>
-            </div>
-            <div class=" info row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/Images/Dental/6.png" alt="..."></img></div>
-                <div class="col-lg-5">
-                    <h1 class="font-weight-light ">Our Technology</h1>
-                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                    <a class="btn btn-primary" href="#!">Call to Action!</a>
-                </div>
-            </div> */}
-
-
-            {/* <div>
-                <div class="emergency">
-                    <div class="emergency-image">
-                        <img src="../Images/Dent2.jpg" alt="ESPA skincare products on a shelf"></img>
-                    </div>
-                    <div class="emergency-text">
-                        <h2>24 hour Emergencies</h2>
-                        <h3>ASH Dental 24-Hour Emergency Dental Service</h3>
-                        <p>We recognize the importance of accommodating the demanding schedules of busy professionals.
-                            That&#39;s why we are proud to introduce our 24-Hour Emergency Dental Service, designed to provide
-                            round-the-clock dental care tailored to your needs.</p>
-
-                        <a href="#" class="gold emergency-button">VIEW MENU</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="centered-container">
-                <div>
-                    <h2>Why Choose ASH Dental&#39;s 24-Hour Service?</h2>
-                    <li>Convenience: Life doesn&#39;t adhere to a 9-to-5 schedule, and neither do dental emergencies.
-                        Our 24-hour* service ensures that you can access quality dental care whenever you need it,
-                        whether it&#39;s the middle of the night or during a hectic workday.</li>
-                    <li>Prompt Assistance: Dental issues can be urgent, and delays in treatment may worsen the
-                        situation. With ASH Dental&#39;s 24-hour service*, you can expect prompt assistance from our
-                        skilled professionals, addressing your dental concerns swiftly and effectively.</li>
-                    <li>Minimal Disruption: We understand the importance of your time and commitments. Our
-                        24-hour service* is designed to provide the dental care you need without disrupting your
-                        schedule. Whether you&#39;re dealing with sudden pain, a broken tooth, or any other urgent
-                        dental issue, we are here to help 24/7.</li>
-                </div>
-                &#160;
-                <div>
-                    <h2>Services Offered:
-                    </h2>
-                    <li>Emergency Toothache Relief</li>
-                    <li>Same-Day Repairs for Chipped or Broken Teeth</li>
-                    <li>Urgent Care for Dental Injuries</li>
-                    <li>Swift Assistance for Lost or Dislodged Dental Restorations</li>
-                    <li>Immediate Attention for Severe Gum Issues</li>
-                </div>
-                &#160;
-                <div>
-                    <h2>How It Works:</h2>
-                    <li>Contact Us Anytime: Reach out to ASH Dental at any hour, day or night, by calling our
-                        dedicated emergency hotline.</li>
-                    <li>Prompt Consultation: Our experienced dental professionals will provide a prompt
-                        consultation, guiding you on the necessary steps and assessing the urgency of your situation.</li>
-                    <li>Immediate Care: If immediate care is required, we will make the necessary arrangements
-                        for you to receive swift and effective treatment at our practice.</li>
-                    <li>Follow-Up: After addressing the immediate concern, we will schedule a follow-up
-                        appointment during regular hours for any further necessary treatments or comprehensive
-                        care.</li>
-                </div>
-                &#160;
-                <p class="text-align: center">*please note that a call out fee applies.</p><p>Emergency Hotline: 062 408 5934</p>
-                <p>
-                Contact ASH Dental now to experience reliable, round-the-clock dental care tailored to your busy
-                    schedule.
-                </p>
-            </div> */}
-
-
-
 
         </div>
     )

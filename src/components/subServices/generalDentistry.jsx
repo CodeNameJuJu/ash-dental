@@ -32,7 +32,7 @@ function GeneralDentistry() {
                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}
                 >
-                    <span className="navbar-toggler-icon"></span>
+                    <i class="fa fa-bars" style={{'font-size': '25px'}}></i>
                 </button>
 
                 <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
