@@ -4,7 +4,10 @@ import { Link, useLocation } from 'react-router-dom'
 import Modal from '../components/modal';
 
 function Services() {
+
+
     const [isOpen, setIsOpen] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     function toggleNavbar() {
         setIsOpen(!isOpen);
@@ -19,30 +22,32 @@ function Services() {
         );
     }
 
-    const [showModal, setShowModal] = useState(false);
     const openModal = () => {
         setShowModal(true);
     };
     const closeModal = () => {
         setShowModal(false);
+        if (window.innerWidth <= 900) { // Check if mobile view
+            setIsOpen(false);
+        }
     };
 
     return (
         <div>
             <hr ></hr>
             <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
-                   <button 
-                   className="navbar-toggler"
+                <button
+                    className="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
                     aria-controls="navbarNav"
-                    aria-expanded="false"
+                    aria-expanded={isOpen ? 'true' : 'false'} // Update aria-expanded for accessibility
                     aria-label="Toggle navigation"
 
                     onClick={toggleNavbar}
                 >
-                <i class="fa fa-bars" style={{'font-size': '25px'}}></i>
+                    <i class="fa fa-bars gold" style={{ 'font-size': '25px' }}></i>
                 </button>
 
                 <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
@@ -151,7 +156,8 @@ function Services() {
                 <h2 class=" brown"> Crafting Radiant Smiles</h2>
                 <div class="serv3-container">
                     <div class="serv3-image-grid">
-                        <a href="/teethWhitening">
+
+                        <Link to="/teethWhitening" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
                                 <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/1.png" alt="1"></img>
@@ -161,8 +167,9 @@ function Services() {
                                         stains and discoloration, restoring the natural brilliance of your teeth. LINK.</p>
                                 </div>
                             </div>
-                        </a>
-                        <a href="/crowns">
+                        </Link>
+
+                        <Link to="/crowns" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
                                 <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/4.png" alt="1"></img>
@@ -172,19 +179,19 @@ function Services() {
                                         crafted to cover imperfections and enhance the overall appearance of your teeth.</p>
                                 </div>
                             </div>
-                        </a>
-                        {/* <a href="/dental">  */}
-                        <div class="serv3-image-block">
-                            <div class="serv3-content-overlay"></div>
-                            <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/8.png" alt="1"></img>
-                            <div class="serv3-content-details fadeIn-bottom">
-                                <h2 class="content-title white">Dental Bonding</h2>
-                                <p class="content-text white" >Address chipped or discoloured teeth with our dental bonding services. Using tooth-coloured resin,
-                                    we sculpt and shape the material to achieve a seamless and natural look.</p>
+                        </Link>
+                        <Link to="/dental" >
+                            <div class="serv3-image-block">
+                                <div class="serv3-content-overlay"></div>
+                                <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/8.png" alt="1"></img>
+                                <div class="serv3-content-details fadeIn-bottom">
+                                    <h2 class="content-title white">Dental Bonding</h2>
+                                    <p class="content-text white" >Address chipped or discoloured teeth with our dental bonding services. Using tooth-coloured resin,
+                                        we sculpt and shape the material to achieve a seamless and natural look.</p>
+                                </div>
                             </div>
-                        </div>
-                        {/* </a> */}
-                        <a href="/crowns">
+                        </Link>
+                        <Link to="/crowns" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
                                 <img class="serv3-img" src="/Images/ServicesLandscape/Crowns2.png" alt="1"></img>
@@ -195,8 +202,9 @@ function Services() {
                                         a natural and harmonious smile.</p>
                                 </div>
                             </div>
-                        </a>
-                        <a href="/orthodontics">
+                        </Link>
+
+                        <Link to="/orthodontics" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
                                 <img class="serv3-img" src="/Images/ServicesLandscape/Ortho.png" alt="1"></img>
@@ -206,8 +214,8 @@ function Services() {
                                         aligners, we tailor treatments to enhance both aesthetics and functionality.</p>
                                 </div>
                             </div>
-                        </a>
-                        <a href="/dental">
+                        </Link>
+                        <Link to="/dental" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
                                 <img class="serv3-img" src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-6511.jpg" alt="1"></img>
@@ -217,8 +225,8 @@ function Services() {
                                         contribute to the overall cosmetic enhancement of your smile by replacing missing teeth. </p>
                                 </div>
                             </div>
-                        </a>
-                        {/* <a href="/teethWhitening">  */}
+                        </Link>
+
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
                             <img class="serv3-img" src="/Images/FacesCloseUpsPortrait/Gum.png" alt="1"></img>
@@ -228,8 +236,8 @@ function Services() {
                                     enhances the appearance of your teeth, especially beneficial for those with a gummy smile.</p>
                             </div>
                         </div>
-                        {/* </a> */}
-                        {/* <a href="/teethWhitening">  */}
+
+
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
                             <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/5.png" alt="1"></img>
@@ -240,8 +248,8 @@ function Services() {
                                     preferences.</p>
                             </div>
                         </div>
-                        {/* </a> */}
-                        {/* <a href="/teethWhitening">  */}
+
+
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
                             <img class="serv3-img" src="/Images/ServicesLandscape/MouthReconstruction.png" alt="1"></img>
@@ -252,7 +260,7 @@ function Services() {
                                     cosmetic and restorative procedures.</p>
                             </div>
                         </div>
-                        {/* </a> */}
+
 
                     </div>
                 </div>

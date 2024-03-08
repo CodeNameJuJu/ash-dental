@@ -71,11 +71,14 @@ li {
     /* Adjust font size for smaller screens */
   }
 }
+.serv3-clickable-wrapper {
+  cursor: pointer; /* Set cursor to pointer on hover */
+}
 
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensure it appears above other content */
+  z-index: 8000; /* Ensure it appears above other content */
   background-color: #ffffff; /* Add your desired background color */
 }
 
@@ -778,7 +781,7 @@ p {
   }
   .sub-nav-item{
     margin-left: 10px;
-    text-align: center;
+
   }
 }
 .navbar-toggler {
