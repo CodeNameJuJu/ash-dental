@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../../Main.css";
 import { Link, useLocation } from 'react-router-dom';
 
 
 function Emergencies() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    function toggleNavbar() {
+        setIsOpen(!isOpen);
+    }
+
     function Navigate({ name, path }) {
         return (
             <Link className="nav-item nav-link" to={path} title={name}>
@@ -14,8 +20,21 @@ function Emergencies() {
     return (
         <div>
             <hr ></hr>
-            <nav class="navbar nav-bg navbar-expand-sm "> <button class="navbar-toggler" type="button" data-target="#navigation"> <span class="navbar-toggler-icon"></span> </button>
-                <div class="collapse navbar-collapse">
+            <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    onClick={toggleNavbar}
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="sub-nav-item">
                             <Navigate name={'Teeth Whitening'} path={'/teethWhitening'} /> </li>

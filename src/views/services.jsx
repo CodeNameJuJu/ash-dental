@@ -25,17 +25,18 @@ function Services() {
         <div>
             <hr ></hr>
             <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
-                <button
-                    className="navbar-toggler"
+                   <button 
+                   className="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
                     aria-controls="navbarNav"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
+
                     onClick={toggleNavbar}
                 >
-                    <span className="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
                 </button>
 
                 <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
