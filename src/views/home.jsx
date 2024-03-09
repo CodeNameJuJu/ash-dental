@@ -1,6 +1,6 @@
 import '../Main.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const Home = () => {
 
@@ -8,13 +8,11 @@ export const Home = () => {
         <div>
             <section class="ban_sec">
                 <div class="banner-1">
-                    {/* class="container" */}
                     <div class="ban_img">
-                        <img src="/Images/banner1.jpg" alt="banner" border="0" style={{ maxHeight: '600px'}}></img>
+                        <img src="/Images/banner1.jpg" alt="banner" border="0" style={{ maxHeight: '600px' }}></img>
                     </div>
                 </div>
             </section>
-
             <div class="serv-top">
                 <div class="text-center">
                     <h1 class="gold ">Welcome to ASH Dental</h1>
@@ -29,14 +27,13 @@ export const Home = () => {
                         ensuring each step of your dental journey is marked by precision, comfort, and transformative care.
                     </p>
                 </div>
-
             </div>
             <div class="serv3-container text-center">
                 <h1 class=" gold">Services </h1>
                 <h2 class=" brown"> Crafting Radiant Smiles</h2>
                 <div class="serv3-container">
-                <div class="serv3-image-grid">
-                <Link to="/teethWhitening" >
+                    <div class="serv3-image-grid">
+                        <Link to="/teethWhitening" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
                                 <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/1.png" alt="1"></img>
@@ -47,7 +44,6 @@ export const Home = () => {
                                 </div>
                             </div>
                         </Link>
-
                         <Link to="/crowns" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
@@ -82,7 +78,6 @@ export const Home = () => {
                                 </div>
                             </div>
                         </Link>
-
                         <Link to="/orthodontics" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
@@ -105,7 +100,6 @@ export const Home = () => {
                                 </div>
                             </div>
                         </Link>
-
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
                             <img class="serv3-img" src="/Images/FacesCloseUpsPortrait/Gum.png" alt="1"></img>
@@ -115,8 +109,6 @@ export const Home = () => {
                                     enhances the appearance of your teeth, especially beneficial for those with a gummy smile.</p>
                             </div>
                         </div>
-
-
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
                             <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/5.png" alt="1"></img>
@@ -127,8 +119,6 @@ export const Home = () => {
                                     preferences.</p>
                             </div>
                         </div>
-
-
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
                             <img class="serv3-img" src="/Images/ServicesLandscape/MouthReconstruction.png" alt="1"></img>
@@ -139,12 +129,9 @@ export const Home = () => {
                                     cosmetic and restorative procedures.</p>
                             </div>
                         </div>
-
+                    </div>
                 </div>
             </div>
-            </div>
-
-
             <div>
                 <section class="meet-artists">
                     <h2 class="home-h2 brown">Your Dental Journey Starts Here</h2>
@@ -154,72 +141,67 @@ export const Home = () => {
             </div>
             &nbsp;
             <div className='row'>
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/5.png" alt="Dental" style={{ height: '100%' }} />
-            <div className='col-md-8 col-sm-12'>
-                <section className='mt-3 pt-3'>
-                    <h2 className='brown mb-2 text-start'>A Journey to Transformative Smiles</h2>
-                </section>
-            <p class="lead text-start center ">We envision a world where every smile tells a story of confidence, health, and individuality. We
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/5.png" alt="Dental" style={{ height: '100%' }} />
+                <div className='col-md-8 col-sm-12'>
+                    <section className='mt-3 pt-3'>
+                        <h2 className='brown mb-2 text-start'>A Journey to Transformative Smiles</h2>
+                    </section>
+                    <p class="lead text-start center ">We envision a world where every smile tells a story of confidence, health, and individuality. We
                         strive to be pioneers in cosmetic and general dentistry, setting new standards for precision, artistry,
-                         </p>
-                <br />
-                <a href="/gallery"><button class="crown-button" >View Gallery</button></a>
+                    </p>
+                    <br />
+                    <a href="/gallery"><button class="crown-button" >View Gallery</button></a>
+                </div>
             </div>
-        </div>
-        
             &nbsp;
             <div className='row'>
-            <div className='col-md-8 col-sm-12'>
-                <section className='mt-3 pt-3'>
-                    <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2>
-                </section>
-                <p class="lead text-start center ">Your journey with ASH Dental is characterized by a patient-centric approach. We listen to your
-                            unique needs, concerns, and aspirations, tailoring our services to ensure a comfortable, positive, and
-                            transformative experience.
-                            </p>
-                <br />
-               
+                <div className='col-md-8 col-sm-12'>
+                    <section className='mt-3 pt-3'>
+                        <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2>
+                    </section>
+                    <p class="lead text-start center ">Your journey with ASH Dental is characterized by a patient-centric approach. We listen to your
+                        unique needs, concerns, and aspirations, tailoring our services to ensure a comfortable, positive, and
+                        transformative experience.
+                    </p>
+                    <br />
+                </div>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/3.png" alt="Patient Centric Excellence" style={{ height: '100%' }} />
             </div>
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/3.png" alt="Patient Centric Excellence" style={{ height: '100%' }} />
-        </div>
-           
             &nbsp;
-
             <div className='row'>
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.jpg" alt="Dental" style={{ height: '100%' }} />
-            <div className='col-md-8 col-sm-12'>
-                <section className='mt-3 pt-3'>
-                    <h2 className='brown mb-2 text-start'>Innovation and Technology</h2>
-                </section>
-            <p class="lead text-start center ">We embrace innovation and leverage cutting-edge technology to provide state-of-the-art dental
-                            solutions. From advanced diagnostic imaging to the latest in cosmetic dentistry techniques, we
-                            ensure that you receive the highest quality care.
-                         </p>
-                <br />
-                <a href="/technology"><button class="crown-button" >Read More About Technology</button></a>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.jpg" alt="Dental" style={{ height: '100%' }} />
+                <div className='col-md-8 col-sm-12'>
+                    <section className='mt-3 pt-3'>
+                        <h2 className='brown mb-2 text-start'>Innovation and Technology</h2>
+                    </section>
+                    <p class="lead text-start center ">We embrace innovation and leverage cutting-edge technology to provide state-of-the-art dental
+                        solutions. From advanced diagnostic imaging to the latest in cosmetic dentistry techniques, we
+                        ensure that you receive the highest quality care.
+                    </p>
+                    <br />
+                    <a href="/technology"><button class="crown-button" >Read More About Technology</button></a>
+                </div>
             </div>
-        </div>
-
             &nbsp;
-            
             <div className='row'>
-            <div className='col-md-8 col-sm-12'>
-                <section className='mt-3 pt-3'>
-                    <h2 className='brown mb-2 text-start'>Meet Our Dental Artists</h2>
-                </section>
-                <p class="lead text-start center "> Our team at ASH Dental is a collective of skilled professionals, each bringing a unique set of expertise
-                            and passion to the practice. We are not just dental professionals; we are artists dedicated to creating
-                            smiles that reflect the true beauty within each person.
-                            </p>
-                            <br></br>
-                            <a href="/about"><button class="crown-button" >Click here to read more</button></a>
-            
+                <div className='col-md-8 col-sm-12'>
+                    <section className='mt-3 pt-3'>
+                        <h2 className='brown mb-2 text-start'>Meet Our Dental Artists</h2>
+                    </section>
+                    <p class="lead text-start center "> Our team at ASH Dental is a collective of skilled professionals, each bringing a unique set of expertise
+                        and passion to the practice. We are not just dental professionals; we are artists dedicated to creating
+                        smiles that reflect the true beauty within each person.
+                    </p>
+                    <br></br>
+                    <a href="/about"><button class="crown-button" >Click here to read more</button></a>
+                </div>
+                <br></br>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3 pt-5' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.jpg" alt="Patient Centric Excellence" style={{ height: '70%' }} />
             </div>
-            <br></br>
-           
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3 pt-5' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.jpg" alt="Patient Centric Excellence" style={{ height: '70%' }} />
-        </div>
         </div>
     )
 }
+
 export default Home;
+
+// ******************************************************************* EOF ******************************************************************************

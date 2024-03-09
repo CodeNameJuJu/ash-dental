@@ -10,9 +10,8 @@ function Navigate({ name, path }) {
     );
 }
 
-
 function Navbar() {
-    // !!!! Google bard Mobile nav Respvonsiveness
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const location = useLocation();
@@ -34,15 +33,13 @@ function Navbar() {
         }
     }, [location]);
 
-
     return (
         <nav className="navbar navbar-light bg-color navbar-expand-lg sticky-top " id="myTopnav">
             <div className="container-fluid">
                 <Link className="active" to="/" title="ASH DENTAL">
                     <img style={{ maxHeight: '60px', Width: '150px' }} src="/Images/primary logo/Ash Dental logo-01.png" alt="Ash Dental Logo"
-                         />
+                    />
                 </Link>
-              {/* !!!! Google bard Mobile nav Respvonsiveness */}
                 <button
                     className="navbar-toggler ms-auto"
                     type="button"
@@ -53,7 +50,7 @@ function Navbar() {
                     aria-label="Toggle navigation"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    <i class="fa fa-bars gold" style={{'font-size': '25px'}}></i>
+                    <i class="fa fa-bars gold" style={{ 'font-size': '25px' }}></i>
                 </button>
 
                 <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
@@ -78,16 +75,18 @@ function Navbar() {
                         </li>
                     </ul>
                     <div className="d-flex ml-auto">
-                    <button type="button" className="btn btn-bg btn-link" onClick={openModal} title="Documents">
-                        Book an appointment
-                    </button>
-                    <Modal showModal={showModal} closeModal={closeModal} />
+                        <button type="button" className="btn btn-bg btn-link" onClick={openModal} title="Documents">
+                            Book an appointment
+                        </button>
+                        <Modal showModal={showModal} closeModal={closeModal} />
+                    </div>
                 </div>
-                </div>
-                
+
             </div>
         </nav>
     );
 }
 
 export default Navbar;
+
+// ******************************************************************* EOF ******************************************************************************

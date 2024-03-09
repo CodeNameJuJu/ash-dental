@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "../../Main.css";
-import { Link, useLocation } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 function CosmeticDentistry() {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +29,7 @@ function CosmeticDentistry() {
                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}
                 >
-                    <i class="fa fa-bars" style={{'font-size': '25px'}}></i>
+                    <i class="fa fa-bars" style={{ 'font-size': '25px' }}></i>
                 </button>
 
                 <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
@@ -45,28 +44,28 @@ function CosmeticDentistry() {
                     </ul>
                 </div>
             </nav>
-        
+
             <div class="row serv-top">
                 <div class=" col-7 text-center">
                     <h1 class="gold text-start">Advanced Cosmetic Dentistry</h1>
                     <h3 class="brown text-start ">Redesign, Enhance, Transform</h3>
-                    <br/>
+                    <br />
                     <p class="lead text-start">Redefine smiles and enhance the natural beauty of your teeth. Cosmetic dentistry goes beyond
                         traditional dental procedures; it&#39;s an art form dedicated to improving the aesthetics and function of
                         your smile. Our skilled team at ASH Dental employs cutting-edge techniques and personalized
                         treatment plans to address a range of cosmetic concerns, including teeth discoloration,
                         misalignment, and imperfections.
-                        </p>
-                        <br/>
-                        <p class="lead text-start">Whether you desire a whiter, straighter, or more aesthetically
+                    </p>
+                    <br />
+                    <p class="lead text-start">Whether you desire a whiter, straighter, or more aesthetically
                         pleasing smile, our cosmetic dentistry services are tailored to meet your unique goals. We offer a
                         comprehensive range of treatments, from professional teeth whitening and veneers to smile
                         makeovers and full-mouth reconstruction.</p>
-                        <br/>
-                     <p class="lead text-start" >The benefits of cosmetic dentistry extend beyond appearance, positively impacting your confidence,
+                    <br />
+                    <p class="lead text-start" >The benefits of cosmetic dentistry extend beyond appearance, positively impacting your confidence,
                         self-esteem, and overall oral health. Discover the transformative power of a radiant smile at ASH
                         Dental, where precision, elegance, and excellence converge to create a truly exceptional cosmetic
-                        dentistry experience.</p> 
+                        dentistry experience.</p>
                 </div>
 
                 <div class="col-5">
@@ -76,13 +75,11 @@ function CosmeticDentistry() {
                     </div>
                 </div>
             </div>
-            <br>
-
-            </br>
-
-
+            <br/>
         </div>
     )
 }
 
 export default CosmeticDentistry;
+
+// ******************************************************************* EOF ******************************************************************************

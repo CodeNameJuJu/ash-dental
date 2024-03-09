@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "../../Main.css";
-import { Link, useLocation } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 function Orthodontics() {
 
@@ -21,7 +20,7 @@ function Orthodontics() {
     return (
         <div>
             <hr ></hr>
-           <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
+            <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -32,7 +31,7 @@ function Orthodontics() {
                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}
                 >
-                    <i class="fa fa-bars" style={{'font-size': '25px'}}></i>
+                    <i class="fa fa-bars" style={{ 'font-size': '25px' }}></i>
                 </button>
 
                 <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
@@ -51,7 +50,7 @@ function Orthodontics() {
             <div class="serv-top">
                 <div class="text-center">
                     <h1 class="gold text-start">Tooth Alignment and Orthodontic Techniques</h1>
-                    
+
                     <h3 class="brown text-start ">Precision Orthodontic Care</h3>
                     <br></br>
                     <p class="lead text-start">We excel in orthodontic care, correcting misalignments and enhancing the overall appearance of
@@ -68,31 +67,33 @@ function Orthodontics() {
             <br></br>
             <br></br>
             <div className='row'>
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Ortho.png" alt="Orthodontics" style={{ height: '100%' }} />
-            <div className='col-md-8 col-sm-12'>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Ortho.png" alt="Orthodontics" style={{ height: '100%' }} />
+                <div className='col-md-8 col-sm-12'>
                     <h3 className='text-color-gold text-start'>Orthodontic devices employed for aligning teeth.</h3>
-                <ul class="lead text-start">
-                                <li>Clear Aligners</li>
-                                <li>Metal braces</li>
-                                <li>clear / ceramic braces</li>
-                            </ul>
-                            <br></br>
-                            <br></br>
-                <h3 className='text-color-gold text-start'>Several kinds of retainers recommended post-treatment.</h3>
-                <ul class="lead text-start">
+                    <ul class="lead text-start">
+                        <li>Clear Aligners</li>
+                        <li>Metal braces</li>
+                        <li>clear / ceramic braces</li>
+                    </ul>
+                    <br></br>
+                    <br></br>
+                    <h3 className='text-color-gold text-start'>Several kinds of retainers recommended post-treatment.</h3>
+                    <ul class="lead text-start">
                         <li className="card-text lead ">Clear – invisible retainers/aligner</li>
                         <li className="card-text lead ">Hawley retainer</li>
                         <li className="card-text lead ">Permanent retainer securely bonded to the inner aspect of teeth.</li>
                     </ul>
 
+                </div>
             </div>
-        </div>
-        &nbsp;
-       
+            &nbsp;
 
-            
+
+
         </div>
     )
 }
 
 export default Orthodontics;
+
+// ******************************************************************* EOF ******************************************************************************

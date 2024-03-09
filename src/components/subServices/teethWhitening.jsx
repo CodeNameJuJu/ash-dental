@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "../../Main.css";
-import { Link, useLocation } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 function TeethWhitening() {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +29,7 @@ function TeethWhitening() {
                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}
                 >
-                   <i class="fa fa-bars" style={{'font-size': '25px'}}></i>
+                    <i class="fa fa-bars" style={{ 'font-size': '25px' }}></i>
                 </button>
 
                 <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
@@ -49,23 +48,23 @@ function TeethWhitening() {
                 <div class=" col-7 text-center">
                     <h1 class="gold text-start">Teeth Whitening</h1>
                     <h3 class="brown text-start ">Illuminate Your Radiance</h3>
-                    <br/>
+                    <br />
                     <p class="lead text-start">Our Teeth Whitening services are a symphony of artistry and science, meticulously designed to
                         unveil the true brilliance of your smile. We believe that a radiant smile is a personal expression, and
                         our approach goes beyond mere aesthetics. Each Teeth Whitening journey begins with a
                         personalized treatment plan, acknowledging your unique dental needs and preferences. Our
                         experienced dental professionals blend artistry with precision, ensuring stunning yet natural-looking
                         results.</p>
-                        <br/>
-                        <p class="lead text-start">Leveraging advanced technology and safe whitening agents, our procedures are crafted to remove
-                            stains and discoloration effectively, prioritizing your dental health and comfort.</p>
-                        <br/>
-                        <p class="lead text-start" >Our commitment to enduring and beautiful results, combined with the latest in whitening
-                        technology.</p> 
-                        <br/>
-                        <p class="lead text-start">Illuminate your unique radiance by scheduling a consultation and discovering the art of Teeth
-                            Whitening at ASH Dental.</p>
-                        <br/>
+                    <br />
+                    <p class="lead text-start">Leveraging advanced technology and safe whitening agents, our procedures are crafted to remove
+                        stains and discoloration effectively, prioritizing your dental health and comfort.</p>
+                    <br />
+                    <p class="lead text-start" >Our commitment to enduring and beautiful results, combined with the latest in whitening
+                        technology.</p>
+                    <br />
+                    <p class="lead text-start">Illuminate your unique radiance by scheduling a consultation and discovering the art of Teeth
+                        Whitening at ASH Dental.</p>
+                    <br />
 
                 </div>
 
@@ -78,7 +77,7 @@ function TeethWhitening() {
             </div>
 
             <br>
-                
+
             </br>
             &nbsp;
         </div>
@@ -86,3 +85,5 @@ function TeethWhitening() {
 }
 
 export default TeethWhitening;
+
+// ******************************************************************* EOF ******************************************************************************

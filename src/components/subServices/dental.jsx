@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "../../Main.css";
-import { Link, useLocation } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 function Dental() {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +30,7 @@ function Dental() {
                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}
                 >
-                    <i class="fa fa-bars" style={{'font-size': '25px'}}></i>
+                    <i class="fa fa-bars" style={{ 'font-size': '25px' }}></i>
                 </button>
 
                 <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
@@ -89,3 +88,4 @@ function Dental() {
 
 export default Dental;
 
+// ******************************************************************* EOF ******************************************************************************

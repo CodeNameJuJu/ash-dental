@@ -1,39 +1,44 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import '../Main.css';
 
 /* Component for displaying technology details */
 function Tech({ name, image, desc, desc2, desc3 }) {
     return (
-        <div className='row ms-0 ps-0 mb-4 pb-4'>
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '350px', width: '400px' }} />
-            <div className='col-md-8 col-sm-12'>
-                <section className='pb-1'>
-                    <h3 className='text-color-gold text-start'>{name}</h3>
-                </section>
-                <p className="lead text-start">{desc}</p>
-                <br />
-                {desc2 && <p className="lead text-start">{desc2}</p>}
-                <br />
-                {desc3 && <p className="lead text-start">{desc3}</p>}
+        <LazyLoad height={200} once>
+            <div className='row ms-0 ps-0 mb-4 pb-4'>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '350px', width: '400px' }} />
+                <div className='col-md-8 col-sm-12'>
+                    <section className='pb-1'>
+                        <h3 className='text-color-gold text-start'>{name}</h3>
+                    </section>
+                    <p className="lead text-start">{desc}</p>
+                    <br />
+                    {desc2 && <p className="lead text-start">{desc2}</p>}
+                    <br />
+                    {desc3 && <p className="lead text-start">{desc3}</p>}
+                </div>
             </div>
-        </div>
+        </LazyLoad>
     );
 }
 
 /* Component for displaying technology details */
 function Tech2({ name, image, desc, desc2 }) {
     return (
-        <div className='row ms-0 ps-0 mb-4 pb-4'>
-            <div className='col-md-8 col-sm-12'>
-                <section className='pb-1'>
-                    <h3 className='text-color-gold text-start'>{name}</h3>
-                </section>
-                <p className="lead text-start">{desc}</p>
-                <br />
-                {desc2 && <p className="lead text-start">{desc2}</p>}
+        <LazyLoad height={200} once>
+            <div className='row ms-0 ps-0 mb-4 pb-4'>
+                <div className='col-md-8 col-sm-12'>
+                    <section className='pb-1'>
+                        <h3 className='text-color-gold text-start'>{name}</h3>
+                    </section>
+                    <p className="lead text-start">{desc}</p>
+                    <br />
+                    {desc2 && <p className="lead text-start">{desc2}</p>}
+                </div>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '350px', width: '400px' }} />
             </div>
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '350px', width: '400px' }} />
-        </div>
+        </LazyLoad>
     );
 }
 
@@ -143,7 +148,6 @@ function Technology() {
                 <br />
                 <br />
                 <h1 className='text-color-gold text-center'>Technology at ASH Dental</h1>
-
                 <h3 className='text-color-gold mb-2 text-center brown'>Elevating your Dental Experience</h3>
                 <br />
                 <br />
@@ -162,12 +166,12 @@ function Technology() {
                 ))}
             </div>
             <div className='mb-4 pb-4 text-center'>
-                <h3  className="gold card-title">
+                <h3 className="gold card-title">
                     Explore the future of dentistry at ASH Dental, where technology and personalized care converge to create smiles that reflect the pinnacle of dental excellence.
                 </h3>
                 <br />
                 <div>
-                    <h3  className="gold card-title">
+                    <h3 className="gold card-title">
                         Contact us to schedule a consultation and discover the transformative impact of advanced dental technology on your oral health journey.
                     </h3>
                 </div>
@@ -179,3 +183,5 @@ function Technology() {
 }
 
 export default Technology;
+
+// ******************************************************************* EOF ******************************************************************************

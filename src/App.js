@@ -17,8 +17,6 @@ import GeneralDentistry from  "../src/components/subServices/generalDentistry";
 import Emergencies from  "../src/components/subServices/emergencies";
 import Dental from  "../src/components/subServices/dental";
 import Crowns from  "../src/components/subServices/crowns";
-import cosmeticDentistry from  "../src/components/subServices/teethWhitening";
-
 
 function App() {
   return (
@@ -40,7 +38,6 @@ function App() {
           <Route path="/orthodontics" element={<Orthodontics />} />
           <Route path="/generalDentistry" element={<GeneralDentistry />} />
           <Route path="/emergencies" element={<Emergencies />} />
-          
         </Routes>
         <Footer />
       </BrowserRouter>
@@ -49,3 +46,5 @@ function App() {
 }
 
 export default App;
+
+// ******************************************************************* EOF ******************************************************************************

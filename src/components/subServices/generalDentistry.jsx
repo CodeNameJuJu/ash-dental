@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "../../Main.css";
-import { Link, useLocation } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 function GeneralDentistry() {
 
@@ -32,7 +31,7 @@ function GeneralDentistry() {
                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}
                 >
-                    <i class="fa fa-bars" style={{'font-size': '25px'}}></i>
+                    <i class="fa fa-bars" style={{ 'font-size': '25px' }}></i>
                 </button>
 
                 <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
@@ -138,45 +137,22 @@ function GeneralDentistry() {
                 <br></br>
                 &nbsp;
                 <br></br>
-                
+
                 <h3 class="brown text-start">Mouthguards and Nightguards:</h3>
                 <p class="lead text-start"> Customized mouthguards and nightguards provide protection
                     against teeth grinding and sports-related injuries.
                 </p>
             </div>
 
-                {/* <div class="crown-container">
-                    <div class="crown-inner-container">
-                        <div class="crown-text-container">
-                            <h2 class="brown">Emergency Dental Care:</h2>
-                            <p class="lead text-start center ">
-                            We understand that dental emergencies can happen unexpectedly, causing
-                            discomfort and anxiety. Our dedicated Emergency Dental Help services are designed to provide swift
-                            and effective care when you need it the most.
-                            </p>
-                            <p class="lead text-start">Whether you&#39;re dealing with a sudden toothache, a
-                                broken tooth, or any other urgent dental issue, our skilled professionals are here to alleviate your
-                                pain and address your concerns promptly. You deserve focused care during those critical moments.
-                            </p>
-                            &nbsp;
-                            &nbsp;
-                        
-                        </div>
-                        <div class="crown-image-container">
-                            <img src="/Images/FacesCloseUpsPortrait/2.png" alt="Image description"></img>
-                        </div>
-                    </div>
-                    
-                </div> */}
-                &nbsp;
-                
-                <div class="row serv-top text-center">
+            &nbsp;
+
+            <div class="row serv-top text-center">
                 <h3 class="brown text-start" >Wisdom Teeth Management</h3>
                 <p class="lead text-start"> Our specialized care for wisdom teeth ensures their removal is as comfortable and efficient as
-                            possible. ASH Dental&#39;s commitment to acknowledging patient needs and concerns, along with a
-                            patient-first approach, is evident in our approach to wisdom teeth management. Comfort during the
-                            procedure are not just an expectation; they are a commitment we uphold throughout your dental
-                            journey with us. 
+                    possible. ASH Dental&#39;s commitment to acknowledging patient needs and concerns, along with a
+                    patient-first approach, is evident in our approach to wisdom teeth management. Comfort during the
+                    procedure are not just an expectation; they are a commitment we uphold throughout your dental
+                    journey with us.
                 </p>
                 <br></br>
                 &nbsp;
@@ -187,7 +163,7 @@ function GeneralDentistry() {
                     treatment plans extends to our denture services. Bid farewell to loose dentures; with cutting-edge
                     technology, you can now enjoy peace of mind by securing your dentures with implants.
                 </p>
-                </div>
+            </div>
 
             <br></br>
         </div>
@@ -195,3 +171,5 @@ function GeneralDentistry() {
 }
 
 export default GeneralDentistry;
+
+// ******************************************************************* EOF ******************************************************************************

@@ -1,4 +1,3 @@
-// Modal.js
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
@@ -73,7 +72,7 @@ function Modal({ showModal, closeModal }) {
                                 <br />
                                 <br />
                                 <div className="row">
-                                    <div className="mb-3 text-start"> {/* Add spacing to the contact details */}
+                                    <div className="mb-3 text-start">
                                         <p className="text-color mb-1">
                                             <MDBIcon icon="phone" className="me-3" /> (012) 111 1715
                                         </p>
@@ -108,3 +107,5 @@ function Modal({ showModal, closeModal }) {
 }
 
 export default Modal;
+
+// ******************************************************************* EOF ******************************************************************************

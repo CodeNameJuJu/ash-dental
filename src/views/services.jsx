@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../Main.css';
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Modal from '../components/modal';
 
 function Services() {
-
 
     const [isOpen, setIsOpen] = useState(false);
     const [showModal, setShowModal] = useState(false);
@@ -12,7 +11,6 @@ function Services() {
     function toggleNavbar() {
         setIsOpen(!isOpen);
     }
-
 
     function Navigate({ name, path }) {
         return (
@@ -27,7 +25,7 @@ function Services() {
     };
     const closeModal = () => {
         setShowModal(false);
-        if (window.innerWidth <= 900) { // Check if mobile view
+        if (window.innerWidth <= 900) {
             setIsOpen(false);
         }
     };
@@ -43,12 +41,10 @@ function Services() {
                     aria-controls="navbarNav"
                     aria-expanded={isOpen ? 'true' : 'false'} // Update aria-expanded for accessibility
                     aria-label="Toggle navigation"
-
                     onClick={toggleNavbar}
                 >
                     <i class="fa fa-bars gold" style={{ 'font-size': '25px' }}></i>
                 </button>
-
                 <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="sub-nav-item">
@@ -61,8 +57,6 @@ function Services() {
                     </ul>
                 </div>
             </nav>
-
-
             <div className='pt-4 mt-3 pb-3 ps-4 ms-4 pe-4 me-4'>
                 <div className='text-center ps-4 ms-4 pe-4 me-4' >
                     <h1 className='pt-4 mt-3 text-color-gold'>Advanced Cosmetic Dentistry</h1>
@@ -87,27 +81,13 @@ function Services() {
                             dentistry experience.
                         </p>
                     </div>
-
                 </div>
-                {/* 
-                <div class="col-4">
-                    <div class="serv2-image-block">
-                        <img class="serv2-image" src="/Images/Dental/5.png" alt="2 description"></img>
-                        <div class="serv2-overlay-block"></div>
-                    </div>
-                </div> */}
             </div>
-
-
-
-
-
             <div class="serv3-container text-center">
                 <h1 class=" gold">Services </h1>
                 <h2 class=" brown"> Crafting Radiant Smiles</h2>
                 <div class="serv3-container">
                     <div class="serv3-image-grid">
-
                         <Link to="/teethWhitening" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
@@ -119,7 +99,6 @@ function Services() {
                                 </div>
                             </div>
                         </Link>
-
                         <Link to="/crowns" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
@@ -154,7 +133,6 @@ function Services() {
                                 </div>
                             </div>
                         </Link>
-
                         <Link to="/orthodontics" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
@@ -177,7 +155,6 @@ function Services() {
                                 </div>
                             </div>
                         </Link>
-
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
                             <img class="serv3-img" src="/Images/FacesCloseUpsPortrait/Gum.png" alt="1"></img>
@@ -187,8 +164,6 @@ function Services() {
                                     enhances the appearance of your teeth, especially beneficial for those with a gummy smile.</p>
                             </div>
                         </div>
-
-
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
                             <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/5.png" alt="1"></img>
@@ -199,8 +174,6 @@ function Services() {
                                     preferences.</p>
                             </div>
                         </div>
-
-
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
                             <img class="serv3-img" src="/Images/ServicesLandscape/MouthReconstruction.png" alt="1"></img>
@@ -211,8 +184,6 @@ function Services() {
                                     cosmetic and restorative procedures.</p>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -237,16 +208,12 @@ function Services() {
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-
-
-            <br></br>
-
+            <br/>
         </div>
     )
 }
 
 export default Services;
+
+// ******************************************************************* EOF ******************************************************************************
