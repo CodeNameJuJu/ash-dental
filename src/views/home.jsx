@@ -215,8 +215,9 @@ export const Home = () => {
                             <a href="/about"><button class="crown-button" >Click here to read more</button></a>
             
             </div>
+            <br></br>
            
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.jpg" alt="Patient Centric Excellence" style={{ height: '70%' }} />
+            <img className='col-md-4 col-sm-12 mb-md-0 mb-3 pt-5' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.jpg" alt="Patient Centric Excellence" style={{ height: '70%' }} />
         </div>
         </div>
     )
