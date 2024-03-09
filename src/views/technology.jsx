@@ -47,7 +47,7 @@ function Technology() {
             desc: "At ASH Dental, we redefine the dental experience by seamlessly integrating everyday technology to elevate your journey with us. Immerse yourself in a personalized atmosphere with Sonos Speakers, where you have the power to curate your own playlist, turning your dental visit into a musical escape.",
             desc2: "Our ceiling-mounted TVs offer a visual retreat, transporting you to another place while receiving treatment. Embracing modernity, we've gone paperless with iPads for efficient and eco-friendly filing. We believe that your time with us should be more than a dental appointment – it's a guest experience.",
             desc3: "Say goodbye to the traditional dental visit dread; at ASH Dental, you're not just a number; you're our valued guest on a uniquely tailored journey.",
-            image: "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-358.jpg"
+            image: "../Images/Practice/High/ASH DENTAL_content_MARCH'24-358.jpg"
         },
         {
             name: "Fläsh Teeth Whitening",
