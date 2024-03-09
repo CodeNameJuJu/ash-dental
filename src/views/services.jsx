@@ -34,7 +34,6 @@ function Services() {
 
     return (
         <div>
-            <hr ></hr>
             <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
                     className="navbar-toggler"
@@ -62,54 +61,6 @@ function Services() {
                     </ul>
                 </div>
             </nav>
-            {/* <section class="ban_sec">
-                <div class="banner-1">
-                    
-                    <div class="ban_img">
-                        <img src="/Images/ServicesLandscape/banner2.jpg" alt="banner" border="0"></img>
-                        <div class="ban_text">
-                            <strong>
-                                <span class="gold">Meeting current</span><br></br> needs now
-                            </strong>
-                            <p class="g">Your Gateway to Healthy, Happy Smiles: Discover Ash Dental.</p>
-                            <a href="#">Lend a hand</a>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
-            {/* <div class="background1">
-                <div >
-                    <div class="scontainer">
-                        <h3 class="title">Text fadeIn bottom</h3>
-                        <div class="content">
-                            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
-                                <div class="content-overlay"></div>
-                                <img class="content-image" src="https://source.unsplash.com/HkTMcmlMOUQ" alt=""></img>
-                                <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title gold">Teeth Whitening:</h3>
-                                    <p class="content-text">Illuminate your smile with our professional teeth whitening procedures. We specialize in removing
-                                        stains and discoloration, restoring the natural brilliance of your teeth. LINK.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
-            {/* <div>
-                <div class="wrapper">
-                    <div class="serv-content-block">
-                        <h2 class="text-color-white">Teeth Whitening:</h2>
-                        <p>Illuminate your smile with our professional teeth whitening procedures. We specialize in removing
-                            stains and discoloration, restoring the natural brilliance of your teeth.</p>
-                    </div>
-                    <div class="serv-overlay-block"></div>
-                    <div class="serv-image-block">
-                        <img class="serv-image" src="/Images/Dental/2.png" alt="description"></img>
-                    </div>
-                </div>
-            </div> */}
 
 
             <div className='pt-4 mt-3 pb-3 ps-4 ms-4 pe-4 me-4'>

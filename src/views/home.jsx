@@ -10,7 +10,7 @@ export const Home = () => {
                 <div class="banner-1">
                     {/* class="container" */}
                     <div class="ban_img">
-                        <img src="/Images/banner1.jpg" alt="banner" border="0" style={{ height: '600px'}}></img>
+                        <img src="/Images/banner1.jpg" alt="banner" border="0" style={{ maxHeight: '600px'}}></img>
                     </div>
                 </div>
             </section>
