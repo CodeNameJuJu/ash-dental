@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 body {
-  margin: 0;
+  width: 100%;
+  max-width: 100%; /* Adjust the value as per your preference */
+  margin: 0 auto; /* Center the body */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff;
@@ -1553,23 +1556,27 @@ ul {
   margin-bottom: 50px;
 }
 
-/*  ** ** **  Services  ** ** ** */
-
+.ban_sec {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
 
 .ban_img {
-
   position: relative;
+  width: 100%;
 }
 
 .ban_img img {
-  
+  max-width: 100%; /* Set the maximum width of the image */
   height: auto;
 }
-@media only screen and (max-width: 480px) {
-  .ban_img img {
-    object-fit: cover;  /* Optional cropping on mobile */
-  }
 
+@media screen and (max-width: 768px) {
+  .ban_img img {
+      max-width: 100%;
+  }
 }
 
 .ban_text {

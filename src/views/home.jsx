@@ -5,14 +5,8 @@ import { Link } from 'react-router-dom'
 export const Home = () => {
 
     return (
-        <div>
-            <section class="ban_sec">
-                <div class="banner-1">
-                    <div class="ban_img">
-                        <img src="/Images/banner1.jpg" alt="banner" border="0" style={{ maxHeight: '600px' }}></img>
-                    </div>
-                </div>
-            </section>
+        <div className="container-fluid p-0">
+                <img src="/Images/banner1.jpg" alt="banner" className="img-fluid" style={{ maxHeight: '600px' }} />
             <div class="serv-top">
                 <div class="text-center">
                     <h1 class="gold ">Welcome to ASH Dental</h1>
