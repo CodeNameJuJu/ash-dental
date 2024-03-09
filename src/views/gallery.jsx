@@ -17,27 +17,27 @@ function Gallery() {
                 <div className="row mb-5 pb-5">
                     {/* Image 1 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-378.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-378.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 2 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-69.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-69.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 3 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-370.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-370.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 4 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-358.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-358.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 5 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-3691.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-3691.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 6 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-38.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-38.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                 </div>
             </div>
@@ -48,43 +48,43 @@ function Gallery() {
                 <div className="row mb-5 pb-5">
                     {/* Image 1 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-43.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-43.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 2 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-228.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-228.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 3 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-223.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-223.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 4 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-231.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-231.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 5 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-267.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-267.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 6 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1061.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1061.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 7 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-31.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-31.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 8 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-18.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-18.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 9 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-44.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 10 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-83.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/Practice/High/ASH DENTAL_content_MARCH'24-83.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                 </div>
             </div>
@@ -95,19 +95,19 @@ function Gallery() {
                 <div className="row">
                     {/* Image 1 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/FacesCloseUpsLandscape/tannie1.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/FacesCloseUpsLandscape/tannie1.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 2 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/FacesCloseUpsLandscape/tannie2.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/FacesCloseUpsLandscape/tannie2.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 3 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/FacesCloseUpsLandscape/mond1.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/FacesCloseUpsLandscape/mond1.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                     {/* Image 4 */}
                     <div className="col-lg-6 mb-3">
-                        <img src="../Images/FacesCloseUpsLandscape/tannie3.jpg" className="img-fluid" alt="Placeholder" />
+                        <img src="../Images/FacesCloseUpsLandscape/tannie3.jpg" className="img-fluid gallery-image" alt="Placeholder" />
                     </div>
                 </div>
             </div>
