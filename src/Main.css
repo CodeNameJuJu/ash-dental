@@ -52,9 +52,6 @@ li {
   }
 }
 
-
-
-
 @media screen and (max-width: 1700px) {
   .card-component h3 {
     font-size: 0.75rem;
