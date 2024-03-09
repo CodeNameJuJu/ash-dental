@@ -144,7 +144,10 @@ export const Home = () => {
                         strive to be pioneers in cosmetic and general dentistry, setting new standards for precision, artistry,
                     </p>
                     <br />
-                    <a href="/gallery"><button class="crown-button" >View Gallery</button></a>
+                    <Link className="active" to="/gallery" title="View Gallery">
+                        <button class="crown-button" >View Gallery</button>
+                    </Link>
+                    
                 </div>
             </div>
             &nbsp;
@@ -173,7 +176,10 @@ export const Home = () => {
                         ensure that you receive the highest quality care.
                     </p>
                     <br />
-                    <a href="/technology"><button class="crown-button" >Read More About Technology</button></a>
+                    <Link className="active" to="/technology" title="Technology">
+                    <button class="crown-button" >Read More About Technology</button>
+                    </Link>
+                
                 </div>
             </div>
             &nbsp;
@@ -187,7 +193,9 @@ export const Home = () => {
                         smiles that reflect the true beauty within each person.
                     </p>
                     <br></br>
-                    <a href="/about"><button class="crown-button" >Click here to read more</button></a>
+                    <Link className="active" to="/about" title="About Us">
+                    <button class="crown-button" >Click here to read more</button>
+                    </Link>
                 </div>
                 <br></br>
                 <img className='col-md-4 col-sm-12 mb-md-0 mb-3 pt-5' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.jpg" alt="Patient Centric Excellence" style={{ height: '70%' }} />
