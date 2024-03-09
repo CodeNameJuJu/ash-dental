@@ -38,13 +38,13 @@ function Navbar() {
     return (
         <nav className="navbar navbar-light bg-color navbar-expand-lg sticky-top " id="myTopnav">
             <div className="container-fluid">
-                <Link className="navbar-brand nav-link shine active" to="/" title="ASH DENTAL">
-                    <img style={{ maxHeight: '60px', Width: '250px' }} src="/Images/primary logo/Ash Dental logo-01.png" alt="Ash Dental Logo"
-                        className="img-fluid" />
+                <Link className="active" to="/" title="ASH DENTAL">
+                    <img style={{ maxHeight: '60px', Width: '150px' }} src="/Images/primary logo/Ash Dental logo-01.png" alt="Ash Dental Logo"
+                         />
                 </Link>
               {/* !!!! Google bard Mobile nav Respvonsiveness */}
                 <button
-                    className="navbar-toggler"
+                    className="navbar-toggler ms-auto"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
@@ -77,13 +77,14 @@ function Navbar() {
                             <Navigate name={'Contact'} path={'/contact'} />
                         </li>
                     </ul>
-                </div>
-                <div className="">
+                    <div className="d-flex ml-auto">
                     <button type="button" className="btn btn-bg btn-link" onClick={openModal} title="Documents">
                         Book an appointment
                     </button>
                     <Modal showModal={showModal} closeModal={closeModal} />
                 </div>
+                </div>
+                
             </div>
         </nav>
     );
