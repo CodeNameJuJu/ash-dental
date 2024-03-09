@@ -2,6 +2,7 @@ import React from 'react';
 import '../Main.css';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link, useLocation } from 'react-router-dom';
 
 function Footer() {
 
@@ -14,17 +15,35 @@ function Footer() {
                             <MDBRow className='mt-3'>
                                 <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
                                     <br></br>
-                                    <ul> <a href='/' rel="noopener noreferrer" title='Page Link' class="a2">Home</a></ul>
+                                    <ul>
+                                        <Link class="a2" to="/" title="Home">
+                                            Home
+                                        </Link></ul>
                                     <br></br>
-                                    <ul><a href='/services' rel="noopener noreferrer" title='Page Link' class="a2">Services</a></ul>
+                                    <ul>
+                                        <Link class="a2" to="/services" title="Services">
+                                            Services
+                                        </Link></ul>
                                     <br></br>
-                                    <ul> <a href='/about' rel="noopener noreferrer" title='Page Link' class="a2">About Us</a></ul>
+                                    <ul>
+                                        <Link class="a2" to="/about" title="About Us">
+                                            About Us
+                                        </Link></ul>
                                     <br></br>
-                                    <ul> <a href='/technology' rel="noopener noreferrer" title='Page Link' class="a2">Technology</a></ul>
+                                    <ul>
+                                        <Link class="a2" to="/technology" title="Technology">
+                                            Technology
+                                        </Link></ul>
                                     <br></br>
-                                    <ul> <a href='/gallery' rel="noopener noreferrer" title='Page Link' class="a2">Gallery</a></ul>
+                                    <ul>
+                                        <Link class="a2" to="/gallery" title="Gallery">
+                                            Gallery
+                                        </Link></ul>
                                     <br></br>
-                                    <ul> <a href='/contact' rel="noopener noreferrer" title='Page Link' class="a2">Contact Us</a></ul>
+                                    <ul>
+                                        <Link class="a2" to="/contact" title="Contact Us">
+                                            Contact Us
+                                        </Link></ul>
                                 </MDBCol>
                                 <MDBCol md="3" lg="2" xl="2.5" className='mx-auto mb-4'>
                                     <br></br>
@@ -42,36 +61,42 @@ function Footer() {
                                 </MDBCol>
                                 <MDBCol md="3" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
                                     <br></br>
-                                    <p>
+                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
+                                    <p >
                                         <MDBIcon icon="home" className="me-2 white" />
-                                        <a class="a2" href='https://www.google.com/maps/place/iDentical+Teeth+./@-25.8332825,28.1828401,17z/data=!3m1!4b1!4m6!3m5!1s0x1e95657a4c6e0441:0xb4df28d0e43cd7b4!8m2!3d-25.8332874!4d28.185415!16s%2Fg%2F11hyyg8vjl?entry=ttu' target="_blank" rel="noopener noreferrer" title='Address Link'>
-                                            Ash Dental, Suite 3&4,   </a>
+                                        Ash Dental, Suite 3&4,
                                     </p>
+                                    </Link>
 
-                                    <p>
-                                        <MDBIcon className="me-4 white" />
-                                        <a class="a2" href='https://www.google.com/maps/place/iDentical+Teeth+./@-25.8332825,28.1828401,17z/data=!3m1!4b1!4m6!3m5!1s0x1e95657a4c6e0441:0xb4df28d0e43cd7b4!8m2!3d-25.8332874!4d28.185415!16s%2Fg%2F11hyyg8vjl?entry=ttu' target="_blank" rel="noopener noreferrer" title='Address Link'>
-                                            Ash Medical Suites 177 </a>
+                                 
+                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
+                                    <p >
+                                        <MDBIcon className="me-4 white " />
+                                        Ash Medical Suites 177,
                                     </p>
-                                    <p>
-                                        <MDBIcon className="me-4 white" />
-                                        <a class="a2" href='https://www.google.com/maps/place/iDentical+Teeth+./@-25.8332825,28.1828401,17z/data=!3m1!4b1!4m6!3m5!1s0x1e95657a4c6e0441:0xb4df28d0e43cd7b4!8m2!3d-25.8332874!4d28.185415!16s%2Fg%2F11hyyg8vjl?entry=ttu' target="_blank" rel="noopener noreferrer" title='Address Link'>
-                                            Garsfontein  Road </a>
+                                    </Link>
+                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
+                                    <p >
+                                        <MDBIcon className="me-4 white " />
+                                        Garsfontein  Road
                                     </p>
-                                    <p>
-                                        <MDBIcon className="me-4 white" />
-                                        <a class="a2" href='https://www.google.com/maps/place/iDentical+Teeth+./@-25.8332825,28.1828401,17z/data=!3m1!4b1!4m6!3m5!1s0x1e95657a4c6e0441:0xb4df28d0e43cd7b4!8m2!3d-25.8332874!4d28.185415!16s%2Fg%2F11hyyg8vjl?entry=ttu' target="_blank" rel="noopener noreferrer" title='Address Link'>
-                                            Ashlea Gardens, </a>
+                                    </Link>
+                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
+                                    <p >
+                                        <MDBIcon className="me-4 white " />
+                                        Ashlea Gardens,
                                     </p>
-                                    <p>
-                                        <MDBIcon className="me-4 white" />
-                                        <a class="a2" href='https://www.google.com/maps/place/iDentical+Teeth+./@-25.8332825,28.1828401,17z/data=!3m1!4b1!4m6!3m5!1s0x1e95657a4c6e0441:0xb4df28d0e43cd7b4!8m2!3d-25.8332874!4d28.185415!16s%2Fg%2F11hyyg8vjl?entry=ttu' target="_blank" rel="noopener noreferrer" title='Address Link'>
-                                            Pretoria 0081</a>
+                                    </Link>
+                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
+                                    <p >
+                                        <MDBIcon className="me-4 white " />
+                                        Pretoria 0081
                                     </p>
+                                    </Link>
                                     <br></br>
                                     <p>
                                         <MDBIcon icon="envelope" className="me-3 white" />
-                                        <a class="a2" href='mailto:info@identicalteeth.co.za' target="_blank" rel="noopener noreferrer" title='Email Link'>info@ashdental.co.za</a>
+                                        <a class="a2" href='mailto:info@ashdental.co.za' target="_blank" rel="noopener noreferrer" title='Email Link'>info@ashdental.co.za</a>
                                     </p>
 
                                     <p>
@@ -86,14 +111,17 @@ function Footer() {
                                 </MDBCol>
                                 <MDBCol md="2" lg="2" xl="2" className='mb-4 mt-3' style={{ 'text-align': 'center' }}>
                                     <div>
-                                        <a href='https://www.facebook.com/profile.php?id=61556083561310' target="_blank" rel="noopener noreferrer" className='me-4 text-reset white'
-                                            style={{ 'font-size': '25px', 'padding-right': '10px', 'text-align': 'center' }}>
-                                            <MDBIcon fab icon="facebook-f" />
-                                        </a>
-                                        <a href='https://www.instagram.com/ashdental_pretoria/' target="_blank" rel="noopener noreferrer" className='me-4 text-reset white'
-                                            style={{ 'font-size': '25px', 'padding-left': '10px' }}>
-                                            <MDBIcon fab icon="instagram" />
-                                        </a>
+                                    <Link to="https://www.facebook.com/profile.php?id=61556083561310" style={{ 'font-size': '25px', 'padding-right': '10px', 'text-align': 'center' }} 
+                                        className='me-4 text-reset white'>
+                                    
+                                    <MDBIcon fab icon="facebook-f" />
+                                    </Link>
+                                    <Link to="https://www.instagram.com/ashdental_pretoria/" style={{ 'font-size': '25px', 'padding-right': '10px', 'text-align': 'center' }} 
+                                        className='me-4 text-reset white'>
+                                    
+                                    <MDBIcon fab icon="instagram" />
+                                    </Link>
+
 
                                     </div>
                                 </MDBCol>
