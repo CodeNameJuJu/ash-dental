@@ -4,7 +4,7 @@ import '../Main.css';
 
 function Gallery() {
     return (
-        <div className="text-center">
+        <div className="text-center container">
             <h1 className='text-color-gold mt-4 pt-4'>Gallery</h1>
             <p className="lead text-start ms-2 mt-3 pt-3 mb-4 pb-4">
                 Explore our gallery and witness the transformative journeys we've embarked on with our patients. Each image tells a story of precision, artistry,
