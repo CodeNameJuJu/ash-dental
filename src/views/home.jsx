@@ -1,12 +1,12 @@
 import '../Main.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from 'react-router-dom'
 
 export const Home = () => {
 
     return (
         <div className="container-fluid p-0">
-                <img src="/Images/banner1.jpg" alt="banner" className="img-fluid" style={{ maxHeight: '600px' }} />
+         <link rel="preload" as="image" href="/Images/banner1.jpg" />
+                <img src="/Images/banner1.jpg" alt="Ash Dental" className="img-fluid" style={{ maxHeight: '600px' }} />
             <div class="serv-top">
                 <div class="text-center">
                     <h1 class="gold ">Welcome to ASH Dental</h1>
@@ -15,7 +15,7 @@ export const Home = () => {
                         We seamlessly blend state-of-the-art technology with a relaxing environment, ensuring a personalized experience from the outset.
                     </p>
                     <br></br>
-                    <p class="lead ">Our commitment to understanding your unique needs unfolds in a consultation room, where together, we craft the best plan tailored
+                    <p class="lead">Our commitment to understanding your unique needs unfolds in a consultation room, where together, we craft the best plan tailored
                         to your individual requirements.
                         Transitioning from consultation to the dental treatment chair, we bring this personalized planning to life,
                         ensuring each step of your dental journey is marked by precision, comfort, and transformative care.
@@ -30,7 +30,7 @@ export const Home = () => {
                         <Link to="/teethWhitening" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/1.png" alt="1"></img>
+                                <img class="serv3-img" src="/Images/1_opt.png" alt="Teeth Whitening"></img>
                                 <div class="serv3-content-details fadeIn-bottom">
                                     <h2 class="content-title white">Teeth Whitening</h2>
                                     <p class="content-text white">Illuminate your smile with our professional teeth whitening procedures. We specialize in removing
@@ -41,7 +41,7 @@ export const Home = () => {
                         <Link to="/crowns" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/4.png" alt="1"></img>
+                                <img class="serv3-img" src="/Images/5_opt.png" alt="Veneers"></img>
                                 <div class="serv3-content-details fadeIn-bottom">
                                     <h2 class="content-title white">Veneers</h2>
                                     <p class="content-text white">Transform your smile with our custom-made porcelain veneers. These thin shells are expertly
@@ -52,7 +52,7 @@ export const Home = () => {
                         <Link to="/dental" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/8.png" alt="1"></img>
+                                <img class="serv3-img" src="/Images/8_opt.png" alt="Dental Bonding"></img>
                                 <div class="serv3-content-details fadeIn-bottom">
                                     <h2 class="content-title white">Dental Bonding</h2>
                                     <p class="content-text white" >Address chipped or discoloured teeth with our dental bonding services. Using tooth-coloured resin,
@@ -63,7 +63,7 @@ export const Home = () => {
                         <Link to="/crowns" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/ServicesLandscape/Crowns2.png" alt="1"></img>
+                                <img class="serv3-img" src="/Images/ServicesLandscape/Crowns2.png" alt="Dental Crowns"></img>
                                 <div class="serv3-content-details fadeIn-bottom">
                                     <h2 class="content-title white">Dental Crowns</h2>
                                     <p class="content-text white">Revitalize damaged or discoloured teeth with our dental crowns made out of emax- and sagemax
@@ -75,7 +75,7 @@ export const Home = () => {
                         <Link to="/orthodontics" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/ServicesLandscape/Ortho.png" alt="1"></img>
+                                <img class="serv3-img" src="/Images/ServicesLandscape/Ortho.png" alt="Orthodontics"></img>
                                 <div class="serv3-content-details fadeIn-bottom">
                                     <h2 class="content-title white">Orthodontics</h2>
                                     <p class="content-text white">Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear
@@ -86,7 +86,7 @@ export const Home = () => {
                         <Link to="/dental" >
                             <div class="serv3-image-block">
                                 <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-6511.jpg" alt="1"></img>
+                                <img class="serv3-img" src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-6511.jpg" alt="Dental Implants"></img>
                                 <div class="serv3-content-details fadeIn-bottom">
                                     <h2 class="content-title white">Dental Implants</h2>
                                     <p class="content-text white">Experience a transformative smile with our dental implant solutions. Beyond restoration, implants
@@ -96,7 +96,7 @@ export const Home = () => {
                         </Link>
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
-                            <img class="serv3-img" src="/Images/FacesCloseUpsPortrait/Gum.png" alt="1"></img>
+                            <img class="serv3-img" src="/Images/FacesCloseUpsPortrait/Gum.png" alt="Gum Contouring"></img>
                             <div class="serv3-content-details fadeIn-bottom">
                                 <h2 class="content-title white">Gum Contouring</h2>
                                 <p class="content-text white">Refine your smile with our gum contouring procedures. Also known as gum reshaping, this service
@@ -105,7 +105,7 @@ export const Home = () => {
                         </div>
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
-                            <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/5.png" alt="1"></img>
+                            <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/5.png" alt="Smile Makeovers"></img>
                             <div class="serv3-content-details fadeIn-bottom">
                                 <h2 class="content-title white">Smile Makeovers</h2>
                                 <p class="content-text white">Embark on a personalized journey with our Smile Makeovers. These comprehensive plans combine
@@ -115,7 +115,7 @@ export const Home = () => {
                         </div>
                         <div class="serv3-image-block">
                             <div class="serv3-content-overlay"></div>
-                            <img class="serv3-img" src="/Images/ServicesLandscape/MouthReconstruction.png" alt="1"></img>
+                            <img class="serv3-img" src="/Images/ServicesLandscape/MouthReconstruction.png" alt="Full-Mouth Reconstruction"></img>
                             <div class="serv3-content-details fadeIn-bottom">
                                 <h2 class="content-title white">Full-Mouth Reconstruction</h2>
                                 <p class="content-text white">Transform your entire oral landscape with our Full-Mouth Reconstruction services. This
@@ -135,7 +135,7 @@ export const Home = () => {
             </div>
             &nbsp;
             <div className='row'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/5.png" alt="Dental" style={{ height: '100%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/5.png" alt="Dental Dentistry" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>A Journey to Transformative Smiles</h2>
@@ -198,7 +198,7 @@ export const Home = () => {
                     </Link>
                 </div>
                 <br></br>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3 pt-5' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.jpg" alt="Patient Centric Excellence" style={{ height: '70%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3 pt-5' src="../Images/ASH_DENTAL_OPT.jpg" alt="Patient Centric Excellence" style={{ height: '70%' }} />
             </div>
         </div>
     )

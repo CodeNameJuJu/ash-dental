@@ -95,6 +95,14 @@ li {
   background-color: #ffffff; /* Add your desired background color */
 }
 
+/* Styles for iPhone (adjust screen size as needed) */
+@media only screen and (max-width: 768px) {
+  .navbar img {
+    max-height: 30px; /* Adjust height for iPhone */
+    width: 110px;   /* Adjust width for iPhone */
+  }
+}
+
 .navbar-second {
   position: sticky;
   top: 70px; /* Adjust according to the height of the first navbar */

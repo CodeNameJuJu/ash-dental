@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import '../Main.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Card({ name, image, bio, title, quali }) {
     return (
