@@ -37,8 +37,7 @@ function Navbar() {
         <nav className="navbar navbar-light bg-color navbar-expand-lg sticky-top " id="myTopnav">
             <div className="container-fluid">
                 <Link className="active" to="/" title="ASH DENTAL">
-                    <img style={{ maxHeight: '60px', Width: '150px' }} src="/Images/primary logo/Ash Dental logo-01.png" alt="Ash Dental Logo"
-                    />
+                    <img className="logo img-fluid" src="/Images/primary logo/Ash Dental logo-01.png" alt="Ash Dental Logo" />
                 </Link>
                 <button
                     className="navbar-toggler ms-auto"
@@ -50,7 +49,7 @@ function Navbar() {
                     aria-label="Toggle navigation"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    <i class="fa fa-bars gold" style={{ 'font-size': '25px' }}></i>
+                    <i className="fa fa-bars gold" style={{ 'fontSize': '25px' }}></i>
                 </button>
 
                 <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">

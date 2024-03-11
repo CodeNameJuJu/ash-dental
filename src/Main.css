@@ -2,9 +2,12 @@
 
 body {
   width: 100%;
-  max-width: 100%; /* Adjust the value as per your preference */
-  margin: 0 auto; /* Center the body */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  max-width: 100%;
+  /* Adjust the value as per your preference */
+  margin: 0 auto;
+  /* Center the body */
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff;
@@ -15,24 +18,28 @@ body {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600; /* Semi-bold */
+  font-weight: 600;
+  /* Semi-bold */
 }
 
 /* Second headings (H3) */
 h3 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 525; /* Medium */
+  font-weight: 525;
+  /* Medium */
 }
 
 /* Content / paragraphs (p) */
 p {
   font-family: 'Silk Serif';
-  font-weight: 400; /* Regular */
+  font-weight: 400;
+  /* Regular */
 }
 
 li {
   font-family: 'Silk Serif', serif;
-  font-weight: 520; /* Regular */
+  font-weight: 520;
+  /* Regular */
 }
 
 .smaller-text {
@@ -41,17 +48,44 @@ li {
 }
 
 .col-md-5 {
-  width: 30%; /* Make both columns take full width on smaller screens */
+  width: 30%;
+  /* Make both columns take full width on smaller screens */
+}
+
+.logo {
+  max-height: 60px;
+  /* Default height for mobile */
+  width: auto;
+}
+
+@media (min-width: 768px) {
+
+  /* Adjust the logo size for larger screens */
+  .logo {
+    max-height: 80px;
+  }
 }
 
 .gallery-image {
   max-width: 100%;
-  height: 450px;
+  max-height: 380px;
+}
+
+@media (max-width: 1700px) {
+  .gallery-image {
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .gallery-image {
+    max-height: 380px;
+  }
 }
 
 @media (max-width: 767px) {
   .gallery-image {
-    height: 100%;
+    max-height: 100%;
   }
 }
 
@@ -67,16 +101,20 @@ li {
   }
 
   .card-padding {
-    padding-top: 20px; /* Adjust padding for smaller screens */
+    padding-top: 20px;
+    /* Adjust padding for smaller screens */
   }
 
   .col-md-5 {
-    width: 45%; /* Make both columns take full width on smaller screens */
+    width: 45%;
+    /* Make both columns take full width on smaller screens */
   }
 
   .img-fluid {
-    max-width: 100%; /* Set max-width to 100% to make the image responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Set max-width to 100% to make the image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
   }
 
   .smaller-text {
@@ -84,29 +122,48 @@ li {
     /* Adjust font size for smaller screens */
   }
 }
+
 .serv3-clickable-wrapper {
-  cursor: pointer; /* Set cursor to pointer on hover */
+  cursor: pointer;
+  /* Set cursor to pointer on hover */
 }
 
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 8000; /* Ensure it appears above other content */
-  background-color: #ffffff; /* Add your desired background color */
+  z-index: 8000;
+  /* Ensure it appears above other content */
+  background-color: #ffffff;
+  /* Add your desired background color */
 }
 
 .navbar-second {
   position: sticky;
-  top: 70px; /* Adjust according to the height of the first navbar */
-  z-index: 1000; /* Ensure it appears above other content */
-  background-color: #ffffff; /* Add your desired background color */
+  top: 96px;
+  /* Adjust according to the height of the first navbar */
+  z-index: 1000;
+  /* Ensure it appears above other content */
+  background-color: #ffffff;
+  /* Add your desired background color */
 }
 
-.no-padding{
+@media screen and (max-width: 1700px) {
+  .navbar-second {
+    position: sticky;
+    top: 75px;
+    /* Adjust according to the height of the first navbar */
+    z-index: 1000;
+    /* Ensure it appears above other content */
+    background-color: #ffffff;
+    /* Add your desired background color */
+  }
+}
+
+.no-padding {
   padding: 0px !important;
 }
 
-.no-margins{
+.no-margins {
   margin-left: 0px !important;
 }
 
@@ -122,16 +179,20 @@ li {
   }
 
   .card-padding {
-    padding-top: 20px; /* Adjust padding for smaller screens */
+    padding-top: 20px;
+    /* Adjust padding for smaller screens */
   }
 
   .col-md-5 {
-    width: 60%; /* Make both columns take full width on smaller screens */
+    width: 60%;
+    /* Make both columns take full width on smaller screens */
   }
 
   .img-fluid {
-    max-width: 100%; /* Set max-width to 100% to make the image responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Set max-width to 100% to make the image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
   }
 
   .smaller-text {
@@ -152,16 +213,20 @@ li {
   }
 
   .card-padding {
-    padding-top: 20px; /* Adjust padding for smaller screens */
+    padding-top: 20px;
+    /* Adjust padding for smaller screens */
   }
 
   .col-md-5 {
-    width: 95%; /* Make both columns take full width on smaller screens */
+    width: 95%;
+    /* Make both columns take full width on smaller screens */
   }
 
   .img-fluid {
-    max-width: 100%; /* Set max-width to 100% to make the image responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Set max-width to 100% to make the image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
   }
 
   .smaller-text {
@@ -608,7 +673,7 @@ p {
 
 .container .card .imgContainer img {
   max-width: 100%;
-  
+
 }
 
 .container .card .content {
@@ -647,6 +712,7 @@ p {
 .text-color-gold {
   color: #B6A792;
 }
+
 /* juju here it affecst my other h2 heavily so made urs an ID lets chat about it <3 */
 .h2 {
   font-weight: bold;
@@ -784,30 +850,37 @@ p {
   .navbar-collapse {
     display: none;
   }
+
   .navbar-toggler {
     display: block;
     background-color: #c9c9c967;
     margin-left: 10px;
     border-color: #28292E !important;
-    color:#28292E !important;
+    color: #28292E !important;
   }
+
   .navbar-collapse.show {
     display: block;
   }
-  .sub-nav-item{
+
+  .sub-nav-item {
     margin-left: 10px;
 
   }
-  .navbar-light{
-    color:#28292E !important;
+
+  .navbar-light {
+    color: #28292E !important;
   }
 }
+
 .navbar-toggler {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem; /* Adjust padding as needed */
+  padding: 0.5rem;
+  /* Adjust padding as needed */
 }
+
 .sub-nav-item::after {
   content: '';
   display: block;
@@ -980,10 +1053,12 @@ p {
   gap: 20px;
   /* Spacing between images */
 }
+
 /* Media query for larger screens (e.g., desktops) */
 @media (min-width: 1024px) {
   .serv3-image-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns on desktop */
   }
 }
 
@@ -1134,13 +1209,18 @@ p {
   /* Target screens less than or equal to 768px wide */
 
   .col-7 {
-    flex: 1; /* Make text column take up more space */
+    flex: 1;
+    /* Make text column take up more space */
   }
+
   .col-5 {
-    width: 50%; /* Set a fixed width for the image column */
+    width: 50%;
+    /* Set a fixed width for the image column */
   }
+
   .serv2-dental {
-    box-sizing: content-box !important; /* Override if needed */
+    box-sizing: content-box !important;
+    /* Override if needed */
   }
 }
 
@@ -1569,13 +1649,14 @@ ul {
 }
 
 .ban_img img {
-  max-width: 100%; /* Set the maximum width of the image */
+  max-width: 100%;
+  /* Set the maximum width of the image */
   height: auto;
 }
 
 @media screen and (max-width: 768px) {
   .ban_img img {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -1705,21 +1786,27 @@ ul {
 .a2 {
   text-decoration: none !important;
 }
+
 @media (max-width: 768px) {
+
   .crown-inner-container,
   .sub-centered-container {
-    flex-direction: row; /* Keep row layout */
+    flex-direction: row;
+    /* Keep row layout */
   }
 
   .crown-text-container,
   .sub-text-container {
-    flex: 1 1 auto; /* Allow text to adapt */
+    flex: 1 1 auto;
+    /* Allow text to adapt */
   }
 
   .crown-image-container,
   .sub-image-container {
-    flex: 1 1 auto; /* Allow image to adapt */
-    flex-order: 2; /* Move image to the end (below text) */
+    flex: 1 1 auto;
+    /* Allow image to adapt */
+    flex-order: 2;
+    /* Move image to the end (below text) */
   }
 }
 
@@ -1768,9 +1855,12 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: white; /* Optional background color */
-  padding: 20px; /* Adjust padding as needed */
-  width: 90%; /* Adjust width as needed */
+  background-color: white;
+  /* Optional background color */
+  padding: 20px;
+  /* Adjust padding as needed */
+  width: 90%;
+  /* Adjust width as needed */
 
 }
 
@@ -1813,11 +1903,11 @@ ul {
 .crown-button:hover {
   background-color: #B6A792;
 }
-.cntr{
+
+.cntr {
   justify-content: center;
   align-items: center;
   margin: auto;
   display: flex;
   padding: 0 4px;
 }
-

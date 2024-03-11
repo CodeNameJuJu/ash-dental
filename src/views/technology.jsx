@@ -2,12 +2,35 @@ import React from 'react';
 import LazyLoad from 'react-lazyload';
 import '../Main.css';
 
+// Define image index mapping with absolute paths
+const imageIndexMapping = {
+    "/Images/Practice/High/ASH DENTAL_content_MARCH'24-358.jpg": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-358.jpg",
+    "/Images/Technology/Teeth whitening.png": "../Images/Technology/Teeth whitening.png",
+    "/Images/Technology/Teeth whitening (3).png": "../Images/Technology/Teeth whitening (3).png",
+    "/Images/Technology/18.png": "../Images/Technology/18.png",
+    "/Images/Technology/17.png": "../Images/Technology/17.png",
+    "/Images/Technology/planmeca-viso-g3.jpg": "../Images/Technology/planmeca-viso-g3.jpg",
+    "/Images/Technology/20.png": "../Images/Technology/20.png",
+    "/Images/Technology/21.png": "../Images/Technology/21.png",
+    "/Images/Technology/22.png": "../Images/Technology/22.png",
+    "/Images/Technology/23.png": "../Images/Technology/23.png",
+    "/Images/Technology/24.png": "../Images/Technology/24.png",
+    "/Images/Technology/25.png": "../Images/Technology/25.png",
+    "/Images/Technology/26.png": "../Images/Technology/26.png",
+    "/Images/Technology/27.png": "../Images/Technology/27.png",
+    "/Images/Technology/SmileFy_Software.png": "../Images/Technology/SmileFy_Software.png",
+    "/Images/Practice/Low/ASH DENTAL_content_MARCH'24-3011.jpg": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-3011.jpg",
+    // Add more mappings as needed
+};
+
+
 /* Component for displaying technology details */
 function Tech({ name, image, desc, desc2, desc3 }) {
     return (
         <LazyLoad height={200} once>
             <div className='row ms-0 ps-0 mb-4 pb-4'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '350px', width: '400px' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={imageIndexMapping[image]} alt={name} style={{ height: '350px', width: '400px' }} />
+
                 <div className='col-md-8 col-sm-12'>
                     <section className='pb-1'>
                         <h3 className='text-color-gold text-start'>{name}</h3>
@@ -36,7 +59,7 @@ function Tech2({ name, image, desc, desc2 }) {
                     <br />
                     {desc2 && <p className="lead text-start">{desc2}</p>}
                 </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={image} alt={name} style={{ height: '350px', width: '400px' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={imageIndexMapping[image]} alt={name} style={{ height: '350px', width: '400px' }} />
             </div>
         </LazyLoad>
     );
@@ -52,7 +75,7 @@ function Technology() {
             desc: "At ASH Dental, we redefine the dental experience by seamlessly integrating everyday technology to elevate your journey with us. Immerse yourself in a personalized atmosphere with Sonos Speakers, where you have the power to curate your own playlist, turning your dental visit into a musical escape.",
             desc2: "Our ceiling-mounted TVs offer a visual retreat, transporting you to another place while receiving treatment. Embracing modernity, we've gone paperless with iPads for efficient and eco-friendly filing. We believe that your time with us should be more than a dental appointment – it's a guest experience.",
             desc3: "Say goodbye to the traditional dental visit dread; at ASH Dental, you're not just a number; you're our valued guest on a uniquely tailored journey.",
-            image: "../Images/Practice/High/ASH DENTAL_content_MARCH'24-358.jpg"
+            image: "/Images/Practice/High/ASH DENTAL_content_MARCH'24-358.jpg"
         },
         {
             name: "Fläsh Teeth Whitening",
@@ -137,7 +160,7 @@ function Technology() {
             name: "Close up with binocular loupes",
             desc: "At ASH Dental, we're dedicated to providing exceptional dental care with the highest level of precision and detail. That's why we've incorporated binocular loupes from Zumax® into our practice. These advanced surgical loupes offer:",
             desc2: "Magnified visualization: Enhanced magnification allows your dentist to see intricate details within the oral cavity, leading to more accurate diagnoses and treatment procedures. Increased efficiency and accuracy: The superior clarity provided by these loupes allows for more precise manoeuvring and manipulation of instruments, leading to efficient and successful treatment outcomes.",
-            image: "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-3011.jpg"
+            image: "/Images/Practice/Low/ASH DENTAL_content_MARCH'24-3011.jpg"
         },
         // Add more technology details here
     ];

@@ -2,11 +2,28 @@ import '../Main.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from 'react-router-dom'
 
+const imageIndexMapping = {
+    "banner": "/Images/banner1.jpg",
+    "teethWhitening": "/Images/FacesCloseUpsLandscape/1.png",
+    "veneers": "/Images/FacesCloseUpsLandscape/4.png",
+    "dentalBonding": "/Images/FacesCloseUpsLandscape/8.png",
+    "dentalCrowns": "/Images/ServicesLandscape/Crowns2.png",
+    "orthodontics": "/Images/ServicesLandscape/Ortho.png",
+    "dentalImplants": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-6511.jpg",
+    "gumContouring": "/Images/FacesCloseUpsPortrait/Gum.png",
+    "smileMakeovers": "/Images/FacesCloseUpsLandscape/5.png",
+    "fullMouthReconstruction": "/Images/ServicesLandscape/MouthReconstruction.png",
+    "meetArtistsImage": "/Images/Dental/5.png",
+    "patientCentricImage": "/Images/Dental/3.png",
+    "technologyImage": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.jpg",
+    "meetArtistsTeamImage": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.jpg"
+};
+
 export const Home = () => {
 
     return (
         <div className="container-fluid p-0">
-                <img src="/Images/banner1.jpg" alt="banner" className="img-fluid" style={{ maxHeight: '600px' }} />
+            <img src={imageIndexMapping["banner"]} alt="banner" className="img-fluid" style={{ maxHeight: '600px' }} />
             <div class="serv-top">
                 <div class="text-center">
                     <h1 class="gold ">Welcome to ASH Dental</h1>
@@ -22,105 +39,93 @@ export const Home = () => {
                     </p>
                 </div>
             </div>
-            <div class="serv3-container text-center">
-                <h1 class=" gold">Services </h1>
-                <h2 class=" brown"> Crafting Radiant Smiles</h2>
-                <div class="serv3-container">
-                    <div class="serv3-image-grid">
-                        <Link to="/teethWhitening" >
-                            <div class="serv3-image-block">
-                                <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/1.png" alt="1"></img>
-                                <div class="serv3-content-details fadeIn-bottom">
-                                    <h2 class="content-title white">Teeth Whitening</h2>
-                                    <p class="content-text white">Illuminate your smile with our professional teeth whitening procedures. We specialize in removing
-                                        stains and discoloration, restoring the natural brilliance of your teeth. LINK.</p>
+            <div className="serv3-container text-center">
+                <h1 className="gold">Services</h1>
+                <h2 className="brown">Crafting Radiant Smiles</h2>
+                <div className="serv3-container">
+                    <div className="serv3-image-grid">
+                        <Link to="/teethWhitening">
+                            <div className="serv3-image-block">
+                                <div className="serv3-content-overlay"></div>
+                                <img className="serv3-img" src={imageIndexMapping["teethWhitening"]} alt="Teeth Whitening" />
+                                <div className="serv3-content-details fadeIn-bottom">
+                                    <h2 className="content-title white">Teeth Whitening</h2>
+                                    <p className="content-text white">Illuminate your smile with our professional teeth whitening procedures. We specialize in removing stains and discoloration, restoring the natural brilliance of your teeth.</p>
                                 </div>
                             </div>
                         </Link>
-                        <Link to="/crowns" >
-                            <div class="serv3-image-block">
-                                <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/4.png" alt="1"></img>
-                                <div class="serv3-content-details fadeIn-bottom">
-                                    <h2 class="content-title white">Veneers</h2>
-                                    <p class="content-text white">Transform your smile with our custom-made porcelain veneers. These thin shells are expertly
-                                        crafted to cover imperfections and enhance the overall appearance of your teeth.</p>
+                        <Link to="/crowns">
+                            <div className="serv3-image-block">
+                                <div className="serv3-content-overlay"></div>
+                                <img className="serv3-img" src={imageIndexMapping["veneers"]} alt="Veneers" />
+                                <div className="serv3-content-details fadeIn-bottom">
+                                    <h2 className="content-title white">Veneers</h2>
+                                    <p className="content-text white">Transform your smile with our custom-made porcelain veneers. These thin shells are expertly crafted to cover imperfections and enhance the overall appearance of your teeth.</p>
                                 </div>
                             </div>
                         </Link>
-                        <Link to="/dental" >
-                            <div class="serv3-image-block">
-                                <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/8.png" alt="1"></img>
-                                <div class="serv3-content-details fadeIn-bottom">
-                                    <h2 class="content-title white">Dental Bonding</h2>
-                                    <p class="content-text white" >Address chipped or discoloured teeth with our dental bonding services. Using tooth-coloured resin,
-                                        we sculpt and shape the material to achieve a seamless and natural look.</p>
+                        <Link to="/dental">
+                            <div className="serv3-image-block">
+                                <div className="serv3-content-overlay"></div>
+                                <img className="serv3-img" src={imageIndexMapping["dentalBonding"]} alt="Dental Bonding" />
+                                <div className="serv3-content-details fadeIn-bottom">
+                                    <h2 className="content-title white">Dental Bonding</h2>
+                                    <p className="content-text white">Address chipped or discolored teeth with our dental bonding services. Using tooth-colored resin, we sculpt and shape the material to achieve a seamless and natural look.</p>
                                 </div>
                             </div>
                         </Link>
-                        <Link to="/crowns" >
-                            <div class="serv3-image-block">
-                                <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/ServicesLandscape/Crowns2.png" alt="1"></img>
-                                <div class="serv3-content-details fadeIn-bottom">
-                                    <h2 class="content-title white">Dental Crowns</h2>
-                                    <p class="content-text white">Revitalize damaged or discoloured teeth with our dental crowns made out of emax- and sagemax
-                                        zirconia porcelain. These caps not only strengthen teeth but also improve their appearance, ensuring
-                                        a natural and harmonious smile.</p>
+                        <Link to="/crowns">
+                            <div className="serv3-image-block">
+                                <div className="serv3-content-overlay"></div>
+                                <img className="serv3-img" src={imageIndexMapping["dentalCrowns"]} alt="Dental Crowns" />
+                                <div className="serv3-content-details fadeIn-bottom">
+                                    <h2 className="content-title white">Dental Crowns</h2>
+                                    <p className="content-text white">Revitalize damaged or discolored teeth with our dental crowns made out of emax- and sagemax zirconia porcelain. These caps not only strengthen teeth but also improve their appearance, ensuring a natural and harmonious smile.</p>
                                 </div>
                             </div>
                         </Link>
-                        <Link to="/orthodontics" >
-                            <div class="serv3-image-block">
-                                <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="/Images/ServicesLandscape/Ortho.png" alt="1"></img>
-                                <div class="serv3-content-details fadeIn-bottom">
-                                    <h2 class="content-title white">Orthodontics</h2>
-                                    <p class="content-text white">Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear
-                                        aligners, we tailor treatments to enhance both aesthetics and functionality.</p>
+                        <Link to="/orthodontics">
+                            <div className="serv3-image-block">
+                                <div className="serv3-content-overlay"></div>
+                                <img className="serv3-img" src={imageIndexMapping["orthodontics"]} alt="Orthodontics" />
+                                <div className="serv3-content-details fadeIn-bottom">
+                                    <h2 className="content-title white">Orthodontics</h2>
+                                    <p className="content-text white">Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear aligners, we tailor treatments to enhance both aesthetics and functionality.</p>
                                 </div>
                             </div>
                         </Link>
-                        <Link to="/dental" >
-                            <div class="serv3-image-block">
-                                <div class="serv3-content-overlay"></div>
-                                <img class="serv3-img" src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-6511.jpg" alt="1"></img>
-                                <div class="serv3-content-details fadeIn-bottom">
-                                    <h2 class="content-title white">Dental Implants</h2>
-                                    <p class="content-text white">Experience a transformative smile with our dental implant solutions. Beyond restoration, implants
-                                        contribute to the overall cosmetic enhancement of your smile by replacing missing teeth. </p>
+                        <Link to="/dental">
+                            <div className="serv3-image-block">
+                                <div className="serv3-content-overlay"></div>
+                                <img className="serv3-img" src={imageIndexMapping["dentalImplants"]} alt="Dental Implants" />
+                                <div className="serv3-content-details fadeIn-bottom">
+                                    <h2 className="content-title white">Dental Implants</h2>
+                                    <p className="content-text white">Experience a transformative smile with our dental implant solutions. Beyond restoration, implants contribute to the overall cosmetic enhancement of your smile by replacing missing teeth.</p>
                                 </div>
                             </div>
                         </Link>
-                        <div class="serv3-image-block">
-                            <div class="serv3-content-overlay"></div>
-                            <img class="serv3-img" src="/Images/FacesCloseUpsPortrait/Gum.png" alt="1"></img>
-                            <div class="serv3-content-details fadeIn-bottom">
-                                <h2 class="content-title white">Gum Contouring</h2>
-                                <p class="content-text white">Refine your smile with our gum contouring procedures. Also known as gum reshaping, this service
-                                    enhances the appearance of your teeth, especially beneficial for those with a gummy smile.</p>
+                        <div className="serv3-image-block">
+                            <div className="serv3-content-overlay"></div>
+                            <img className="serv3-img" src={imageIndexMapping["gumContouring"]} alt="Gum Contouring" />
+                            <div className="serv3-content-details fadeIn-bottom">
+                                <h2 className="content-title white">Gum Contouring</h2>
+                                <p className="content-text white">Refine your smile with our gum contouring procedures. Also known as gum reshaping, this service enhances the appearance of your teeth, especially beneficial for those with a gummy smile.</p>
                             </div>
                         </div>
-                        <div class="serv3-image-block">
-                            <div class="serv3-content-overlay"></div>
-                            <img class="serv3-img" src="/Images/FacesCloseUpsLandscape/5.png" alt="1"></img>
-                            <div class="serv3-content-details fadeIn-bottom">
-                                <h2 class="content-title white">Smile Makeovers</h2>
-                                <p class="content-text white">Embark on a personalized journey with our Smile Makeovers. These comprehensive plans combine
-                                    various cosmetic procedures to achieve a harmonious and attractive smile tailored to your unique
-                                    preferences.</p>
+                        <div className="serv3-image-block">
+                            <div className="serv3-content-overlay"></div>
+                            <img className="serv3-img" src={imageIndexMapping["smileMakeovers"]} alt="Smile Makeovers" />
+                            <div className="serv3-content-details fadeIn-bottom">
+                                <h2 className="content-title white">Smile Makeovers</h2>
+                                <p className="content-text white">Embark on a personalized journey with our Smile Makeovers. These comprehensive plans combine various cosmetic procedures to achieve a harmonious and attractive smile tailored to your unique preferences.</p>
                             </div>
                         </div>
-                        <div class="serv3-image-block">
-                            <div class="serv3-content-overlay"></div>
-                            <img class="serv3-img" src="/Images/ServicesLandscape/MouthReconstruction.png" alt="1"></img>
-                            <div class="serv3-content-details fadeIn-bottom">
-                                <h2 class="content-title white">Full-Mouth Reconstruction</h2>
-                                <p class="content-text white">Transform your entire oral landscape with our Full-Mouth Reconstruction services. This
-                                    comprehensive approach addresses both functional and aesthetic concerns, incorporating various
-                                    cosmetic and restorative procedures.</p>
+                        <div className="serv3-image-block">
+                            <div className="serv3-content-overlay"></div>
+                            <img className="serv3-img" src={imageIndexMapping["fullMouthReconstruction"]} alt="Full-Mouth Reconstruction" />
+                            <div className="serv3-content-details fadeIn-bottom">
+                                <h2 className="content-title white">Full-Mouth Reconstruction</h2>
+                                <p className="content-text white">Transform your entire oral landscape with our Full-Mouth Reconstruction services. This comprehensive approach addresses both functional and aesthetic concerns, incorporating various cosmetic and restorative procedures.</p>
                             </div>
                         </div>
                     </div>
@@ -147,7 +152,7 @@ export const Home = () => {
                     <Link className="active" to="/gallery" title="View Gallery">
                         <button class="crown-button" >View Gallery</button>
                     </Link>
-                    
+
                 </div>
             </div>
             &nbsp;
@@ -177,9 +182,9 @@ export const Home = () => {
                     </p>
                     <br />
                     <Link className="active" to="/technology" title="Technology">
-                    <button class="crown-button" >Read More About Technology</button>
+                        <button class="crown-button" >Read More About Technology</button>
                     </Link>
-                
+
                 </div>
             </div>
             &nbsp;
@@ -194,7 +199,7 @@ export const Home = () => {
                     </p>
                     <br></br>
                     <Link className="active" to="/about" title="About Us">
-                    <button class="crown-button" >Click here to read more</button>
+                        <button class="crown-button" >Click here to read more</button>
                     </Link>
                 </div>
                 <br></br>
