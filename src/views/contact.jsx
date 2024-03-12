@@ -22,18 +22,21 @@ export const Contact = () => {
   const { isSubmitting } = formState;
   const form = useRef();
 
-  const sendEmail = () => {
-    emailjs
-      .sendForm('service_ny768nq', 'template_fdsdj05', form.current, 'KpiSa53Nghfe0Zc2i')
-      .then(
-        (result) => {
-          alert('message sent successfully...');
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
+  const sendEmail = async (formData) => {
+    try {
+      const response = await emailjs.sendForm(
+        'service_po12fdq', // Replace with your EmailJS service ID
+        'template_k1eb8wu', // Replace with your EmailJS template ID
+        form.current, // Reference to the form
+        'vOMrbftS0la3Ph2pI' // Replace with your EmailJS user ID
       );
+      console.log('Email sent:', response);
+      alert('Message sent successfully');
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      alert('Failed to send message. Please try again later.');
+    }
+  
 
     return new Promise((resolve) => {
       setTimeout(() => {
