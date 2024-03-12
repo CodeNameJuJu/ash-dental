@@ -48,11 +48,11 @@ function Crowns() {
             </nav>
 
             <div className=' ps-4 ms-4 pe-4 me-4'>
-                <div className='text-center ps-4 ms-4 pe-4 me-4' >
+                <div className='text-center ps-2 ms-4 pe-2 me-2' >
                     <h1 className='pt-4 mt-3 text-color-gold text-start'>Crowns and Veneers</h1>
                     <h3 class="brown text-start">Artistry and Precision Unleashed</h3>
                     <br></br>
-                    <div className='d-flex flex-column justify-content-center'>
+                    <div className=''>
                         <p className="lead  text-start text-start">Our Crowns and Veneers services embody the perfect blend of artistry and precision, meticulously
                             crafted to revitalize, and enhance your smile. Recognizing the uniqueness of your smile as a personal
                             expression, our approach transcends traditional dentistry.Whether you seek to restore a damaged

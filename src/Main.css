@@ -854,7 +854,10 @@ p {
 
 @media (max-width: 900px) {
   .navbar-collapse {
-    display: none;
+    transition: transform 0.5s ease-in; /* Adjust duration and timing as desired */
+    transform: translateY(-100%); /* Initially hidden above viewport */
+    opacity: 0; /* Initially transparent (optional, for background color ease-in) */
+  
   }
 
   .navbar-toggler {
@@ -866,7 +869,8 @@ p {
   }
 
   .navbar-collapse.show {
-    display: block;
+    transform: translateY(0); /* Slides down smoothly */
+    opacity: 1; /* Becomes fully opaque (optional) */
   }
 
   .sub-nav-item {
