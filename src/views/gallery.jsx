@@ -19,12 +19,11 @@ const imageIndexMapping = {
     "ASH DENTAL_content_MARCH'24-18.jpg": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-18.jpg",
     "ASH DENTAL_content_MARCH'24-44.jpg": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.jpg",
     "ASH DENTAL_content_MARCH'24-83.jpg": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-83.jpg",
-    "lippe1.JPG": "../Images/FacesCloseUpsLandscape/lippe1.JPG",
-    "lippe2.jpg": "../Images/FacesCloseUpsLandscape/lippe2.jpg",
-    "snor2.jpg": "../Images/FacesCloseUpsLandscape/snor2.jpg",
-    "snor1.jpg": "../Images/FacesCloseUpsLandscape/snor1.jpg",
-    "mond1.jpg": "../Images/FacesCloseUpsLandscape/mond1.jpg",
-    "tannie3.jpg": "../Images/FacesCloseUpsLandscape/tannie3.jpg"
+    "lippecombo.png": "../Images/FacesCloseUpsLandscape/lippecombo.png",
+    "tanniecombo.png": "../Images/FacesCloseUpsLandscape/tanniecombo.png",
+    "snorcombo.png": "../Images/FacesCloseUpsLandscape/snorcombo.png",
+    "mond2.JPG": "../Images/FacesCloseUpsLandscape/mond2.JPG",
+    "tannie1.jpg": "../Images/FacesCloseUpsLandscape/tannie1.jpg",
 };
 
 function Gallery() {

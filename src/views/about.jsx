@@ -113,16 +113,16 @@ export const About = () => {
                                                 name={item.name}
                                                 image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
                                                 title="Co-Founder and Dental Artist"
-                                                quali="BSc (Pret), BChD (Pret)"
+                                                quali="BSc (Pret.), BChD (Pret.)"
                                                 bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
                                             />
                                         ) : (
                                             <Card
                                                 name={item.name}
                                                 image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
-                                                title="Founder and Chief Smile Architect"
-                                                quali="BChD (Pret.), DipOdont (Oral Surg.)(Pret.) "
-                                                bio="Dr. Rodrigues leads our team with a vision to redefine dental care. As an accomplished dentist with a passion for cosmetic dentistry, Dr Rodrigues has transformed countless smiles and lives."
+                                                title="Dental Artist"
+                                                quali="BChD (Pret.)"
+                                                bio="Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of 'unwavering commitment and a new benchmark in luxury dental care.'"
                                             />
                                         )}
                                     </React.Fragment>
