@@ -46,18 +46,18 @@ function Emergencies() {
                 </div>
             </nav>
 
-            <div class="row serv-top">
-                <div class=" col-7 text-center">
-                    <h1 class="gold text-start">24 hour Emergencies</h1>
-                    <h3 class="brown text-start ">ASH Dental 24-Hour Emergency Dental Service</h3>
+            &nbsp;
+            <div className='row'>
+                <div className='col-md-8 col-sm-12'>
+                        <h1 class="gold text-start">24 hour Emergencies</h1>
+                        <h3 class="brown text-start ">ASH Dental 24-Hour Emergency Dental Service</h3>
+                        {/* <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2> */}
                     <br />
                     <p class="lead text-start">We recognize the importance of accommodating the demanding schedules of busy professionals.
                         That&#39;s why we are proud to introduce our 24-Hour Emergency Dental Service, designed to provide
                         round-the-clock dental care tailored to your needs. From dental restorations to general maintenance, we ensure
                         that every aspect of your oral health is meticulously addressed.</p>
-                    <br></br>
-
-
+                    <br />
                     <h3 class="brown text-start " >Services Offered:</h3>
 
                     <ul class="lead text-start  ">
@@ -77,17 +77,11 @@ function Emergencies() {
                     <p class=" gold text-start">
                         *please note that a call out fee applies
                     </p>
+                    <br />
                 </div>
-
-
-                <div class="col-5">
-                    <div class="serv2-image-block">
-                        <img class="serv2-image" src="/Images/Dental/7.png" alt="2 description"></img>
-                        <div class="serv2-overlay-block"></div>
-                    </div>
-                </div>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/7.png" alt="Dental Implants" style={{ height: '100%' }} />
             </div>
-
+   
 
             <br></br>
             &nbsp;

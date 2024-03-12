@@ -45,10 +45,13 @@ function Dental() {
                     </ul>
                 </div>
             </nav>
-            <div class="row serv-top mb-5">
-                <div class=" col-7 text-center">
-                    <h1 class="gold text-start">Dental Implants</h1>
-                    <h3 class="brown text-start ">Journey to a Confident Smile</h3>
+
+            &nbsp;
+            <div className='row'>
+                <div className='col-md-8 col-sm-12'>
+                        <h1 class="gold text-start">Dental Implants</h1>
+                        <h3 class="brown text-start ">Journey to a Confident Smile</h3>
+                        {/* <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2> */}
                     <br />
                     <p class="lead text-start">Dental implants are more than just a procedure; they represent a transformative journey to restore
                         your confident smile.</p>
@@ -58,7 +61,7 @@ function Dental() {
                         aesthetics.Our dental professionals harness the latest advancements in dental implantology,
                         offering cutting-edge solutions tailored to each individual. From single-tooth implants to full-arch
                         rehabilitation, we employ state-of-the-art techniques and technologies, including 3D x-ray, 3D
-                        printing and advanced diagnostic software, to ensure the utmost precision in every procedure. </p>
+                        printing and advanced diagnostic software, to ensure the utmost precision in every procedure.</p>
                     <br />
                     <p class="lead text-start" >At
                         ASH Dental, dental implantology is not just a service; it&#39;s a dedication to providing you with a
@@ -67,20 +70,9 @@ function Dental() {
                     <p class="lead text-start gold">Your journey to a radiant smile is marked by excellence, comfort, and results that redefine dental
                         care… because detail matters.</p>
                     <br />
-
                 </div>
-
-                <div class="col-5 serv2-dental">
-                    <div class="serv2-image-block">
-                        <img class="serv2-image" src="/Images/Dental/1.png" alt="2 description"></img>
-                        <div class="serv2-overlay-block"></div>
-                    </div>
-                </div>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/1.png" alt="Dental Implants" style={{ height: '100%' }} />
             </div>
-
-            <br>
-
-            </br>
             &nbsp;
         </div>
     )

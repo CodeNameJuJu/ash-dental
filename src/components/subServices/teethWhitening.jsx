@@ -44,10 +44,12 @@ function TeethWhitening() {
                     </ul>
                 </div>
             </nav>
-            <div class="row serv-top mb-5">
-                <div class=" col-7 text-center">
-                    <h1 class="gold text-start">Teeth Whitening</h1>
-                    <h3 class="brown text-start ">Illuminate Your Radiance</h3>
+            &nbsp;
+            <div className='row'>
+                <div className='col-md-8 col-sm-12'>
+                        <h1 class="gold text-start">Teeth Whitening</h1>
+                        <h3 class="brown text-start ">Illuminate Your Radiance</h3>
+                        {/* <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2> */}
                     <br />
                     <p class="lead text-start">Our Teeth Whitening services are a symphony of artistry and science, meticulously designed to
                         unveil the true brilliance of your smile. We believe that a radiant smile is a personal expression, and
@@ -65,21 +67,13 @@ function TeethWhitening() {
                     <p class="lead text-start">Illuminate your unique radiance by scheduling a consultation and discovering the art of Teeth
                         Whitening at ASH Dental.</p>
                     <br />
-
                 </div>
-
-                <div class="col-5">
-                    <div class="serv2-image-block">
-                        <img class="serv2-image" src="/Images/ServicesLandscape/TW1.png" alt="2 description"></img>
-                        <div class="serv2-overlay-block"></div>
-                    </div>
-                </div>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/TW1.png" alt="Teeth whitening" style={{ height: '100%' }} />
             </div>
-
-            <br>
-
-            </br>
             &nbsp;
+
+
+
         </div>
     )
 }

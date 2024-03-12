@@ -47,29 +47,26 @@ function GeneralDentistry() {
                 </div>
             </nav>
 
-            <div class="row serv-top">
-                <div class=" col-7 text-center">
-                    <h1 class="gold text-start">Comprehensive General Dentistry</h1>
-                    <h3 class="brown text-start ">Personalized Care for Optimal Oral Health</h3>
+
+            &nbsp;
+            <div className='row'>
+                <div className='col-md-8 col-sm-12'>
+                        <h1 class="gold text-start">Comprehensive General Dentistry</h1>
+                        <h3 class="brown text-start ">Personalized Care for Optimal Oral Health</h3>
+                        {/* <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2> */}
                     <br />
                     <p class="lead text-start">Experience personalised care and optimal oral health with our comprehensive range of general
                         dental services for the whole family that go beyond routine check-ups and cleanings. We believe in
                         crafting customized treatment plans tailored to individual needs, reflecting our commitment to
                         excellence in every service we offer.</p>
                     <br />
-                    <p class="lead text-start"> From dental restorations to general maintenance, we ensure
+                    <p class="lead text-start">From dental restorations to general maintenance, we ensure
                         that every aspect of your oral health is meticulously addressed.</p>
                     <br />
                 </div>
-
-                <div class="col-5">
-                    <div class="serv2-image-block">
-                        <img class="serv2-image" src="/Images/FacesCloseUpsPortrait/8.png" alt="2 description"></img>
-                        <div class="serv2-overlay-block"></div>
-                    </div>
-                </div>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/FacesCloseUpsPortrait/8.png" alt="Comprehensive General Dentistry" style={{ height: '490px' }} />
             </div>
-
+            &nbsp;
             <br></br>
 
             <div class="row serv-top text-center">
@@ -147,7 +144,7 @@ function GeneralDentistry() {
             &nbsp;
 
             <div class="row serv-top text-center">
-                <h3 class="brown text-start" >Wisdom Teeth Management</h3>
+                <h3 class="brown text-start" >Wisdom Teeth Management:</h3>
                 <p class="lead text-start"> Our specialized care for wisdom teeth ensures their removal is as comfortable and efficient as
                     possible. ASH Dental&#39;s commitment to acknowledging patient needs and concerns, along with a
                     patient-first approach, is evident in our approach to wisdom teeth management. Comfort during the
@@ -156,7 +153,7 @@ function GeneralDentistry() {
                 </p>
                 <br></br>
                 &nbsp;
-                <h3 class="brown text-start">Denture Expertise</h3>
+                <h3 class="brown text-start">Denture Expertise:</h3>
                 <p class="lead text-start "> Our team is skilled in providing denture solutions that restore smiles and functionality. ASH Dental&#39;s
                     dedication to embracing uniqueness and acceptance is reflected in our denture expertise. We
                     understand that every patient is a unique canvas, and our commitment to providing personalized
