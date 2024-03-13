@@ -102,12 +102,12 @@ function Footer() {
 
                                     <p>
                                         <MDBIcon icon="phone" className="me-3 white pt-2" />
-                                        <a class="a2" href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>(012) 111 1715</a>
+                                        <a class="a2" href='tel: 012 111 1715' target="_blank" rel="noopener noreferrer" title='Phone Link'>(012) 111 1715</a>
                                     </p>
 
                                     <p>
                                         <MDBIcon icon="phone" className="me-3 white pt-2" />
-                                        <a class="a2" href='tel:012 111 1715' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
+                                        <a class="a2" href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
                                     </p>
                                 </MDBCol>
                                 <MDBCol md="2" lg="2" xl="2" className='mb-4 mt-3' style={{ 'text-align': 'center' }}>
