@@ -36,7 +36,7 @@ export const Contact = () => {
       console.error('Email sending failed:', error);
       alert('Failed to send message. Please try again later.');
     }
-  
+
 
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -70,21 +70,24 @@ export const Contact = () => {
           <div className="mb-3 text-start col-md-4 lead">
             <h3 className="text-color-gold mb-2 pb-2">Contact Details:</h3>
             <p className="text-color mb-1">
-              <MDBIcon icon="phone" className="me-3" /> (012) 111 1715
+              <MDBIcon icon="phone" className="me-3" />
+              <a class="a2 text-color " href='tel:012 111 1715' target="_blank" rel="noopener noreferrer" title='Phone Link'>(012) 111 1715</a>
             </p>
             <p className="text-color mb-1">
-              <MDBIcon icon="phone" className="me-3" /> 084 850 3501
+              <MDBIcon icon="phone" className="me-3" />
+              <a class="a2 text-color " href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
             </p>
             <p className="mb-0">
               <MDBIcon icon="envelope" className="me-3" />
-              info@ashdental.co.za
+              <a class="a2 text-color " href='mailto:info@ashdental.co.za' target="_blank" rel="noopener noreferrer" title='Email Link'>info@ashdental.co.za</a>
             </p>
           </div>
           <div className="mb-3 col-md-4 text-start">
             <h3 className="text-color-gold mb-2 pb-2">Emergency Contact Details:</h3>
             <p className="lead">For dental emergencies, our dedicated Emergency Dental Care team is available outside regular office hours.</p>
             <p className="lead mt-2 pt-2">
-              <MDBIcon icon="phone" className="me-3" /> 084 850 3501
+              <MDBIcon icon="phone" className="me-3" />
+              <a class="a2 text-color " href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
             </p>
           </div>
         </div>
