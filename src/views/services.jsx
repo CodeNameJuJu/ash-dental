@@ -130,7 +130,7 @@ function Services() {
                 <div className='text-center ps-4 ms-4 pe-4 me-4' >
                     <h1 className='pt-4 mt-3 text-color-gold'>Advanced Cosmetic Dentistry</h1>
                     <h3 className="brown">Redesign, Enhance, Transform</h3>
-                    <div className='d-flex flex-column justify-content-center'>
+                    <div className='d-flex flex-column justify-content-center testem'>
                         <p className="lead text-start">Redefine smiles and enhance the natural beauty of your teeth. Cosmetic dentistry goes beyond traditional dental procedures; it's an art form dedicated to improving the aesthetics and function of your smile. Our skilled team at ASH Dental employs cutting-edge techniques and personalized treatment plans to address a range of cosmetic concerns, including teeth discoloration, misalignment, and imperfections.</p>
                         <br />
                         <p className="lead text-start">Whether you desire a whiter, straighter, or more aesthetically pleasing smile, our cosmetic dentistry services are tailored to meet your unique goals. We offer a comprehensive range of treatments, from professional teeth whitening and veneers to smile makeovers and full-mouth reconstruction.</p>
@@ -159,12 +159,12 @@ function Services() {
                     </div>
                 </div>
             </div>
-            <div className='pt-4 mt-3 pb-3 ps-4 ms-4 pe-4 me-4'>
+            <div className='pt-4 mt-3 pb-3 ps-4 ms-4 pe-4 me-4 testem'>
                 <div className='text-center ps-4 ms-4 pe-4 me-4' >
                     <h1 className='pt-4 mt-3 text-color-gold'>A Journey to Transformative Smiles</h1>
                     <h3 className="brown">Redesign, Enhance, Transform</h3>
                     <div className='d-flex flex-column justify-content-center'>
-                        <p className="lead col-8 text-start">At ASH Dental, our Cosmetic Dentistry goes beyond enhancing smiles; it's about crafting a personalized and radiant expression of your individuality. Schedule a consultation to explore the possibilities and rediscover the beauty of your smile with us.</p>
+                        <p className="lead col-8 text-start testem">At ASH Dental, our Cosmetic Dentistry goes beyond enhancing smiles; it's about crafting a personalized and radiant expression of your individuality. Schedule a consultation to explore the possibilities and rediscover the beauty of your smile with us.</p>
                         <br />
                         <p className="lead col-8 text-start">Schedule a consultation to explore the possibilities and rediscover the beauty of your smile with us.</p>
                         <br />

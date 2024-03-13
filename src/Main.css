@@ -1117,7 +1117,14 @@ p {
 .serv3-image-block:hover .serv3-content-overlay {
   opacity: 2;
 }
-
+@media ((max-width: 768px)){
+  .serv3-content-details p{
+    font-size: 1em  !important ;
+  }
+  .serv3-content-details h2{
+    font-size: 1.2em !important ;
+  }
+}
 
 .serv3-content-details {
   position: absolute;
@@ -1548,6 +1555,7 @@ img {
   line-height: 1.5;
 }
 
+
 .btn.btn-gold {
   background-color: #B6A792;
   color: #030303;
@@ -1795,6 +1803,20 @@ ul {
 
 .a2 {
   text-decoration: none !important;
+}
+/* Foooter mobile classes */
+.mobmarg {
+  padding-top: 15px;
+}
+.mobal {
+
+  justify-content:center;
+}
+
+@media (max-width: 768px) {
+  .mobmarg {
+    padding-top: 5px;
+  }
 }
 
 @media (max-width: 768px) {

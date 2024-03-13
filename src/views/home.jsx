@@ -146,7 +146,7 @@ export const Home = () => {
                         <h2 className='brown mb-2 text-start'>A Journey to Transformative Smiles</h2>
                     </section>
                     <p class="lead text-start center ">We envision a world where every smile tells a story of confidence, health, and individuality. We
-                        strive to be pioneers in cosmetic and general dentistry, setting new standards for precision, artistry,
+                        strive to be pioneers in cosmetic and general dentistry, setting new standards for precision artistry.
                     </p>
                     <br />
                     <Link className="active" to="/gallery" title="View Gallery">
@@ -182,7 +182,7 @@ export const Home = () => {
                     </p>
                     <br />
                     <Link className="active" to="/technology" title="Technology">
-                        <button class="crown-button" >Read More About Technology</button>
+                        <button class="crown-button" >Read About Our Technology</button>
                     </Link>
 
                 </div>
@@ -199,7 +199,7 @@ export const Home = () => {
                     </p>
                     <br></br>
                     <Link className="active" to="/about" title="About Us">
-                        <button class="crown-button" >Click here to read more</button>
+                        <button class="crown-button" >Meet Our Team</button>
                     </Link>
                 </div>
                 <br></br>
