@@ -108,9 +108,9 @@ export const About = () => {
                                             <Card
                                                 name={item.name}
                                                 image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
-                                                title="Co-Founder and Dental Artist"
+                                                title="Dental Artist"
                                                 quali="BChD (Pret.)"
-                                                bio="Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of 'unwavering commitment and a new benchmark in luxury dental care."                                            />
+                                                bio="Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of 'unwavering commitment and a new benchmark in luxury dental care." />
                                         )}
                                         {index === 1 && (
                                             <>
@@ -118,8 +118,8 @@ export const About = () => {
                                                     <Card
                                                         name={item.name}
                                                         image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
-                                                        title="Dental Artist"
-                                                        quali="BChD (Pret.)"
+                                                        title="Co-Founder and Dental Artist"
+                                                        quali="BSc (Pret.), BChD (Pret.)"
                                                         bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
                                                     />
                                                 ) : (
@@ -155,7 +155,7 @@ export const About = () => {
                                                 image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
                                                 title="Dental Artist"
                                                 quali="BChD (Pret.)"
-                                                bio="Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of 'unwavering commitment and a new benchmark in luxury dental care."                                            />
+                                                bio="Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of 'unwavering commitment and a new benchmark in luxury dental care." />
                                         )}
                                         {index === 1 && (
                                             <>
