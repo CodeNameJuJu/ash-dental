@@ -36,7 +36,7 @@ function Modal({ showModal, closeModal }) {
   };
 
   return (
-    <div className={`modal ${showModal ? 'show' : ''}`} tabIndex="-1" role="dialog" style={{ display: showModal ? 'block' : 'none' }}>
+    <div className={`modal-move modal ${showModal ? 'show' : ''}`} tabIndex="-1" role="dialog" style={{ display: showModal ? 'block' : 'none' }}>
       <div className="modal-dialog text-center modal-lg">
         <div className="modal-content">
           <div className="modal-header">

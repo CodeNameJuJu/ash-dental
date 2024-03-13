@@ -64,7 +64,7 @@ export const Contact = () => {
             <p className="lead">ASH DENTAL</p>
             <p className="lead">Ash Medical Suites 3 & 4</p>
             <p className="lead">177 Garsfontein Road,</p>
-            <p className="lead">Ashley Garden,</p>
+            <p className="lead">Ashlea Garden,</p>
             <p className="lead">Pretoria, Gauteng</p>
           </div>
           <div className="mb-3 text-start col-md-4 lead">

@@ -34,6 +34,7 @@ function Navbar() {
     }, [location]);
 
     return (
+        <>
         <nav className="navbar navbar-light bg-color navbar-expand-lg sticky-top " id="myTopnav">
             <div className="container-fluid">
                 <Link className="active" to="/" title="ASH DENTAL">
@@ -77,12 +78,13 @@ function Navbar() {
                         <button type="button" className="btn btn-bg btn-link" onClick={openModal} title="Documents">
                             Book an appointment
                         </button>
-                        <Modal showModal={showModal} closeModal={closeModal} />
                     </div>
                 </div>
 
             </div>
         </nav>
+        <Modal showModal={showModal} closeModal={closeModal} />
+        </>
     );
 }
 

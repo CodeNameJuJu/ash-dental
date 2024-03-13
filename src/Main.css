@@ -1943,3 +1943,7 @@ ul {
   display: flex;
   padding: 0 4px;
 }
+
+.modal-move{
+  padding-top: 120px;
+}
