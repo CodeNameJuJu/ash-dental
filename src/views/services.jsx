@@ -151,7 +151,7 @@ function Services() {
                                     <img className="serv3-img" src={service.image} style={{ height: '450px' }} alt={service.name} />
                                     <div className="serv3-content-details fadeIn-bottom">
                                         <h2 className="content-title white">{service.name}</h2>
-                                        <p className="content-text white">{service.description}</p>
+                                        <p className="content-text white mobile-font">{service.description}</p>
                                     </div>
                                 </div>
                             </Link>

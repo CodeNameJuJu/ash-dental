@@ -1118,7 +1118,7 @@ p {
   opacity: 2;
 }
 @media ((max-width: 768px)){
-  .serv3-content-details p{
+  .mobile-font{
     font-size: 1em  !important ;
   }
   .serv3-content-details h2{

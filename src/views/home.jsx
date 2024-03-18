@@ -50,7 +50,7 @@ export const Home = () => {
                                 <img className="serv3-img" src={imageIndexMapping["teethWhitening"]} alt="Teeth Whitening" />
                                 <div className="serv3-content-details fadeIn-bottom">
                                     <h2 className="content-title white">Teeth Whitening</h2>
-                                    <p className="content-text white">Illuminate your smile with our professional teeth whitening procedures. We specialize in removing stains and discoloration, restoring the natural brilliance of your teeth.</p>
+                                    <p className="content-text white mobile-font">Illuminate your smile with our professional teeth whitening procedures. We specialize in removing stains and discoloration, restoring the natural brilliance of your teeth.</p>
                                 </div>
                             </div>
                         </Link>
