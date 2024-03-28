@@ -1553,6 +1553,7 @@ img {
 .home-p {
   margin-bottom: 30px;
   line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 
@@ -1596,11 +1597,6 @@ img {
   .home-h2 {
     font-size: 1.5em;
   }
-
-  .home-p {
-    font-size: 0.8em;
-  }
-
   .home-img {
     max-width: 100%;
   }
