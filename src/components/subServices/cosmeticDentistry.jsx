@@ -70,7 +70,7 @@ function CosmeticDentistry() {
 
                 <div class="col-5">
                     <div class="serv2-image-block">
-                        <img class="serv2-image" src="/Images/ServicesLandscape/Ortho.png" alt="2 description"></img>
+                        <img class="serv2-image" src="/Images/ServicesLandscape/Ortho.webp" alt="2 description"></img>
                         <div class="serv2-overlay-block"></div>
                     </div>
                 </div>

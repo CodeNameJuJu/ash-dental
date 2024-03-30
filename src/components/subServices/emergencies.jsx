@@ -79,7 +79,7 @@ function Emergencies() {
                     </p>
                     <br />
                 </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/7.png" alt="Dental Implants" style={{ height: '100%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/7.webp" alt="Dental Implants" style={{ height: '100%' }} />
             </div>
    
 

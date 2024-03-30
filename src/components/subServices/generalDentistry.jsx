@@ -64,7 +64,7 @@ function GeneralDentistry() {
                         that every aspect of your oral health is meticulously addressed.</p>
                     <br />
                 </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/FacesCloseUpsPortrait/8.png" alt="Comprehensive General Dentistry" style={{ height: '490px' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/FacesCloseUpsPortrait/8.webp" alt="Comprehensive General Dentistry" style={{ height: '490px' }} />
             </div>
             &nbsp;
             <br></br>

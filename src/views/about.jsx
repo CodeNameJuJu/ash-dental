@@ -16,7 +16,7 @@ function Card({ name, image, bio, title, quali }) {
             <div className="col-md-5 col-sm-6 no-padding">
                 <img className="img-fluid" src={image} alt="trainer-img" />
             </div>
-            <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Images/Texture3.webp)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-3 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
                     <br />
                     <br />
@@ -36,7 +36,7 @@ function Card({ name, image, bio, title, quali }) {
 function Card2({ name, image, bio, title, quali }) {
     return (
         <div className="row d-flex justify-content-center mb-5 pb-5 pt-4 mt-4 me-0 ms-0 ps-0 pe-0">
-            <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Images/Texture3.png)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Images/Texture3.webp)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-4 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
                     <br />
                     <br />
@@ -98,7 +98,7 @@ export const About = () => {
                                         {index === 0 && (
                                             <Card
                                                 name={item.name}
-                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
+                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                 title="Founder and Chief Smile Architect"
                                                 quali="BChD (Pret.), DipOdont (Oral Surg.)(Pret.)"
                                                 bio="Dr. Rodrigues leads our team with a vision to redefine dental care. As an accomplished dentist with a passion for cosmetic dentistry, Dr Rodrigues has transformed countless smiles and lives."
@@ -107,7 +107,7 @@ export const About = () => {
                                         {index === 2 && (
                                             <Card
                                                 name={item.name}
-                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
+                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                 title="Dental Artist"
                                                 quali="BChD (Pret.)"
                                                 bio="Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of unwavering commitment and a new benchmark in luxury dental care." />
@@ -117,15 +117,15 @@ export const About = () => {
                                                 {isSmallScreen ? (
                                                     <Card
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
+                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                         title="Co-Founder and Dental Artist"
                                                         quali="BSc (Pret.), BChD (Pret.)"
                                                         bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
                                                     />
                                                 ) : (
-                                                    <Card
+                                                    <Card2
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
+                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                         title="Co-Founder and Dental Artist"
                                                         quali="BSc (Pret.), BChD (Pret.)"
                                                         bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
@@ -143,7 +143,7 @@ export const About = () => {
                                         {index === 0 && (
                                             <Card
                                                 name={item.name}
-                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
+                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                 title="Founder and Chief Smile Architect"
                                                 quali="BChD (Pret.), DipOdont (Oral Surg.)(Pret.)"
                                                 bio="Dr. Rodrigues leads our team with a vision to redefine dental care. As an accomplished dentist with a passion for cosmetic dentistry, Dr Rodrigues has transformed countless smiles and lives."
@@ -152,7 +152,7 @@ export const About = () => {
                                         {index === 2 && (
                                             <Card
                                                 name={item.name}
-                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
+                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                 title="Dental Artist"
                                                 quali="BChD (Pret.)"
                                                 bio="Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of unwavering commitment and a new benchmark in luxury dental care." />
@@ -162,15 +162,15 @@ export const About = () => {
                                                 {isSmallScreen ? (
                                                     <Card
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
+                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                         title="Co-Founder and Dental Artist"
                                                         quali="BSc (Pret.), BChD (Pret.)"
                                                         bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
                                                     />
                                                 ) : (
-                                                    <Card
+                                                    <Card2
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.jpg`}
+                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                         title="Co-Founder and Dental Artist"
                                                         quali="BSc (Pret.), BChD (Pret.)"
                                                         bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
@@ -199,7 +199,7 @@ export const About = () => {
                     </p>
                     <br />
                     <br />
-                    <img style={{ height: '100%', width: '100%' }} src={process.env.PUBLIC_URL + "/Images/Practice/High/ASH DENTAL_content_MARCH'24-343.jpg"} text="First slide" alt='Sale1' />
+                    <img style={{ height: '100%', width: '100%' }} src={process.env.PUBLIC_URL + "/Images/Practice/High/ASH DENTAL_content_MARCH'24-343.webp"} text="First slide" alt='Sale1' />
                     <br />
                 </div>
                 <br />

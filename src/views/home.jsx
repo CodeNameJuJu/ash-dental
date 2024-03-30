@@ -3,20 +3,20 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from 'react-router-dom'
 
 const imageIndexMapping = {
-    "banner": "/Images/banner1.jpg",
-    "teethWhitening": "/Images/FacesCloseUpsLandscape/1.png",
-    "veneers": "/Images/FacesCloseUpsLandscape/4.png",
-    "dentalBonding": "/Images/FacesCloseUpsLandscape/8.png",
-    "dentalCrowns": "/Images/ServicesLandscape/Crowns2.png",
-    "orthodontics": "/Images/ServicesLandscape/Ortho.png",
-    "dentalImplants": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-6511.jpg",
-    "gumContouring": "/Images/FacesCloseUpsPortrait/Gum.png",
-    "smileMakeovers": "/Images/FacesCloseUpsLandscape/5.png",
-    "fullMouthReconstruction": "/Images/ServicesLandscape/MouthReconstruction.png",
-    "meetArtistsImage": "/Images/Dental/5.png",
-    "patientCentricImage": "/Images/Dental/3.png",
-    "technologyImage": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.jpg",
-    "meetArtistsTeamImage": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.jpg"
+    "banner": "/Images/banner1.webp",
+    "teethWhitening": "/Images/FacesCloseUpsLandscape/1.webp",
+    "veneers": "/Images/FacesCloseUpsLandscape/4.webp",
+    "dentalBonding": "/Images/FacesCloseUpsLandscape/8.webp",
+    "dentalCrowns": "/Images/ServicesLandscape/Crowns2.webp",
+    "orthodontics": "/Images/ServicesLandscape/Ortho.webp",
+    "dentalImplants": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-6511.webp",
+    "gumContouring": "/Images/FacesCloseUpsPortrait/Gum.webp",
+    "smileMakeovers": "/Images/FacesCloseUpsLandscape/5.webp",
+    "fullMouthReconstruction": "/Images/ServicesLandscape/MouthReconstruction.webp",
+    "meetArtistsImage": "/Images/Dental/5.webp",
+    "patientCentricImage": "/Images/Dental/3.webp",
+    "technologyImage": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.webp",
+    "meetArtistsTeamImage": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.webp"
 };
 
 export const Home = () => {
@@ -140,7 +140,7 @@ export const Home = () => {
             </div>
             &nbsp;
             <div className='row'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/5.png" alt="Dental" style={{ height: '100%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/5.webp" alt="Dental" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>A Journey to Transformative Smiles</h2>
@@ -167,11 +167,11 @@ export const Home = () => {
                     </p>
                     <br />
                 </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/3.png" alt="Patient Centric Excellence" style={{ height: '100%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/3.webp" alt="Patient Centric Excellence" style={{ height: '100%' }} />
             </div>
             &nbsp;
             <div className='row'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.jpg" alt="Dental" style={{ height: '100%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.webp" alt="Dental" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>Innovation and Technology</h2>
@@ -203,7 +203,7 @@ export const Home = () => {
                     </Link>
                 </div>
                 <br></br>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3 pt-5' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.jpg" alt="Patient Centric Excellence" style={{ height: '70%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3 pt-5' src="../Images/Practice/Low/ASH DENTAL_content_MARCH'24-1741.webp" alt="Patient Centric Excellence" style={{ height: '70%' }} />
             </div>
         </div>
     )

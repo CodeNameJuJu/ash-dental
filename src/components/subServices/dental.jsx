@@ -71,7 +71,7 @@ function Dental() {
                         care… because detail matters.</p>
                     <br />
                 </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/1.png" alt="Dental Implants" style={{ height: '100%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/1.webp" alt="Dental Implants" style={{ height: '100%' }} />
             </div>
             &nbsp;
         </div>

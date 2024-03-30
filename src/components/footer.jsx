@@ -2,7 +2,7 @@ import React from 'react';
 import '../Main.css';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Footer() {
 

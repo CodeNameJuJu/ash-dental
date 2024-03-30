@@ -68,7 +68,7 @@ function TeethWhitening() {
                         Whitening at ASH Dental.</p>
                     <br />
                 </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/TW1.png" alt="Teeth whitening" style={{ height: '100%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/TW1.webp" alt="Teeth whitening" style={{ height: '100%' }} />
             </div>
             &nbsp;
 
