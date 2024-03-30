@@ -144,10 +144,10 @@ export const Home = () => {
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>A Journey to Transformative Smiles</h2>
+                        <p class="lead text-start center ">We envision a world where every smile tells a story of confidence, health, and individuality. We
+                            strive to be pioneers in cosmetic and general dentistry, setting new standards for precision artistry.
+                        </p>
                     </section>
-                    <p class="lead text-start center ">We envision a world where every smile tells a story of confidence, health, and individuality. We
-                        strive to be pioneers in cosmetic and general dentistry, setting new standards for precision artistry.
-                    </p>
                     <br />
                     <Link className="active" to="/gallery" title="View Gallery">
                         <button class="crown-button" >View Gallery</button>
@@ -160,11 +160,11 @@ export const Home = () => {
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2>
+                        <p class="lead text-start center ">Your journey with ASH Dental is characterized by a patient-centric approach. We listen to your
+                            unique needs, concerns, and aspirations, tailoring our services to ensure a comfortable, positive, and
+                            transformative experience.
+                        </p>
                     </section>
-                    <p class="lead text-start center ">Your journey with ASH Dental is characterized by a patient-centric approach. We listen to your
-                        unique needs, concerns, and aspirations, tailoring our services to ensure a comfortable, positive, and
-                        transformative experience.
-                    </p>
                     <br />
                 </div>
                 <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/3.webp" alt="Patient Centric Excellence" style={{ height: '100%' }} />
@@ -175,11 +175,11 @@ export const Home = () => {
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>Innovation and Technology</h2>
+                        <p class="lead text-start center ">We embrace innovation and leverage cutting-edge technology to provide state-of-the-art dental
+                            solutions. From advanced diagnostic imaging to the latest in cosmetic dentistry techniques, we
+                            ensure that you receive the highest quality care.
+                        </p>
                     </section>
-                    <p class="lead text-start center ">We embrace innovation and leverage cutting-edge technology to provide state-of-the-art dental
-                        solutions. From advanced diagnostic imaging to the latest in cosmetic dentistry techniques, we
-                        ensure that you receive the highest quality care.
-                    </p>
                     <br />
                     <Link className="active" to="/technology" title="Technology">
                         <button class="crown-button" >Read About Our Technology</button>
@@ -192,11 +192,11 @@ export const Home = () => {
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>Meet Our Dental Artists</h2>
+                        <p class="lead text-start center "> Our team at ASH Dental is a collective of skilled professionals, each bringing a unique set of expertise
+                            and passion to the practice. We are not just dental professionals; we are artists dedicated to creating
+                            smiles that reflect the true beauty within each person.
+                        </p>
                     </section>
-                    <p class="lead text-start center "> Our team at ASH Dental is a collective of skilled professionals, each bringing a unique set of expertise
-                        and passion to the practice. We are not just dental professionals; we are artists dedicated to creating
-                        smiles that reflect the true beauty within each person.
-                    </p>
                     <br></br>
                     <Link className="active" to="/about" title="About Us">
                         <button class="crown-button" >Meet Our Team</button>

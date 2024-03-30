@@ -42,7 +42,7 @@ function Gallery() {
                 <div className="row mb-5 pb-5">
                     {/* Dynamically load images for the first set */}
                     {Object.keys(imageIndexMapping).slice(0, 6).map((imageName, index) => (
-                        <div key={index} className="col-lg-6 mb-3">
+                        <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
                             <LazyLoad height={200} once>
                                 <img src={imageIndexMapping[imageName]} className="img-fluid gallery-image" alt="Placeholder" />
                             </LazyLoad>
@@ -57,7 +57,7 @@ function Gallery() {
                 <div className="row mb-5 pb-5">
                     {/* Dynamically load images for the second set */}
                     {Object.keys(imageIndexMapping).slice(6, 16).map((imageName, index) => (
-                        <div key={index} className="col-lg-6 mb-3">
+                        <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
                             <LazyLoad height={200} once>
                                 <img src={imageIndexMapping[imageName]} className="img-fluid gallery-image" alt="Placeholder" />
                             </LazyLoad>
@@ -72,7 +72,7 @@ function Gallery() {
                 <div className="row">
                     {/* Dynamically load images for the third set */}
                     {Object.keys(imageIndexMapping).slice(16).map((imageName, index) => (
-                        <div key={index} className="col-lg-6 mb-3">
+                        <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
                             <LazyLoad height={200} once>
                                 <img src={imageIndexMapping[imageName]} className="img-fluid teeth" alt="Placeholder" />
                             </LazyLoad>
