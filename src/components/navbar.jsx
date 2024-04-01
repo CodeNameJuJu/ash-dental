@@ -75,7 +75,7 @@ function Navbar() {
                         </li>
                     </ul>
                     <div className="d-flex ml-auto">
-                        <button type="button" className="btn btn-bg btn-link" onClick={openModal} title="Documents">
+                        <button type="button" className="btn btn-bg btn-link ms-auto" onClick={openModal} title="Documents">
                             Book an appointment
                         </button>
                     </div>

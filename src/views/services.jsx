@@ -90,9 +90,9 @@ function Services() {
 
     return (
         <div>
-            <nav className="navbar nav-bg navbar-expand-sm navbar-second">
+            <nav className="navbar nav-bg navbar-expand-sm navbar-second allin">
                 <button
-                    className="navbar-toggler fadeIn-animation"
+                    className="navbar-toggler  ms-auto  fadeIn-animation"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"

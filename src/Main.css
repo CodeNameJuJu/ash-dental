@@ -404,6 +404,17 @@ input[type="range"]::-moz-range-thumb {
   width: 1rem;
 }
 
+@media (max-width: 700px) {
+  .navbar-nav {
+    text-align: right !important;
+    padding-right: 15px;
+    background-color: #00000000 !important;
+  }
+  .navbar {
+    background-color: #00000000;
+  }
+
+}
 
 @media all and (min-width: 992px) {
   .dropdown-menu li {
@@ -418,9 +429,11 @@ input[type="range"]::-moz-range-thumb {
     font-size: 12pt !important;
     text-shadow: none !important;
   }
-
+  .navbar-nav {
+    text-align: right !important;
+  }
   .nav-item {
-    padding-right: 15px;
+    text-align: right;
   }
 
   .nav-item .submenu {
@@ -455,11 +468,11 @@ input[type="range"]::-moz-range-thumb {
 
     .bg-color {
       width: 100% !important;
-      background-color: #1C1C1C !important;
+      background-color: #1c1c1c00 !important;
 
       .bg-color {
         width: 100% !important;
-        background-color: #1C1C1C !important;
+        background-color: #1c1c1c00 !important;
 
       }
     }
@@ -862,10 +875,13 @@ p {
 
   .navbar-toggler {
     display: block;
-    background-color: #c9c9c967;
+    background-color: #c9c9c900;
     margin-left: 10px;
-    border-color: #28292E !important;
+    border-color: #28292e02 !important;
     color: #28292E !important;
+  }
+  .allin{
+    padding-right: 15px;
   }
 
   .navbar-collapse.show {
