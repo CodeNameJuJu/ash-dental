@@ -170,8 +170,8 @@ li {
   right: 0; /* Align the collapsed menu to the left edge */
   width: 70%; /* Make the collapsed menu full width */
   height: 100vh; /* Make the collapsed menu full viewport height */
-  transition: all 0.3s ease-in-out; /* Add smooth transition for collapse/uncollapse */
-  overflow-y: auto; /* Allow scrolling if content overflows */
+
+
 }
 
 /* Styling for collapsed state (optional) */
@@ -983,7 +983,7 @@ p {
   }
 
   .navbar-collapse.show {
-    animation: slideFromRight 0.3s ease-in-out forwards;
+    animation: slideFromRight 0.7s ease-in-out forwards;
     
     opacity: 1; /* Becomes fully opaque (optional) */
   }
@@ -1724,6 +1724,9 @@ img {
   margin-left: 50px;
   padding-right: 50px;
 }
+.no-padding-row {
+  padding: 0 !important; /* Set padding to 0 and override Bootstrap's default */
+}
 
 /* Create four equal columns that sits next to each other */
 .column {
@@ -1768,7 +1771,7 @@ ul {
 .ban_sec {
   position: relative;
   overflow: hidden;
-  max-width: 100%;
+  max-width: 100vh;
   margin: 0 auto;
 }
 
@@ -1778,7 +1781,7 @@ ul {
 }
 
 .ban_img img {
-  max-width: 100%;
+  max-width: 100vh;
   /* Set the maximum width of the image */
   height: auto;
 }

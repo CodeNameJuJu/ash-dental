@@ -211,7 +211,7 @@ export const About = () => {
                 <section className='mb-5 pb-5 text-center' id="what-we-do">
                     <div className="container-fluid">
                         <div className='mb-3 pb-3 ps-3 pe-3' >
-                            <div className="row mt-5 no-margins">
+                            <div className="row mt-5 no-margins no-padding-row">
                                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                                     <div className="card background">
                                         <div className="card-block block-1">
@@ -248,7 +248,7 @@ export const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                                <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 ">
                                     <div className="card background">
                                         <div className="card-block block-1">
                                             <h3 className="card-title text-color-gold"><i className="fa-solid fa-pen-to-square me-3"></i>Patient Education and Empowerment:</h3>
