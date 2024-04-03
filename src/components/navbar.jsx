@@ -48,7 +48,7 @@ function Navbar() {
                         <img className="logo img-fluid" src="/Images/primary logo/Ash Dental logo-01.webp" alt="Ash Dental Logo" />
                     </Link>
                     <button
-                        className="navbar-toggler ms-auto fadeIn-animation"
+                        className="navbar-toggler ms-auto "
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent"
