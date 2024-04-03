@@ -92,7 +92,7 @@ function Services() {
         <div>
             <nav className="navbar nav-bg navbar-expand-sm navbar-second allin">
                 <button
-                    className="navbar-toggler  ms-auto  fadeIn-animation"
+                    className="navbar-toggler  ms-auto  fadeIn-animation hide-mob"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"

@@ -133,6 +133,86 @@ li {
   cursor: pointer;
   /* Set cursor to pointer on hover */
 }
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 8000; /* Ensure it appears above other content */
+  background-color: #ffffff; /* Initial background color (can be removed later) */
+  display: flex; /* Allow for positioning elements within the navbar */
+}
+.side-btn {
+  color: #ffffff !important;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-left: 15px;
+
+}
+
+.navbar-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border: none; /* Remove default border */
+  cursor: pointer; /* Indicate interactivity */
+}
+
+/* Right-hand side positioning */
+.navbar-nav {
+  margin-left: auto; /* Push navigation links to the right */
+}
+
+/* Black background for collapsed state (optional) */
+.navbar-collapse.show {
+  background-color: rgb(14, 12, 12); /* Adjust for desired color */
+  position: absolute; /* Position the collapsed menu on top of the content */
+  top: 0; /* Start collapsed menu off-screen */
+  right: 0; /* Align the collapsed menu to the left edge */
+  width: 70%; /* Make the collapsed menu full width */
+  height: 100vh; /* Make the collapsed menu full viewport height */
+  transition: all 0.3s ease-in-out; /* Add smooth transition for collapse/uncollapse */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Styling for collapsed state (optional) */
+.navbar-collapse.show .navbar-nav {
+  flex-direction: column; /* Stack navigation links vertically */
+  align-items: center; /* Center navigation links horizontally */
+  padding: 2rem; /* Add some padding for aesthetics */
+}
+
+.navbar-collapse.show .nav-item {
+  margin-bottom: 1rem; /* Add spacing between navigation links */
+}
+
+/* Media query for smaller screens (adjust as needed) */
+@media (max-width: 900px) {
+  .navbar-collapse {
+    transition: transform 0.5s ease-in; /* Maintain transition for mobile */
+  }
+
+  .navbar-toggler {
+    display: block; /* Show toggler button on smaller screens */
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .nav-item {
+      color: #000 !important;
+  }
+}
+@media (max-width: 900px) {
+  .nav-item {
+    color: #ffffff !important;
+  }
+  .nav-link {
+    color: #ffffff !important;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .hide-mob {
+      display: none !important;
+  }
+}
 
 .navbar {
   position: sticky;
@@ -158,7 +238,7 @@ li {
     position: sticky;
     top: 75px;
     /* Adjust according to the height of the first navbar */
-    z-index: 1000;
+    z-index: 700;
     /* Ensure it appears above other content */
     background-color: #ffffff;
     /* Add your desired background color */
@@ -420,6 +500,12 @@ input[type="range"]::-moz-range-thumb {
   .dropdown-menu li {
     position: relative;
   }
+  .side-btn{
+    display: none !important;
+  }
+  .hide-desk {
+    display: none !important;
+  }
 
   .nav-hover:hover {
     font-size: 12.1pt;
@@ -484,7 +570,7 @@ input[type="range"]::-moz-range-thumb {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #2e2828 !important;
+  color: #2e2828;
   text-decoration: none;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
@@ -872,6 +958,10 @@ p {
     opacity: 0; /* Initially transparent (optional, for background color ease-in) */
   
   }
+  .middle {
+    justify-content: center;
+    padding-top: 20px;
+  }
 
   .navbar-toggler {
     display: block;
@@ -883,9 +973,18 @@ p {
   .allin{
     padding-right: 15px;
   }
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%); /* Start from outside the screen (right) */
+    }
+    to {
+      transform: translateX(0); /* Slide to the left to become visible */
+    }
+  }
 
   .navbar-collapse.show {
-    transform: translateY(0); /* Slides down smoothly */
+    animation: slideFromRight 0.3s ease-in-out forwards;
+    
     opacity: 1; /* Becomes fully opaque (optional) */
   }
 
@@ -1958,6 +2057,7 @@ ul {
 
 .modal-move{
   padding-top: 120px;
+  z-index: 9999;
 }
 
 @keyframes fadeIn {
