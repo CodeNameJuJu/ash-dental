@@ -21,7 +21,7 @@ function Dental() {
             <hr ></hr>
             <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
-                    className="navbar-toggler"
+                    className="navbar-toggler hide-mob"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
