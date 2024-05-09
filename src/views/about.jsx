@@ -199,7 +199,7 @@ export const About = () => {
                     </p>
                     <br />
                     <br />
-                    <img style={{ height: '100%', width: '100%' }} src={process.env.PUBLIC_URL + "/Images/Practice/High/ASH DENTAL_content_MARCH'24-343.webp"} text="First slide" alt='Sale1' />
+                    <img style={{ height: '100%', width: '100%' }} src={process.env.PUBLIC_URL + "/Images/Practice/Low/ASH DENTAL_content_MARCH'24-169.jpg"} text="First slide" alt='Sale1' />
                     <br />
                 </div>
                 <br />

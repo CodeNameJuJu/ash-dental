@@ -23,6 +23,8 @@ const imageIndexMapping = {
     "tanniecombo.webp": "../Images/FacesCloseUpsLandscape/tanniecombo.webp",
     "snorcombo.webp": "../Images/FacesCloseUpsLandscape/snorcombo.webp",
     "mond2.webp": "../Images/FacesCloseUpsLandscape/mond2.webp",
+    "NewTeeth.jpg": "../Images/FacesCloseUpsLandscape/NewTeeth.jpg",
+    "NewTeeth2.jpg": "../Images/FacesCloseUpsLandscape/NewTeeth2.jpg",
     "tannie1.webp": "../Images/FacesCloseUpsLandscape/tannie1.webp",
 };
 
