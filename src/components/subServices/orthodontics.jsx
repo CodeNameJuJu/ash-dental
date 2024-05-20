@@ -68,7 +68,7 @@ function Orthodontics() {
                 <div className='col-md-8 col-sm-12'>
                     <h3 className='text-color-gold text-start'>Orthodontic devices employed for aligning teeth.</h3>
                     <ul class="lead text-start">
-                        <li>Clear Aligners</li>
+                        <li><a href="#Aligners" class="gold mt-4 pt-4 mx-2">Clear Aligners - Click here to learn more. </a></li>
                         <li>Metal braces</li>
                         <li>clear / ceramic braces</li>
                     </ul>
@@ -88,7 +88,7 @@ function Orthodontics() {
             <div className='row'>
                 <div className='col-md-12 col-sm-12'>
                     <h1 className='text-color-gold text-start'>Unleash Your Smile with Clear Aligners.</h1>
-                    <h3 class="brown text-start ">Embrace Confidence: Explore Clear Aligners at ASH Dental</h3>
+                    <h3 class="brown text-start " id="Aligners">Embrace Confidence: Explore Clear Aligners at ASH Dental</h3>
                     <div class="text-center">
                         <br></br>
                         <p class="lead text-start">
@@ -97,7 +97,6 @@ function Orthodontics() {
                         <br></br>
                         <br></br>
                         <h5 class="text-color-gold text-start ">What are Clear Aligners?</h5>
-                        <br></br>
                         <p class="lead text-start">
                             Clear aligners are a series of clear, removable trays that gradually straighten your teeth over time.
                             They're virtually invisible, making them a popular choice for adults who want to improve their smile without the world knowing.
@@ -105,13 +104,12 @@ function Orthodontics() {
                         <br></br>
                         <br></br>
                         <h5 class="text-color-gold text-start ">Benefits of Clear Aligners:</h5>
-                        <br></br>
                         <ul class="lead text-start">
-                            <li className="card-text lead ">Discreet: Unlike metal braces, clear aligners are nearly invisible, so you can smile confidently throughout treatment.</li>
-                            <li className="card-text lead ">Removable: Enjoy the freedom to remove your aligners for eating, drinking, brushing, and flossing.</li>
-                            <li className="card-text lead ">Comfortable: Made from smooth, comfortable material that won't irritate your gums or cheeks.</li>
-                            <li className="card-text lead ">Effective: Gradually straighten your teeth for a beautiful, lasting result.</li>
-                            <li className="card-text lead ">Convenient: Fewer appointments needed compared to traditional braces</li>
+                            <li className="card-text lead ">- Discreet: Unlike metal braces, clear aligners are nearly invisible, so you can smile confidently throughout treatment.</li>
+                            <li className="card-text lead ">- Removable: Enjoy the freedom to remove your aligners for eating, drinking, brushing, and flossing.</li>
+                            <li className="card-text lead ">- Comfortable: Made from smooth, comfortable material that won't irritate your gums or cheeks.</li>
+                            <li className="card-text lead ">- Effective: Gradually straighten your teeth for a beautiful, lasting result.</li>
+                            <li className="card-text lead ">- Convenient: Fewer appointments needed compared to traditional braces</li>
                         </ul>
                         <br></br>
                         <br></br>
@@ -147,7 +145,13 @@ function Orthodontics() {
                 <Link className="active text-start" to="/contact" title="View Gallery">
                     <button class="crown-button" >Contact Us</button>
                 </Link>
+                <br></br>
             </div>
+            <br></br>
+            <img className='col-md-3 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Ortho.jpg" alt="Orthodontics" style={{ height: '60%' }} />
+            <img className='col-md-3 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Clear.jpg" alt="Orthodontics" style={{ height: '60%' }} />
+            <img className='col-md-3 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Aligner.jpg" alt="Aligner" style={{ height: '60%' }} />
+            <img className='col-md-3 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Aligners.jpg" alt="Clear Aligners" style={{ height: '60%' }} />
         </div>
     )
 }

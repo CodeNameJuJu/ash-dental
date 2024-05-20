@@ -35,8 +35,9 @@ function Gallery() {
     return (
         <div className="text-center container">
             <h1 className='text-color-gold mt-4 pt-4'>Gallery</h1>
-            <a href="#facility" class="gold mt-4 pt-4 mx-2">Facility</a>
-                <a href="#smile-gallery"  class="gold mx-2">Smile Gallery</a>
+                    
+            <a href="#facility" class="gold mt-4 pt-4 mx-2"><button  href="#facility" class="gallery-button" >Facility</button></a>
+                <a href="#smile-gallery" ><button  href="#smile-gallery" class="gallery-button">Smile Gallery</button></a>
                 <br></br>
                     <p className="lead text-start ms-2 mt-3 pt-3 mb-4 pb-4">
                         Explore our gallery and witness the transformative journeys we've embarked on with our patients. Each image tells a story of precision, artistry,

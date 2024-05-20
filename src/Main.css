@@ -2050,6 +2050,21 @@ ul {
 .crown-button:hover {
   background-color: #B6A792;
 }
+.gallery-button {
+  width: 140px; /* Adjust width as needed */
+  height: 45px; /* Adjust height as needed */
+  background-color: #726358;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.gallery-button:hover {
+  background-color: #B6A792;
+}
 
 .cntr {
   justify-content: center;
@@ -2075,4 +2090,23 @@ ul {
 
 .fadeIn-animation {
   animation: 3s fadeIn;
+}
+.nonumber {
+  list-style: none; /* Remove default list style (numbers) */
+  list-style-type: disc; /* Sets a disc marker (can be customized) */
+  padding-left: 1.2em; /* Optional: Adjust spacing for hyphens */
+}
+
+@media screen and (min-width: 770px) {
+  .dental-img {
+      display: flex;
+      justify-content: center; /* Centers the images horizontally */
+      align-items: center; /* Optionally centers vertically, if needed */
+  }
+
+}
+@media screen and (max-width: 770px) {
+  .dental-img { /* Target specific image classes */
+  height: 20%;
+}
 }
