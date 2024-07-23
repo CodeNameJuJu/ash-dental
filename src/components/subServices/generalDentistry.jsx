@@ -51,9 +51,9 @@ function GeneralDentistry() {
             &nbsp;
             <div className='row'>
                 <div className='col-md-8 col-sm-12'>
-                        <h1 class="gold text-start">Comprehensive General Dentistry</h1>
-                        <h3 class="brown text-start ">Personalized Care for Optimal Oral Health</h3>
-                        {/* <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2> */}
+                    <h1 class="gold text-start">Comprehensive General Dentistry</h1>
+                    <h3 class="brown text-start ">Personalized Care for Optimal Oral Health</h3>
+                    {/* <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2> */}
                     <br />
                     <p class="lead text-start">Experience personalised care and optimal oral health with our comprehensive range of general
                         dental services for the whole family that go beyond routine check-ups and cleanings. We believe in
@@ -82,24 +82,89 @@ function GeneralDentistry() {
                 </p>
                 <br></br>
                 &nbsp;
+
                 <br></br>
-                <h3 class="brown text-start ">Root Canal Therapy:</h3>
+                <h3 class="gold text-start ">Root Canal Therapy:</h3>
+                <h4 class="brown text-start"> Journey to a Confident Smile</h4>
+                &nbsp;
                 <p class="lead text-start"> Experience advanced Endodontic treatments at ASH Dental, where we redefine
                     root canal therapy with precision and innovation to alleviate the throbbing pain. Endodontic
                     procedures, commonly known as root canal treatments, involve the meticulous removal of infected
                     or damaged pulp from within the tooth (dental abscess), followed by thorough cleaning,
                     disinfection, and the sealing of the root canal.
                 </p>
-                <br></br>
+                &nbsp;
                 <p class="lead text-start">
-                    At ASH Dental, we employ cutting-edge 3D imaging technology to enhance the diagnostic and
-                    treatment process, providing a comprehensive view of the tooth&#39;s internal structure. This ensures
-                    unparalleled accuracy and precision in addressing complex root canal issues. Our dedicated team of
-                    professionals combines expertise with advanced techniques to make Endodontic treatments a
-                    seamless and effective experience, promoting long-term oral health. Trust ASH Dental for state-of-
-                    the-art Endodontic care that goes beyond conventional root canal therapy, ensuring optimal results
-                    for your dental well-being.
+                    Dental implants are more than just a procedure, they represent a transformative journey to restore your confident smile.
+                    Experience advanced Endodontic treatments at ASH Dental, where we redefine root canal therapy with precision and innovation to alleviate the throbbing
+                    pain. Endodontic procedures, commonly known as root canal treatments, involve the meticulous removal of infected or damaged pulp from within the
+                    tooth (dental abscess), followed by thorough cleaning, disinfection, and the sealing of the root canal.
                 </p>
+                &nbsp;
+                <p class="lead text-start">
+                    At ASH Dental, we employ cutting-edge 3D imaging technology to enhance the diagnostic and treatment process, providing a comprehensive view of the
+                    tooth&#39;s internal structure. This ensures unparalleled accuracy and precision in addressing complex root canal issues. Our dedicated team
+                    of professionals combines expertise with advanced techniques to make Endodontic treatments a seamless and effective experience,
+                    promoting long-term oral health. Trust ASH Dental for state-of- the-art Endodontic care that goes beyond conventional root canal therapy,
+                    ensuring optimal results for your dental well-being.
+                </p>
+                &nbsp;
+                <h4 class="brown text-start">Root Canal Treatments</h4>
+                <h6 class="brown text-start">Dealing with a bad toothache? It might be time for a root canal treatment! Here’s everything you need to know: </h6>
+                &nbsp;
+                <h5 class="brown text-start">What is a Root Canal?</h5>
+                <p class="lead text-start">
+                    A root canal is a dental procedure that repairs and saves a tooth that is badly decayed or infected. It involves removing the nerve and pulp, cleaning the
+                    inside of the tooth, and sealing it.
+                </p>
+                &nbsp;
+                <h5 class="brown text-start">When is it Needed?</h5>
+                <p class="lead text-start">
+                    Root canal treatment is necessary when the pulp inside your tooth becomes inflamed or infected. This can be due to deep decay, a crack or chip in the
+                    tooth, or trauma to the tooth.
+                </p>
+                &nbsp;
+
+                <h5 class="brown text-start">The Procedure:</h5>
+                <p class="lead text-start">
+                    <ol>
+                        <li>Examination and X-rays: We examine the tooth and take X-rays to see the extent of the damage.</li>
+                        <li>Local Anaesthesia: We numb the tooth and surrounding area to keep you comfortable.</li>
+                        <li>Removing the Pulp: We make an opening in the tooth and remove the infected pulp.</li>
+                        <li>Cleaning and Shaping: We clean and shape the inside of the tooth.</li>
+                        <li>Filling the Canals: The canals are filled with a rubber-like material and sealed.</li>
+                        <li>Restoration: We restore the tooth with a crown or filling to bring back its full function and appearance.</li>
+                    </ol>
+                </p>
+                <h5 class="brown text-start">Benefits of Root Canal Treatment:</h5>
+                <p class="lead text-start">
+                    <ol className="nonumber">
+                        <li className="card-text lead "><b>Pain Relief:</b> Say goodbye to the pain caused by infection or inflammation.</li>
+                        <li className="card-text lead ">Saves the Tooth: Keeps your natural tooth instead of extracting it.</li>
+                        <li className="card-text lead "> Prevents Spread of Infection: Stops the infection from spreading to other teeth and tissues.</li>
+                        <li className="card-text lead "> Restores Function: Allows you to chew and bite without discomfort.</li>
+                    </ol>
+                </p>
+                    &nbsp;
+                <h5 class="brown text-start">Aftercare Tips:</h5>
+                <p class="lead text-start">
+                    <ol className="nonumber">
+                        <li className="card-text lead ">Follow-Up Visits: Attend all follow-up visits to ensure proper healing.</li>
+                        <li className="card-text lead ">Good Oral Hygiene: Brush and floss regularly to keep your teeth healthy.</li>
+                        <li className="card-text lead ">Avoid Hard Foods: Initially, avoid biting down on hard foods to protect the treated tooth.</li>
+                    </ol>
+                </p>
+                &nbsp;
+                <p class="lead text-start">
+                    A root canal treatment is a common and effective way to save a damaged tooth and maintain your oral health. If you’re experiencing severe tooth pain,
+                    sensitivity, or swelling, give us a call to see if a root canal is right for you!
+                </p>
+                &nbsp;
+                <br></br>
+                <div class="dental-img">
+                    <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/RootCanal.jpg" alt="Software for Implant" style={{ height: '100%' }} />
+                    <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/RootCanal 2.jpg" alt="Implant Guide" style={{ height: '100%' }} />
+                    </div>
                 <br></br>
                 &nbsp;
                 <br></br>

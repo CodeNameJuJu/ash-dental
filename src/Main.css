@@ -201,6 +201,17 @@ li {
       color: #000 !important;
   }
 }
+@media (max-width: 991px) {
+  .natetext {
+    color: #ffffff !important;
+  }
+  .natetext {
+    color: #ffffff !important;
+  }
+  .hide-services{
+    display: none;
+  }
+}
 @media (max-width: 900px) {
   .nav-item {
     color: #ffffff !important;
@@ -214,7 +225,6 @@ li {
       display: none !important;
   }
 }
-
 .navbar {
   position: sticky;
   top: 0;
@@ -496,6 +506,14 @@ input[type="range"]::-moz-range-thumb {
   }
 
 }
+@media (min-width: 940px) {
+  .no-desk {
+    display: none; /* Hides the element with class "my-element" on screens smaller than 800px */
+  }
+  .hide-services {
+
+  }
+}
 
 @media all and (min-width: 992px) {
   .dropdown-menu li {
@@ -666,7 +684,9 @@ section .section-title {
   border: 0;
 
 }
-
+.lowerdropw{
+  text-align: center;
+}
 .dropdown-item:hover {
   background-color: #B6A792 !important;
   color: #ffffff !important;
