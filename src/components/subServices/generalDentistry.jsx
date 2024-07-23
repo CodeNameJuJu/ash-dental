@@ -124,6 +124,7 @@ function GeneralDentistry() {
                     tooth, or trauma to the tooth.
                 </p>
                 &nbsp;
+
                 <h5 class="brown text-start">The Procedure:</h5>
                 <p class="lead text-start">
                     <ol>

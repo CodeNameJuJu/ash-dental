@@ -13,7 +13,7 @@ function Navigate({ name, path }) {
 function Navbar() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
+
 
     const location = useLocation();
 
@@ -29,14 +29,17 @@ function Navbar() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
     useEffect(() => {
         const navbar = document.getElementById('navbarSupportedContent');
         if (navbar) {
             navbar.classList.remove('show');
         }
     }, [location]);
+    const [isMoreAboutUsOpen, setIsMoreAboutUsOpen] = useState(false);
 
+    const toggleMoreAboutUs = () => {
+        setIsMoreAboutUsOpen(!isMoreAboutUsOpen);
+    };
 
 
     return (
@@ -65,11 +68,27 @@ function Navbar() {
                         </button>
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
-                            <li className="nav-item nav-hover">
+                            <li className="nav-item nav-hover natetext">
                                 <Navigate name={'Home'} path={'/'} />
                             </li>
-                            <li className="nav-item nav-hover">
+                            <li className="nav-item nav-hover natetext hide-services">
                                 <Navigate name={'Services'} path={'/services'} />
+                            </li>
+                            <li className="nav-item nav-hover dropdown lowerdropw no-desk">
+                                <li className="nav-link  no-desk" onClick={toggleMoreAboutUs}>
+                                    Services
+                                </li>
+                                {isMoreAboutUsOpen && (
+                                    <li className="nav-item natetext lower-drop no-desk">
+                                        <li class="nav-item natetext lower-drop no-desk"><Navigate name={'All Services'} path={'/services'} /> </li>
+                                        <li class="nav-item natetext lower-drop no-desk"><Navigate name={'Teeth Whitening'} path={'/teethWhitening'} /> </li>
+                                        <li class="nav-item natetext lowerdropw"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
+                                        <li class="nav-item natetext lowerdropw"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
+                                        <li class="nav-item natetext lowerdropw"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
+                                        <li class="nav-item natetext lowerdropw"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                                        <li class="nav-item natetext lowerdropw"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
+                                    </li>
+                                )}
                             </li>
                             <li className="nav-item nav-hover">
                                 <Navigate name={'About'} path={'/about'} />

@@ -18,11 +18,12 @@ import Emergencies from  "../src/components/subServices/emergencies";
 import Dental from  "../src/components/subServices/dental";
 import Crowns from  "../src/components/subServices/crowns";
 
+
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
+       <Navbar />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -39,7 +40,7 @@ function App() {
           <Route path="/generalDentistry" element={<GeneralDentistry />} />
           <Route path="/emergencies" element={<Emergencies />} />
         </Routes>
-        <Footer />
+        <Footer /> 
       </BrowserRouter>
     </div>
   );
