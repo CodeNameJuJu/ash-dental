@@ -27,6 +27,10 @@ const imageIndexMapping = {
     "NewTeeth.jpg": "../Images/FacesCloseUpsLandscape/NewTeeth.jpg",
     "NewTeeth2.jpg": "../Images/FacesCloseUpsLandscape/NewTeeth2.jpg",
     "teethRestore.webp": "../Images/FacesCloseUpsLandscape/teethRestore.webp",
+    "brightsmile.jpeg": "../Images/FacesCloseUpsLandscape/brightsmile.jpeg",
+    "smilebefore.jpeg": "../Images/FacesCloseUpsLandscape/smilebefore.jpeg",
+    "smileafter.jpeg": "../Images/FacesCloseUpsLandscape/smileafter.jpeg",
+    
     
     
 };
