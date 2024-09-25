@@ -19,17 +19,20 @@ const imageIndexMapping = {
     "ASH DENTAL_content_MARCH'24-18.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-18.webp",
     "ASH DENTAL_content_MARCH'24-44.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.webp",
     "ASH DENTAL_content_MARCH'24-83.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-83.webp",
-    "lippecombo.webp": "../Images/FacesCloseUpsLandscape/lippecombo.webp",
-    "tanniecombo.webp": "../Images/FacesCloseUpsLandscape/tanniecombo.webp",
-    "snorcombo.webp": "../Images/FacesCloseUpsLandscape/snorcombo.webp",
+    
+    "lippecombo.webp": "../Images/FacesCloseUpsLandscape/lippecombo.jpg",
+    "tanniecombo.webp": "../Images/FacesCloseUpsLandscape/tanniecombo.jpg",
+    "snorcombo.jpg": "../Images/FacesCloseUpsLandscape/snorcombo.jpg",
     // "tannie1.webp": "../Images/FacesCloseUpsLandscape/tannie1.webp",
-    "mond2.webp": "../Images/FacesCloseUpsLandscape/mond2.webp",
-    "NewTeeth.jpg": "../Images/FacesCloseUpsLandscape/NewTeeth.jpg",
-    "NewTeeth2.jpg": "../Images/FacesCloseUpsLandscape/NewTeeth2.jpg",
-    "teethRestore.webp": "../Images/FacesCloseUpsLandscape/teethRestore.webp",
-    "brightsmile.jpeg": "../Images/FacesCloseUpsLandscape/brightsmile.jpeg",
-    "smilebefore.jpeg": "../Images/FacesCloseUpsLandscape/smilebefore.jpeg",
-    "smileafter.jpeg": "../Images/FacesCloseUpsLandscape/smileafter.jpeg",
+    "mond2.jpg": "../Images/FacesCloseUpsLandscape/mond2.jpg",
+    "NewTeethGum.jpg": "../Images/FacesCloseUpsLandscape/NewTeethGum.jpg",
+    "NewTeeth22.jpg": "../Images/FacesCloseUpsLandscape/NewTeeth22.jpg",
+    "smileRestore2.jpg": "../Images/FacesCloseUpsLandscape/smileRestore2.jpg",
+    "brightsmile.jpg": "../Images/FacesCloseUpsLandscape/brightsmile.jpg",
+    "SmileBeforeAfter.jpg": "../Images/FacesCloseUpsLandscape/SmileBeforeAfter.jpg",
+    "TopView.jpg": "../Images/FacesCloseUpsLandscape/TopView.jpg",
+    "SmileMakeOver.jpg": "../Images/FacesCloseUpsLandscape/SmileMakeOver.jpg",
+
     
     
     
@@ -86,7 +89,7 @@ function Gallery() {
                             {/* Dynamically load images for the third set */}
                             {Object.keys(imageIndexMapping).slice(16).map((imageName, index) => (
                                 <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
-                                    <LazyLoad height={200} once>
+                                    <LazyLoad height={250} width={250} once>
                                         <img src={imageIndexMapping[imageName]} className="img-fluid teeth" alt="Placeholder" />
                                     </LazyLoad>
                                 </div>

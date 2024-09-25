@@ -73,7 +73,7 @@ li {
 
 .teeth {
   max-height: 600px; /* Set maximum height to 100% of its container */
-  height: 600px; /* Set maximum height to 100% of its container */
+  /* height: 600px;  Removed to fit in new before and after images */
   width: 600px;
 }
 
