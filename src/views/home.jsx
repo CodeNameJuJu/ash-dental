@@ -3,7 +3,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from 'react-router-dom'
 
 const imageIndexMapping = {
-    "banner": "/Images/ServicesLandscape/AshBanner.jpg",
+    "banner": "/Images/banner1.webp",
     "teethWhitening": "/Images/FacesCloseUpsLandscape/1.webp",
     "veneers": "/Images/FacesCloseUpsLandscape/4.webp",
     "dentalBonding": "/Images/FacesCloseUpsLandscape/8.webp",
