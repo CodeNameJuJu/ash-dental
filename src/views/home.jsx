@@ -23,7 +23,7 @@ export const Home = () => {
 
     return (
         <div className="container-fluid p-0">
-        <Link to="/specials"><img src={imageIndexMapping["banner"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '615px' }} /></Link>
+        <img src={imageIndexMapping["banner"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '615px' }} />
             <div class="serv-top">
                 <div class="text-center">
                     <h1 class="gold ">Welcome to ASH Dental</h1>

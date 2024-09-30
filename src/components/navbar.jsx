@@ -102,9 +102,9 @@ function Navbar() {
                             <li className="nav-item nav-hover">
                                 <Navigate name={'Contact'} path={'/contact'} />
                             </li>
-                            <li className="nav-item nav-hover">
+                            {/* <li className="nav-item nav-hover">
                                 <Navigate name={'Special Offers'} path={'/specials'} />
-                            </li>
+                            </li> */}
                         </ul>
                         <div className="d-flex ml-auto middle">
                             <button type="button" className="btn btn-bg btn-link " onClick={openModal} title="Documents">
