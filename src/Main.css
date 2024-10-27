@@ -2071,7 +2071,7 @@ ul {
   background-color: #B6A792;
 }
 .gallery-button {
-  width: 140px; /* Adjust width as needed */
+  width: auto; /* Adjust width as needed */
   height: 45px; /* Adjust height as needed */
   background-color: #726358;
   color: white;

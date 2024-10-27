@@ -19,7 +19,7 @@ const imageIndexMapping = {
     "ASH DENTAL_content_MARCH'24-18.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-18.webp",
     "ASH DENTAL_content_MARCH'24-44.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-44.webp",
     "ASH DENTAL_content_MARCH'24-83.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-83.webp",
-    
+
     "lippecombo.webp": "../Images/FacesCloseUpsLandscape/lippecombo.jpg",
     "tanniecombo.webp": "../Images/FacesCloseUpsLandscape/tanniecombo.jpg",
     "snorcombo.jpg": "../Images/FacesCloseUpsLandscape/snorcombo.jpg",
@@ -33,73 +33,86 @@ const imageIndexMapping = {
     "TopView.jpg": "../Images/FacesCloseUpsLandscape/TopView.jpg",
     "SmileMakeOver.jpg": "../Images/FacesCloseUpsLandscape/SmileMakeOver.jpg",
 
-    
-    
-    
+
+
+
 };
 
 function Gallery() {
     return (
         <div className="text-center container">
-            <h1 className='text-color-gold mt-4 pt-4'>Gallery</h1>
-                    
-            <a href="#facility" class="gold mt-4 pt-4 mx-2"><button  href="#facility" class="gallery-button" >Facility</button></a>
-                <a href="#smile-gallery" ><button  href="#smile-gallery" class="gallery-button">Smile Gallery</button></a>
-                <br></br>
-                    <p className="lead text-start ms-2 mt-3 pt-3 mb-4 pb-4">
-                        Explore our gallery and witness the transformative journeys we've embarked on with our patients. Each image tells a story of precision, artistry,
-                        and the pursuit of dental excellence. Join us on a visual tour that reflects the harmonious blend of design, technology,
-                        and the personalized touch that defines ASH Dental.
-                    </p>
+            <h1 className='text-color-gold mt-4 pt-4'>Explore our smile transformations at ASH dental</h1>
+            <a href="#smile-gallery"><button href="#smile-gallery" class="gallery-button">Smile Gallery (Before and after photos)</button></a>
+            <a href="#smile-in-progress" class="gold mt-4 pt-4 mx-2"><button href="#smile-in-progress" class="gallery-button">Smile in Progress</button></a>
+            <a href="#facility" class="gold mt-4 pt-4 mx-2"><button href="#facility" class="gallery-button">Our Dental Practice</button></a>
+            <br></br>
+            <p className="lead text-start ms-2 mt-3 pt-3 mb-4 pb-4">
+                Explore our gallery and witness the transformative smile journeys we've embarked on with
+                our patients. Each image tells a story of precision, artistry, and the pursuit of dental
+                excellence. Join us on a visual tour that reflects the harmonious blend of design, technology,
+                and the personalised touch that defines ASH Dental.
+            </p>
+            <p className="lead text-start ms-2 mt-3 pt-3 mb-4 pb-4">
+                At ASH Dental, we specialize in a variety of advanced dental treatments, from cosmetic
+                dentistry like veneers, teeth whitening, and clear aligners, to comprehensive solutions
+                such as dental implants. Our gallery showcases real patient results, featuring everything
+                from smile makeovers to restorative treatments. Each image reflects the quality of care
+                provided by our experienced team of dentists in Pretoria East.
+            </p>
+            <p className="lead text-start ms-2 mt-3 pt-3 mb-4 pb-4">
+                Discover how we create beautiful, lasting smiles through cutting-edge treatments and
+                personalised care. We’re dedicated to providing personalised, cutting-edge treatments to
+                patients across Pretoria and surrounding areas.
+            </p>
 
-                    {/* First set of images */}
-                    <div className="container">
-                        <h2 className="brown mt-4 pt-4 mb-4 pb-4" id="facility">Where Relaxation Meets Results</h2>
-                        <div className="row mb-5 pb-5">
-                            {/* Dynamically load images for the first set */}
-                            {Object.keys(imageIndexMapping).slice(0, 6).map((imageName, index) => (
-                                <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
-                                    <LazyLoad height={200} once>
-                                        <img src={imageIndexMapping[imageName]} className="img-fluid gallery-image" alt="Placeholder" />
-                                    </LazyLoad>
-                                </div>
-                            ))}
+            {/* First set of images */}
+            <div className="container">
+                <h2 className="brown mt-4 pt-4 mb-4 pb-4" id="smile-gallery">Transforming Smiles, One Patient at a Time</h2>
+                <div className="row">
+                    {/* Dynamically load images for the third set */}
+                    {Object.keys(imageIndexMapping).slice(16).map((imageName, index) => (
+                        <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
+                            <LazyLoad height={250} width={250} once>
+                                <img src={imageIndexMapping[imageName]} className="img-fluid teeth" alt="Placeholder" />
+                            </LazyLoad>
                         </div>
-                    </div>
-
-                    {/* Second set of images */}
-                    <div className="container " id="smile-in-progress">
-                        <h2 className="brown mt-4 pt-4 mb-4 pb-4">Smile in Progress</h2>
-                        <div className="row mb-5 pb-5">
-                            {/* Dynamically load images for the second set */}
-                            {Object.keys(imageIndexMapping).slice(6, 16).map((imageName, index) => (
-                                <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
-                                    <LazyLoad height={200} once>
-                                        <img src={imageIndexMapping[imageName]} className="img-fluid gallery-image" alt="Placeholder" />
-                                    </LazyLoad>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Last set of images */}
-                    <div className="container">
-                        <h2 className="brown mt-4 pt-4 mb-4 pb-4" id="smile-gallery">Transforming Smiles, One Patient at a Time</h2>
-                        <div className="row">
-                            {/* Dynamically load images for the third set */}
-                            {Object.keys(imageIndexMapping).slice(16).map((imageName, index) => (
-                                <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
-                                    <LazyLoad height={250} width={250} once>
-                                        <img src={imageIndexMapping[imageName]} className="img-fluid teeth" alt="Placeholder" />
-                                    </LazyLoad>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    ))}
                 </div>
-                );
+            </div>
+
+            {/* Second set of images */}
+            <div className="container " id="smile-in-progress">
+                <h2 className="brown mt-4 pt-4 mb-4 pb-4">Smile in Progress</h2>
+                <div className="row mb-5 pb-5">
+                    {/* Dynamically load images for the second set */}
+                    {Object.keys(imageIndexMapping).slice(6, 16).map((imageName, index) => (
+                        <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
+                            <LazyLoad height={200} once>
+                                <img src={imageIndexMapping[imageName]} className="img-fluid gallery-image" alt="Placeholder" />
+                            </LazyLoad>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Last set of images */}
+            <div className="container">
+                <h2 className="brown mt-4 pt-4 mb-4 pb-4" id="facility">Where Relaxation Meets Results</h2>
+                <div className="row mb-5 pb-5">
+                    {/* Dynamically load images for the first set */}
+                    {Object.keys(imageIndexMapping).slice(0, 6).map((imageName, index) => (
+                        <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
+                            <LazyLoad height={200} once>
+                                <img src={imageIndexMapping[imageName]} className="img-fluid gallery-image" alt="Placeholder" />
+                            </LazyLoad>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
 }
 
-                export default Gallery;
+export default Gallery;
 
 // ******************************************************************* EOF ******************************************************************************
