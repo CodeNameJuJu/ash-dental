@@ -50,13 +50,46 @@ export const Contact = () => {
       <div className="pb-4 mb-4">
         <br />
         <br />
-        <h1 className="header-col text-center">Get in Touch</h1>
+        <h1 className="header-col text-center">Contact Us – Conveniently Located in the Heart of Pretoria East</h1>
         <br />
         <br />
         <p className="pb-3 mb-3 lead">
-          Thank you for considering ASH Dental for your dental care needs. Feel free to reach out to
-          us. Whether you have inquiries about our services, want to schedule an appointment, or
-          simply have a question, we are here to assist you on your dental journey.
+          ASH Dental is strategically located in the heart of Pretoria East, offering easy access to
+          patients from surrounding areas like Brooklyn, Lynnwood, Menlo Park, Faerie Glen,
+          Garsfontein, and Moreleta Park. Our practice is just a few minutes' drive from these key
+          neighbourhoods, making it an ideal choice for both routine dental care and urgent
+          treatments.
+        </p>
+        <p className="pb-3 mb-3 lead">
+          We are also conveniently close to major landmarks, businesses, and shopping destinations,
+          including:
+        </p>
+        <ul className="pb-3 mb-3 lead">
+          <li>
+            1.0 km from the Protea Hotel Fire and Ice
+          </li>
+          <li>
+            1.3 km from Menlyn Park Shopping Centre
+          </li>
+          <li>
+            1.9 km from Time Square Casino
+          </li>
+          <li>
+            2.1 km from Menlyn Maine Central Square
+          </li>
+          <li>
+            3.4 km from the Pretoria Country Club
+          </li>
+        </ul>
+        <p className="pb-3 mb-3 lead">
+          Whether you’re staying nearby or working in the area, ASH Dental provides accessible, top-
+          quality dental services for your convenience. From general dentistry to cosmetic treatments,
+          our team is here to serve all your dental needs.
+        </p>
+        <p className="pb-3 mb-3 lead">
+          Feel free to reach out to us. Whether you have inquiries about our services, want to
+          schedule an appointment, or simply have a question, we are here to assist you on your
+          dental journey.
         </p>
         <div className="row">
           <div className="mb-3 text-start col-md-4">
@@ -65,7 +98,7 @@ export const Contact = () => {
             <p className="lead">Ash Medical Suites 3 & 4</p>
             <p className="lead">177 Garsfontein Road,</p>
             <p className="lead">Ashlea Garden,</p>
-            <p className="lead">Pretoria, Gauteng</p>
+            <p className="lead">Pretoria East, Gauteng</p>
           </div>
           <div className="mb-3 text-start col-md-4 lead">
             <h3 className="text-color-gold mb-2 pb-2">Contact Details:</h3>
@@ -84,7 +117,7 @@ export const Contact = () => {
           </div>
           <div className="mb-3 col-md-4 text-start">
             <h3 className="text-color-gold mb-2 pb-2">Emergency Contact Details:</h3>
-            <p className="lead">For dental emergencies, our dedicated Emergency Dental Care team is available outside regular office hours.</p>
+            <p className="lead">For 24 hour dental emergencies, our dedicated emergency dental care team is available outside regular dental office hours to assist you.</p>
             <p className="lead mt-2 pt-2">
               <MDBIcon icon="phone" className="me-3" />
               <a class="a2 text-color " href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
