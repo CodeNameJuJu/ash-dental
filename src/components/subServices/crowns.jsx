@@ -68,7 +68,9 @@ function Crowns() {
             &nbsp;
 
             <div className='row'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Crowns2.webp" alt="Crowns" style={{ height: '100%' }} />
+                <figure>
+                    <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Crowns2.webp" alt="Crowns" style={{ height: '100%' }} />
+                </figure>
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>Crowning Achievement in Precision</h2>

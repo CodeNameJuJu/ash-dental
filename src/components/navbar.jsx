@@ -48,7 +48,9 @@ function Navbar() {
             <nav className="navbar navbar-light bg-color navbar-expand-lg sticky-top " id="myTopnav">
                 <div className="container-fluid">
                     <Link className="active" to="/" title="ASH DENTAL">
-                        <img className="logo img-fluid" src="/Images/primary logo/Ash Dental logo-01.webp" alt="Ash Dental Logo" />
+                        <figure>
+                            <img className="logo img-fluid" src="/Images/primary logo/Ash Dental logo-01.webp" alt="Ash Dental Logo" />
+                        </figure>
                     </Link>
                     <button
                         className="navbar-toggler ms-auto "

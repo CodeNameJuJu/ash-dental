@@ -7,13 +7,19 @@ import { Link } from 'react-router-dom';
 function Footer() {
 
     return (
-        <div style={{ backgroundImage: `url(/Images/Texture2.webp)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', opacity: 1 }}>
-            <div class="footer-bg" style={{ opacity: 0.8 }} >
+        <div>
+            <div class="footer-bg">
                 <MDBFooter className='text-center text-lg-start text-muted '>
-                    <section class="">
+                    <section>
                         <MDBContainer className='mt-5 mobal'>
                             <MDBRow className='mt-3'>
-                                <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4 '>
+                                <MDBCol md="3" lg="3" xl="3" className='mt-3' style={{ 'text-align': 'center' }}>
+                                    <figure>
+                                        <img className="img-fluid mt-5" src="/Images/primary logo/Ash Dental logo-02.webp" alt="Ash Dental Logo" />
+                                    </figure>
+                                </MDBCol>
+                                <MDBCol md="3" lg="2" xl="2" className='mx-auto'>
+                                <h6 class="white mt-5"> Nav</h6>
                                     <br></br>
                                     <ul>
                                         <Link class="a2" to="/" title="Home">
@@ -45,9 +51,9 @@ function Footer() {
                                             Contact Us
                                         </Link></ul>
                                 </MDBCol>
-                                <MDBCol md="3" lg="2" xl="2.5" className='mx-auto mb-4 mobal'>
+                                <MDBCol md="3" lg="2" xl="2" className='mx-auto'>
                                     <br></br>
-                                    <h6 class="white"> Trading Hours</h6>
+                                    <h6 class="white mt-2"> Trading Hours</h6>
                                     <ul class="white mobmarg"> Mon- Fri: 8:00 – 17:00 </ul>
                                     <ul class="white mobmarg"> Saturday: 9:00 – 12:00</ul>
                                     <ul class="white mobmarg"> Sunday: Closed </ul>
@@ -55,7 +61,7 @@ function Footer() {
                                     <div>
                                     </div>
                                 </MDBCol>
-                                <MDBCol md="3" lg="3" xl="3" className='mx-auto mb-md-0 mb-4 mobal'>
+                                <MDBCol md="3" lg="3" xl="3" className='mx-auto'>
                                     <br></br>
                                     <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
                                         <p >
@@ -109,9 +115,7 @@ function Footer() {
                                         <MDBIcon icon="phone" className="me-3 white pt-2 fadeIn-animation" />
                                         <a class="a2" href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
                                     </p>
-                                </MDBCol>
-                                <MDBCol md="2" lg="2" xl="2" className='mb-4 mt-3' style={{ 'text-align': 'center' }}>
-                                    <div>
+                                    <div className='mt-3'>
                                         <Link to="https://www.facebook.com/profile.php?id=61556083561310" style={{ 'font-size': '25px', 'padding-right': '10px', 'text-align': 'center' }}
                                             className='me-4 text-reset white'>
 
@@ -125,7 +129,7 @@ function Footer() {
                                     </div>
                                 </MDBCol>
                             </MDBRow>
-                            <div className='text-center p-4' >
+                            <div className='text-center pt-4' >
                                 © 2024 Copyright:&nbsp;
                                 <p className='text-reset fw-bold'>
                                     Ash Dental

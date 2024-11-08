@@ -64,7 +64,9 @@ function Dental() {
                         printing and advanced diagnostic software, to ensure the utmost precision in every procedure.</p>
                     <br />
                 </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/1.webp" alt="Dental Implants" style={{ height: '100%' }} />
+                <figure>
+                    <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/1.webp" alt="Dental Implants" style={{ height: '100%' }} />
+                </figure>
             </div>
             &nbsp;
             &nbsp;
@@ -124,12 +126,22 @@ function Dental() {
                     <br />
                 </div>
                 <div class="dental-img">
-                    <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/xraydepth.jpg" alt="Software for Implant" style={{ height: '100%' }} />
-                    <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/ImplantGuide.jpg" alt="Implant Guide" style={{ height: '100%' }} />
-                    <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Implant.jpg" alt="Implant System" style={{ height: '100%' }} />
-                    <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Crownimplant.jpg" alt="Implant Guide" style={{ height: '100%' }} />
-                    <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/xray.jpg" alt="Full Arch Rehabilitation" style={{ height: '100%' }} />
-                    </div>
+                    <figure>
+                        <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/xraydepth.jpg" alt="Software for Implant" style={{ height: '100%' }} />
+                    </figure>
+                    <figure>
+                        <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/ImplantGuide.jpg" alt="Implant Guide" style={{ height: '100%' }} />
+                    </figure>
+                    <figure>
+                        <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Implant.jpg" alt="Implant System" style={{ height: '100%' }} />
+                    </figure>
+                    <figure>
+                        <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Crownimplant.jpg" alt="Implant Guide" style={{ height: '100%' }} />
+                    </figure>
+                    <figure>
+                        <img className='col-md-2 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/xray.jpg" alt="Full Arch Rehabilitation" style={{ height: '100%' }} />
+                    </figure>
+                </div>
             </div>
             &nbsp;
         </div>

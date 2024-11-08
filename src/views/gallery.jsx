@@ -33,18 +33,15 @@ const imageIndexMapping = {
     "TopView.jpg": "../Images/FacesCloseUpsLandscape/TopView.jpg",
     "SmileMakeOver.jpg": "../Images/FacesCloseUpsLandscape/SmileMakeOver.jpg",
 
-
-
-
 };
 
 function Gallery() {
     return (
         <div className="text-center container">
             <h1 className='text-color-gold mt-4 pt-4'>Explore our smile transformations at ASH dental</h1>
-            <a href="#smile-gallery"><button href="#smile-gallery" class="gallery-button">Smile Gallery (Before and after photos)</button></a>
-            <a href="#smile-in-progress" class="gold mt-4 pt-4 mx-2"><button href="#smile-in-progress" class="gallery-button">Smile in Progress</button></a>
-            <a href="#facility" class="gold mt-4 pt-4 mx-2"><button href="#facility" class="gallery-button">Our Dental Practice</button></a>
+            <a href="#smile-gallery" class="gold mt-4 pt-4 pb-4 mx-2"><button href="#smile-gallery" class="gallery-button">Smile Gallery (Before and after photos)</button></a>
+            <a href="#smile-in-progress" class="gold mt-4 pt-4 pb-4 mx-2"><button href="#smile-in-progress" class="gallery-button">Smile in Progress</button></a>
+            <a href="#facility" class="gold mt-4 pt-4 pb-4 mx-2"><button href="#facility" class="gallery-button">Our Dental Practice</button></a>
             <br></br>
             <p className="lead text-start ms-2 mt-3 pt-3 mb-4 pb-4">
                 Explore our gallery and witness the transformative smile journeys we've embarked on with

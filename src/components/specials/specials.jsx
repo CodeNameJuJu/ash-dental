@@ -12,7 +12,9 @@ export const Specials = () => {
 
     return (
         <div className="container-fluid p-0">
-            <img src={imageIndexMapping["banner"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '615px' }} />
+            <figure>
+                <img src={imageIndexMapping["banner"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '615px' }} />
+            </figure>
             <div className='ps-4 ms-4 pe-4 me-4'>
                 <div >
                     <h1 className='pt-4 mt-3 text-color-gold text-start'>Transform Your Smile with ClearCorrect Aligners</h1>
@@ -34,7 +36,7 @@ export const Specials = () => {
                         <ol className="nonumber">
                             <li className="card-text lead "><span class="b">Date:</span> 28 September 2024</li>
                             <li className="card-text lead "><span class="b">Time:</span> 08:00 - 12:00</li>
-                            <li className="card-text lead "><span class="b">Location:</span>ASH Dental, Suite 3&amp;4, Ash Medical Suite, 
+                            <li className="card-text lead "><span class="b">Location:</span>ASH Dental, Suite 3&amp;4, Ash Medical Suite,
                                 177 Garsfontein Rd, Ashlea Gardens, Pretoria, 0081.</li>
                             <li className="card-text lead ">Clear Aligner Consultation Offer Only <span class="b">R700</span></li>
                         </ol>
@@ -46,17 +48,17 @@ export const Specials = () => {
                 <div className='text-center ' >
                     <h2 className=' text-color-gold text-start'>Why choose ClearCorrect?</h2>
                     <br></br>
-                        <p className="lead text-start">At ASH Dental, we proudly offer ClearCorrect clear aligners as a superior solution for
-                            achieving a straighter, more confident smile. ClearCorrect stands out among other clear
-                            aligner options due to its exceptional combination of discretion, comfort, and effectiveness.
-                            These nearly invisible aligners are custom-made to fit your teeth perfectly, ensuring precise
-                            and gradual movement for optimal results. Crafted from high-quality, durable materials,
-                            ClearCorrect aligners provide a comfortable fit that seamlessly integrates into your lifestyle.
-                            Their removable design allows you to enjoy your favorite foods and maintain your regular
-                            oral hygiene routine without interruption. Backed by a global leader in dental innovation,
-                            ClearCorrect offers flexible and personalized treatment plans tailored to your unique needs.
-                        </p>
-                        <br></br>
+                    <p className="lead text-start">At ASH Dental, we proudly offer ClearCorrect clear aligners as a superior solution for
+                        achieving a straighter, more confident smile. ClearCorrect stands out among other clear
+                        aligner options due to its exceptional combination of discretion, comfort, and effectiveness.
+                        These nearly invisible aligners are custom-made to fit your teeth perfectly, ensuring precise
+                        and gradual movement for optimal results. Crafted from high-quality, durable materials,
+                        ClearCorrect aligners provide a comfortable fit that seamlessly integrates into your lifestyle.
+                        Their removable design allows you to enjoy your favorite foods and maintain your regular
+                        oral hygiene routine without interruption. Backed by a global leader in dental innovation,
+                        ClearCorrect offers flexible and personalized treatment plans tailored to your unique needs.
+                    </p>
+                    <br></br>
                 </div>
                 &nbsp;
 
@@ -65,30 +67,32 @@ export const Specials = () => {
                     <p class="lead text-start">
                         <ol className="nonumber">
                             <li className="card-text lead "><span class="b">Comprehensive Examination:</span> Our experienced dentist will conduct a thorough
-                                 examination of your teeth and gums.</li>
+                                examination of your teeth and gums.</li>
                             <li className="card-text lead "><span class="b">Digital Scan:</span> Our experienced dentist will take a 3D scan of your teeth using cutting-
-                                    edge digital technology. This process is quick, painless, and provides a detailed
-                                    model of your teeth.</li>
+                                edge digital technology. This process is quick, painless, and provides a detailed
+                                model of your teeth.</li>
                             <li className="card-text lead "><span class="b">Digital Photographs:</span> We’ll take high-quality digital photographs of your teeth from
-                                    multiple angles. These images will help us document your current smile and plan
-                                    your treatment effectively.
-                                </li>
+                                multiple angles. These images will help us document your current smile and plan
+                                your treatment effectively.
+                            </li>
                             <li className="card-text lead "><span class="b">Personalized Treatment Plan:</span> After the scan, the dentist will assess your teeth and
-                                    create a treatment plan tailored specifically to your needs. You’ll even receive a
-                                    mock-up of your future smile!
-                                </li>
+                                create a treatment plan tailored specifically to your needs. You’ll even receive a
+                                mock-up of your future smile!
+                            </li>
                             <li className="card-text lead "><span class="b">Exclusive Offer:</span> During your consultation, enjoy a<span class="b"> 20% discount on
-                                    your treatment</span>
-                                 plan quote, making it easier than ever to start your journey to a perfect smile.
-                                </li>
+                                your treatment</span>
+                                plan quote, making it easier than ever to start your journey to a perfect smile.
+                            </li>
                         </ol>
                     </p>
                 </div>
-             </div>
+            </div>
             &nbsp;
-                <div>
+            <div>
+                <figure>
                     <img src={imageIndexMapping["banner2"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '550px' }} />
-                </div>
+                </figure>
+            </div>
 
             &nbsp;
             <div className=' ps-4 ms-4 pe-4 me-4'>
@@ -128,21 +132,23 @@ export const Specials = () => {
             <div className=' ps-4 ms-4 pe-4 me-4'>
                 <h2 class="gold text-start">Book Your Spot Today!</h2>
                 <h3 class="text-start">Spaces are limited, so make sure to book your consultation as soon as possible to secure your place.</h3>
-                
-                    <p class="lead text-start">
-                        <ol className="nonumber">
-                            <li className="card-text lead "><span class="b">Phone:</span> 012 111 1715</li>
-                            <li className="card-text lead "><span class="b">Email:</span> info@ashdental.co.za</li>
-                            <li className="card-text lead "><span class="b">WhatsApp:</span> 084 850 3501</li>
-                            <li className="card-text lead ">Clear Aligner Consultation Offer Only <span class="b">R700</span></li>
-                        </ol>
-                        We can’t wait to help you achieve the smile you’ve always wanted!
-                    </p>
-                </div>
+
+                <p class="lead text-start">
+                    <ol className="nonumber">
+                        <li className="card-text lead "><span class="b">Phone:</span> 012 111 1715</li>
+                        <li className="card-text lead "><span class="b">Email:</span> info@ashdental.co.za</li>
+                        <li className="card-text lead "><span class="b">WhatsApp:</span> 084 850 3501</li>
+                        <li className="card-text lead ">Clear Aligner Consultation Offer Only <span class="b">R700</span></li>
+                    </ol>
+                    We can’t wait to help you achieve the smile you’ve always wanted!
+                </p>
+            </div>
             &nbsp;
-                <div>
+            <div>
+                <figure>
                     <img src={imageIndexMapping["banner3"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '615px' }} />
-                </div>    
+                </figure>
+            </div>
         </div>
     )
 }
