@@ -74,18 +74,20 @@ export const About = () => {
         <div className='ps-md-5 ms-md-5 pe-md-5 me-md-5 ps-sm-3 ms-sm-3 pe-sm-3 me-sm-3'>
             <div className='text-center ps-4 ms-4 pe-4 me-4 ps-md-4 ms-md-4 pe-md-4 me-md-4' >
                 <div className='pt-4 mt-3 pb-3 ps-md-4 ms-md-4 pe-md-4 me-md-4'>
-                    <h1 className='pt-4 mt-3 pb-3 text-color-gold'>A Journey to Transformative Smiles</h1>
+                    <h1 className='pt-4 mt-3 pb-3 text-color-gold'>Transform your smile with expert dental care and precision</h1>
                     <div className='d-flex justify-content-center'>
-                        <p className="lead col-md-12 col-sm-10 ps-1 ms-1 text-start">At ASH Dental, we envision a world where every smile tells a story of confidence, health,
-                            and individuality. We strive to be pioneers in cosmetic and general dentistry, setting new standards for precision,
-                            artistry, and patient-centric care.
+                        <p className="lead col-md-12 col-sm-10 ps-1 ms-1 text-start">We envision a world where every smile radiates confidence, health, and individuality. As
+                            leaders in both cosmetic and general dentistry, we are committed to setting new benchmarks
+                            for precision, artistry, and patient-centred dental care.
                         </p>
                     </div>
-                    <h3 className='pt-4 mt-3 pb-3 brown'>Meet Our Dental Artists</h3>
+                    <h2 className='pt-4 mt-3 pb-3 brown'>Meet our dental artists: Crafting smiles with expertise and passion</h2>
                     <div className='d-flex justify-content-center'>
                         <p className="lead col-md-12 col-sm-10 ps-1 ms-1 text-start">
-                            Our team at ASH Dental is a collective of skilled professionals, each bringing a unique set of expertise and passion to the practice.
-                            We are not just dental professionals; we are artists dedicated to creating smiles that reflect the true beauty within each person.
+                        Our team of dentists in Pretoria comprises highly skilled professionals, each bringing their
+                        unique expertise and dedication to our dental practice. We are not just dental experts; we
+                        are passionate artists committed to creating smiles that reflect your inner beauty and
+                        enhance your overall well-being.
                         </p>
                     </div>
                 </div>

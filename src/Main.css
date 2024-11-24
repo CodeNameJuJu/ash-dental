@@ -2134,3 +2134,25 @@ ul {
 
 /* Specials Page css */
 .b, strong {font-weight:bold !important;}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #25D366; /* WhatsApp green */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+/* positioning on bottom right */
+  position: fixed;
+  bottom: 40px; /* Distance from the bottom of the screen */
+  right: 30px;  /* Distance from the right of the screen */
+  z-index: 9999; /* Ensures the button stays above other content */
+}
+
+.whatsapp-icon:hover {
+  background-color: #1DA1F2; /* Darker green on hover */
+  cursor: pointer;
+}

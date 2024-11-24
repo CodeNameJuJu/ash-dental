@@ -26,21 +26,38 @@ export const Home = () => {
         <img src={imageIndexMapping["banner"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '615px' }} />
             <div class="serv-top">
                 <div class="text-center">
-                    <h1 class="gold ">Welcome to ASH Dental</h1>
+                    <h1 class="gold ">Welcome to ASH Dental: your dental practice in Pretoria East</h1>
+                    <h1 class="gold ">your dental practice in Pretoria East</h1>
                     <br></br>
-                    <p class="lead">Our journey begins the moment you step into our practice, where a seamless and visually captivating design welcomes you.
-                        We seamlessly blend state-of-the-art technology with a relaxing environment, ensuring a personalized experience from the outset.
+                    <p class="lead">Your journey with us begins the moment you step into our practice, where a harmonious
+                        blend of cutting-edge technology and a soothing environment welcomes you. From the
+                        very start, we ensure that your experience is both visually captivating and deeply
+                        personalized.
                     </p>
                     <br></br>
-                    <p class="lead ">Our commitment to understanding your unique needs unfolds in a consultation room, where together, we craft the best plan tailored
-                        to your individual requirements.
-                        Transitioning from consultation to the dental treatment chair, we bring this personalized planning to life,
-                        ensuring each step of your dental journey is marked by precision, comfort, and transformative care.
+                    <p class="lead ">Our commitment to understanding your unique needs takes shape in our consultation
+                        room, where we collaborate to create a treatment plan specifically tailored to your
+                        individual requirements. As you transition from consultation to the treatment chair, we
+                        bring this personalized approach to life, ensuring every step of your dental journey is
+                        defined by precision, comfort, and transformative care.
+                    </p>
+
+                    <br></br>
+                    <p class="lead">Whether you’re seeking advanced treatments for complex dental issues or routine care
+                        for everyday needs, our experienced team is dedicated to delivering exceptional care.
+                        From intricate cosmetic procedures and restorative work to essential preventive and
+                        general dentistry, we offer comprehensive solutions that address every aspect of your
+                        oral health.
+                    </p>
+                    <br></br>
+                    <p class="lead ">At our Pretoria East dental practice, you’ll experience the perfect fusion of advanced
+                        techniques and compassionate service. Your journey to a healthier, more radiant smile
+                        begins here.
                     </p>
                 </div>
             </div>
             <div className="serv3-container text-center">
-                <h1 className="gold">Services</h1>
+                <h1 className="gold">Dental Services</h1>
                 <h2 className="brown">Crafting Radiant Smiles</h2>
                 <div className="serv3-container">
                     <div className="serv3-image-grid">
@@ -133,9 +150,11 @@ export const Home = () => {
             </div>
             <div>
                 <section class="meet-artists">
-                    <h2 class="home-h2 brown">Your Dental Journey Starts Here</h2>
-                    <p class="home-p" >Embark on a dental journey where precision meets luxury. Experience ASH Dental – Where
-                        Transformative Smiles Begin. Reach out to us for inquiries, appointments, or questions.</p>
+                    <h1 class="home-h2 brown">Start Your Dental Journey with Us</h1>
+                    <p class="home-p" >Say goodbye to the dread of dental appointments. At ASH Dental, every visit is designed
+                        to be a positive, transformative experience. Start your journey to a radiant smile
+                        today—reach out for inquiries, appointments, or any questions you may have. We can’t
+                        wait to see you.</p>
                 </section>
             </div>
             &nbsp;
@@ -157,6 +176,7 @@ export const Home = () => {
             </div>
             &nbsp;
             <div className='row'>
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/3.webp" alt="Patient Centric Excellence" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2>
@@ -167,7 +187,7 @@ export const Home = () => {
                     </section>
                     <br />
                 </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/3.webp" alt="Patient Centric Excellence" style={{ height: '100%' }} />
+                
             </div>
             &nbsp;
             <div className='row'>
