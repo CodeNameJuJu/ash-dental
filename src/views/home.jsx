@@ -3,7 +3,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from 'react-router-dom'
 
 const imageIndexMapping = {
-    "banner": "/Images/banner1.webp",
+    // "banner": "/Images/banner1.webp",
+    "banner": "/Images/ServicesLandscape/AshDentalBanner.png",
     "teethWhitening": "/Images/FacesCloseUpsLandscape/1.webp",
     "veneers": "/Images/FacesCloseUpsLandscape/4.webp",
     "dentalBonding": "/Images/FacesCloseUpsLandscape/8.webp",
@@ -23,7 +24,9 @@ export const Home = () => {
 
     return (
         <div className="container-fluid p-0">
-        <img src={imageIndexMapping["banner"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '615px' }} />
+        <Link to="/about">
+            <img src={imageIndexMapping["banner"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '615px' }} />
+            </Link>
             <div class="serv-top">
                 <div class="text-center">
                     <h1 class="gold ">Welcome to ASH Dental: your dental practice in Pretoria East</h1>

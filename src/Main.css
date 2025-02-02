@@ -2156,3 +2156,8 @@ ul {
   background-color: #1DA1F2; /* Darker green on hover */
   cursor: pointer;
 }
+
+ .new-doctor-bio {
+  font-size: 17px !important;
+
+ }

@@ -7,7 +7,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const imageIndexMapping = [
     { name: "Dr. Guilherme Rodrigues", index: 158 },
     { name: "Dr. Juan Williams", index: 188 },
-    { name: "Dr. Eulana Marais", index: 123 }
+    { name: "Dr. Eulana Marais", index: 123 },
+    { name: "Dr. Michelle Karl",  }
 ];
 
 function Card({ name, image, bio, title, quali }) {
@@ -46,11 +47,14 @@ function Card2({ name, image, bio, title, quali }) {
                     <h4 className="card-title text-start">{quali}</h4>
                     <br />
                     <br />
-                    <p className="card-text lead text-start smaller-text">{bio}</p>
+                    <p className={`card-text lead text-start smaller-text ${name === "Dr. Michelle Karl" ? 'new-doctor-bio' : ''}`}>
+                        {bio}
+                        </p>
+
                 </div>
             </div>
             <div className="col-md-5 col-sm-6 no-padding">
-                <img className="img-fluid" src={image} alt="trainer-img" />
+                <img className="img-fluid img-fluid-doc" src={image} alt="trainer-img" />
             </div>
         </div>
     );
@@ -135,6 +139,33 @@ export const About = () => {
                                                 )}
                                             </>
                                         )}
+                                        {index === 3 && (
+                                            <>
+                                                {isSmallScreen ? (
+                                                    <Card
+                                                        name={item.name}
+                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/doc_new.jpg`}
+                                                        title="Cosmetic Dentist & Facial Aesthetics Artist"
+                                                        className="new-doctor-bio docimg"
+                                                        bio="Dr. Michelle Karl is a highly skilled cosmetic dentist with a passion for facial aesthetics. With nearly two decades of experience in private practice, Dr. Karl brings a wealth of expertise, artistic precision,
+                                                         and a patient-centred approach to our team. Having earned her BChD degree from the University of Pretoria in 2005, Dr. Karl has built a reputation for transforming smiles and enhancing natural beauty through cutting-edge 
+                                                        cosmetic and restorative dentistry. Her keen eye for detail and dedication to excellence align perfectly with ASH Dental’s vision of redefining the dental experience. Beyond dentistry, Dr. Karl specialises in 
+                                                        facial aesthetics, offering a range of non-invasive treatments. Her philosophy is simple: every smile should radiate confidence, and beauty should be enhanced, not altered. "
+                                                    />
+                                                ) : (
+                                                    <Card2
+                                                        name={item.name}
+                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/doc_new.jpg`}
+                                                        title="Cosmetic Dentist & Facial Aesthetics Artist"
+                                                        className="new-doctor-bio "
+                                                        bio="Dr. Michelle Karl is a highly skilled cosmetic dentist with a passion for facial aesthetics. With nearly two decades of experience in private practice, Dr. Karl brings a wealth of expertise, artistic precision,
+                                                         and a patient-centred approach to our team. Having earned her BChD degree from the University of Pretoria in 2005, Dr. Karl has built a reputation for transforming smiles and enhancing natural beauty through cutting-edge 
+                                                        cosmetic and restorative dentistry. Her keen eye for detail and dedication to excellence align perfectly with ASH Dental’s vision of redefining the dental experience. Beyond dentistry, Dr. Karl specialises in 
+                                                        facial aesthetics, offering a range of non-invasive treatments. Her philosophy is simple: every smile should radiate confidence, and beauty should be enhanced, not altered. "
+                                                    />
+                                                )}
+                                            </>
+                                        )}
                                     </React.Fragment>
                                 ))}
                             </>
@@ -176,6 +207,35 @@ export const About = () => {
                                                         title="Co-Founder and Dental Artist"
                                                         quali="BSc (Pret.), BChD (Pret.)"
                                                         bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
+                                                    />
+                                                )}
+                                            </>
+                                        )}
+                                        {index === 3 && (
+                                            <>
+                                                {isSmallScreen ? (
+                                                    <Card
+                                                        name={item.name}
+                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/doc_new.jpg`}
+                                                        title="Cosmetic Dentist & Facial Aesthetics Artist"
+                                                        
+                                                        bio="Dr. Michelle Karl is a highly skilled cosmetic dentist with a passion for facial aesthetics. With nearly two decades of experience in private practice, Dr. Karl brings a wealth of expertise, artistic precision,
+                                                         and a patient-centred approach to our team. Having earned her BChD degree from the University of Pretoria in 2005, Dr. Karl has built a reputation for transforming smiles and enhancing natural beauty through cutting-edge 
+                                                        cosmetic and restorative dentistry. Her keen eye for detail and dedication to excellence align perfectly with ASH Dental’s vision of redefining the dental experience. Beyond dentistry, Dr. Karl specialises in 
+                                                        facial aesthetics, offering a range of non-invasive treatments. Her philosophy is simple: every smile should radiate confidence, and beauty should be enhanced, not altered. "
+                                                        className="new-doctor-bio"
+                                                    />
+                                                ) : (
+                                                    <Card2
+                                                        name={item.name}
+                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/doc_new.jpg`}
+                                                        title="Cosmetic Dentist & Facial Aesthetics Artist"
+                                                        
+                                                        bio="Dr. Michelle Karl is a highly skilled cosmetic dentist with a passion for facial aesthetics. With nearly two decades of experience in private practice, Dr. Karl brings a wealth of expertise, artistic precision,
+                                                         and a patient-centred approach to our team. Having earned her BChD degree from the University of Pretoria in 2005, Dr. Karl has built a reputation for transforming smiles and enhancing natural beauty through cutting-edge 
+                                                        cosmetic and restorative dentistry. Her keen eye for detail and dedication to excellence align perfectly with ASH Dental’s vision of redefining the dental experience. Beyond dentistry, Dr. Karl specialises in 
+                                                        facial aesthetics, offering a range of non-invasive treatments. Her philosophy is simple: every smile should radiate confidence, and beauty should be enhanced, not altered. "
+                                                        className="new-doctor-bio"
                                                     />
                                                 )}
                                             </>
