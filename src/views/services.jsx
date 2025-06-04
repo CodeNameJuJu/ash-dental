@@ -121,6 +121,9 @@ function Services() {
                             <Navigate name={'General Dentistry'} path={'/generalDentistry'} />
                         </li>
                         <li className="sub-nav-item">
+                            <Navigate name={'Facial Aesthetics'} path={'/facialAesthetics'} />
+                        </li>
+                        <li className="sub-nav-item">
                             <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} />
                         </li>
                     </ul>

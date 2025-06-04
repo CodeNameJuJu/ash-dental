@@ -612,7 +612,7 @@ input[type="range"]::-moz-range-thumb {
 
 
 section {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 section .section-title {
@@ -2161,3 +2161,4 @@ ul {
   font-size: 17px !important;
 
  }
+

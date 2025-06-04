@@ -19,6 +19,7 @@ import Emergencies from  "../src/components/subServices/emergencies";
 import Dental from  "../src/components/subServices/dental";
 import Crowns from  "../src/components/subServices/crowns";
 import Specials from './components/specials/specials';
+import FacialAesthetics from "../src/components/subServices/facialAesthetics";
 
 
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/teethWhitening" element={<TeethWhitening />} />
           <Route path="/crowns" element={<Crowns />} />
           <Route path="/dental" element={<Dental />} />
+          <Route path="/facialAesthetics" element={<FacialAesthetics />} />
           <Route path="/orthodontics" element={<Orthodontics />} />
           <Route path="/generalDentistry" element={<GeneralDentistry />} />
           <Route path="/emergencies" element={<Emergencies />} />

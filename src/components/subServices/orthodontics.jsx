@@ -42,13 +42,14 @@ function Orthodontics() {
                         <li class="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
                         <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                        <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                     </ul>
                 </div>
             </nav>
             <br></br>
             <div className="text-center container">
-                <h1 className='text-color-gold mt-4 pt-4'>Ortho</h1>
+                <h1 className='text-color-gold mt-4 pt-4'>Orthodontics</h1>
                 <a href="#ClearAligners" class="gold mt-4 pt-4 mx-2">
                     <button href="#ClearAligners" class="crown-button" >Clear Aligners</button>
                 </a>
@@ -63,7 +64,6 @@ function Orthodontics() {
                     <h1 class="gold text-start">Comprehensive tooth alignment solutions: from clear aligners to traditional
                         braces</h1>
                     <br></br>
-                    <br></br>
                     <p class="lead text-start">We specialise in transforming smiles with top-notch orthodontic care. Our expert team is
                         dedicated to addressing misalignments and enhancing the beauty of your teeth through
                         personalized treatment plans. With access to the latest technology and a research-driven
@@ -71,7 +71,8 @@ function Orthodontics() {
                         best possible results. Whether you&#39;re a teenager starting your journey with braces or an
                         adult looking for discreet, clear aligners, we offer a range of options to help you achieve a
                         perfectly aligned and confident smile.</p>
-                    <h2 class="brown text-start ">Unleash Your Smile with Clear Aligners.</h2>
+                    <br></br>
+                    <h2 class="brown text-start pt-2 ">Unleash Your Smile with Clear Aligners.</h2>
                     <br></br>
                     <p class="lead text-start">Embrace Confidence: Explore Clear Aligners at ASH Dental</p>
                     <p class="lead text-start">Looking for a straighter smile without the hassle of traditional braces? ASH Dental offers
@@ -199,13 +200,14 @@ function Orthodontics() {
                     <p class="lead text-start">Contact ASH Dental today to schedule a consultation and discuss how clear aligners or
                         traditional braces can help you achieve the confident smile you deserve!</p>
                     &nbsp;
-                    &nbsp;
+                    {/* &nbsp;
                     <Link className="active text-start" to="/contact" title="View Gallery">
                         <button class="crown-button" >Contact Us</button>
-                    </Link>
-                    &nbsp;
+                    </Link>*/}
+                    &nbsp; 
                 </div>
             </div>
+            <br></br>
 
             <div className='row'>
                 <div className='col-md-12 col-sm-12'>

@@ -42,7 +42,9 @@ function Crowns() {
                         <li class="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
                         <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                        <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
+                        
                     </ul>
                 </div>
             </nav>
@@ -51,7 +53,7 @@ function Crowns() {
                 <div className='text-center ps-2 ms-4 pe-2 me-2' >
                     <h1 className='pt-4 mt-3 text-color-gold text-start'>Comprehensive crowns and veneers services: artistry and precision for your
                         perfect smile</h1>
-                    <h2 class="brown text-start">H2: Expertly crafted dental crowns: precision, durability, and aesthetic perfection</h2>
+                    <h2 class="brown text-start">Expertly crafted dental crowns: precision, durability, and aesthetic perfection</h2>
                     <br></br>
                     <div className=''>
                         <p className="lead  text-start text-start">Dental crowns are custom-made caps that cover damaged or weakened teeth to restore
@@ -68,10 +70,9 @@ function Crowns() {
             <div className='row'>
                 <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Crowns2.webp" alt="Crowns" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
-                    <section className='mt-3 pt-3'>
-                        <h2 className='brown mb-2 text-start'>Benefits of Dental Crowns:</h2>
+                    <section className=''>
+                        <h2 className='brown mb- text-start'>Benefits of Dental Crowns:</h2>
                     </section>
-                        <h3 class="brown text-start">Benefits of Dental Crowns:</h3>
                     <p class="lead text-start">
                         <ol className="nonumber">
                             <li className="card-text lead "><b>Restores Function:</b> Crowns fully restore the tooth’s ability to chew and speak
@@ -100,7 +101,7 @@ function Crowns() {
             <div className='row'>
             <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Veneers.webp" alt="Veneers" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
-                    <section className='mt-3 pt-3'>
+                    <section className=''>
                         <h2 className='brown mb-2 text-start'>Veneers for a radiant transformation</h2>
                     </section>
                     <p class="lead text-start center ">Veneers are thin, custom-made shells designed to cover the front surface of your teeth. They
