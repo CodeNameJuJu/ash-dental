@@ -170,11 +170,18 @@ function Technology() {
             <section className='mb-5 pb-5'>
                 <br />
                 <br />
-                <h1 className='text-color-gold text-center'>Technology at ASH Dental</h1>
+                <h1 className='text-color-gold text-center'>Cutting-edge dental technology at ASH dental: Advanced tools for precise,
+                comfortable, and effective dental treatments.</h1>
                 <h3 className='text-color-gold mb-2 text-center brown'>Elevating your Dental Experience</h3>
                 <br />
                 <br />
-                <p className="lead text-start">We embrace cutting-edge dental technology to revolutionize your dental experience. Our commitment to precision, comfort, and excellence is reflected in the state-of-the-art technologies we employ to ensure your journey to optimal oral health is nothing short of exceptional.</p>
+                <p className="lead text-start">At ASH Dental, we prioritize your comfort and well-being by integrating the latest
+                    advancements in dental technology. Our state-of-the-art tools and equipment enable us to
+                    deliver precise diagnostics, tailored dental treatment plans, and exceptional results. By
+                    harnessing cutting-edge technology, we ensure a higher level of accuracy and efficiency in
+                    every aspect of your care, leading to improved outcomes and a more satisfying dental
+                    experience.
+                </p>
             </section>
             <br />
             <div>

@@ -42,6 +42,7 @@ function GeneralDentistry() {
                         <li class="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
                         <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                        <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                     </ul>
                 </div>

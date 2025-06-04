@@ -9,6 +9,7 @@ import Contact from './views/contact';
 import Gallery from './views/gallery';
 import Navbar from "./components/navbar";
 import Footer from './components/footer';
+import WhatsAppButton from "./components/whatsapp"
 import ScrollToTop from "./components/scrollToTop";
 import CosmeticDentistry  from "../src/components/subServices/cosmeticDentistry";
 import TeethWhitening from  "../src/components/subServices/teethWhitening";
@@ -18,6 +19,8 @@ import Emergencies from  "../src/components/subServices/emergencies";
 import Dental from  "../src/components/subServices/dental";
 import Crowns from  "../src/components/subServices/crowns";
 import Specials from './components/specials/specials';
+import FacialAesthetics from "../src/components/subServices/facialAesthetics";
+
 
 
 function App() {
@@ -37,11 +40,13 @@ function App() {
           <Route path="/teethWhitening" element={<TeethWhitening />} />
           <Route path="/crowns" element={<Crowns />} />
           <Route path="/dental" element={<Dental />} />
+          <Route path="/facialAesthetics" element={<FacialAesthetics />} />
           <Route path="/orthodontics" element={<Orthodontics />} />
           <Route path="/generalDentistry" element={<GeneralDentistry />} />
           <Route path="/emergencies" element={<Emergencies />} />
           <Route path="/specials" element={<Specials />} />
         </Routes>
+        <WhatsAppButton />
         <Footer /> 
       </BrowserRouter>
     </div>

@@ -121,6 +121,9 @@ function Services() {
                             <Navigate name={'General Dentistry'} path={'/generalDentistry'} />
                         </li>
                         <li className="sub-nav-item">
+                            <Navigate name={'Facial Aesthetics'} path={'/facialAesthetics'} />
+                        </li>
+                        <li className="sub-nav-item">
                             <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} />
                         </li>
                     </ul>
@@ -128,14 +131,38 @@ function Services() {
             </nav>
             <div className='pt-4 mt-3 pb-3 ps-4 ms-4 pe-4 me-4'>
                 <div className='text-center' >
-                    <h1 className='pt-4 mt-3 pb-3 text-color-gold'>Advanced Cosmetic Dentistry</h1>
-                    <h3 className="brown pb-3">Redesign, Enhance, Transform</h3>
+                    <h1 className='pt-4 mt-3 pb-3 text-color-gold'>Enhance your oral health and smile with comprehensive general and cosmetic
+                        dentistry</h1>
+                    {/* <h3 className="brown pb-3">Redesign, Enhance, Transform</h3> */}
                     <div className='d-flex flex-column justify-content-center testem'>
-                        <p className="lead text-start">Redefine smiles and enhance the natural beauty of your teeth. Cosmetic dentistry goes beyond traditional dental procedures; it's an art form dedicated to improving the aesthetics and function of your smile. Our skilled team at ASH Dental employs cutting-edge techniques and personalized treatment plans to address a range of cosmetic concerns, including teeth discoloration, misalignment, and imperfections.</p>
+                        <p className="lead text-start">At ASH Dental, we are dedicated to redefining smiles and enhancing the natural beauty of
+                            your teeth through both general and cosmetic dentistry. Our approach goes beyond
+                            traditional dental care, blending essential general treatments with advanced cosmetic
+                            procedures to ensure both the health and aesthetics of your smile.</p>
                         <br />
-                        <p className="lead text-start">Whether you desire a whiter, straighter, or more aesthetically pleasing smile, our cosmetic dentistry services are tailored to meet your unique goals. We offer a comprehensive range of treatments, from professional teeth whitening and veneers to smile makeovers and full-mouth reconstruction.</p>
+                        &nbsp;
+                        <h2 className="brown">General dentistry for comprehensive oral health</h2>
+                        <p className="lead text-start">Our general dentistry services are designed to provide essential care and maintain your oral
+                            health. This includes routine dental exams, professional cleanings, fillings, and preventive
+                            care to protect against cavities and gum disease. Our goal is to ensure your smile remains
+                            healthy and functional throughout your life.</p>
                         <br />
-                        <p className="lead text-start">The benefits of cosmetic dentistry extend beyond appearance, positively impacting your confidence, self-esteem, and overall oral health. Discover the transformative power of a radiant smile at ASH Dental, where precision, elegance, and excellence converge to create a truly exceptional cosmetic dentistry experience.</p>
+                        &nbsp;
+                        <h2 className="brown">Cosmetic dentistry to perfect and transform your smile</h2>
+                        <p className="lead text-start">Cosmetic dentistry at ASH Dental is an art form dedicated to improving the aesthetics and
+                            function of your smile. Using cutting-edge techniques and personalised treatment plans, we
+                            address a range of cosmetic concerns, including teeth discoloration, misalignment, and
+                            imperfections. Whether you desire a whiter, straighter, or more aesthetically pleasing smile,
+                            our cosmetic services are tailored to meet your unique goals. We offer a comprehensive
+                            range of cosmetic treatments, from professional teeth whitening, veneers and implants to
+                            smile makeovers and full-mouth reconstruction. The benefits of these services extend
+                            beyond appearance, positively impacting your confidence, self-esteem, and overall oral
+                            health.</p>
+                        <br></br>
+                        &nbsp;
+                        <p className="lead text-start">Discover the transformative power of both general and cosmetic dentistry at ASH Dental,
+                            where precision, care, and excellence converge to create a truly exceptional dental
+                            experience.</p>
                     </div>
                 </div>
             </div>

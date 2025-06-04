@@ -42,32 +42,67 @@ function Orthodontics() {
                         <li class="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
                         <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                        <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                     </ul>
                 </div>
             </nav>
             <br></br>
+            <div className="text-center container">
+                <h1 className='text-color-gold mt-4 pt-4'>Orthodontics</h1>
+                <a href="#ClearAligners" class="gold mt-4 pt-4 mx-2">
+                    <button href="#ClearAligners" class="crown-button" >Clear Aligners</button>
+                </a>
+                <a href="#TraditionalBraces" >
+                    <button href="#TraditionalBraces" class="crown-button">Traditional braces</button>
+                </a>
+            </div>
+            
+
             <div class="serv-top">
                 <div class="text-center">
-                    <h1 class="gold text-start">Tooth Alignment and Orthodontic Techniques</h1>
-                    <h3 class="brown text-start ">Precision Orthodontic Care</h3>
+                    <h1 class="gold text-start">Comprehensive tooth alignment solutions: from clear aligners to traditional
+                        braces</h1>
                     <br></br>
-                    <p class="lead text-start">We excel in orthodontic care, correcting misalignments and enhancing the overall appearance of
-                        teeth. ASH Dental's commitment to a patient-centric journey ensures that every orthodontic
-                        treatment is tailored to individual patient needs. Access to cutting-edge technology and a research-
-                        driven approach are integral to our orthodontic care, ensuring optimal results.Whether you&#39;re a teenager embarking on orthodontic care or an adult exploring discreet options, we
-                        provide personalized solutions ranging from traditional braces to clear, nearly invisible alternatives.
+                    <p class="lead text-start">We specialise in transforming smiles with top-notch orthodontic care. Our expert team is
+                        dedicated to addressing misalignments and enhancing the beauty of your teeth through
+                        personalized treatment plans. With access to the latest technology and a research-driven
+                        approach, we ensure that each orthodontic solution is tailored to your unique needs for the
+                        best possible results. Whether you&#39;re a teenager starting your journey with braces or an
+                        adult looking for discreet, clear aligners, we offer a range of options to help you achieve a
+                        perfectly aligned and confident smile.</p>
+                    <br></br>
+                    <h2 class="brown text-start pt-2 ">Unleash Your Smile with Clear Aligners.</h2>
+                    <br></br>
+                    <p class="lead text-start">Embrace Confidence: Explore Clear Aligners at ASH Dental</p>
+                    <p class="lead text-start">Looking for a straighter smile without the hassle of traditional braces? ASH Dental offers
+                        clear aligners, a discreet and comfortable option to achieve your dream smile.
                     </p>
                     <br></br>
                 </div>
             </div>
-            <br></br>
-            <br></br>
+            &nbsp;
+            &nbsp;
             <div className='row'>
                 <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Ortho.webp" alt="Orthodontics" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
-                    <h3 className='text-color-gold text-start'>Orthodontic devices employed for aligning teeth.</h3>
-                    <ul class="lead text-start">
+                    <h3 className='text-color-gold text-start' id="ClearAligners">What are Clear Aligners?</h3>
+                    <p class="lead text-start">Clear aligners are a series of clear, removable trays that gradually straighten your teeth over
+                        time. They&#39;re virtually invisible, making them a popular choice for adults who want to improve
+                        their smile without the world knowing.</p>
+                    <br />
+                    <h3 className='text-color-gold text-start'>Benefits of Clear Aligners:</h3>
+                    <ol className="nonumber">
+                        <li className="card-text lead "><strong>Discreet: </strong>Unlike metal braces, clear aligners are nearly invisible, so you can smile
+                            confidently throughout treatment.</li>
+                        <li className="card-text lead ">Removable: Enjoy the freedom to remove your aligners for eating, drinking,
+                            brushing, and flossing.</li>
+                        <li className="card-text lead ">Comfortable: Made from smooth, comfortable material that won&#39;t irritate your gums
+                            or cheeks.</li>
+                        <li className="card-text lead ">Effective: Gradually straighten your teeth for a beautiful, lasting result.</li>
+                        <li className="card-text lead ">Convenient: Fewer appointments needed compared to traditional braces.</li>
+                    </ol>
+                    {/* <ul class="lead text-start">
                         <li><a href="#Aligners" class="gold mt-4 pt-4 mx-2">Clear Aligners - Click here to learn more. </a></li>
                         <li>Metal braces</li>
                         <li>clear / ceramic braces</li>
@@ -79,12 +114,101 @@ function Orthodontics() {
                         <li className="card-text lead ">Clear – invisible retainers/aligner</li>
                         <li className="card-text lead ">Hawley retainer</li>
                         <li className="card-text lead ">Permanent retainer securely bonded to the inner aspect of teeth.</li>
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
             <br></br>
             <br></br>
+            &nbsp;
+            &nbsp;
+
+            <div className='row'>
+                <div className='col-md-12 col-sm-12'>
+                    <h3 className='text-color-gold text-start'>Who is a Candidate for Clear Aligners?</h3>
+                    <p class="lead text-start">Clear aligners are a great option for adults with mild to moderate misalignment issues,
+                        including:</p>
+                    &nbsp;
+                    &nbsp;
+                    <h3 class="brown text-start " >The Clear Aligner Process at ASH Dental:</h3>
+                    <ol class="nonumber">
+                        <li className="card-text lead ">Consultation: Schedule a consultation with our experienced dentists to discuss your
+                            smile goals.</li>
+                        <li className="card-text lead ">Digital Scan: We&#39;ll utilise advanced technology to create a digital scan of your teeth
+                            for a precise treatment plan.</li>
+                        <li className="card-text lead ">Custom Aligners: Your personalized set of clear aligners will be created based on
+                            your digital scan.</li>
+                        <li className="card-text lead ">Treatment: Wear your aligners as instructed by your dentist, typically for 20-22 hours
+                            a day.</li>
+                        <li className="card-text lead ">Regular Checkups: Schedule regular appointments to monitor your progress and
+                            ensure proper alignment.</li>
+                        <li className="card-text lead ">Your Dream Smile: Celebrate your new, straighter smile!</li>
+                    </ol>
+                    &nbsp;
+                    <div class="text-center">
+                        <h2 class="brown text-start " id="TraditionalBraces">Achieve a Perfectly Aligned Smile with Traditional Braces</h2>
+                        <br></br>
+                        <p class="lead text-start">ASH Dental provides comprehensive traditional braces treatments designed to enhance your
+                            smile and address a variety of orthodontic issues.</p>
+                    </div>
+                    &nbsp;
+                    <h3 class="brown centre ">What Are Traditional Braces?</h3>
+                    <p class="lead text-start">Traditional braces consist of metal or ceramic brackets that are securely attached to your
+                        teeth, connected by a wire that gradually adjusts their position. This well-established
+                        orthodontic treatment is highly effective for correcting a wide range of alignment issues and
+                        providing long-lasting results.
+                    </p>
+                    &nbsp;
+                    &nbsp;
+                    <h3 class="brown text-start ">Benefits of Traditional Braces:</h3>
+                    <ol class="nonumber">
+                        <li className="card-text lead ">Comprehensive Correction: Traditional braces can address complex misalignments
+                            and bite issues that may not be suitable for other treatments.</li>
+                        <li className="card-text lead ">Durability: Made from high-quality materials, metal and ceramic braces offer robust
+                            and long-lasting performance.</li>
+                        <li className="card-text lead ">Proven Results: With a history of successful outcomes, traditional braces provide
+                            reliable and predictable improvements in smile alignment.</li>
+                        <li className="card-text lead ">Customizable Options: Choose from various bracket types, including metal for
+                            durability or ceramic for a more discreet look.</li>
+                    </ol>
+                    &nbsp;
+                    <h3 class="brown text-start ">Who is a Candidate for Traditional Braces?</h3>
+                    <p class="lead text-start">Traditional braces are suitable for patients of all ages who need:</p>
+                    &nbsp;
+                    <ol className="nonumber">
+                        <li className="card-text lead ">Extensive Alignment Corrections: Effective for addressing severe tooth
+                            misalignment and bite issues.</li>
+                        <li className="card-text lead ">Complex Bite Problems: Ideal for correcting overbites, underbites, and crossbites.</li>
+                        <li className="card-text lead ">Comprehensive Treatment: Suitable for cases requiring significant adjustment to
+                            achieve optimal results.</li>
+                    </ol>
+                    &nbsp;
+                    <h3 class="brown text-start "> The Traditional Braces Process at ASH Dental:</h3>
+                    <ol className="nonumber">
+                        <li className="card-text lead ">Consultation: Begin with a thorough evaluation to determine if traditional braces are
+                            the right option for you..</li>
+                        <li className="card-text lead ">Treatment Planning: We develop a detailed treatment plan using advanced imaging
+                            and diagnostic tools to ensure precise alignment.</li>
+                        <li className="card-text lead ">Bracket Placement: Your braces are custom-fitted and securely attached to your
+                            teeth, with wires adjusted to initiate the alignment process.</li>
+                        <li className="card-text lead ">Ongoing Adjustments: Regular appointments are scheduled to make necessary
+                            adjustments, monitor progress, and ensure the best results.</li>
+                        <li className="card-text lead ">Final Results: Enjoy a beautifully aligned smile as your teeth shift into their ideal
+                            positions through the effectiveness of traditional braces.</li>
+                    </ol>
+                    &nbsp;
+                    &nbsp;
+                    <p class="lead text-start">Contact ASH Dental today to schedule a consultation and discuss how clear aligners or
+                        traditional braces can help you achieve the confident smile you deserve!</p>
+                    &nbsp;
+                    {/* &nbsp;
+                    <Link className="active text-start" to="/contact" title="View Gallery">
+                        <button class="crown-button" >Contact Us</button>
+                    </Link>*/}
+                    &nbsp; 
+                </div>
+            </div>
             <br></br>
+
             <div className='row'>
                 <div className='col-md-12 col-sm-12'>
                     <h1 className='text-color-gold text-start'>Unleash Your Smile with Clear Aligners.</h1>

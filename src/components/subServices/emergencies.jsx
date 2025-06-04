@@ -41,6 +41,7 @@ function Emergencies() {
                         <li class="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
                         <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                        <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                     </ul>
                 </div>
@@ -48,52 +49,56 @@ function Emergencies() {
 
             &nbsp;
             <div className='row'>
-                <div className='col-md-8 col-sm-12'>
-                        <h1 class="gold text-start">24 hour Emergencies</h1>
-                        <h3 class="brown text-start ">ASH Dental 24-Hour Emergency Dental Service</h3>
-                        {/* <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2> */}
-                    <br />
-                    <p class="lead text-start">We recognize the importance of accommodating the demanding schedules of busy professionals.
-                        That&#39;s why we are proud to introduce our 24-Hour Emergency Dental Service, designed to provide
-                        round-the-clock dental care tailored to your needs. From dental restorations to general maintenance, we ensure
-                        that every aspect of your oral health is meticulously addressed.</p>
-                    <br />
-                    <h3 class="brown text-start " >Services Offered:</h3>
+                {/* <!-- Image Column on the Left --> */}
+                <div className='col-md-4 col-sm-12 '>
+                    <img
+                        className='img-fluid'
+                        src="/Images/Dental/7.webp"
+                        alt="Dental Implants"
+                        style={{ maxHeight: '100%', width: 'auto' }}
+                    />
+                </div>
 
-                    <ul class="lead text-start  ">
-                        <li>Emergency Toothache Relief</li>
+                {/* <!-- Text Column on the Right --> */}
+                <div className='col-md-8 col-sm-12'>
+                    <h1 class="gold text-start">Round-the-clock dental care: ASH dental’s 24-hour emergency services</h1>
+                    <h3 class="brown text-start">ASH dental’s 24-hour emergency services</h3>
+                    <br />
+                    <p class="lead text-start">
+                        We understand that dental emergencies can happen at any time, and busy schedules make
+                        immediate care essential. That’s why ASH Dental offers 24-Hour Emergency Dental
+                        Services, providing comprehensive care around the clock to meet your urgent needs. From
+                        quick relief for toothaches to immediate repairs for dental injuries, we are here to ensure
+                        your oral health is promptly and effectively addressed.
+                    </p>
+                    <br />
+                    <h2 class="brown text-start">Services Offered:</h2>
+                    <ul class="lead text-start">
+                        <li>Emergency toothache relief</li>
                         <li>Same-Day Repairs for Chipped or Broken Teeth</li>
                         <li>Urgent Care for Dental Injuries</li>
                         <li>Swift Assistance for Lost or Dislodged Dental Restorations</li>
                         <li>Immediate Attention for Severe Gum Issues</li>
                     </ul>
-                    <br></br>
+                    <br />
                     <h3 class="brown text-start">Emergency Contact Number: 084 850 3501</h3>
-
-                    <p class="lead  text-start">
-                        Contact ASH Dental now to experience reliable, round-the-clock dental care tailored to your busy
-                        schedule.
-                    </p>
-                    <p class=" gold text-start">
-                        *please note that a call out fee applies
+                    <p class="lead text-start">For reliable, 24/7 dental care that fits your busy lifestyle, contact ASH Dental today.</p>
+                    <p class="gold text-start">
+                        *Please note that a call-out fee applies.
                     </p>
                     <br />
                 </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/7.webp" alt="Dental Implants" style={{ height: '100%' }} />
             </div>
-   
 
             <br></br>
             &nbsp;
+
             <div className=' row text-center'>
                 &nbsp;
-
             </div>
+
             <section className='mb-2 pb-2 text-center' id="what-we-do">
-
-
                 <div className="container-fluid">
-
                     <div className='mb-3 pb-3 ps-3 pe-3' >
 
                         <div className="row mt-5">
@@ -102,9 +107,10 @@ function Emergencies() {
                                     <div className="card-block block-1">
                                         <h3 className="card-title text-color-gold">Convenience:</h3>
                                         <p className="lead">
-                                            Life doesn&#39;t adhere to a 9-to-5 schedule, and neither do dental emergencies.
-                                            Our 24-hour* service ensures that you can access quality dental care whenever you need it,
-                                            whether it&#39;s the middle of the night or during a hectic workday
+                                        Dental emergencies don’t keep office hours, and neither do we. Our 24-hour service*
+                                        ensures that you have access to high-quality dental care whenever you need it. Plus, with
+                                        our convenient location in Pretoria East, you can easily reach us whether it’s late at night or
+                                        during a busy workday.
                                         </p>
                                     </div>
                                 </div>
@@ -114,9 +120,9 @@ function Emergencies() {
                                     <div className="card-block block-1">
                                         <h3 className="card-title text-color-gold">Prompt Assistance:</h3>
                                         <p className="lead">
-                                            Dental issues can be urgent, and delays in treatment may worsen the
-                                            situation. With ASH Dental&#39;s 24-hour service*, you can expect prompt assistance from our
-                                            skilled professionals, addressing your dental concerns swiftly and effectively.
+                                            Urgent dental issues require immediate attention to prevent complications. With ASH
+                                            Dental’s 24-hour service*, you can count on prompt, expert care from our skilled dentists,
+                                            addressing your concerns quickly and efficiently.
                                         </p>
                                     </div>
                                 </div>
@@ -126,10 +132,9 @@ function Emergencies() {
                                     <div className="card-block block-1">
                                         <h3 className="card-title text-color-gold">Minimal Disruption:</h3>
                                         <p className="lead">
-                                            We understand the importance of your time and commitments. Our
-                                            24-hour service* is designed to provide the dental care you need without disrupting your
-                                            schedule. Whether you&#39;re dealing with sudden pain, a broken tooth, or any other urgent
-                                            dental issue, we are here to help 24/7.
+                                            We value your time and understand the importance of your schedule. Our 24-hour service*
+                                            is designed to offer the dental care you need with minimal disruption. Whether it’s sudden
+                                            pain or a broken tooth, we’re available around the clock to assist you.
                                         </p>
                                         <br />
                                     </div>
@@ -140,8 +145,9 @@ function Emergencies() {
                                     <div className="card-block block-1">
                                         <h3 className="card-title text-color-gold">Patient Education and Empowerment:</h3>
                                         <p className="lead">
-                                            We believe that an informed patient is an empowered patient. Our team takes the time to explain procedures,
-                                            discuss treatment options, and answer any questions you may have.
+                                            An informed patient is a confident patient. Our team is dedicated to explaining procedures,
+                                            discussing treatment options, and answering any questions you may have, ensuring you’re
+                                            fully empowered in your dental care decisions.
                                         </p>
 
                                     </div>

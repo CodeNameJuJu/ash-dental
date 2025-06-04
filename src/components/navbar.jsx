@@ -85,7 +85,8 @@ function Navbar() {
                                         <li class="nav-item natetext lowerdropw"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
                                         <li class="nav-item natetext lowerdropw"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
                                         <li class="nav-item natetext lowerdropw"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
-                                        <li class="nav-item natetext lowerdropw"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                                        <li class="nav-item natetext lowerdropw"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>   
+                                        <li class="nav-item natetext lowerdropw"> <Navigate name={'Facial Aesthetics'} path={'/facialAesthetics'} /> </li>
                                         <li class="nav-item natetext lowerdropw"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                                     </li>
                                 )}
