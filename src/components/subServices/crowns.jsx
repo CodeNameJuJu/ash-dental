@@ -19,7 +19,6 @@ function Crowns() {
     }
     return (
         <div>
-            <hr ></hr>
             <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
                     className="navbar-toggler hide-mob"
@@ -43,13 +42,14 @@ function Crowns() {
                         <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
                         <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
+                        <li class="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                         
                     </ul>
                 </div>
             </nav>
 
-            <div className=' ps-4 ms-4 pe-4 me-4'>
+            <div className=' ps-4 ms-4 pe-4 me-4 top-pad'>
                 <div className='text-center ps-2 ms-4 pe-2 me-2' >
                     <h1 className='pt-4 mt-3 text-color-gold text-start'>Comprehensive crowns and veneers services: artistry and precision for your
                         perfect smile</h1>

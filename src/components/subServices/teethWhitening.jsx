@@ -17,7 +17,6 @@ function TeethWhitening() {
     }
     return (
         <div>
-            <hr ></hr>
             <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
                     className="navbar-toggler hide-mob"
@@ -41,12 +40,13 @@ function TeethWhitening() {
                         <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
                         <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
+                        <li class="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                     </ul>
                 </div>
             </nav>
             &nbsp;
-            <div className='row'>
+            <div className='row top-pad'>
                 <div className='col-md-8 col-sm-12'>
                         <h1 class="gold text-start">Teeth Whitening</h1>
                         <h3 class="brown text-start ">Illuminate Your Radiance</h3>

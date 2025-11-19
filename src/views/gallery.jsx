@@ -4,11 +4,13 @@ import '../Main.css';
 
 const imageIndexMapping = {
     "ASH DENTAL_content_MARCH'24-378.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-378.webp",
+    "ashdental_dentalchair.jpeg": "../Images/Practice/Low/ashdental_dentalchair.jpeg",
     "ASH DENTAL_content_MARCH'24-69.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-69.webp",
     "ASH DENTAL_content_MARCH'24-370.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-370.webp",
     "ASH DENTAL_content_MARCH'24-358.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-358.webp",
     "ASH DENTAL_content_MARCH'24-3691.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-3691.webp",
     "ASH DENTAL_content_MARCH'24-38.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-38.webp",
+    "ashdentalpractice.jpeg": "../Images/Practice/Low/ashdentalpractice.jpeg",
     "ASH DENTAL_content_MARCH'24-43.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-43.webp",
     "ASH DENTAL_content_MARCH'24-228.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-228.webp",
     "ASH DENTAL_content_MARCH'24-223.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-223.webp",

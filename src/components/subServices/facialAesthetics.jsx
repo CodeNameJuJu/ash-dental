@@ -19,8 +19,6 @@ function FacialAesthetics() {
     }
     return (
         <div>
-            <hr ></hr>
-            <div>
                 <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
                     <button
                         className="navbar-toggler hide-mob"
@@ -44,14 +42,14 @@ function FacialAesthetics() {
                             <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
                             <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
                             <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
+                            <li class="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
                             <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                             
                         </ul>
                     </div>
                 </nav>
-            </div>
             &nbsp;
-            <div className='row'>
+            <div className='row top-pad2'>
                 <div className='col-md-8 col-sm-12'>
                     <h1 className='text-color-gold text-start'>Facial Aesthetics</h1>
                     <h2 class="brown text-start">A better version of you</h2>
