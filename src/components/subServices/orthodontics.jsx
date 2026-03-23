@@ -20,7 +20,6 @@ function Orthodontics() {
 
     return (
         <div>
-            <hr ></hr>
             <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
                     className="navbar-toggler hide-mob"
@@ -43,12 +42,13 @@ function Orthodontics() {
                         <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
                         <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
+                        <li class="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
                         <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                     </ul>
                 </div>
             </nav>
             <br></br>
-            <div className="text-center container">
+            <div className="text-center container  top-pad">
                 <h1 className='text-color-gold mt-4 pt-4'>Orthodontics</h1>
                 <a href="#ClearAligners" class="gold mt-4 pt-4 mx-2">
                     <button href="#ClearAligners" class="crown-button" >Clear Aligners</button>
@@ -84,7 +84,7 @@ function Orthodontics() {
             &nbsp;
             &nbsp;
             <div className='row'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Ortho.webp" alt="Orthodontics" style={{ height: '100%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/orthodual.jpeg" alt="Orthodontics" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
                     <h3 className='text-color-gold text-start' id="ClearAligners">What are Clear Aligners?</h3>
                     <p class="lead text-start">Clear aligners are a series of clear, removable trays that gradually straighten your teeth over

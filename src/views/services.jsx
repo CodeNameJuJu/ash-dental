@@ -58,7 +58,7 @@ function Services() {
         {
             name: 'Orthodontics',
             path: '/orthodontics',
-            image: '/Images/ServicesLandscape/Ortho.webp',
+            image: '/Images/ServicesLandscape/orthodual.jpeg',
             description: 'Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear aligners, we tailor treatments to enhance both aesthetics and functionality.',
         },
         {
@@ -124,12 +124,15 @@ function Services() {
                             <Navigate name={'Facial Aesthetics'} path={'/facialAesthetics'} />
                         </li>
                         <li className="sub-nav-item">
+                            <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} />
+                        </li>
+                        <li className="sub-nav-item">
                             <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} />
                         </li>
                     </ul>
                 </div>
             </nav>
-            <div className='pt-4 mt-3 pb-3 ps-4 ms-4 pe-4 me-4'>
+            <div className='pt-5 mt-3 pb-3 ps-4 ms-4 pe-4 me-4 top-pad'>
                 <div className='text-center' >
                     <h1 className='pt-4 mt-3 pb-3 text-color-gold'>Enhance your oral health and smile with comprehensive general and cosmetic
                         dentistry</h1>

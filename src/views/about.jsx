@@ -9,7 +9,8 @@ const imageIndexMapping = [
     { name: "Dr. Juan Williams", index: 188 },
     { name: "Dr. Eulana Marais", index: 123 },
     { name: "Dr. Michelle Karl",  },
-    { name: "Danette Smit",  }
+    { name: "Danette Smit",  },
+    { name: "Tannah Rae",  }
 ];
 
 function Card({ name, image, bio, title, quali }) {
@@ -96,13 +97,27 @@ export const About = () => {
         <div className='ps-md-5 ms-md-5 pe-md-5 me-md-5 ps-sm-3 ms-sm-3 pe-sm-3 me-sm-3'>
             <div className='text-center ps-4 ms-4 pe-4 me-4 ps-md-4 ms-md-4 pe-md-4 me-md-4' >
                 <div className='pt-4 mt-3 pb-3 ps-md-4 ms-md-4 pe-md-4 me-md-4'>
+               
                     <h1 className='pt-4 mt-3 pb-3 text-color-gold'>Transform your smile with expert dental care and precision</h1>
                     <div className='d-flex justify-content-center'>
+                     
                         <p className="lead col-md-12 col-sm-10 ps-1 ms-1 text-start">We envision a world where every smile radiates confidence, health, and individuality. As
                             leaders in both cosmetic and general dentistry, we are committed to setting new benchmarks
                             for precision, artistry, and patient-centred dental care.
                         </p>
                     </div>
+                    
+                <div className='pt-3 mt-3'>
+                    <h3 className='text-color-gold'>Meet the Team </h3>
+                    <p className="lead  text-start ps-1 ms-1">
+                        Discover the diverse talents that come together to create a harmonious blend of precision, compassion, and excellence,
+                        ensuring that your experience with us is not just a dental appointment but a transformative and positive journey toward optimal oral health and confidence.
+                        Our dedicated team at ASH Dental extends beyond our dentists to include skilled professionals in various roles.
+                        Each member plays a pivotal role in shaping the overall patient experience at our practice, contributing to the seamless and comfortable journey you undergo with us.
+                    </p>
+                    <br />
+                </div>
+                <img style={{height: '100%', width: '100%'  }} src={process.env.PUBLIC_URL + "/Images/ServicesLandscape/Ashdentalteam2.jpeg"} text="First slide" alt='Sale1' />
                     <h2 className='pt-4 mt-3 pb-3 brown'>Meet our dental artists: Crafting smiles with expertise and passion</h2>
                     <div className='d-flex justify-content-center'>
                         <p className="lead col-md-12 col-sm-10 ps-1 ms-1 text-start">
@@ -204,6 +219,41 @@ export const About = () => {
                                                 )}
                                             </>
                                         )}
+                                         {index === 5 && (
+                                            <>
+                                                {isSmallScreen ? (
+                                                    <Card
+                                                        name={item.name}
+                                                        image={`${process.env.PUBLIC_URL}/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
+                                                        title="Medical Aesthetician & Somatologist"
+                                                        className="new-doctor-bio "
+                                                        bio={`Tannah Rae is a qualified Medical Aesthetician and Somatologist, holding diplomas in both Somatology and Advanced Dermal Aesthetics.
+                                                        Graduating with distinction in Advanced Dermal Science and Applied Cosmetic Science, she has built her career on a foundation of clinical 
+                                                        excellence and a deep understanding of skin health.Tannah approaches skincare as both an art and a science. She views the skin as part of a larger, 
+                                                        interconnected system—often misunderstood—and is passionate about solving complex skin concerns through evidence-based treatments such as chemical peels, 
+                                                        microneedling, and laser therapy. Known for her discipline, curiosity, and strong work ethic, she is driven by a desire to understand the “how” and “why” 
+                                                        behind every treatment she offers. For Tannah, skincare is more than a profession—it’s a purpose. She finds the greatest reward in helping clients regain 
+                                                        confidence through ethical, tailored care that restores both skin health and self-trust.`}
+
+                                                    />
+                                                ) : (
+                                                    <Card2
+                                                        name={item.name}
+                                                        image={`${process.env.PUBLIC_URL}/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
+                                                        title="Medical Aesthetician & Somatologist"
+                                                        className="new-doctor-bio "
+                                                        bio={`Tannah Rae is a qualified Medical Aesthetician and Somatologist, holding diplomas in both Somatology and Advanced Dermal Aesthetics.
+                                                        Graduating with distinction in Advanced Dermal Science and Applied Cosmetic Science, she has built her career on a foundation of clinical 
+                                                        excellence and a deep understanding of skin health.Tannah approaches skincare as both an art and a science. She views the skin as part of a larger, 
+                                                        interconnected system—often misunderstood—and is passionate about solving complex skin concerns through evidence-based treatments such as chemical peels, 
+                                                        microneedling, and laser therapy. Known for her discipline, curiosity, and strong work ethic, she is driven by a desire to understand the “how” and “why” 
+                                                        behind every treatment she offers. For Tannah, skincare is more than a profession—it’s a purpose. She finds the greatest reward in helping clients regain 
+                                                        confidence through ethical, tailored care that restores both skin health and self-trust.`}
+
+                                                    />
+                                                )}
+                                            </>
+                                        )}
                                     </React.Fragment>
                                 ))}
                             </>
@@ -296,6 +346,47 @@ export const About = () => {
                                                 )}
                                             </>
                                         )}
+                                        {index === 5 && (
+                                            <>
+                                                {isSmallScreen ? (
+                                                    <Card
+                                                        name={item.name}
+                                                        image={`${process.env.PUBLIC_URL}/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
+                                                        title="Medical Aesthetician & Somatologist"
+                                                        bio={
+                                                            <div className="new-doctor-bio">Tannah Rae is a qualified Medical Aesthetician and Somatologist, 
+                                                            holding diplomas in both Somatology and Advanced Dermal Aesthetics.Graduating with distinction in Advanced
+                                                            Dermal Science and Applied Cosmetic Science, she has built her career on a foundation of clinical 
+                                                            excellence and a deep understanding of skin health.Tannah approaches skincare as both an art and a 
+                                                            science. She views the skin as part of a larger, interconnected system—often misunderstood—and is
+                                                            passionate about solving complex skin concerns through evidence-based treatments such as chemical 
+                                                            peels, microneedling, and laser therapy.Known for her discipline, curiosity, and strong work ethic, 
+                                                            she is driven by a desire to understand the “how” and “why” behind every treatment she offers.For 
+                                                            Tannah, skincare is more than a profession—it’s a purpose. She finds the greatest reward in helping 
+                                                            clients regain confidence through ethical, tailored care that restores both skin health and self-trust.`
+                                                            </div>}
+                                                    />
+                                                ) : (
+                                                    <Card2
+                                                        name={item.name}
+                                                        image={`${process.env.PUBLIC_URL}/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
+                                                        title="Medical Aesthetician & Somatologist"
+                                                        bio={
+                                                        <div className="new-doctor-bio">
+                                                            Tannah Rae is a qualified Medical Aesthetician and Somatologist, holding diplomas in both Somatology and Advanced Dermal Aesthetics.
+                                                            Graduating with distinction in Advanced Dermal Science and Applied Cosmetic Science, she has built her career on a foundation of clinical 
+                                                            excellence and a deep understanding of skin health.Tannah approaches skincare as both an art and a science. She views the skin as part of a larger, 
+                                                            interconnected system—often misunderstood—and is passionate about solving complex skin concerns through evidence-based treatments such as chemical peels, 
+                                                            microneedling, and laser therapy. Known for her discipline, curiosity, and strong work ethic, she is driven by a desire to understand the “how” and “why” 
+                                                            behind every treatment she offers. For Tannah, skincare is more than a profession—it’s a purpose. She finds the greatest reward in helping clients regain 
+                                                            confidence through ethical, tailored care that restores both skin health and self-trust.
+                                                        </div>}
+
+                                                    />
+                                                )}
+                                            </>
+                                        )}
+                                        
                                     </React.Fragment>
                                 ))}
                             </>
@@ -307,19 +398,7 @@ export const About = () => {
                     endodontics, oral surgery, and general dentistry.
                 </p>
 
-                <div className='pt-3 mt-3'>
-                    <h3 className='text-color-gold'>Meet the Team </h3>
-                    <p className="lead  text-start ps-1 ms-1">
-                        Discover the diverse talents that come together to create a harmonious blend of precision, compassion, and excellence,
-                        ensuring that your experience with us is not just a dental appointment but a transformative and positive journey toward optimal oral health and confidence.
-                        Our dedicated team at ASH Dental extends beyond our dentists to include skilled professionals in various roles.
-                        Each member plays a pivotal role in shaping the overall patient experience at our practice, contributing to the seamless and comfortable journey you undergo with us.
-                    </p>
-                    <br />
-                    <br />
-                    <img style={{height: '100%', width: '100%'  }} src={process.env.PUBLIC_URL + "/Images/ServicesLandscape/Ashdentalteam.jpg"} text="First slide" alt='Sale1' />
-                    <br />
-                </div>
+
                 <br />
                 <br />
                 <br />

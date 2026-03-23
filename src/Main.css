@@ -237,11 +237,8 @@ li {
 .navbar-second {
   position: sticky;
   top: 96px;
-  /* Adjust according to the height of the first navbar */
   z-index: 1000;
-  /* Ensure it appears above other content */
   background-color: #ffffff;
-  /* Add your desired background color */
 }
 
 @media screen and (max-width: 1700px) {
@@ -2093,6 +2090,12 @@ ul {
   display: flex;
   padding: 0 4px;
 }
+.cntr2 {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+}
 
 .modal-move{
   padding-top: 120px;
@@ -2162,3 +2165,74 @@ ul {
 
  }
 
+ .bigger{
+  font-size: 20px !important;
+ }
+
+
+ .navbar-transparent {
+  background: transparent !important;
+  box-shadow: none;
+  transition: background 0.3s ease;
+  position: absolute;   /* sits on top of the video */
+  width: 100%;
+  z-index: 10;          /* above the video */
+}
+
+/* Navbar after scroll */
+.navbar-scrolled {
+  background: #ffffff !important;
+  transition: background 0.3s ease;
+  position: sticky; /* keeps normal sticky behavior after scroll */
+}
+
+.mob-test {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  /* height: 715px; */
+  object-fit: cover;
+  position: relative; /* below the navbar */
+  z-index: 1; 
+}
+
+.home_btn_padding {
+  padding: 18px 28px;   /* ↑ top/bottom, → left/right */
+  font-size: 1.2rem; /* or 18–20px */
+  padding: 12px 28px;
+  margin-bottom: auto;
+}
+
+@media (max-width: 768px) {
+  .mob-test {
+    height: 50vh !important; /* smaller height on mobile */
+    
+  }
+}
+
+.meet-artists2 {
+  width: 100vw; /* full width of screen */
+  background-image: url('../public/Images/ServicesLandscape/bg.jpeg'); /* path to your image */
+  background-size: cover; /* make sure image covers the section */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+  color: #ffffff; /* optional: text color for visibility */
+  padding: 80px 10%; /* top-bottom, left-right spacing */
+  box-sizing: border-box;
+}
+
+.meet-artists2 .lead,
+.meet-artists2 .home-p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* optional: improves readability */
+  background-color: #0c0b0b4b;
+}
+
+.top-pad {
+  padding-top: 75px;
+}
+
+.top-pad2 {
+  padding-top: 70px;
+}

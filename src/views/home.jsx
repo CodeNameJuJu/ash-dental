@@ -1,15 +1,20 @@
 import '../Main.css';
+import React, { useEffect, useState } from 'react';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from 'react-router-dom'
+import Modal from '../components/modal';
+
 
 const imageIndexMapping = {
-    // "banner": "/Images/banner1.webp",
-    "banner": "/Images/ServicesLandscape/AshDentalBanner.png",
+    "banner": "/Images/banner1.webp",
+    "bannerabout": "/Images/ServicesLandscape/bannerabout.jpeg",
+    // "banner": "/Images/ServicesLandscape/AshDentalBanner.png",
     "teethWhitening": "/Images/FacesCloseUpsLandscape/1.webp",
     "veneers": "/Images/FacesCloseUpsLandscape/4.webp",
     "dentalBonding": "/Images/FacesCloseUpsLandscape/8.webp",
     "dentalCrowns": "/Images/ServicesLandscape/Crowns2.webp",
-    "orthodontics": "/Images/ServicesLandscape/Ortho.webp",
+    // "orthodontics": "/Images/ServicesLandscape/Ortho.webp",
+    "orthodontics": "/Images/ServicesLandscape/orthodual.jpeg",
     "dentalImplants": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-6511.webp",
     "gumContouring": "/Images/FacesCloseUpsPortrait/Gum.webp",
     "smileMakeovers": "/Images/FacesCloseUpsLandscape/5.webp",
@@ -21,44 +26,41 @@ const imageIndexMapping = {
 };
 
 export const Home = () => {
+      const [showModal, setShowModal] = useState(false);
+      const openModal = () => setShowModal(true);
+      const closeModal = () => setShowModal(false);
+    
 
     return (
         <div className="container-fluid p-0">
-        <Link to="/about">
-            <img src={imageIndexMapping["banner"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '615px' }} />
-            </Link>
+            {/* <Link to="/about"> */}
+                {/* <img src={imageIndexMapping["banner"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '715px' }} /> */}
+                <video
+                    className="img-fluid mob-test"
+                    style={{ objectFit: 'cover' }}
+                        autoPlay muted loop playsInline >
+                    <source src="/Videos/ashVideo.MP4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                </video>
+            {/* </Link> */}
             <div class="serv-top">
-                <div class="text-center">
-                    <h1 class="gold ">Welcome to ASH Dental: your dental practice in Pretoria East</h1>
-                    <h1 class="gold ">your dental practice in Pretoria East</h1>
-                    <br></br>
-                    <p class="lead">Your journey with us begins the moment you step into our practice, where a harmonious
-                        blend of cutting-edge technology and a soothing environment welcomes you. From the
-                        very start, we ensure that your experience is both visually captivating and deeply
-                        personalized.
-                    </p>
-                    <br></br>
-                    <p class="lead ">Our commitment to understanding your unique needs takes shape in our consultation
-                        room, where we collaborate to create a treatment plan specifically tailored to your
-                        individual requirements. As you transition from consultation to the treatment chair, we
-                        bring this personalized approach to life, ensuring every step of your dental journey is
-                        defined by precision, comfort, and transformative care.
-                    </p>
+                <button type="button" class="btn btn-bg btn-link cntr2 home_btn_padding py" onClick={openModal} title="Appointment">
+                    Reserve a Consultation
+                </button>
+ 
 
+                <Modal showModal={showModal} closeModal={closeModal} />
+                <div class="text-center">
+                    <h1 class="gold pt-4">Welcome to ASH Dental</h1>
+                    <h4 class="gold ">Your dental practice in Pretoria East</h4>
                     <br></br>
-                    <p class="lead">Whether you’re seeking advanced treatments for complex dental issues or routine care
-                        for everyday needs, our experienced team is dedicated to delivering exceptional care.
-                        From intricate cosmetic procedures and restorative work to essential preventive and
-                        general dentistry, we offer comprehensive solutions that address every aspect of your
-                        oral health.
-                    </p>
-                    <br></br>
-                    <p class="lead ">At our Pretoria East dental practice, you’ll experience the perfect fusion of advanced
-                        techniques and compassionate service. Your journey to a healthier, more radiant smile
-                        begins here.
-                    </p>
+
+                    
                 </div>
             </div>
+                {/* <Link to="/about"> place1
+                    <img src={imageIndexMapping["bannerabout"]} alt="banner" className="img-fluid mob-test" style={{ maxHeight: '1200px' }} /> 
+                 </Link> */}
             <div className="serv3-container text-center">
                 <h1 className="gold">Dental Services</h1>
                 <h2 className="brown">Crafting Radiant Smiles</h2>
@@ -154,15 +156,20 @@ export const Home = () => {
             <div>
                 <section class="meet-artists">
                     <h1 class="home-h2 brown">Start Your Dental Journey with Us</h1>
-                    <p class="home-p" >Say goodbye to the dread of dental appointments. At ASH Dental, every visit is designed
-                        to be a positive, transformative experience. Start your journey to a radiant smile
-                        today—reach out for inquiries, appointments, or any questions you may have. We can’t
-                        wait to see you.</p>
+                    <p class="home-p" ></p>
+                    <p class="lead">Your journey with us begins the moment you step into our practice, where a harmonious
+                        blend of cutting-edge technology and a soothing environment welcomes you. From the
+                        very start, we ensure that your experience is both visually captivating and deeply
+                        personalized.
+                    </p>
+                    <br></br>
                 </section>
+
+
             </div>
             &nbsp;
             <div className='row'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/5.webp" alt="Dental" style={{ height: '100%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/Journey.jpeg" alt="Dental" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>A Journey to Transformative Smiles</h2>
@@ -179,7 +186,7 @@ export const Home = () => {
             </div>
             &nbsp;
             <div className='row'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/3.webp" alt="Patient Centric Excellence" style={{ height: '100%' }} />
+                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/Dental/PatientCentric.jpeg" alt="Patient Centric Excellence" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
                     <section className='mt-3 pt-3'>
                         <h2 className='brown mb-2 text-start'>Patient-Centric Excellence</h2>
@@ -210,6 +217,36 @@ export const Home = () => {
 
                 </div>
             </div>
+            <br></br>
+            {/* <section className="meet-artists2"> PLACE2
+                <p className="lead">
+                    Our commitment to understanding your unique needs takes shape in our consultation
+                    room, where we collaborate to create a treatment plan specifically tailored to your
+                    individual requirements. As you transition from consultation to the treatment chair, we
+                    bring this personalized approach to life, ensuring every step of your dental journey is
+                    defined by precision, comfort, and transformative care.
+                </p>
+                <br />
+                <p className="lead">
+                    Whether you’re seeking advanced treatments for complex dental issues or routine care
+                    for everyday needs, our experienced team is dedicated to delivering exceptional care.
+                    From intricate cosmetic procedures and restorative work to essential preventive and
+                    general dentistry, we offer comprehensive solutions that address every aspect of your
+                    oral health.
+                </p>
+                <br />
+                <p className="lead">
+                    At our Pretoria East dental practice, you’ll experience the perfect fusion of advanced
+                    techniques and compassionate service. Your journey to a healthier, more radiant smile
+                    begins here.
+                </p>
+                <p className="home-p">
+                    Say goodbye to the dread of dental appointments. At ASH Dental, every visit is designed
+                    to be a positive, transformative experience. Start your journey to a radiant smile
+                    today—reach out for inquiries, appointments, or any questions you may have. We can’t
+                    wait to see you.
+                </p>
+            </section> */}
             &nbsp;
             <div className='row'>
                 <div className='col-md-8 col-sm-12'>
