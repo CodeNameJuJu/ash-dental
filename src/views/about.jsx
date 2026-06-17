@@ -98,7 +98,7 @@ export const About = () => {
             <div className='text-center ps-4 ms-4 pe-4 me-4 ps-md-4 ms-md-4 pe-md-4 me-md-4' >
                 <div className='pt-4 mt-3 pb-3 ps-md-4 ms-md-4 pe-md-4 me-md-4'>
                
-                    <h1 className='pt-4 mt-3 pb-3 text-color-gold'>Transform your smile with expert dental care and precision</h1>
+                    <h1 className='pt-4 mt-3 pb-3 text-color-gold page-heading'>Transform your smile with expert dental care and precision</h1>
                     <div className='d-flex justify-content-center'>
                      
                         <p className="lead col-md-12 col-sm-10 ps-1 ms-1 text-start">We envision a world where every smile radiates confidence, health, and individuality. As
@@ -108,7 +108,7 @@ export const About = () => {
                     </div>
                     
                 <div className='pt-3 mt-3'>
-                    <h3 className='text-color-gold'>Meet the Team </h3>
+                    <h3 className='text-color-gold page-heading'>Meet the Team </h3>
                     <p className="lead  text-start ps-1 ms-1">
                         Discover the diverse talents that come together to create a harmonious blend of precision, compassion, and excellence,
                         ensuring that your experience with us is not just a dental appointment but a transformative and positive journey toward optimal oral health and confidence.

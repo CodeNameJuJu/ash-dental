@@ -134,7 +134,7 @@ function Services() {
             </nav>
             <div className='pt-5 mt-3 pb-3 ps-4 ms-4 pe-4 me-4 top-pad'>
                 <div className='text-center' >
-                    <h1 className='pt-4 mt-3 pb-3 text-color-gold'>Enhance your oral health and smile with comprehensive general and cosmetic
+                    <h1 className='pt-4 mt-3 pb-3 text-color-gold page-heading'>Enhance your oral health and smile with comprehensive general and cosmetic
                         dentistry</h1>
                     {/* <h3 className="brown pb-3">Redesign, Enhance, Transform</h3> */}
                     <div className='d-flex flex-column justify-content-center testem'>
@@ -191,7 +191,7 @@ function Services() {
             </div>
             <div className='pt-4 mt-3 pb-3 ps-4 ms-4 pe-4 me-4'>
                 <div className='text-center' >
-                    <h1 className='pt-4 mt-3 pb-3 text-color-gold'>A Journey to Transformative Smiles</h1>
+                    <h1 className='pt-4 mt-3 pb-3 text-color-gold page-heading'>A Journey to Transformative Smiles</h1>
                     <h3 className="brown pb-3">Redesign, Enhance, Transform</h3>
                     <div className='d-flex flex-column justify-content-center'>
                         <p className="lead text-start">At ASH Dental, our Cosmetic Dentistry goes beyond enhancing smiles; it's about crafting a personalized and radiant expression of your individuality. Schedule a consultation to explore the possibilities and rediscover the beauty of your smile with us.</p>

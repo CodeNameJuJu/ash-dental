@@ -80,7 +80,7 @@ function Navbar() {
               <li className="nav-item nav-hover natetext">
                 <Navigate name={'Home'} path={'/'} />
               </li>
-              <li className="nav-item nav-hover natetext hide-services">
+              <li className="nav-item nav-hover natetext">
                 <Navigate name={'Services'} path={'/services'} />
               </li>
               <li className="nav-item nav-hover dropdown lowerdropw no-desk">
@@ -89,9 +89,6 @@ function Navbar() {
                 </li>
                 {isMoreAboutUsOpen && (
                   <li className="nav-item natetext lower-drop no-desk">
-                    <li className="nav-item natetext lower-drop no-desk">
-                      <Navigate name={'All Services'} path={'/services'} />{' '}
-                    </li>
                     <li className="nav-item natetext lower-drop no-desk">
                       <Navigate name={'Teeth Whitening'} path={'/teethWhitening'} />{' '}
                     </li>

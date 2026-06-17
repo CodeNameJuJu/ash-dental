@@ -3,48 +3,22 @@
 body {
   width: 100%;
   max-width: 100%;
-  /* Adjust the value as per your preference */
   margin: 0 auto;
-  /* Center the body */
   overflow-x: hidden;
-  /* Hide horizontal scrollbar */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff;
   color: #1C1C1C;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  /* Semi-bold */
-}
-
-/* Second headings (H3) */
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 525;
-  /* Medium */
-}
-
-/* Content / paragraphs (p) */
-p {
-  font-family: 'Silk Serif';
-  font-weight: 400;
-  /* Regular */
-}
-
-li {
-  font-family: 'Silk Serif', serif;
-  font-weight: 520;
-  /* Regular */
+  font-family: 'Poppins', sans-serif;
 }
 
 .smaller-text {
   font-size: 20px !important;
-  /* Adjust font size for smaller screens */
+}
+
+.page-heading {
+  margin-top: 80px !important;
+  padding-top: 20px !important;
 }
 
 .col-md-5 {
@@ -508,7 +482,7 @@ input[type="range"]::-moz-range-thumb {
     display: none; /* Hides the element with class "my-element" on screens smaller than 800px */
   }
   .hide-services {
-
+    display: none;
   }
 }
 
@@ -1969,7 +1943,7 @@ ul {
   .sub-image-container {
     flex: 1 1 auto;
     /* Allow image to adapt */
-    flex-order: 2;
+    order: 2;
     /* Move image to the end (below text) */
   }
 }
@@ -2067,20 +2041,30 @@ ul {
 .crown-button:hover {
   background-color: #B6A792;
 }
+
 .gallery-button {
-  width: 140px; /* Adjust width as needed */
-  height: 45px; /* Adjust height as needed */
+  width: 140px;
+  height: 45px;
   background-color: #726358;
   color: white;
-  padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 45px;
 }
 
 .gallery-button:hover {
   background-color: #B6A792;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .cntr {

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
-import emailjs from 'emailjs-com'; // Import emailjs-com
+import emailjs from '@emailjs/browser';
 
 function FormInput({ type, name, placeholder }) {
   return (

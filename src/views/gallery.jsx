@@ -1,5 +1,4 @@
 import React from 'react';
-import LazyLoad from 'react-lazyload';
 import '../Main.css';
 
 const imageIndexMapping = {
@@ -43,10 +42,16 @@ const imageIndexMapping = {
 function Gallery() {
     return (
         <div className="text-center container">
-            <h1 className='text-color-gold mt-4 pt-4'>Gallery</h1>
+            <h1 className='text-color-gold page-heading'>Gallery</h1>
                     
-            <a href="#facility" class="gold mt-4 pt-4 mx-2"><button  href="#facility" class="gallery-button" >Facility</button></a>
-                <a href="#smile-gallery" ><button  href="#smile-gallery" class="gallery-button">Smile Gallery</button></a>
+            <div className="mt-4 mb-4">
+                <a href="#facility" className="mx-2">
+                    <button className="gallery-button">Facility</button>
+                </a>
+                <a href="#smile-gallery" className="mx-2">
+                    <button className="gallery-button">Smile Gallery</button>
+                </a>
+            </div>
                 <br></br>
                     <p className="lead text-start ms-2 mt-3 pt-3 mb-4 pb-4">
                         Explore our gallery and witness the transformative journeys we've embarked on with our patients. Each image tells a story of precision, artistry,
@@ -61,9 +66,12 @@ function Gallery() {
                             {/* Dynamically load images for the first set */}
                             {Object.keys(imageIndexMapping).slice(0, 6).map((imageName, index) => (
                                 <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
-                                    <LazyLoad height={200} once>
-                                        <img src={imageIndexMapping[imageName]} className="img-fluid gallery-image" alt="Placeholder" />
-                                    </LazyLoad>
+                                    <img 
+                                        loading="lazy"
+                                        src={imageIndexMapping[imageName]} 
+                                        className="img-fluid gallery-image" 
+                                        alt="Placeholder" 
+                                    />
                                 </div>
                             ))}
                         </div>
@@ -76,9 +84,12 @@ function Gallery() {
                             {/* Dynamically load images for the second set */}
                             {Object.keys(imageIndexMapping).slice(6, 16).map((imageName, index) => (
                                 <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
-                                    <LazyLoad height={200} once>
-                                        <img src={imageIndexMapping[imageName]} className="img-fluid gallery-image" alt="Placeholder" />
-                                    </LazyLoad>
+                                    <img 
+                                        loading="lazy"
+                                        src={imageIndexMapping[imageName]} 
+                                        className="img-fluid gallery-image" 
+                                        alt="Placeholder" 
+                                    />
                                 </div>
                             ))}
                         </div>
@@ -91,9 +102,12 @@ function Gallery() {
                             {/* Dynamically load images for the third set */}
                             {Object.keys(imageIndexMapping).slice(16).map((imageName, index) => (
                                 <div key={index} className="col-lg-6 mb-3 fadeIn-animation">
-                                    <LazyLoad height={250} width={250} once>
-                                        <img src={imageIndexMapping[imageName]} className="img-fluid teeth" alt="Placeholder" />
-                                    </LazyLoad>
+                                    <img 
+                                        loading="lazy"
+                                        src={imageIndexMapping[imageName]} 
+                                        className="img-fluid teeth" 
+                                        alt="Placeholder" 
+                                    />
                                 </div>
                             ))}
                         </div>

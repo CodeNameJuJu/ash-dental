@@ -50,7 +50,7 @@ export const Contact = () => {
       <div className="pb-4 mb-4">
         <br />
         <br />
-        <h1 className="header-col text-center">Get in Touch</h1>
+        <h1 className="header-col text-center page-heading">Get in Touch</h1>
         <br />
         <br />
         <p className="pb-3 mb-3 lead">

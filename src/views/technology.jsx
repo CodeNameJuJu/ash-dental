@@ -1,5 +1,4 @@
 import React from 'react';
-import LazyLoad from 'react-lazyload';
 import '../Main.css';
 
 // Define image index mapping with absolute paths
@@ -27,41 +26,50 @@ const imageIndexMapping = {
 /* Component for displaying technology details */
 function Tech({ name, image, desc, desc2, desc3 }) {
     return (
-        <LazyLoad height={200} once>
-            <div className='row ms-0 ps-0 mb-4 pb-4'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={imageIndexMapping[image]} alt={name} style={{ height: '350px', width: '400px' }} />
+        <div className='row ms-0 ps-0 mb-4 pb-4'>
+            <img 
+                loading="lazy"
+                className='col-md-4 col-sm-12 mb-md-0 mb-3' 
+                src={imageIndexMapping[image]} 
+                alt={name} 
+                style={{ height: '350px', width: '400px' }} 
+            />
 
-                <div className='col-md-8 col-sm-12'>
-                    <section className='pb-1'>
-                        <h3 className='text-color-gold text-start'>{name}</h3>
-                    </section>
-                    <p className="lead text-start">{desc}</p>
-                    <br />
-                    {desc2 && <p className="lead text-start">{desc2}</p>}
-                    <br />
-                    {desc3 && <p className="lead text-start">{desc3}</p>}
-                </div>
+            <div className='col-md-8 col-sm-12'>
+                <section className='pb-1'>
+                    <h3 className='text-color-gold text-start'>{name}</h3>
+                </section>
+                <p className="lead text-start">{desc}</p>
+                <br />
+                {desc2 && <p className="lead text-start">{desc2}</p>}
+                <br />
+                {desc3 && <p className="lead text-start">{desc3}</p>}
             </div>
-        </LazyLoad>
+        </div>
     );
+
 }
 
 /* Component for displaying technology details */
 function Tech2({ name, image, desc, desc2 }) {
     return (
-        <LazyLoad height={200} once>
-            <div className='row ms-0 ps-0 mb-4 pb-4'>
-                <div className='col-md-8 col-sm-12'>
-                    <section className='pb-1'>
-                        <h3 className='text-color-gold text-start'>{name}</h3>
-                    </section>
-                    <p className="lead text-start">{desc}</p>
-                    <br />
-                    {desc2 && <p className="lead text-start">{desc2}</p>}
-                </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={imageIndexMapping[image]} alt={name} style={{ height: '350px', width: '400px' }} />
+        <div className='row ms-0 ps-0 mb-4 pb-4'>
+            <div className='col-md-8 col-sm-12'>
+                <section className='pb-1'>
+                    <h3 className='text-color-gold text-start'>{name}</h3>
+                </section>
+                <p className="lead text-start">{desc}</p>
+                <br />
+                {desc2 && <p className="lead text-start">{desc2}</p>}
             </div>
-        </LazyLoad>
+            <img 
+                loading="lazy"
+                className='col-md-4 col-sm-12 mb-md-0 mb-3' 
+                src={imageIndexMapping[image]} 
+                alt={name} 
+                style={{ height: '350px', width: '400px' }} 
+            />
+        </div>
     );
 }
 
@@ -170,7 +178,7 @@ function Technology() {
             <section className='mb-5 pb-5'>
                 <br />
                 <br />
-                <h1 className='text-color-gold text-center'>Cutting-edge dental technology at ASH dental: Advanced tools for precise,
+                <h1 className='text-color-gold text-center page-heading'>Cutting-edge dental technology at ASH dental: Advanced tools for precise,
                 comfortable, and effective dental treatments.</h1>
                 <h3 className='text-color-gold mb-2 text-center brown'>Elevating your Dental Experience</h3>
                 <br />
