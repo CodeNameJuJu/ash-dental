@@ -1,144 +1,80 @@
 import React from 'react';
 import '../Main.css';
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import { MDBIcon } from 'mdb-react-ui-kit';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from 'react-router-dom';
 
 function Footer() {
-
     return (
-        <div style={{ backgroundImage: `url(/Images/Texture2.webp)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', opacity: 1 }}>
-            <div class="footer-bg" style={{ opacity: 0.8 }} >
-                <MDBFooter className='text-center text-lg-start text-muted '>
-                    <section class="">
-                        <MDBContainer className='mt-5 mobal'>
-                            <MDBRow className='mt-3'>
-                                <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4 '>
-                                    <br></br>
-                                    <ul>
-                                        <Link class="a2" to="/" title="Home">
-                                            Home
-                                        </Link></ul>
-                                    <br></br>
-                                    <ul>
-                                        <Link class="a2" to="/services" title="Services">
-                                            Services
-                                        </Link></ul>
-                                    <br></br>
-                                    <ul>
-                                        <Link class="a2" to="/about" title="About Us">
-                                            About Us
-                                        </Link></ul>
-                                    <br></br>
-                                    <ul>
-                                        <Link class="a2" to="/technology" title="Technology">
-                                            Technology
-                                        </Link></ul>
-                                    <br></br>
-                                    <ul>
-                                        <Link class="a2" to="/gallery" title="Gallery">
-                                            Gallery
-                                        </Link></ul>
-                                    <br></br>
-                                    <ul>
-                                        <Link class="a2" to="/contact" title="Contact Us">
-                                            Contact Us
-                                        </Link></ul>
-                                </MDBCol>
-                                <MDBCol md="3" lg="2" xl="2.5" className='mx-auto mb-4 mobal'>
-                                    <br></br>
-                                    <h6 class="white"> Trading Hours</h6>
-                                    <ul class="white mobmarg"> Mon- Fri: 8:00 – 17:00 </ul>
-                                    <ul class="white mobmarg"> Saturday: 9:00 – 12:00</ul>
-                                    <ul class="white mobmarg"> Sunday: Closed </ul>
-                                    <ul class="white mobmarg">Public Holidays: Closed </ul>
-                                    <div>
-                                    </div>
-                                </MDBCol>
-                                <MDBCol md="3" lg="3" xl="3" className='mx-auto mb-md-0 mb-4 mobal'>
-                                    <br></br>
-                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
-                                        <p >
-                                            <MDBIcon icon="home" className="me-2 white fadeIn-animation" />
-                                            ASH DENTAL
-                                        </p>
-                                    </Link>
-                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
-                                        <p >
-                                            <MDBIcon className="me-2 white fadeIn-animation" />
-                                            Ash Medical Suites 3&4
-                                        </p>
-                                    </Link>
-                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
-                                        <p >
-                                            <MDBIcon className="me-2 white fadeIn-animation" />
-                                            177 Garsfontein Road
-                                        </p>
-                                    </Link>
-                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
-                                        <p >
-                                            <MDBIcon className="me-2 white fadeIn-animation" />
-                                            Ashlea Gardens
-                                        </p>
-                                    </Link>
-                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
-                                        <p >
-                                            <MDBIcon className="me-2 white  fadeIn-animation" />
-                                            Pretoria 0081
-                                        </p>
-                                    </Link>
+        <footer className="footer-modern">
+            <div className="container py-5">
+                <div className="row">
+                    <div className="col-md-3 col-sm-6 mb-4">
+                        <h5 className="footer-heading">ASH Dental</h5>
+                        <p className="footer-text">Luxury dentistry in Pretoria East. Where transformative smiles begin.</p>
+                        <div className="footer-socials">
+                            <Link to="https://www.facebook.com/profile.php?id=61556083561310" title="Facebook" className="footer-social-link">
+                                <MDBIcon fab icon="facebook-f" />
+                            </Link>
+                            <Link to="https://www.instagram.com/ashdental_pretoria/" title="Instagram" className="footer-social-link">
+                                <MDBIcon fab icon="instagram" />
+                            </Link>
+                        </div>
+                    </div>
 
-                                    <Link className="a2" to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1e956185bb6bd329:0x151fc757078a76f1?sa=X&ved=2ahUKEwiT3_-YpOeEAxXEgv0HHUiWDJIQ9Rd6BAg3EAA" title='Address Link'>
-                                        <p >
-                                            <MDBIcon icon="link" className="me-2 white pt-1 fadeIn-animation" />
-                                            Click Here For Directions
-                                        </p>
-                                    </Link>
-                                    <br></br>
-                                    <p>
-                                        <MDBIcon icon="envelope" className="me-3 white fadeIn-animation" />
-                                        <a class="a2" href='mailto:info@ashdental.co.za' target="_blank" rel="noopener noreferrer" title='Email Link'>info@ashdental.co.za</a>
-                                    </p>
+                    <div className="col-md-2 col-sm-6 mb-4">
+                        <h5 className="footer-heading">Quick Links</h5>
+                        <ul className="footer-links">
+                            <li><Link to="/" title="Home">Home</Link></li>
+                            <li><Link to="/services" title="Services">Services</Link></li>
+                            <li><Link to="/about" title="About Us">About Us</Link></li>
+                            <li><Link to="/technology" title="Technology">Technology</Link></li>
+                            <li><Link to="/gallery" title="Gallery">Gallery</Link></li>
+                            <li><Link to="/contact" title="Contact Us">Contact</Link></li>
+                        </ul>
+                    </div>
 
-                                    <p>
-                                        <MDBIcon icon="phone" className="me-3 white pt-2 fadeIn-animation" />
-                                        <a class="a2" href='tel: 012 111 1715' target="_blank" rel="noopener noreferrer" title='Phone Link'>(012) 111 1715</a>
-                                    </p>
+                    <div className="col-md-3 col-sm-6 mb-4">
+                        <h5 className="footer-heading">Trading Hours</h5>
+                        <ul className="footer-hours">
+                            <li><span>Mon – Fri</span><span>8:00 – 17:00</span></li>
+                            <li><span>Saturday</span><span>9:00 – 12:00</span></li>
+                            <li><span>Sunday</span><span>Closed</span></li>
+                            <li><span>Public Holidays</span><span>Closed</span></li>
+                        </ul>
+                    </div>
 
-                                    <p>
-                                        <MDBIcon icon="phone" className="me-3 white pt-2 fadeIn-animation" />
-                                        <a class="a2" href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
-                                    </p>
-                                </MDBCol>
-                                <MDBCol md="2" lg="2" xl="2" className='mb-4 mt-3' style={{ 'text-align': 'center' }}>
-                                    <div>
-                                        <Link to="https://www.facebook.com/profile.php?id=61556083561310" style={{ 'font-size': '25px', 'padding-right': '10px', 'text-align': 'center' }}
-                                            className='me-4 text-reset white'>
+                    <div className="col-md-4 col-sm-6 mb-4">
+                        <h5 className="footer-heading">Contact</h5>
+                        <ul className="footer-contact">
+                            <li>
+                                <MDBIcon icon="map-marker-alt" className="me-2" />
+                                <Link to="https://www.google.com/maps/dir//ASH+Dental,+Suite+3%264,+Ash+Medical+Suite,+177+Garsfontein+Rd,+Ashlea+Gardens,+Pretoria,+0081" title="Directions">
+                                    Ash Medical Suites 3&4, 177 Garsfontein Rd, Ashlea Gardens, Pretoria
+                                </Link>
+                            </li>
+                            <li>
+                                <MDBIcon icon="envelope" className="me-2" />
+                                <a href="mailto:info@ashdental.co.za" title="Email">info@ashdental.co.za</a>
+                            </li>
+                            <li>
+                                <MDBIcon icon="phone" className="me-2" />
+                                <a href="tel:0121111715" title="Phone">(012) 111 1715</a>
+                            </li>
+                            <li>
+                                <MDBIcon icon="phone" className="me-2" />
+                                <a href="tel:0848503501" title="Phone">084 850 3501</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                                            <MDBIcon fab icon="facebook-f fadeIn-animation" />
-                                        </Link>
-                                        <Link to="https://www.instagram.com/ashdental_pretoria/" style={{ 'font-size': '25px', 'padding-right': '10px', 'text-align': 'center' }}
-                                            className='me-4 text-reset white'>
-
-                                            <MDBIcon fab icon="instagram fadeIn-animation" />
-                                        </Link>
-                                    </div>
-                                </MDBCol>
-                            </MDBRow>
-                            <div className='text-center p-4' >
-                                © 2024 Copyright:&nbsp;
-                                <p className='text-reset fw-bold'>
-                                    Ash Dental
-                                </p>
-                            </div>
-                        </MDBContainer>
-                    </section>
-                </MDBFooter>
+                <div className="footer-bottom">
+                    <p>&copy; {new Date().getFullYear()} ASH Dental. All rights reserved.</p>
+                </div>
             </div>
-        </div>
-    )
+        </footer>
+    );
 }
 
 export default Footer;
-
-// ******************************************************************* EOF ******************************************************************************

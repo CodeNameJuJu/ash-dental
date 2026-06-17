@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import '../Main.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import SEO from '../components/seo';
+import CdnImage from '../components/cdnImage';
 
 // Image index mapping
 const imageIndexMapping = [
@@ -21,9 +22,9 @@ function Card({ name, image, bio, title, quali }) {
     return (
         <div className="row d-flex justify-content-center mb-5 pb-5 pt-4 mt-4 me-0 ms-0 ps-0 pe-0">
             <div className="col-md-5 col-sm-6 no-padding">
-                <img className="img-fluid" src={image} alt="trainer-img" />
+                <CdnImage className="img-fluid" src={image} alt={name} />
             </div>
-            <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Images/Texture3.webp)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(https://ik.imagekit.io/siftan/Images/Texture3.webp)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-3 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
                     <br />
                     <br />
@@ -32,8 +33,6 @@ function Card({ name, image, bio, title, quali }) {
                     <h3 className="card-title text-start">{title}</h3>
                     <h4 className="card-title text-start">{quali}</h4>
                     <br />
-                    {/* <p className="card-text lead text-start smaller-text">{bio}</p> */}
-
                     <p className={`card-text lead pb-2 text-start smaller-text ${name === "Danette Smit" ? 'new-doctor-bio' : ''}`}>
                         {name === "Danette Smit" && !isExpanded ? bioPreview : bio}
                     </p>
@@ -56,7 +55,7 @@ function Card({ name, image, bio, title, quali }) {
 function Card2({ name, image, bio, title, quali }) {
     return (
         <div className="row d-flex justify-content-center mb-5 pb-5 pt-4 mt-4 me-0 ms-0 ps-0 pe-0">
-            <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Images/Texture3.webp)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className='col-md-5 col-sm-6 card-background' style={{ backgroundImage: `url(https://ik.imagekit.io/siftan/Images/Texture3.webp)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='pb-4 mb-4 pt-2 mt-2 ps-4 ms-4 pe-4 me-4'>
                     <br />
                     <br />
@@ -73,7 +72,7 @@ function Card2({ name, image, bio, title, quali }) {
                 </div>
             </div>
             <div className="col-md-5 col-sm-6 no-padding">
-                <img className="img-fluid img-fluid-doc" src={image} alt="trainer-img" />
+                <CdnImage className="img-fluid img-fluid-doc" src={image} alt={name} />
             </div>
         </div>
     );
@@ -94,7 +93,12 @@ export const About = () => {
     }, []);
 
     return (
-        <div className='ps-md-5 ms-md-5 pe-md-5 me-md-5 ps-sm-3 ms-sm-3 pe-sm-3 me-sm-3'>
+        <div className='ps-md-5 ms-md-5 pe-md-5 me-md-5 ps-sm-3 ms-sm-3 pe-sm-3 me-sm-3 top-pad'>
+            <SEO
+                title="About Us"
+                description="Meet the team at ASH Dental in Pretoria East. Our skilled dentists and professionals are dedicated to crafting confident smiles with expertise and passion."
+                path="/about"
+            />
             <div className='text-center ps-4 ms-4 pe-4 me-4 ps-md-4 ms-md-4 pe-md-4 me-md-4' >
                 <div className='pt-4 mt-3 pb-3 ps-md-4 ms-md-4 pe-md-4 me-md-4'>
                
@@ -117,7 +121,7 @@ export const About = () => {
                     </p>
                     <br />
                 </div>
-                <img style={{height: '100%', width: '100%'  }} src={process.env.PUBLIC_URL + "/Images/ServicesLandscape/Ashdentalteam2.jpeg"} text="First slide" alt='Sale1' />
+                <CdnImage style={{height: '100%', width: '100%'  }} src="https://ik.imagekit.io/siftan/Images/ServicesLandscape/Ashdentalteam2.jpeg" alt="ASH Dental team" loading="lazy" />
                     <h2 className='pt-4 mt-3 pb-3 brown'>Meet our dental artists: Crafting smiles with expertise and passion</h2>
                     <div className='d-flex justify-content-center'>
                         <p className="lead col-md-12 col-sm-10 ps-1 ms-1 text-start">
@@ -137,7 +141,7 @@ export const About = () => {
                                         {index === 0 && (
                                             <Card
                                                 name={item.name}
-                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
+                                                image={`https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                 title="Founder and Chief Smile Architect"
                                                 quali="BChD (Pret.), DipOdont (Oral Surg.)(Pret.)"
                                                 bio="Dr. Rodrigues leads our team with a vision to redefine dental care. As an accomplished dentist with a passion for cosmetic dentistry, Dr Rodrigues has transformed countless smiles and lives."
@@ -146,7 +150,7 @@ export const About = () => {
                                         {index === 2 && (
                                             <Card
                                                 name={item.name}
-                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
+                                                image={`https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                 title="Dental Artist"
                                                 quali="BChD (Pret.), DipOdont (Endo)"
                                                 bio="Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of unwavering commitment and a new benchmark in luxury dental care." />
@@ -154,7 +158,7 @@ export const About = () => {
                                         {index === 4 && (
                                             <Card
                                                 name={item.name}
-                                                image={`${process.env.PUBLIC_URL}/Images/ServicesLandscape/hygenist.jpg`}
+                                                image={`https://ik.imagekit.io/siftan/Images/ServicesLandscape/hygenist.jpg`}
                                                 title="Hygienist & Health Professional"
                                                 quali="OH (Pret.)"
                                                 bio="With 15 years of experience, Danette brings a wealth of expertise and a compassionate approach to patient care.​
@@ -174,7 +178,7 @@ export const About = () => {
                                                 {isSmallScreen ? (
                                                     <Card
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                         title="Co-Founder and Dental Artist"
                                                         quali="BSc (Pret.), BChD (Pret.)"
                                                         bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
@@ -182,7 +186,7 @@ export const About = () => {
                                                 ) : (
                                                     <Card2
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                         title="Co-Founder and Dental Artist"
                                                         quali="BSc (Pret.), BChD (Pret.)"
                                                         bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
@@ -195,7 +199,7 @@ export const About = () => {
                                                 {isSmallScreen ? (
                                                     <Card
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/DrKarl.jpg`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/Practice/High/DrKarl.jpg`}
                                                         title="Cosmetic Dentist & Facial Aesthetics Artist"
                                                         className="new-doctor-bio docimg"
                                                         quali="BChD (Pret.)"
@@ -207,7 +211,7 @@ export const About = () => {
                                                 ) : (
                                                     <Card2
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/DrKarl.jpg`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/Practice/High/DrKarl.jpg`}
                                                         title="Cosmetic Dentist & Facial Aesthetics Artist"
                                                         className="new-doctor-bio "
                                                         quali="BChD (Pret.)"
@@ -224,7 +228,7 @@ export const About = () => {
                                                 {isSmallScreen ? (
                                                     <Card
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
                                                         title="Medical Aesthetician & Somatologist"
                                                         className="new-doctor-bio "
                                                         bio={`Tannah Rae is a qualified Medical Aesthetician and Somatologist, holding diplomas in both Somatology and Advanced Dermal Aesthetics.
@@ -239,7 +243,7 @@ export const About = () => {
                                                 ) : (
                                                     <Card2
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
                                                         title="Medical Aesthetician & Somatologist"
                                                         className="new-doctor-bio "
                                                         bio={`Tannah Rae is a qualified Medical Aesthetician and Somatologist, holding diplomas in both Somatology and Advanced Dermal Aesthetics.
@@ -264,7 +268,7 @@ export const About = () => {
                                         {index === 0 && (
                                             <Card
                                                 name={item.name}
-                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
+                                                image={`https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                 title="Founder and Chief Smile Architect"
                                                 quali="BChD (Pret.), DipOdont (Oral Surg.)(Pret.)"
                                                 bio="Dr. Rodrigues leads our team with a vision to redefine dental care. As an accomplished dentist with a passion for cosmetic dentistry, Dr Rodrigues has transformed countless smiles and lives."
@@ -273,7 +277,7 @@ export const About = () => {
                                         {index === 2 && (
                                             <Card
                                                 name={item.name}
-                                                image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
+                                                image={`https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                 title="Dental Artist"
                                                 quali="BChD (Pret.), DipOdont (Endo)"
                                                 bio="Dr. Eulana isn't just about fixing teeth; she's about crafting confident smiles and empowering individuals to shine. As you step into our practice, Dr. Eulana's warm and caring presence instantly puts you at ease. Her commitment to precision and excellence aligns perfectly with ASH DENTAL's ethos of unwavering commitment and a new benchmark in luxury dental care." />
@@ -281,7 +285,7 @@ export const About = () => {
                                         {index === 4 && (
                                             <Card
                                                 name={item.name}
-                                                image={`${process.env.PUBLIC_URL}/Images/ServicesLandscape/hygenist.jpg`}
+                                                image={`https://ik.imagekit.io/siftan/Images/ServicesLandscape/hygenist.jpg`}
                                                 title="Hygienist & Health Professional"
                                                 quali="OH (Pret.)"
                                                 bio="With 15 years of experience, Danette brings a wealth of expertise and a compassionate approach to patient care.​
@@ -301,7 +305,7 @@ export const About = () => {
                                                 {isSmallScreen ? (
                                                     <Card
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                         title="Co-Founder and Dental Artist"
                                                         quali="BSc (Pret.), BChD (Pret.)"
                                                         bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
@@ -309,7 +313,7 @@ export const About = () => {
                                                 ) : (
                                                     <Card2
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH'24-${item.index}.webp`}
                                                         title="Co-Founder and Dental Artist"
                                                         quali="BSc (Pret.), BChD (Pret.)"
                                                         bio="Meet Dr. Williams, our Dental Artist at ASH Dental. With a passion for crafting beautifully aligned smiles, Dr. Williams brings a blend of technical expertise and artistic flair to dental care."
@@ -322,7 +326,7 @@ export const About = () => {
                                                 {isSmallScreen ? (
                                                     <Card
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/DrKarl.jpg`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/Practice/High/DrKarl.jpg`}
                                                         title="Cosmetic Dentist & Facial Aesthetics Artist"
                                                         quali="BChD (Pret.)"
                                                         bio="Dr. Michelle Karl is a highly skilled cosmetic dentist with a passion for facial aesthetics. With nearly two decades of experience in private practice, Dr. Karl brings a wealth of expertise, artistic precision,
@@ -334,7 +338,7 @@ export const About = () => {
                                                 ) : (
                                                     <Card2
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/Practice/Low/DrKarl.jpg`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/Practice/High/DrKarl.jpg`}
                                                         title="Cosmetic Dentist & Facial Aesthetics Artist"
                                                         quali="BChD (Pret.)"
                                                         bio="Dr. Michelle Karl is a highly skilled cosmetic dentist with a passion for facial aesthetics. With nearly two decades of experience in private practice, Dr. Karl brings a wealth of expertise, artistic precision,
@@ -351,7 +355,7 @@ export const About = () => {
                                                 {isSmallScreen ? (
                                                     <Card
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
                                                         title="Medical Aesthetician & Somatologist"
                                                         bio={
                                                             <div className="new-doctor-bio">Tannah Rae is a qualified Medical Aesthetician and Somatologist, 
@@ -369,7 +373,7 @@ export const About = () => {
                                                 ) : (
                                                     <Card2
                                                         name={item.name}
-                                                        image={`${process.env.PUBLIC_URL}/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
+                                                        image={`https://ik.imagekit.io/siftan/Images/FacesCloseUpsPortrait/TannahAbout.jpeg`}
                                                         title="Medical Aesthetician & Somatologist"
                                                         bio={
                                                         <div className="new-doctor-bio">
@@ -468,5 +472,3 @@ export const About = () => {
 }
 
 export default About;
-
-// ******************************************************************* EOF ******************************************************************************

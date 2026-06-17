@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../../Main.css";
 import { Link } from 'react-router-dom';
+import CdnImage from '../cdnImage';
 
 function Emergencies() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ function Emergencies() {
     }
     return (
         <div>
-            <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
+            <nav className=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
                     className="navbar-toggler hide-mob"
                     type="button"
@@ -29,20 +30,20 @@ function Emergencies() {
                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}
                 >
-                    <i class="fa fa-bars" style={{ 'font-size': '25px' }}></i>
+                    <i className="fa fa-bars" style={{ 'font-size': '25px' }}></i>
                 </button>
 
-                <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="sub-nav-item">
+                <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="sub-nav-item">
                             <Navigate name={'Teeth Whitening'} path={'/teethWhitening'} /> </li>
-                        <li class="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
-                        <li class="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
-                        <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
-                        <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
+                        <li className="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
+                        <li className="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
+                        <li className="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                        <li className="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                     </ul>
                 </div>
             </nav>
@@ -51,20 +52,21 @@ function Emergencies() {
             <div className='row top-pad'>
                 {/* <!-- Image Column on the Left --> */}
                 <div className='col-md-4 col-sm-12 '>
-                    <img
+                    <CdnImage
                         className='img-fluid'
-                        src="/Images/Dental/7.webp"
-                        alt="Dental Implants"
+                        src="https://ik.imagekit.io/siftan/Images/Dental/7.webp"
+                        alt="24 hour dental emergency services"
+                        loading="lazy"
                         style={{ maxHeight: '100%', width: 'auto' }}
                     />
                 </div>
 
                 {/* <!-- Text Column on the Right --> */}
                 <div className='col-md-8 col-sm-12'>
-                    <h1 class="gold text-start">Round-the-clock dental care: ASH dental’s 24-hour emergency services</h1>
-                    <h3 class="brown text-start">ASH dental’s 24-hour emergency services</h3>
+                    <h1 className="gold text-start">Round-the-clock dental care: ASH dental’s 24-hour emergency services</h1>
+                    <h3 className="brown text-start">ASH dental’s 24-hour emergency services</h3>
                     <br />
-                    <p class="lead text-start">
+                    <p className="lead text-start">
                         We understand that dental emergencies can happen at any time, and busy schedules make
                         immediate care essential. That’s why ASH Dental offers 24-Hour Emergency Dental
                         Services, providing comprehensive care around the clock to meet your urgent needs. From
@@ -72,8 +74,8 @@ function Emergencies() {
                         your oral health is promptly and effectively addressed.
                     </p>
                     <br />
-                    <h2 class="brown text-start">Services Offered:</h2>
-                    <ul class="lead text-start">
+                    <h2 className="brown text-start">Services Offered:</h2>
+                    <ul className="lead text-start">
                         <li>Emergency toothache relief</li>
                         <li>Same-Day Repairs for Chipped or Broken Teeth</li>
                         <li>Urgent Care for Dental Injuries</li>
@@ -81,9 +83,9 @@ function Emergencies() {
                         <li>Immediate Attention for Severe Gum Issues</li>
                     </ul>
                     <br />
-                    <h3 class="brown text-start">Emergency Contact Number: 084 850 3501</h3>
-                    <p class="lead text-start">For reliable, 24/7 dental care that fits your busy lifestyle, contact ASH Dental today.</p>
-                    <p class="gold text-start">
+                    <h3 className="brown text-start">Emergency Contact Number: 084 850 3501</h3>
+                    <p className="lead text-start">For reliable, 24/7 dental care that fits your busy lifestyle, contact ASH Dental today.</p>
+                    <p className="gold text-start">
                         *Please note that a call-out fee applies.
                     </p>
                     <br />
@@ -158,7 +160,7 @@ function Emergencies() {
                 </div>
             </section>
             <div className=' row text-center'>
-                <h3 class=" gold card-title ">
+                <h3 className=" gold card-title ">
                     Embark on a dental journey where precision meets luxury. Experience ASH Dental – Where Transformative Smiles Begin.
                 </h3>
             </div>
@@ -168,5 +170,3 @@ function Emergencies() {
 }
 
 export default Emergencies;
-
-// ******************************************************************* EOF ******************************************************************************

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../../Main.css";
 import { Link } from 'react-router-dom';
+import CdnImage from '../cdnImage';
 
 function SkinHealthBeauty() {
 
@@ -19,7 +20,7 @@ function SkinHealthBeauty() {
     }
     return (
         <div>
-            <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
+            <nav className=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
                     className="navbar-toggler hide-mob"
                     type="button"
@@ -30,20 +31,20 @@ function SkinHealthBeauty() {
                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}
                 >
-                    <i class="fa fa-bars" style={{ 'font-size': '25px' }}></i>
+                    <i className="fa fa-bars" style={{ 'font-size': '25px' }}></i>
                 </button>
 
-                <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="sub-nav-item">
+                <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="sub-nav-item">
                             <Navigate name={'Teeth Whitening'} path={'/teethWhitening'} /> </li>
-                        <li class="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
-                        <li class="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
-                        <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
-                        <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
+                        <li className="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
+                        <li className="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
+                        <li className="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                        <li className="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                     </ul>
                 </div>
             </nav>
@@ -151,9 +152,9 @@ function SkinHealthBeauty() {
                     </div>
                 </div>
 
-                <img
+                <CdnImage
                     className='col-md-4 col-sm-12 mb-md-0 mb-3'
-                    src="/Images/FacesCloseUpsPortrait/SkinHealthBeauty.jpeg"
+                    src="https://ik.imagekit.io/siftan/Images/FacesCloseUpsPortrait/SkinHealthBeauty.jpeg"
                     alt="Skin Health & beauty"
                     style={{ height: '700px', objectFit: 'cover', borderRadius: '10px' }}
                 />
@@ -161,16 +162,16 @@ function SkinHealthBeauty() {
             &nbsp;
             <br></br>
 
-            <div class="row serv-top text-center">
+            <div className="row serv-top text-center">
 
-                <h3 class="brown text-start" >Welcome to a Thoughtful Approach to Skin Health</h3>
-                <p class="lead text-start">Your skin tells a story that’s uniquely yours—and we’re here to listen. At the heart of our
+                <h3 className="brown text-start" >Welcome to a Thoughtful Approach to Skin Health</h3>
+                <p className="lead text-start">Your skin tells a story that’s uniquely yours—and we’re here to listen. At the heart of our
                     philosophy is a commitment to care, precision, and respect for your personal journey.
                     Whether you’re looking to restore balance, refresh your glow, or simply take a quiet moment
                     for yourself, our treatments are tailored with intention and sensitivity.
                 </p>
                 &nbsp;
-                <p class="lead text-start">We warmly invite you to discover what feels right for you, at your own pace.</p>
+                <p className="lead text-start">We warmly invite you to discover what feels right for you, at your own pace.</p>
                 <br></br>
             </div>
 
@@ -180,5 +181,3 @@ function SkinHealthBeauty() {
 }
 
 export default SkinHealthBeauty;
-
-// ******************************************************************* EOF ******************************************************************************

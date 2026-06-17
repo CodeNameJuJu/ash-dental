@@ -1,26 +1,27 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import '../Main.css';
+import SEO from '../components/seo';
+import CdnImage from '../components/cdnImage';
 
 // Define image index mapping with absolute paths
 const imageIndexMapping = {
-    "/Images/Practice/High/ASH DENTAL_content_MARCH'24-358.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-358.webp",
-    "/Images/Technology/Teeth whitening.webp": "../Images/Technology/Teeth whitening.webp",
-    "/Images/Technology/Teeth whitening (3).webp": "../Images/Technology/Teeth whitening (3).webp",
-    "/Images/Technology/18.webp": "../Images/Technology/18.webp",
-    "/Images/Technology/17.webp": "../Images/Technology/17.webp",
-    "/Images/Technology/planmeca-viso-g3.webp": "../Images/Technology/planmeca-viso-g3.webp",
-    "/Images/Technology/20.webp": "../Images/Technology/20.webp",
-    "/Images/Technology/21.webp": "../Images/Technology/21.webp",
-    "/Images/Technology/22.webp": "../Images/Technology/22.webp",
-    "/Images/Technology/23.webp": "../Images/Technology/23.webp",
-    "/Images/Technology/24.webp": "../Images/Technology/24.webp",
-    "/Images/Technology/25.webp": "../Images/Technology/25.webp",
-    "/Images/Technology/26.webp": "../Images/Technology/26.webp",
-    "/Images/Technology/27.webp": "../Images/Technology/27.webp",
-    "/Images/Technology/SmileFy_Software.webp": "../Images/Technology/SmileFy_Software.webp",
-    "/Images/Practice/Low/ASH DENTAL_content_MARCH'24-3011.webp": "../Images/Practice/Low/ASH DENTAL_content_MARCH'24-3011.webp",
-    // Add more mappings as needed
+    "/Images/Practice/High/ASH DENTAL_content_MARCH'24-358.webp": "https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH'24-358.webp",
+    "/Images/Technology/Teeth whitening.webp": "https://ik.imagekit.io/siftan/Images/Technology/Teeth whitening.webp",
+    "/Images/Technology/Teeth whitening (3).webp": "https://ik.imagekit.io/siftan/Images/Technology/Teeth whitening (3).webp",
+    "/Images/Technology/18.webp": "https://ik.imagekit.io/siftan/Images/Technology/18.webp",
+    "/Images/Technology/17.webp": "https://ik.imagekit.io/siftan/Images/Technology/17.webp",
+    "/Images/Technology/planmeca-viso-g3.webp": "https://ik.imagekit.io/siftan/Images/Technology/planmeca-viso-g3.webp",
+    "/Images/Technology/20.webp": "https://ik.imagekit.io/siftan/Images/Technology/20.webp",
+    "/Images/Technology/21.webp": "https://ik.imagekit.io/siftan/Images/Technology/21.webp",
+    "/Images/Technology/22.webp": "https://ik.imagekit.io/siftan/Images/Technology/22.webp",
+    "/Images/Technology/23.webp": "https://ik.imagekit.io/siftan/Images/Technology/23.webp",
+    "/Images/Technology/24.webp": "https://ik.imagekit.io/siftan/Images/Technology/24.webp",
+    "/Images/Technology/25.webp": "https://ik.imagekit.io/siftan/Images/Technology/25.webp",
+    "/Images/Technology/26.webp": "https://ik.imagekit.io/siftan/Images/Technology/26.webp",
+    "/Images/Technology/27.webp": "https://ik.imagekit.io/siftan/Images/Technology/27.webp",
+    "/Images/Technology/SmileFy_Software.webp": "https://ik.imagekit.io/siftan/Images/Technology/SmileFy_Software.webp",
+    "/Images/Practice/Low/ASH DENTAL_content_MARCH'24-3011.webp": "https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH'24-3011.webp",
 };
 
 
@@ -29,7 +30,7 @@ function Tech({ name, image, desc, desc2, desc3 }) {
     return (
         <LazyLoad height={200} once>
             <div className='row ms-0 ps-0 mb-4 pb-4'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={imageIndexMapping[image]} alt={name} style={{ height: '350px', width: '400px' }} />
+                <CdnImage className='col-md-4 col-sm-12 mb-md-0 mb-3' src={imageIndexMapping[image]} alt={name} style={{ height: '350px', width: '400px' }} />
 
                 <div className='col-md-8 col-sm-12'>
                     <section className='pb-1'>
@@ -59,7 +60,7 @@ function Tech2({ name, image, desc, desc2 }) {
                     <br />
                     {desc2 && <p className="lead text-start">{desc2}</p>}
                 </div>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src={imageIndexMapping[image]} alt={name} style={{ height: '350px', width: '400px' }} />
+                <CdnImage className='col-md-4 col-sm-12 mb-md-0 mb-3' src={imageIndexMapping[image]} alt={name} style={{ height: '350px', width: '400px' }} />
             </div>
         </LazyLoad>
     );
@@ -166,7 +167,12 @@ function Technology() {
     ];
 
     return (
-        <div className='container text-center'>
+        <div className='container text-center top-pad'>
+            <SEO
+                title="Technology"
+                description="Discover the cutting-edge dental technology at ASH Dental including 3D imaging, CBCT scans, digital impressions, CEREC CAD/CAM, and more."
+                path="/technology"
+            />
             <section className='mb-5 pb-5'>
                 <br />
                 <br />
@@ -213,5 +219,3 @@ function Technology() {
 }
 
 export default Technology;
-
-// ******************************************************************* EOF ******************************************************************************

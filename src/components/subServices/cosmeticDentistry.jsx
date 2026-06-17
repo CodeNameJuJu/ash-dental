@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../../Main.css";
 import { Link } from 'react-router-dom';
+import CdnImage from '../cdnImage';
 
 function CosmeticDentistry() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ function CosmeticDentistry() {
     return (
         <div>
             <hr ></hr>
-            <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
+            <nav className=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
                     className="navbar-toggler hide-mob"
                     type="button"
@@ -29,51 +30,51 @@ function CosmeticDentistry() {
                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}
                 >
-                    <i class="fa fa-bars" style={{ 'font-size': '25px' }}></i>
+                    <i className="fa fa-bars" style={{ 'font-size': '25px' }}></i>
                 </button>
 
-                <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="sub-nav-item">
+                <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="sub-nav-item">
                             <Navigate name={'Teeth Whitening'} path={'/teethWhitening'} /> </li>
-                        <li class="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
-                        <li class="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
-                        <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
-                        <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
+                        <li className="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
+                        <li className="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
+                        <li className="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                        <li className="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                     </ul>
                 </div>
             </nav>
 
-            <div class="row serv-top">
-                <div class=" col-7 text-center">
-                    <h1 class="gold text-start">Advanced Cosmetic Dentistry</h1>
-                    <h3 class="brown text-start ">Redesign, Enhance, Transform</h3>
+            <div className="row serv-top">
+                <div className=" col-7 text-center">
+                    <h1 className="gold text-start">Advanced Cosmetic Dentistry</h1>
+                    <h3 className="brown text-start ">Redesign, Enhance, Transform</h3>
                     <br />
-                    <p class="lead text-start">Redefine smiles and enhance the natural beauty of your teeth. Cosmetic dentistry goes beyond
+                    <p className="lead text-start">Redefine smiles and enhance the natural beauty of your teeth. Cosmetic dentistry goes beyond
                         traditional dental procedures; it&#39;s an art form dedicated to improving the aesthetics and function of
                         your smile. Our skilled team at ASH Dental employs cutting-edge techniques and personalized
                         treatment plans to address a range of cosmetic concerns, including teeth discoloration,
                         misalignment, and imperfections.
                     </p>
                     <br />
-                    <p class="lead text-start">Whether you desire a whiter, straighter, or more aesthetically
+                    <p className="lead text-start">Whether you desire a whiter, straighter, or more aesthetically
                         pleasing smile, our cosmetic dentistry services are tailored to meet your unique goals. We offer a
                         comprehensive range of treatments, from professional teeth whitening and veneers to smile
                         makeovers and full-mouth reconstruction.</p>
                     <br />
-                    <p class="lead text-start" >The benefits of cosmetic dentistry extend beyond appearance, positively impacting your confidence,
+                    <p className="lead text-start" >The benefits of cosmetic dentistry extend beyond appearance, positively impacting your confidence,
                         self-esteem, and overall oral health. Discover the transformative power of a radiant smile at ASH
                         Dental, where precision, elegance, and excellence converge to create a truly exceptional cosmetic
                         dentistry experience.</p>
                 </div>
 
-                <div class="col-5">
-                    <div class="serv2-image-block">
-                        <img class="serv2-image" src="/Images/ServicesLandscape/Ortho.webp" alt="2 description"></img>
-                        <div class="serv2-overlay-block"></div>
+                <div className="col-5">
+                    <div className="serv2-image-block">
+                        <CdnImage className="serv2-image" src="https://ik.imagekit.io/siftan/Images/ServicesLandscape/Ortho.webp" alt="Cosmetic dentistry services" loading="lazy" />
+                        <div className="serv2-overlay-block"></div>
                     </div>
                 </div>
             </div>
@@ -83,5 +84,3 @@ function CosmeticDentistry() {
 }
 
 export default CosmeticDentistry;
-
-// ******************************************************************* EOF ******************************************************************************

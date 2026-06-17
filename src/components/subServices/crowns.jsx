@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../../Main.css";
 import { Link } from 'react-router-dom';
+import CdnImage from '../cdnImage';
 
 function Crowns() {
 
@@ -19,7 +20,7 @@ function Crowns() {
     }
     return (
         <div>
-            <nav class=" navbar nav-bg navbar-expand-sm navbar-second">
+            <nav className=" navbar nav-bg navbar-expand-sm navbar-second">
                 <button
                     className="navbar-toggler hide-mob"
                     type="button"
@@ -30,20 +31,20 @@ function Crowns() {
                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}
                 >
-                    <i class="fa fa-bars" style={{ 'font-size': '25px' }}></i>
+                    <i className="fa fa-bars" style={{ 'font-size': '25px' }}></i>
                 </button>
 
-                <div class={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="sub-nav-item">
+                <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="sub-nav-item">
                             <Navigate name={'Teeth Whitening'} path={'/teethWhitening'} /> </li>
-                        <li class="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
-                        <li class="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
-                        <li class="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
-                        <li class="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
-                        <li class="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
+                        <li className="sub-nav-item"><Navigate name={'Crowns and Veneers'} path={'/crowns'} />  </li>
+                        <li className="sub-nav-item"> <Navigate name={'Dental Implants'} path={'/dental'} />  </li>
+                        <li className="sub-nav-item"><Navigate name={'Orthodontics'} path={'/orthodontics'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'General Dentistry'} path={'/generalDentistry'} />  </li>
+                        <li className="sub-nav-item"> <Navigate name={'Facial Aesthetics'} path={'/FacialAesthetics'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'Skin, Health & Beauty'} path={'/skinHealthBeauty'} /> </li>
+                        <li className="sub-nav-item"> <Navigate name={'24 Hour Emergencies'} path={'/emergencies'} /> </li>
                         
                     </ul>
                 </div>
@@ -53,7 +54,7 @@ function Crowns() {
                 <div className='text-center ps-2 ms-4 pe-2 me-2' >
                     <h1 className='pt-4 mt-3 text-color-gold text-start'>Comprehensive crowns and veneers services: artistry and precision for your
                         perfect smile</h1>
-                    <h2 class="brown text-start">Expertly crafted dental crowns: precision, durability, and aesthetic perfection</h2>
+                    <h2 className="brown text-start">Expertly crafted dental crowns: precision, durability, and aesthetic perfection</h2>
                     <br></br>
                     <div className=''>
                         <p className="lead  text-start text-start">Dental crowns are custom-made caps that cover damaged or weakened teeth to restore
@@ -68,12 +69,12 @@ function Crowns() {
             &nbsp;
 
             <div className='row'>
-                <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Crowns2.webp" alt="Crowns" style={{ height: '100%' }} />
+                <CdnImage className='col-md-4 col-sm-12 mb-md-0 mb-3 img-text-spacing' src="https://ik.imagekit.io/siftan/Images/ServicesLandscape/Crowns2.webp" alt="Crowns" loading="lazy" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
                     <section className=''>
                         <h2 className='brown mb- text-start'>Benefits of Dental Crowns:</h2>
                     </section>
-                    <p class="lead text-start">
+                    <p className="lead text-start">
                         <ol className="nonumber">
                             <li className="card-text lead "><b>Restores Function:</b> Crowns fully restore the tooth’s ability to chew and speak
                                 normally.</li>
@@ -86,7 +87,7 @@ function Crowns() {
                         </ol>
                     </p>
                     &nbsp;
-                    <p class="lead text-start center ">Our commitment to precision dentistry is evident in the crafting of dental crowns. We use
+                    <p className="lead text-start center ">Our commitment to precision dentistry is evident in the crafting of dental crowns. We use
                         advanced emax and sagemax zirconia porcelain to create crowns that are not only durable
                         but also aesthetically pleasing. Each crown is meticulously designed with inLab CAD
                         Software by a skilled ceramicist to ensure a perfect fit and finish. Whether addressing
@@ -99,20 +100,20 @@ function Crowns() {
 
             &nbsp;
             <div className='row'>
-            <img className='col-md-4 col-sm-12 mb-md-0 mb-3' src="/Images/ServicesLandscape/Veneers.webp" alt="Veneers" style={{ height: '100%' }} />
+            <CdnImage className='col-md-4 col-sm-12 mb-md-0 mb-3 img-text-spacing' src="https://ik.imagekit.io/siftan/Images/ServicesLandscape/Veneers.webp" alt="Veneers" loading="lazy" style={{ height: '100%' }} />
                 <div className='col-md-8 col-sm-12'>
                     <section className=''>
                         <h2 className='brown mb-2 text-start'>Veneers for a radiant transformation</h2>
                     </section>
-                    <p class="lead text-start center ">Veneers are thin, custom-made shells designed to cover the front surface of your teeth. They
+                    <p className="lead text-start center ">Veneers are thin, custom-made shells designed to cover the front surface of your teeth. They
                         are crafted from durable materials and are used to improve the appearance of your smile by
                         addressing imperfections like stains, chips, gaps, or misalignment. Veneers are bonded to
                         the teeth, creating a natural-looking enhancement that blends seamlessly with your existing
                         teeth.
                     </p>
                     &nbsp;
-                    <h3 class="brown text-start">Benefits of Veneers:</h3>
-                    <p class="lead text-start">
+                    <h3 className="brown text-start">Benefits of Veneers:</h3>
+                    <p className="lead text-start">
                         <ol className="nonumber">
                             <li className="card-text lead "><strong>Enhances Aesthetics: </strong> Veneers can significantly improve the appearance of your
                                 teeth, providing a flawless and uniform smile.</li>
@@ -125,7 +126,7 @@ function Crowns() {
                         </ol>
                     </p>
                     <br />
-                    <p class="lead text-start center ">ASH Dental&#39;s veneers serve as a canvas for creating a radiant smile, meticulously tailored to
+                    <p className="lead text-start center ">ASH Dental&#39;s veneers serve as a canvas for creating a radiant smile, meticulously tailored to
                         your unique features. Each veneer is designed to address your specific concerns and
                         enhance your smile with a focus on achieving both a natural appearance and transformative
                         results. Our personalised veneer solutions ensure that your smile reflects your ideal look
@@ -136,7 +137,7 @@ function Crowns() {
             <br></br>
             <br></br>
             <div className=' ps-4 ms-4 pe-4 me-4'>
-                    <h2 class="brown text-start">Veneers vs. Crowns: What’s the Difference?</h2>
+                    <h2 className="brown text-start">Veneers vs. Crowns: What’s the Difference?</h2>
                     <p className="lead  text-start text-start">Veneers: Veneers are thin, custom-made shells that cover the front surface of your teeth.
                         They are typically made from porcelain or composite resin.</p>
 
@@ -182,7 +183,7 @@ function Crowns() {
             </div>
             &nbsp;
             <div className=' row text-center'>
-                <h4 class=" gold card-title ">
+                <h4 className=" gold card-title ">
                     Experience a journey to a revitalized and confident smile that reflects the pinnacle of dental care.
                     Schedule a consultation and discover the artistry behind our Crowns and Veneers services.
                 </h4>
@@ -196,5 +197,3 @@ function Crowns() {
 }
 
 export default Crowns;
-
-// ******************************************************************* EOF ******************************************************************************

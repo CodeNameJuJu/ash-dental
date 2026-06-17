@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Modal from './modal';
+import CdnImage from './cdnImage';
 
 function Navigate({ name, path }) {
   return (
@@ -51,9 +52,9 @@ function Navbar() {
       >
         <div className="container-fluid">
           <Link className="active" to="/" title="ASH DENTAL">
-            <img
+            <CdnImage
               className="logo img-fluid"
-              src="/Images/primary logo/Ash Dental logo-01.webp"
+              src="https://ik.imagekit.io/siftan/Images/primary logo/Ash Dental logo-01.webp"
               alt="Ash Dental Logo"
             />
           </Link>

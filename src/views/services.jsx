@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import '../Main.css';
 import { Link } from 'react-router-dom';
 import Modal from '../components/modal';
+import SEO from '../components/seo';
+import CdnImage from '../components/cdnImage';
 
 function Services() {
 
@@ -34,55 +36,55 @@ function Services() {
         {
             name: 'Teeth Whitening',
             path: '/teethWhitening',
-            image: '/Images/FacesCloseUpsLandscape/1.webp',
+            image: 'https://ik.imagekit.io/siftan/Images/FacesCloseUpsLandscape/1.webp',
             description: 'Illuminate your smile with our professional teeth whitening procedures. We specialize in removing stains and discoloration, restoring the natural brilliance of your teeth.',
         },
         {
             name: 'Veneers',
             path: '/crowns',
-            image: '/Images/FacesCloseUpsLandscape/4.webp',
+            image: 'https://ik.imagekit.io/siftan/Images/FacesCloseUpsLandscape/4.webp',
             description: 'Transform your smile with our custom-made porcelain veneers. These thin shells are expertly crafted to cover imperfections and enhance the overall appearance of your teeth.',
         },
         {
             name: 'Dental Bonding',
             path: '/dental',
-            image: '/Images/FacesCloseUpsLandscape/8.webp',
+            image: 'https://ik.imagekit.io/siftan/Images/FacesCloseUpsLandscape/8.webp',
             description: 'Address chipped or discoloured teeth with our dental bonding services. Using tooth-coloured resin, we sculpt and shape the material to achieve a seamless and natural look.',
         },
         {
             name: 'Dental Crowns',
             path: '/crowns',
-            image: '/Images/ServicesLandscape/Crowns2.webp',
+            image: 'https://ik.imagekit.io/siftan/Images/ServicesLandscape/Crowns2.webp',
             description: 'Revitalize damaged or discoloured teeth with our dental crowns made out of emax- and sagemax zirconia porcelain. These caps not only strengthen teeth but also improve their appearance, ensuring a natural and harmonious smile.',
         },
         {
             name: 'Orthodontics',
             path: '/orthodontics',
-            image: '/Images/ServicesLandscape/orthodual.jpeg',
+            image: 'https://ik.imagekit.io/siftan/Images/ServicesLandscape/orthodual.jpeg',
             description: 'Achieve a beautifully aligned smile with our orthodontic solutions. From traditional braces to clear aligners, we tailor treatments to enhance both aesthetics and functionality.',
         },
         {
             name: 'Dental Implants',
             path: '/dental',
-            image: '/Images/Practice/Low/ASH DENTAL_content_MARCH\'24-6511.webp',
+            image: 'https://ik.imagekit.io/siftan/Images/Practice/High/ASH DENTAL_content_MARCH\'24-6511.webp',
             description: 'Experience a transformative smile with our dental implant solutions. Beyond restoration, implants contribute to the overall cosmetic enhancement of your smile by replacing missing teeth.',
         },
         {
             name: 'Gum Contouring',
             path: '/gumContouring',
-            image: '/Images/FacesCloseUpsPortrait/Gum.webp',
+            image: 'https://ik.imagekit.io/siftan/Images/FacesCloseUpsPortrait/Gum.webp',
             description: 'Refine your smile with our gum contouring procedures. Also known as gum reshaping, this service enhances the appearance of your teeth, especially beneficial for those with a gummy smile.',
         },
         {
             name: 'Smile Makeovers',
             path: '/smileMakeovers',
-            image: '/Images/FacesCloseUpsLandscape/5.webp',
+            image: 'https://ik.imagekit.io/siftan/Images/FacesCloseUpsLandscape/5.webp',
             description: 'Embark on a personalized journey with our Smile Makeovers. These comprehensive plans combine various cosmetic procedures to achieve a harmonious and attractive smile tailored to your unique preferences.',
         },
         {
             name: 'Full-Mouth Reconstruction',
             path: '/fullMouthReconstruction',
-            image: '/Images/ServicesLandscape/MouthReconstruction.webp',
+            image: 'https://ik.imagekit.io/siftan/Images/ServicesLandscape/MouthReconstruction.webp',
             description: 'Transform your entire oral landscape with our Full-Mouth Reconstruction services. This comprehensive approach addresses both functional and aesthetic concerns, incorporating various cosmetic and restorative procedures.',
         },
         // Add more services here...
@@ -90,6 +92,11 @@ function Services() {
 
     return (
         <div>
+            <SEO
+                title="Services"
+                description="Explore our comprehensive dental services including teeth whitening, veneers, dental implants, orthodontics, crowns, and cosmetic dentistry at ASH Dental in Pretoria East."
+                path="/services"
+            />
             <nav className="navbar nav-bg navbar-expand-sm navbar-second allin">
                 <button
                     className="navbar-toggler  ms-auto  fadeIn-animation hide-mob"
@@ -136,7 +143,6 @@ function Services() {
                 <div className='text-center' >
                     <h1 className='pt-4 mt-3 pb-3 text-color-gold'>Enhance your oral health and smile with comprehensive general and cosmetic
                         dentistry</h1>
-                    {/* <h3 className="brown pb-3">Redesign, Enhance, Transform</h3> */}
                     <div className='d-flex flex-column justify-content-center testem'>
                         <p className="lead text-start">At ASH Dental, we are dedicated to redefining smiles and enhancing the natural beauty of
                             your teeth through both general and cosmetic dentistry. Our approach goes beyond
@@ -178,7 +184,7 @@ function Services() {
                             <Link key={index} to={service.path}>
                                 <div className="serv3-image-block">
                                     <div className="serv3-content-overlay"></div>
-                                    <img className="serv3-img" src={service.image} style={{ height: '450px' }} alt={service.name} />
+                                    <CdnImage className="serv3-img" src={service.image} loading="lazy" style={{ height: '450px' }} alt={service.name} />
                                     <div className="serv3-content-details fadeIn-bottom">
                                         <h2 className="content-title white">{service.name}</h2>
                                         <p className="content-text white mobile-font">{service.description}</p>
@@ -212,5 +218,3 @@ function Services() {
 }
 
 export default Services;
-
-// ******************************************************************* EOF ******************************************************************************

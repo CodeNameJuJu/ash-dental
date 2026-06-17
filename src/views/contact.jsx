@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import '../Main.css';
 import emailjs from '@emailjs/browser';
 import { MDBIcon } from 'mdb-react-ui-kit';
+import SEO from '../components/seo';
 
 function Form({ type, name, place }) {
   return (
@@ -25,10 +26,10 @@ export const Contact = () => {
   const sendEmail = async (formData) => {
     try {
       const response = await emailjs.sendForm(
-        'service_po12fdq', // Replace with your EmailJS service ID
-        'template_k1eb8wu', // Replace with your EmailJS template ID
-        form.current, // Reference to the form
-        'vOMrbftS0la3Ph2pI' // Replace with your EmailJS user ID
+        'service_po12fdq',
+        'template_k1eb8wu',
+        form.current,
+        'vOMrbftS0la3Ph2pI'
       );
       console.log('Email sent:', response);
       alert('Message sent successfully');
@@ -46,7 +47,12 @@ export const Contact = () => {
   };
 
   return (
-    <div className="container text-start pb-4 mb-4">
+    <div className="container text-start pb-4 mb-4 top-pad">
+      <SEO
+        title="Contact"
+        description="Get in touch with ASH Dental in Pretoria East. Book an appointment, call us, or send a message. We're here to help with all your dental needs."
+        path="/contact"
+      />
       <div className="pb-4 mb-4">
         <br />
         <br />
@@ -71,15 +77,15 @@ export const Contact = () => {
             <h3 className="text-color-gold mb-2 pb-2">Contact Details:</h3>
             <p className="text-color mb-1">
               <MDBIcon icon="phone" className="me-3" />
-              <a class="a2 text-color " href='tel:012 111 1715' target="_blank" rel="noopener noreferrer" title='Phone Link'>(012) 111 1715</a>
+              <a className="a2 text-color " href='tel:012 111 1715' target="_blank" rel="noopener noreferrer" title='Phone Link'>(012) 111 1715</a>
             </p>
             <p className="text-color mb-1">
               <MDBIcon icon="phone" className="me-3" />
-              <a class="a2 text-color " href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
+              <a className="a2 text-color " href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
             </p>
             <p className="mb-0">
               <MDBIcon icon="envelope" className="me-3" />
-              <a class="a2 text-color " href='mailto:info@ashdental.co.za' target="_blank" rel="noopener noreferrer" title='Email Link'>info@ashdental.co.za</a>
+              <a className="a2 text-color " href='mailto:info@ashdental.co.za' target="_blank" rel="noopener noreferrer" title='Email Link'>info@ashdental.co.za</a>
             </p>
           </div>
           <div className="mb-3 col-md-4 text-start">
@@ -87,7 +93,7 @@ export const Contact = () => {
             <p className="lead">For dental emergencies, our dedicated Emergency Dental Care team is available outside regular office hours.</p>
             <p className="lead mt-2 pt-2">
               <MDBIcon icon="phone" className="me-3" />
-              <a class="a2 text-color " href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
+              <a className="a2 text-color " href='tel:084 850 3501' target="_blank" rel="noopener noreferrer" title='Phone Link'>084 850 3501 </a>
             </p>
           </div>
         </div>
@@ -140,5 +146,3 @@ export const Contact = () => {
 };
 
 export default Contact;
-
-// ******************************************************************* EOF ******************************************************************************

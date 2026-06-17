@@ -1,35 +1,37 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import './Main.css';
-import Home from './views/home';
-import About from './views/about';
-import Services from "./views/services";
-import Technology from "./views/technology";
-import Contact from './views/contact';
-import Gallery from './views/gallery';
 import Navbar from "./components/navbar";
 import Footer from './components/footer';
 import WhatsAppButton from "./components/whatsapp"
 import ScrollToTop from "./components/scrollToTop";
-import CosmeticDentistry  from "../src/components/subServices/cosmeticDentistry";
-import TeethWhitening from  "../src/components/subServices/teethWhitening";
-import Orthodontics from  "../src/components/subServices/orthodontics";
-import GeneralDentistry from  "../src/components/subServices/generalDentistry";
-import Emergencies from  "../src/components/subServices/emergencies";
-import Dental from  "../src/components/subServices/dental";
-import Crowns from  "../src/components/subServices/crowns";
-import Specials from './components/specials/specials';
-import FacialAesthetics from "../src/components/subServices/facialAesthetics";
-import SkinHealthBeauty from "../src/components/subServices/skinHealthBeauty";
 
+const Home = lazy(() => import('./views/home'));
+const About = lazy(() => import('./views/about'));
+const Services = lazy(() => import("./views/services"));
+const Technology = lazy(() => import("./views/technology"));
+const Contact = lazy(() => import('./views/contact'));
+const Gallery = lazy(() => import('./views/gallery'));
+const CosmeticDentistry = lazy(() => import("./components/subServices/cosmeticDentistry"));
+const TeethWhitening = lazy(() => import("./components/subServices/teethWhitening"));
+const Orthodontics = lazy(() => import("./components/subServices/orthodontics"));
+const GeneralDentistry = lazy(() => import("./components/subServices/generalDentistry"));
+const Emergencies = lazy(() => import("./components/subServices/emergencies"));
+const Dental = lazy(() => import("./components/subServices/dental"));
+const Crowns = lazy(() => import("./components/subServices/crowns"));
+const Specials = lazy(() => import("./components/specials/specials"));
+const FacialAesthetics = lazy(() => import("./components/subServices/facialAesthetics"));
+const SkinHealthBeauty = lazy(() => import("./components/subServices/skinHealthBeauty"));
 
 
 function App() {
   return (
-    <div>
+    <HelmetProvider>
       <BrowserRouter>
        <Navbar />
         <ScrollToTop />
+        <Suspense fallback={<div className="text-center pt-5 mt-5"><h2 className="gold">Loading...</h2></div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
@@ -48,13 +50,12 @@ function App() {
           <Route path="/emergencies" element={<Emergencies />} />
           <Route path="/specials" element={<Specials />} />
         </Routes>
+        </Suspense>
         <WhatsAppButton />
         <Footer /> 
       </BrowserRouter>
-    </div>
+    </HelmetProvider>
   );
 }
 
 export default App;
-
-// ******************************************************************* EOF ******************************************************************************
